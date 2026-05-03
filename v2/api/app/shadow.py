@@ -95,12 +95,29 @@ def json_dump(value: Any) -> str:
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
 
+def normalize_scalar(value: Any) -> Any:
+    if isinstance(value, str):
+        candidate = value.strip()
+        if candidate and any(separator in candidate for separator in ("T", " ")) and ":" in candidate and "-" in candidate:
+            normalized = candidate.replace("Z", "+00:00")
+            try:
+                parsed = datetime.fromisoformat(normalized)
+            except ValueError:
+                return value
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=timezone.utc)
+            else:
+                parsed = parsed.astimezone(timezone.utc)
+            return parsed.isoformat(timespec="seconds")
+    return value
+
+
 def normalize_payload(value: Any) -> Any:
     if isinstance(value, dict):
         return {key: normalize_payload(value[key]) for key in sorted(value)}
     if isinstance(value, list):
         return [normalize_payload(item) for item in value]
-    return value
+    return normalize_scalar(value)
 
 
 def strip_transport_fields(value: Any) -> Any:

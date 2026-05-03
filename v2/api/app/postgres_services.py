@@ -23,6 +23,7 @@ from app.db.models import Template
 from app.integrity import assert_no_critical_issues
 from app.integrity import audit_report_record
 from app.integrity import audit_template_record
+from app.native_authority import NativeAuthorityStore
 from app.shadow import ShadowBackend
 from app.shadow import now_utc
 from app.shadow import slugify
@@ -179,6 +180,8 @@ def json_string(value: Any) -> str:
 class PostgresCompatibilityStore:
     def __init__(self, shadow: ShadowBackend):
         self.shadow = shadow
+        self._native = NativeAuthorityStore(shadow)
+        self.native_authority = True
 
     @property
     def settings(self):
@@ -986,3 +989,40 @@ class PostgresCompatibilityStore:
         finally:
             session.close()
         return {"rule": result}
+
+
+def _delegate_native_method(name: str):
+    def delegated(self: PostgresCompatibilityStore, *args: Any, **kwargs: Any):
+        self.ensure_synced(force=False)
+        return getattr(self._native, name)(*args, **kwargs)
+
+    return delegated
+
+
+for _delegated_name in (
+    "bootstrap",
+    "stages",
+    "templates",
+    "template",
+    "companies",
+    "company",
+    "monitoring",
+    "reports",
+    "report",
+    "create_company",
+    "update_company",
+    "save_template",
+    "delete_template",
+    "create_report",
+    "preview_report",
+    "update_report",
+    "delete_report",
+    "document_status",
+    "document_record",
+    "upload_documents",
+    "save_report_source",
+    "delete_report_source",
+    "save_monitoring_rule",
+    "process_next_background_job",
+):
+    setattr(PostgresCompatibilityStore, _delegated_name, _delegate_native_method(_delegated_name))

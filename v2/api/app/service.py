@@ -17,6 +17,7 @@ from fastapi import Request
 from app.legacy_bridge import LegacyBridge
 from app.postgres_services import PostgresCompatibilityStore
 from app import postgres_services
+from app import native_authority
 from app.shadow import ShadowBackend
 from app.shadow import diff_values
 from app.shadow import normalize_payload
@@ -104,6 +105,8 @@ class CompatibilityService:
         original_datetime = legacy_db.datetime
         original_uuid4 = legacy_db.uuid.uuid4
         original_postgres_now_utc = postgres_services.now_utc
+        original_native_now_utc = native_authority.now_utc
+        original_native_datetime = native_authority.datetime
 
         def deterministic_uuid4():
             uuid_counter["value"] += 1
@@ -118,12 +121,16 @@ class CompatibilityService:
         legacy_db.datetime = DeterministicDateTime
         legacy_db.uuid.uuid4 = deterministic_uuid4
         postgres_services.now_utc = deterministic_now_utc
+        native_authority.now_utc = deterministic_now_utc
+        native_authority.datetime = DeterministicDateTime
         try:
             yield
         finally:
             legacy_db.datetime = original_datetime
             legacy_db.uuid.uuid4 = original_uuid4
             postgres_services.now_utc = original_postgres_now_utc
+            native_authority.now_utc = original_native_now_utc
+            native_authority.datetime = original_native_datetime
 
     def load_postgres_read(self, *, category: str, request_key: str) -> dict[str, Any]:
         snapshot = self.shadow.load_snapshot_record(request_key)
@@ -354,7 +361,8 @@ class CompatibilityService:
                 backend_mode=self.backend_mode,
             )
 
-        self.shadow.sync_from_source(reason=f"write-promoted:{category}", force=True)
+        if not getattr(self.postgres, "native_authority", False):
+            self.shadow.sync_from_source(reason=f"write-promoted:{category}", force=True)
         reconciliation_path, reconciliation = self.shadow.record_state_reconciliation(
             category=category,
             request_key=request_key,
