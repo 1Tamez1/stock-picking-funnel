@@ -1,7 +1,0 @@
-{
-  "write_frozen": true,
-  "reason": "cutover_rehearsal",
-  "message": "Writes are frozen during hosted validation.",
-  "source": "unit-test",
-  "created_at": "2026-04-21T12:00:00+00:00"
-}

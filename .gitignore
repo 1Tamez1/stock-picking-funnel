@@ -1,10 +1,71 @@
-node_modules/
-.next/
-__pycache__/
-*.pyc
+# OS/editor noise
+.DS_Store
+*.swp
+*.swo
+
+# Secrets and local environment files
 .env
 .env.*
-.DS_Store
+*.env
+*.env.*
+!.env.example
+!*.env.example
+!v2/deploy/.env*.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+v2/.venv/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Playwright and test output
+test-results/
+playwright-report/
+blob-report/
+v2/.tmp/
+
+# Local runtime data, databases, uploads, and backups
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.dump
+*.bak
+*.log
+funnel.db
+var/
+!var/
+!var/uploads/
+!var/uploads/.gitkeep
+contracts/backups/
+
+# Generated V2 contracts and runtime artifacts
 v2/contracts/backups/
 v2/contracts/debug/
-v2/contracts/shadow/*.db
+v2/contracts/hosted-runtime/
+v2/contracts/shadow/
+v2/contracts/integrity/
+v2/contracts/migration-dry-run.json
+v2/contracts/parity-matrix.json
+
+# Codex/local scratch space
+.codex-tmp/
