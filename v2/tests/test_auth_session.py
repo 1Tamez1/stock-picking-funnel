@@ -127,6 +127,68 @@ class AuthSessionTest(unittest.TestCase):
         finally:
             tempdir.cleanup()
 
+    def test_mcp_bearer_token_scopes_block_unscoped_writes(self) -> None:
+        tempdir, env = self.make_runtime()
+        try:
+            with temporary_env(env):
+                settings = load_settings()
+                shadow = ShadowBackend(settings)
+                try:
+                    auth = AuthService(shadow)
+                    auth.bootstrap_owner(email="owner@example.com", password="secret-pass", display_name="Owner")
+                    token_payload = auth.issue_api_token(label="Read Token", expires_in_days=30, scopes=["read"])
+                finally:
+                    shadow.close()
+
+                headers = {"Authorization": f"Bearer {token_payload['token']}"}
+                with TestClient(create_app()) as client:
+                    reports = client.get("/api/reports?include_drafts=1&per_page=1", headers=headers)
+                    self.assertEqual(reports.status_code, 200)
+                    report_id = int(reports.json()["reports"][0]["id"])
+                    sections = client.get(f"/api/reports/{report_id}/sections", headers=headers)
+                    self.assertEqual(sections.status_code, 200)
+                    section_id = sections.json()["sections"][0]["section_id"]
+
+                    read_call = client.post(
+                        "/mcp",
+                        headers=headers,
+                        json={
+                            "jsonrpc": "2.0",
+                            "id": 1,
+                            "method": "tools/call",
+                            "params": {
+                                "name": "read_report_section",
+                                "arguments": {"report_id": report_id, "section_id": section_id},
+                            },
+                        },
+                    )
+                    self.assertEqual(read_call.status_code, 200)
+                    self.assertIn("result", read_call.json())
+
+                    write_call = client.post(
+                        "/mcp",
+                        headers=headers,
+                        json={
+                            "jsonrpc": "2.0",
+                            "id": 2,
+                            "method": "tools/call",
+                            "params": {
+                                "name": "patch_report_section",
+                                "arguments": {
+                                    "report_id": report_id,
+                                    "section_id": section_id,
+                                    "expected_report_revision": 1,
+                                    "expected_section_revision": 1,
+                                },
+                            },
+                        },
+                    )
+                    self.assertEqual(write_call.status_code, 200)
+                    self.assertEqual(write_call.json()["error"]["code"], -32003)
+                    self.assertIn("write_reports", write_call.json()["error"]["message"])
+        finally:
+            tempdir.cleanup()
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -13,6 +13,7 @@ from app.postgres_services import PostgresCompatibilityStore
 from app.runtime_state import read_cutover_state
 from app.runtime_state import read_write_freeze_state
 from app.routers.compatibility import router as compatibility_router
+from app.routers.mcp import router as mcp_router
 from app.service import CompatibilityService
 from app.shadow import ShadowBackend
 from app.storage import StorageAdapter
@@ -60,7 +61,8 @@ def create_app() -> FastAPI:
             "/api/session/login",
             "/api/session/logout",
         }
-        if path.startswith("/api/") and path not in public_api_paths and session_payload.required and not session_payload.authenticated:
+        protected_app_path = path.startswith("/api/") or path == "/mcp"
+        if protected_app_path and path not in public_api_paths and session_payload.required and not session_payload.authenticated:
             headers = {
                 "X-Funnel-Instance-Id": request.app.state.bridge.instance_id,
                 "X-Funnel-Request-Id": request.app.state.bridge.request_id(),
@@ -99,6 +101,7 @@ def create_app() -> FastAPI:
         return await call_next(request)
 
     app.include_router(compatibility_router)
+    app.include_router(mcp_router)
     return app
 
 

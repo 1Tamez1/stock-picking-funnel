@@ -17,9 +17,14 @@ from app.db.models import Document
 from app.db.models import MonitoringRule
 from app.db.models import Report
 from app.db.models import BackgroundJob
+from app.db.models import AgentRun
+from app.db.models import AgentRunStep
+from app.db.models import AgentToolCall
+from app.db.models import ReportSectionModule
 from app.db.models import ReportSource
 from app.db.models import Stage
 from app.db.models import Template
+from app.db.models import TemplateSectionModule
 from app.integrity import assert_no_critical_issues
 from app.integrity import audit_report_record
 from app.integrity import audit_template_record
@@ -69,6 +74,34 @@ LEGACY_TABLE_COLUMNS: dict[str, list[str]] = {
         "next_action",
         "review_date",
         "completed_at",
+        "created_at",
+        "updated_at",
+    ],
+    "template_section_modules": [
+        "id",
+        "template_id",
+        "stage_key",
+        "section_id",
+        "section_title",
+        "section_path",
+        "section_ordinal",
+        "schema_version",
+        "module_json",
+        "created_at",
+        "updated_at",
+    ],
+    "report_section_modules": [
+        "id",
+        "report_id",
+        "template_id",
+        "stage_key",
+        "section_id",
+        "section_title",
+        "section_path",
+        "section_ordinal",
+        "revision",
+        "schema_version",
+        "module_json",
         "created_at",
         "updated_at",
     ],
@@ -145,6 +178,43 @@ LEGACY_TABLE_COLUMNS: dict[str, list[str]] = {
         "created_at",
         "updated_at",
     ],
+    "agent_runs": [
+        "id",
+        "report_id",
+        "section_id",
+        "run_kind",
+        "status",
+        "orchestrator",
+        "mcp_session_id",
+        "prompt_name",
+        "state_json",
+        "created_at",
+        "updated_at",
+        "completed_at",
+    ],
+    "agent_run_steps": [
+        "id",
+        "run_id",
+        "step_key",
+        "status",
+        "input_json",
+        "output_json",
+        "error",
+        "created_at",
+        "updated_at",
+    ],
+    "agent_tool_calls": [
+        "id",
+        "run_id",
+        "step_id",
+        "tool_name",
+        "arguments_json",
+        "result_json",
+        "status",
+        "request_id",
+        "created_at",
+        "updated_at",
+    ],
 }
 
 SOURCE_STRING_COLUMNS: dict[str, list[str]] = {
@@ -152,10 +222,15 @@ SOURCE_STRING_COLUMNS: dict[str, list[str]] = {
     "companies": ["created_at", "updated_at"],
     "templates": ["created_at", "updated_at"],
     "reports": ["created_at", "updated_at", "completed_at"],
+    "template_section_modules": ["created_at", "updated_at"],
+    "report_section_modules": ["created_at", "updated_at"],
     "documents": ["uploaded_at", "normalized_updated_at"],
     "report_sources": ["created_at", "updated_at"],
     "background_jobs": ["created_at", "updated_at", "leased_at", "available_at", "completed_at"],
     "monitoring_rules": ["created_at", "updated_at", "last_checked_at"],
+    "agent_runs": ["created_at", "updated_at", "completed_at"],
+    "agent_run_steps": ["created_at", "updated_at"],
+    "agent_tool_calls": ["created_at", "updated_at"],
 }
 
 
@@ -268,6 +343,40 @@ class PostgresCompatibilityStore:
                     }
                     for row in rows_for(Report)
                 ],
+                "template_section_modules": [
+                    {
+                        "id": int(row["id"]),
+                        "template_id": int(row["template_id"]),
+                        "stage_key": row["stage_key"],
+                        "section_id": row["section_id"],
+                        "section_title": row["section_title"],
+                        "section_path": row["section_path"],
+                        "section_ordinal": int(row["section_ordinal"]),
+                        "schema_version": int(row["schema_version"]),
+                        "module_json": json_string(row["module_json"] or {}),
+                        "created_at": iso_utc(row["created_at"]),
+                        "updated_at": iso_utc(row["updated_at"]),
+                    }
+                    for row in rows_for(TemplateSectionModule)
+                ],
+                "report_section_modules": [
+                    {
+                        "id": int(row["id"]),
+                        "report_id": int(row["report_id"]),
+                        "template_id": int(row["template_id"]),
+                        "stage_key": row["stage_key"],
+                        "section_id": row["section_id"],
+                        "section_title": row["section_title"],
+                        "section_path": row["section_path"],
+                        "section_ordinal": int(row["section_ordinal"]),
+                        "revision": int(row["revision"]),
+                        "schema_version": int(row["schema_version"]),
+                        "module_json": json_string(row["module_json"] or {}),
+                        "created_at": iso_utc(row["created_at"]),
+                        "updated_at": iso_utc(row["updated_at"]),
+                    }
+                    for row in rows_for(ReportSectionModule)
+                ],
                 "documents": [
                     {
                         "id": int(row["id"]),
@@ -352,6 +461,52 @@ class PostgresCompatibilityStore:
                         "updated_at": iso_utc(row["updated_at"]),
                     }
                     for row in rows_for(MonitoringRule)
+                ],
+                "agent_runs": [
+                    {
+                        "id": int(row["id"]),
+                        "report_id": int(row["report_id"]) if row["report_id"] is not None else None,
+                        "section_id": row["section_id"],
+                        "run_kind": row["run_kind"],
+                        "status": row["status"],
+                        "orchestrator": row["orchestrator"],
+                        "mcp_session_id": row["mcp_session_id"],
+                        "prompt_name": row["prompt_name"],
+                        "state_json": json_string(row["state_json"] or {}),
+                        "created_at": iso_utc(row["created_at"]),
+                        "updated_at": iso_utc(row["updated_at"]),
+                        "completed_at": row["completed_at"],
+                    }
+                    for row in rows_for(AgentRun)
+                ],
+                "agent_run_steps": [
+                    {
+                        "id": int(row["id"]),
+                        "run_id": int(row["run_id"]),
+                        "step_key": row["step_key"],
+                        "status": row["status"],
+                        "input_json": json_string(row["input_json"] or {}),
+                        "output_json": json_string(row["output_json"] or {}),
+                        "error": row["error"],
+                        "created_at": iso_utc(row["created_at"]),
+                        "updated_at": iso_utc(row["updated_at"]),
+                    }
+                    for row in rows_for(AgentRunStep)
+                ],
+                "agent_tool_calls": [
+                    {
+                        "id": int(row["id"]),
+                        "run_id": int(row["run_id"]) if row["run_id"] is not None else None,
+                        "step_id": int(row["step_id"]) if row["step_id"] is not None else None,
+                        "tool_name": row["tool_name"],
+                        "arguments_json": json_string(row["arguments_json"] or {}),
+                        "result_json": json_string(row["result_json"] or {}),
+                        "status": row["status"],
+                        "request_id": row["request_id"],
+                        "created_at": iso_utc(row["created_at"]),
+                        "updated_at": iso_utc(row["updated_at"]),
+                    }
+                    for row in rows_for(AgentToolCall)
                 ],
             }
         finally:

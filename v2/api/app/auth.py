@@ -20,6 +20,8 @@ from app.shadow import SHADOW_WORKSPACE_ID
 from app.shadow import ShadowBackend
 from app.shadow import now_utc
 
+TOKEN_SCOPES = {"read", "write_sources", "write_reports", "finalize_reports", "admin"}
+
 
 def _timestamp(value: datetime | None) -> str:
     if value is None:
@@ -58,6 +60,21 @@ def api_token_prefix(token: str) -> str:
     return token[:12]
 
 
+def normalize_token_scopes(value: Any, *, default_admin: bool = False) -> list[str]:
+    if isinstance(value, str):
+        raw_items = [item.strip() for item in value.split(",")]
+    elif isinstance(value, (list, tuple, set)):
+        raw_items = [str(item).strip() for item in value]
+    else:
+        raw_items = []
+    scopes = sorted({item for item in raw_items if item in TOKEN_SCOPES})
+    if "admin" in scopes:
+        return ["admin"]
+    if not scopes and default_admin:
+        return ["admin"]
+    return scopes
+
+
 @dataclass(slots=True)
 class SessionPayload:
     required: bool
@@ -67,6 +84,7 @@ class SessionPayload:
     display_name: str = ""
     expires_at: str = ""
     auth_method: str = ""
+    scopes: tuple[str, ...] = ()
 
     def as_dict(self) -> dict[str, Any]:
         payload = {
@@ -80,6 +98,7 @@ class SessionPayload:
                 "display_name": self.display_name,
             }
             payload["expires_at"] = self.expires_at
+            payload["scopes"] = list(self.scopes or ("admin",))
         return payload
 
 
@@ -174,6 +193,7 @@ class AuthService:
                 "display_name": str(user.display_name or ""),
                 "expires_at": _timestamp(expires_at),
                 "auth_method": "session",
+                "scopes": ["admin"],
             }
         finally:
             session.close()
@@ -208,6 +228,7 @@ class AuthService:
                 "display_name": str(user.display_name or ""),
                 "expires_at": _timestamp(expires_at),
                 "auth_method": "bearer",
+                "scopes": normalize_token_scopes(api_token.scopes_json, default_admin=True),
             }
         finally:
             session.close()
@@ -239,6 +260,7 @@ class AuthService:
             display_name=str(loaded["display_name"]),
             expires_at=str(loaded["expires_at"]),
             auth_method=str(loaded.get("auth_method") or ""),
+            scopes=tuple(normalize_token_scopes(loaded.get("scopes"), default_admin=True)),
         )
 
     def login(self, *, email: str, password: str, request: Request) -> tuple[str, dict[str, Any]]:
@@ -292,8 +314,12 @@ class AuthService:
                 session.close()
         return {"ok": True}
 
-    def issue_api_token(self, *, label: str, expires_in_days: int | None = None) -> dict[str, Any]:
+    def issue_api_token(self, *, label: str, expires_in_days: int | None = None, scopes: Any = None) -> dict[str, Any]:
         normalized_label = label.strip() or "Agent Token"
+        default_scope_request = scopes in (None, "", [], ())
+        normalized_scopes = normalize_token_scopes(scopes, default_admin=default_scope_request)
+        if not normalized_scopes and not default_scope_request:
+            raise ValueError(f"Token scopes must include at least one of: {', '.join(sorted(TOKEN_SCOPES))}.")
         session = self._session()
         try:
             user = session.execute(
@@ -309,6 +335,7 @@ class AuthService:
                 label=normalized_label,
                 token_prefix=api_token_prefix(raw_token),
                 token_hash=session_token_hash(raw_token),
+                scopes_json=normalized_scopes,
                 created_at=now,
                 updated_at=now,
                 last_used_at=None,
@@ -323,6 +350,7 @@ class AuthService:
                     "id": int(record.id),
                     "label": record.label,
                     "token_prefix": record.token_prefix,
+                    "scopes": list(record.scopes_json or ["admin"]),
                     "created_at": _timestamp(record.created_at),
                     "expires_at": _timestamp(record.expires_at),
                     "revoked_at": _timestamp(record.revoked_at),
@@ -341,6 +369,7 @@ class AuthService:
                         "id": int(row.id),
                         "label": row.label,
                         "token_prefix": row.token_prefix,
+                        "scopes": normalize_token_scopes(row.scopes_json, default_admin=True),
                         "created_at": _timestamp(row.created_at),
                         "updated_at": _timestamp(row.updated_at),
                         "last_used_at": _timestamp(row.last_used_at),

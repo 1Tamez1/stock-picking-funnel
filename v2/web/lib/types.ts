@@ -341,11 +341,61 @@ export interface ReportRecord {
   resource_uri: string;
   api_url: string;
   auto_inherited_fields: string[];
+  section_modules?: ReportSectionSummaryRecord[];
   inherited_screening?: UpstreamReportReference | null;
   inherited_business_underwriting?: UpstreamReportReference | null;
   inherited_management_underwriting?: UpstreamReportReference | null;
   inherited_financial_underwriting?: UpstreamReportReference | null;
   inherited_valuation_position_size?: UpstreamReportReference | null;
+}
+
+export interface SectionEntryRecord {
+  field_id: string;
+  question: string;
+  description: string;
+  kind: string;
+  options: string[];
+  max: number | null;
+  origin: string;
+  path: string;
+  ordinal: number;
+  value: JsonValue;
+  notes: {
+    value?: string;
+    required: boolean;
+    category: string;
+    placeholder: string;
+  };
+  sources: FieldContextRecord & {
+    required: boolean;
+  };
+  exception_status: string;
+  read_only: boolean;
+  annotations_allowed: boolean;
+}
+
+export interface ReportSectionSummaryRecord {
+  schema_version: number;
+  report_id: number;
+  report_revision: number;
+  section_revision: number;
+  stage_key: string;
+  template_id: number;
+  section_id: string;
+  section_title: string;
+  section_path: string;
+  section_ordinal: number;
+  description: string;
+  entry_count: number;
+  completion: CompletionRecord;
+  resource_uri: string;
+  api_url: string;
+}
+
+export interface ReportSectionRecord extends Omit<ReportSectionSummaryRecord, "entry_count"> {
+  section_notes: string;
+  section_sources: FieldContextRecord;
+  entries: SectionEntryRecord[];
 }
 
 export interface CompanyRecord extends CompanySummaryRecord {
@@ -412,6 +462,20 @@ export interface CompanyPayload {
 
 export interface ReportPayload {
   report: ReportRecord;
+}
+
+export interface ReportSectionsPayload {
+  report_id: number;
+  report_revision: number;
+  sections: ReportSectionSummaryRecord[];
+}
+
+export interface ReportSectionPayload {
+  section: ReportSectionRecord;
+  report?: ReportRecord;
+  completion?: CompletionRecord;
+  report_completion?: CompletionRecord;
+  preview?: JsonObject;
 }
 
 export interface TemplatePayload {

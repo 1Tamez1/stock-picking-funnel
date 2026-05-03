@@ -20,6 +20,7 @@ from app.db.models import Company
 from app.db.models import Document
 from app.db.models import MonitoringRule
 from app.db.models import Report
+from app.db.models import ReportSectionModule
 from app.db.models import ReportSource
 from app.db.models import Stage
 from app.db.models import Template
@@ -691,6 +692,27 @@ class NativeAuthorityStore:
         if agent_contract:
             report["agent_contract"] = agent_contract
             report["completion"] = agent_contract.get("completion", {})
+        module_rows = (
+            session.execute(
+                select(ReportSectionModule)
+                .where(ReportSectionModule.report_id == int(ctx.report.id))
+                .order_by(ReportSectionModule.section_ordinal, ReportSectionModule.id)
+            )
+            .scalars()
+            .all()
+        )
+        section_modules = []
+        for row in module_rows:
+            module = dict(row.module_json or {})
+            module["section_revision"] = int(row.revision or module.get("section_revision") or 1)
+            section_modules.append(legacy_db.module_summary(module))
+        if not section_modules:
+            sections = report.get("template", {}).get("schema", {}).get("sections", [])
+            section_modules = [
+                legacy_db.module_summary(legacy_db.report_section_module_payload(report, section, ordinal))
+                for ordinal, section in enumerate(sections, start=1)
+            ]
+        report["section_modules"] = section_modules
         return report
 
     def _sort_companies(self, companies: list[dict[str, Any]], order: str | None) -> list[dict[str, Any]]:

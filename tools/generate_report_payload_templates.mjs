@@ -108,6 +108,187 @@ function buildPatchTemplate(fields, readonlyIds = new Set()) {
   };
 }
 
+function hasOwn(value, key) {
+  return Object.prototype.hasOwnProperty.call(value || {}, key);
+}
+
+function sectionAnnotationKey(sectionId) {
+  return `section:${sectionId}`;
+}
+
+function normalizedSourceContext(value) {
+  if (!value || typeof value !== "object") return { source_ids: [], citation: "" };
+  return {
+    source_ids: Array.isArray(value.source_ids) ? value.source_ids : [],
+    citation: String(value.citation || ""),
+  };
+}
+
+function fieldRequiresSourceLinks(field) {
+  return String(field.section_title || "").trim().toLowerCase() !== "basic inputs";
+}
+
+function fieldIsReadOnly(field, readonlyIds) {
+  const origin = String(field.origin || "").trim().toLowerCase();
+  return readonlyIds.has(field.id) || ["derived", "system", "readonly", "read_only", "auto_inherited", "inherited"].includes(origin);
+}
+
+function fieldCurrentValue(report, field) {
+  const store = isScalarField(field) ? report.responses || {} : report.metrics || {};
+  return hasOwn(store, field.id) ? store[field.id] : "";
+}
+
+function buildSectionEntryFromField(report, field, readonlyIds) {
+  const fieldId = String(field.id || "");
+  const note = report.field_notes?.[fieldId] || "";
+  const sources = normalizedSourceContext(report.field_sources?.[fieldId]);
+  const readOnly = fieldIsReadOnly(field, readonlyIds);
+  const entry = {
+    field_id: fieldId,
+    question: String(field.label || ""),
+    description: String(field.help || ""),
+    kind: String(field.kind || ""),
+    options: Array.isArray(field.options) ? field.options : [],
+    max: field.max ?? null,
+    origin: String(field.origin || ""),
+    path: String(field.path || ""),
+    ordinal: Number(field.ordinal || 0),
+    read_only: readOnly,
+    annotations_allowed: readOnly,
+    notes: {
+      value: String(note || ""),
+      required: Boolean(field.notes_required),
+      category: String(field.note_category || ""),
+      placeholder: String(field.note_placeholder || ""),
+    },
+    sources: {
+      ...sources,
+      required: fieldRequiresSourceLinks(field),
+    },
+    exception_status: String(report.field_exceptions?.[fieldId] || ""),
+  };
+  if (readOnly) entry.existing_value = fieldCurrentValue(report, field);
+  else entry.value = fieldCurrentValue(report, field);
+  return entry;
+}
+
+function sectionTemplateFileName(section) {
+  return `${String(section.section_ordinal || 0).padStart(2, "0")}-${slugify(section.section_title || section.section_id)}.section.template.json`;
+}
+
+function sectionDataQualityValue(section) {
+  const quality = section.data_quality || {};
+  if (!quality || typeof quality !== "object" || Array.isArray(quality)) return quality || "";
+  const keys = Object.keys(quality);
+  if (keys.length === 1 && keys[0] === section.section_id) return quality[keys[0]];
+  return quality;
+}
+
+function buildSectionPatchTemplate(section) {
+  return {
+    schema_version: Number(section.schema_version || 2),
+    report_id: Number(section.report_id || 0),
+    stage_key: String(section.stage_key || ""),
+    template_id: Number(section.template_id || 0),
+    section_id: String(section.section_id || ""),
+    section_title: String(section.section_title || ""),
+    section_path: String(section.section_path || ""),
+    section_ordinal: Number(section.section_ordinal || 0),
+    description: String(section.description || ""),
+    expected_report_revision: Number(section.report_revision || 1),
+    expected_section_revision: Number(section.section_revision || section.report_revision || 1),
+    section_rating: section.section_rating ?? "",
+    data_quality: sectionDataQualityValue(section),
+    section_notes: String(section.section_notes || ""),
+    section_sources: normalizedSourceContext(section.section_sources),
+    completion: section.completion || {},
+    entries: sortedFields(section.entries || []).map((entry) => {
+      const readOnly = Boolean(entry.read_only);
+      const output = {
+        field_id: String(entry.field_id || ""),
+        question: String(entry.question || ""),
+        description: String(entry.description || ""),
+        kind: String(entry.kind || ""),
+        options: Array.isArray(entry.options) ? entry.options : [],
+        max: entry.max ?? null,
+        origin: String(entry.origin || ""),
+        path: String(entry.path || ""),
+        ordinal: Number(entry.ordinal || 0),
+        read_only: readOnly,
+        annotations_allowed: Boolean(entry.annotations_allowed),
+        notes: {
+          value: String(entry.notes?.value || ""),
+          required: Boolean(entry.notes?.required),
+          category: String(entry.notes?.category || ""),
+          placeholder: String(entry.notes?.placeholder || ""),
+        },
+        sources: {
+          ...normalizedSourceContext(entry.sources),
+          required: Boolean(entry.sources?.required),
+        },
+        exception_status: String(entry.exception_status || ""),
+      };
+      if (readOnly) output.existing_value = entry.value ?? "";
+      else output.value = entry.value ?? "";
+      return output;
+    }),
+  };
+}
+
+function buildSectionTemplatesFromReport(report) {
+  const fullModules = (report.section_modules || []).filter((section) => Array.isArray(section.entries));
+  if (fullModules.length) return fullModules.map(buildSectionPatchTemplate);
+
+  const schema = report.template?.schema || {};
+  const readonlyIds = new Set(report.agent_contract?.readonly_field_ids || []);
+  const summaryById = new Map((report.section_modules || []).map((section) => [String(section.section_id || ""), section]));
+  return [...(schema.sections || [])].map((section, index) => {
+    const sectionId = String(section.id || "");
+    const sectionKey = sectionAnnotationKey(sectionId);
+    const summary = summaryById.get(sectionId) || {};
+    return buildSectionPatchTemplate({
+      schema_version: 2,
+      report_id: report.id || 0,
+      report_revision: Number(report.revision || 1),
+      section_revision: Number(summary.section_revision || report.revision || 1),
+      stage_key: report.stage_key || report.template?.stage_key || "",
+      template_id: report.template_id || report.template?.id || 0,
+      section_id: sectionId,
+      section_title: section.title || "",
+      section_path: section.path || slugify(section.title || sectionId),
+      section_ordinal: Number(section.ordinal || index + 1),
+      description: section.body_markdown || "",
+      section_rating: report.section_ratings?.[sectionId] ?? "",
+      data_quality: hasOwn(report.data_quality || {}, sectionId) ? { [sectionId]: report.data_quality[sectionId] } : {},
+      section_notes: report.field_notes?.[sectionKey] || "",
+      section_sources: normalizedSourceContext(report.field_sources?.[sectionKey]),
+      completion: summary.completion || {},
+      entries: sortedFields(section.fields || []).map((field) => buildSectionEntryFromField(report, field, readonlyIds)),
+    });
+  });
+}
+
+function buildSectionTemplatesFromTemplate(template, stage = {}) {
+  return buildSectionTemplatesFromReport({
+    id: 0,
+    revision: 1,
+    stage_id: template.stage_id || stage.id || 0,
+    stage_key: template.stage_key || stage.key || "",
+    stage_name: template.stage_name || stage.name || "",
+    template_id: template.id || 0,
+    template,
+    responses: {},
+    metrics: {},
+    section_ratings: {},
+    data_quality: {},
+    field_sources: {},
+    field_notes: {},
+    field_exceptions: {},
+    agent_contract: { readonly_field_ids: [] },
+    section_modules: [],
+  });
+}
+
 function stageFileName(sequence, stageKey) {
   return `${String(sequence).padStart(2, "0")}-${stageKey}.patch.template.json`;
 }
@@ -172,6 +353,13 @@ async function generateAllStages(args) {
     const payload = buildPatchTemplate(template.schema?.fields || []);
     const fileName = stageFileName(stage.sequence || 99, template.stage_key || `stage-${template.stage_id}`);
     await writeJson(path.join(outputDir, fileName), payload);
+    const sectionDir = path.join("sections", `${String(stage.sequence || 99).padStart(2, "0")}-${template.stage_key || `stage-${template.stage_id}`}`);
+    const sectionFiles = [];
+    for (const sectionTemplate of buildSectionTemplatesFromTemplate(template, stage)) {
+      const sectionFile = path.join(sectionDir, sectionTemplateFileName(sectionTemplate));
+      await writeJson(path.join(outputDir, sectionFile), sectionTemplate);
+      sectionFiles.push(sectionFile);
+    }
     const generatedFieldCount = Object.keys(payload.responses).length + Object.keys(payload.metrics).length;
     manifest.templates.push({
       stage_id: template.stage_id,
@@ -181,11 +369,13 @@ async function generateAllStages(args) {
       template_name: template.name,
       field_count: template.schema?.field_count || 0,
       generated_patch_key_count: generatedFieldCount,
+      generated_section_template_count: sectionFiles.length,
       auto_inherited_field_count: sortedFields(template.schema?.fields || []).filter((field) =>
         String(field.id || "").startsWith("inherited-") ||
         String(field.section_title || "").trim().toLowerCase().startsWith("inherited from ")
       ).length,
       file: fileName,
+      section_files: sectionFiles,
     });
   }
 
@@ -219,6 +409,8 @@ async function generateFromReport(args) {
     const livePath = path.join(workspaceDir, "report.live.json");
     const templatePath = path.join(workspaceDir, "report.patch.template.json");
     const patchPath = path.join(workspaceDir, "report.patch.json");
+    const sectionTemplates = buildSectionTemplatesFromReport(report);
+    const sectionTemplateFiles = sectionTemplates.map((section) => path.join("sections", sectionTemplateFileName(section)));
     const workspaceMeta = {
       workspace_name: folderName,
       created_at: new Date().toISOString(),
@@ -234,12 +426,21 @@ async function generateFromReport(args) {
         live_report: "report.live.json",
         patch_template: "report.patch.template.json",
         patch_working_copy: "report.patch.json",
+        section_templates: sectionTemplateFiles,
         verify_report: "report.verify.json",
+      },
+      mcp: {
+        endpoint: "/mcp",
+        section_resource_template: "funnel://reports/{report_id}/sections/{section_id}",
+        preferred_tools: ["list_report_sections", "read_report_section", "preview_report_section", "patch_report_section", "preview_report_completion", "finalize_report"],
       },
     };
     await writeJson(livePath, payload);
     await writeJson(templatePath, template);
     await writeJson(patchPath, template);
+    for (const [index, sectionTemplate] of sectionTemplates.entries()) {
+      await writeJson(path.join(workspaceDir, sectionTemplateFiles[index]), sectionTemplate);
+    }
     await writeJson(path.join(workspaceDir, "workspace.json"), workspaceMeta);
     console.log(workspaceDir);
     return;

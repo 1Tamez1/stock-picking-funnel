@@ -63,6 +63,7 @@ NOTE_PLACEHOLDERS = {
     "optional_text": "Optional: capture caveats, uncertainty, assumptions, or audit-trail context for this response.",
 }
 SCHEMA_VERSION = 4
+SECTION_MODULE_SCHEMA_VERSION = 2
 SQLITE_TIMEOUT_SECONDS = 10.0
 SQLITE_BUSY_TIMEOUT_MS = 5_000
 WRITE_RETRY_ATTEMPTS = 4
@@ -1415,6 +1416,78 @@ def init_db(conn: sqlite3.Connection) -> None:
             updated_at TEXT NOT NULL
         );
 
+        CREATE TABLE IF NOT EXISTS template_section_modules (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            template_id INTEGER NOT NULL REFERENCES templates(id) ON DELETE CASCADE,
+            stage_key TEXT NOT NULL DEFAULT '',
+            section_id TEXT NOT NULL,
+            section_title TEXT NOT NULL DEFAULT '',
+            section_path TEXT NOT NULL DEFAULT '',
+            section_ordinal INTEGER NOT NULL DEFAULT 0,
+            schema_version INTEGER NOT NULL DEFAULT 2,
+            module_json TEXT NOT NULL DEFAULT '{}',
+            created_at TEXT NOT NULL,
+            updated_at TEXT NOT NULL,
+            UNIQUE(template_id, section_id)
+        );
+
+        CREATE TABLE IF NOT EXISTS report_section_modules (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            report_id INTEGER NOT NULL REFERENCES reports(id) ON DELETE CASCADE,
+            template_id INTEGER NOT NULL REFERENCES templates(id),
+            stage_key TEXT NOT NULL DEFAULT '',
+            section_id TEXT NOT NULL,
+            section_title TEXT NOT NULL DEFAULT '',
+            section_path TEXT NOT NULL DEFAULT '',
+            section_ordinal INTEGER NOT NULL DEFAULT 0,
+            revision INTEGER NOT NULL DEFAULT 1,
+            schema_version INTEGER NOT NULL DEFAULT 2,
+            module_json TEXT NOT NULL DEFAULT '{}',
+            created_at TEXT NOT NULL,
+            updated_at TEXT NOT NULL,
+            UNIQUE(report_id, section_id)
+        );
+
+        CREATE TABLE IF NOT EXISTS agent_runs (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            report_id INTEGER REFERENCES reports(id) ON DELETE SET NULL,
+            section_id TEXT NOT NULL DEFAULT '',
+            run_kind TEXT NOT NULL DEFAULT 'report_completion',
+            status TEXT NOT NULL DEFAULT 'created',
+            orchestrator TEXT NOT NULL DEFAULT 'langgraph',
+            mcp_session_id TEXT NOT NULL DEFAULT '',
+            prompt_name TEXT NOT NULL DEFAULT '',
+            state_json TEXT NOT NULL DEFAULT '{}',
+            created_at TEXT NOT NULL,
+            updated_at TEXT NOT NULL,
+            completed_at TEXT NOT NULL DEFAULT ''
+        );
+
+        CREATE TABLE IF NOT EXISTS agent_run_steps (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            run_id INTEGER NOT NULL REFERENCES agent_runs(id) ON DELETE CASCADE,
+            step_key TEXT NOT NULL,
+            status TEXT NOT NULL DEFAULT 'created',
+            input_json TEXT NOT NULL DEFAULT '{}',
+            output_json TEXT NOT NULL DEFAULT '{}',
+            error TEXT NOT NULL DEFAULT '',
+            created_at TEXT NOT NULL,
+            updated_at TEXT NOT NULL
+        );
+
+        CREATE TABLE IF NOT EXISTS agent_tool_calls (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            run_id INTEGER REFERENCES agent_runs(id) ON DELETE SET NULL,
+            step_id INTEGER REFERENCES agent_run_steps(id) ON DELETE SET NULL,
+            tool_name TEXT NOT NULL,
+            arguments_json TEXT NOT NULL DEFAULT '{}',
+            result_json TEXT NOT NULL DEFAULT '{}',
+            status TEXT NOT NULL DEFAULT 'created',
+            request_id TEXT NOT NULL DEFAULT '',
+            created_at TEXT NOT NULL,
+            updated_at TEXT NOT NULL
+        );
+
         CREATE INDEX IF NOT EXISTS idx_companies_bucket ON companies(bucket);
         CREATE INDEX IF NOT EXISTS idx_companies_stage ON companies(current_stage_id);
         CREATE INDEX IF NOT EXISTS idx_reports_company ON reports(company_id);
@@ -1424,6 +1497,11 @@ def init_db(conn: sqlite3.Connection) -> None:
         CREATE INDEX IF NOT EXISTS idx_background_jobs_status ON background_jobs(status, available_at, id);
         CREATE UNIQUE INDEX IF NOT EXISTS idx_background_jobs_kind_document ON background_jobs(kind, document_id);
         CREATE INDEX IF NOT EXISTS idx_monitoring_company ON monitoring_rules(company_id);
+        CREATE INDEX IF NOT EXISTS idx_template_section_modules_template ON template_section_modules(template_id, section_ordinal);
+        CREATE INDEX IF NOT EXISTS idx_report_section_modules_report ON report_section_modules(report_id, section_ordinal);
+        CREATE INDEX IF NOT EXISTS idx_agent_runs_report ON agent_runs(report_id, status, id);
+        CREATE INDEX IF NOT EXISTS idx_agent_run_steps_run ON agent_run_steps(run_id, id);
+        CREATE INDEX IF NOT EXISTS idx_agent_tool_calls_run ON agent_tool_calls(run_id, id);
         """
     )
     ensure_column(conn, "reports", "revision", "INTEGER NOT NULL DEFAULT 1")
@@ -3201,6 +3279,619 @@ def exhaustive_report_completion(report: dict[str, Any]) -> dict[str, Any]:
 
 def generic_report_completion(report: dict[str, Any]) -> dict[str, Any]:
     return exhaustive_report_completion(report)
+
+
+def section_annotation_key(section_id: str) -> str:
+    return f"section:{section_id}"
+
+
+def normalized_field_context(value: Any) -> dict[str, Any]:
+    if not isinstance(value, dict):
+        return {"source_ids": [], "citation": ""}
+    source_ids: list[int] = []
+    for item in value.get("source_ids") or []:
+        try:
+            source_ids.append(int(item))
+        except (TypeError, ValueError):
+            continue
+    return {
+        "source_ids": source_ids,
+        "citation": str(value.get("citation") or ""),
+    }
+
+
+def template_section_module_payload(template: dict[str, Any], section: dict[str, Any], ordinal: int) -> dict[str, Any]:
+    return {
+        "schema_version": SECTION_MODULE_SCHEMA_VERSION,
+        "template_id": int(template.get("id") or 0),
+        "stage_key": str(template.get("stage_key") or ""),
+        "section_id": str(section.get("id") or ""),
+        "section_title": str(section.get("title") or ""),
+        "section_path": str(section.get("path") or slugify(str(section.get("title") or ""))),
+        "section_ordinal": ordinal,
+        "description": str(section.get("body_markdown") or ""),
+        "entries": [
+            {
+                "field_id": field["id"],
+                "question": field.get("label", ""),
+                "description": field.get("help", ""),
+                "kind": field.get("kind", ""),
+                "options": list(field.get("options") or []),
+                "max": field.get("max"),
+                "origin": field.get("origin", ""),
+                "path": field.get("path", ""),
+                "ordinal": int(field.get("ordinal") or 0),
+                "notes": {
+                    "required": bool(field.get("notes_required")),
+                    "category": field.get("note_category", ""),
+                    "placeholder": field.get("note_placeholder", ""),
+                },
+                "sources": {
+                    "required": field_requires_source_links(field),
+                },
+            }
+            for field in section.get("fields", [])
+        ],
+    }
+
+
+def section_completion(report: dict[str, Any], section: dict[str, Any]) -> dict[str, Any]:
+    completion = exhaustive_report_completion(report)
+    section_id = str(section.get("id") or "")
+
+    def in_section(item: dict[str, Any]) -> bool:
+        return str(item.get("section_id") or "") == section_id
+
+    progress = next(
+        (item for item in completion.get("section_progress", []) if str(item.get("id") or "") == section_id),
+        {},
+    )
+    missing_fields = [item for item in completion.get("missing_fields", []) if in_section(item)]
+    missing_source_links = [item for item in completion.get("missing_source_links", []) if in_section(item)]
+    blocked_source_links = [item for item in completion.get("blocked_source_links", []) if in_section(item)]
+    missing_required_notes = [item for item in completion.get("missing_required_notes", []) if in_section(item)]
+    exception_missing_notes = [item for item in completion.get("exception_missing_notes", []) if in_section(item)]
+    blocker_count = (
+        len(missing_fields)
+        + len(missing_source_links)
+        + len(blocked_source_links)
+        + len(missing_required_notes)
+        + len(exception_missing_notes)
+    )
+    field_count = int(progress.get("field_count") or 0)
+    covered_count = int(progress.get("covered_field_count") or 0)
+    answered_count = int(progress.get("answered_field_count") or 0)
+    status = "complete" if blocker_count == 0 else "in_progress" if covered_count else "not_started"
+    return {
+        "status": status,
+        "field_count": field_count,
+        "template_field_count": int(progress.get("template_field_count") or len(section.get("fields", []))),
+        "exempt_field_count": int(progress.get("exempt_field_count") or 0),
+        "covered_field_count": covered_count,
+        "answered_field_count": answered_count,
+        "coverage_pct": round((covered_count / field_count) * 100, 2) if field_count else 100.0,
+        "missing_fields": missing_fields,
+        "missing_field_ids": [item["id"] for item in missing_fields],
+        "missing_source_links": missing_source_links,
+        "missing_source_field_ids": [item["id"] for item in missing_source_links],
+        "blocked_source_links": blocked_source_links,
+        "blocked_source_field_ids": [item["id"] for item in blocked_source_links],
+        "missing_required_notes": missing_required_notes,
+        "missing_required_note_ids": [item["id"] for item in missing_required_notes],
+        "exception_missing_notes": exception_missing_notes,
+        "exception_missing_note_ids": [item["id"] for item in exception_missing_notes],
+    }
+
+
+def report_section_module_payload(
+    report: dict[str, Any],
+    section: dict[str, Any],
+    ordinal: int,
+    *,
+    section_revision: int | None = None,
+) -> dict[str, Any]:
+    responses, metrics = merged_report_values(report)
+    persisted_responses = report.get("responses") or {}
+    persisted_metrics = report.get("metrics") or {}
+    readonly_field_ids = set(non_editable_field_ids(report))
+    section_id = str(section.get("id") or "")
+    section_key = section_annotation_key(section_id)
+    field_sources = report.get("field_sources") or {}
+    field_notes = report.get("field_notes") or {}
+    field_exceptions = report.get("field_exceptions") or {}
+    field_ids = {str(field["id"]) for field in section.get("fields", [])}
+    data_quality = report.get("data_quality") or {}
+    module = {
+        "schema_version": SECTION_MODULE_SCHEMA_VERSION,
+        "report_id": int(report.get("id") or 0),
+        "report_revision": int(report.get("revision") or 1),
+        "section_revision": int(section_revision or report.get("revision") or 1),
+        "stage_key": str(report.get("stage_key") or report.get("template", {}).get("stage_key") or ""),
+        "template_id": int(report.get("template_id") or report.get("template", {}).get("id") or 0),
+        "section_id": section_id,
+        "section_title": str(section.get("title") or ""),
+        "section_path": str(section.get("path") or slugify(str(section.get("title") or ""))),
+        "section_ordinal": ordinal,
+        "description": str(section.get("body_markdown") or ""),
+        "section_rating": (report.get("section_ratings") or {}).get(section_id),
+        "data_quality": {
+            str(key): value
+            for key, value in data_quality.items()
+            if str(key) in field_ids or str(key) in {section_id, section_key}
+        },
+        "section_notes": str(field_notes.get(section_key) or ""),
+        "section_notes_present": section_key in field_notes,
+        "section_sources": normalized_field_context(field_sources.get(section_key)),
+        "section_sources_present": section_key in field_sources,
+        "entries": [],
+        "completion": section_completion(report, section),
+    }
+    for field in section.get("fields", []):
+        field_id = str(field["id"])
+        raw_value = raw_field_value_from_stores(field, responses, metrics)
+        module["entries"].append(
+            {
+                "field_id": field_id,
+                "question": field.get("label", ""),
+                "description": field.get("help", ""),
+                "kind": field.get("kind", ""),
+                "options": list(field.get("options") or []),
+                "max": field.get("max"),
+                "origin": field.get("origin", ""),
+                "path": field.get("path", ""),
+                "ordinal": int(field.get("ordinal") or 0),
+                "value": "" if raw_value is None else raw_value,
+                "value_present": field_id in (persisted_metrics if metric_field(field) else persisted_responses),
+                "notes": {
+                    "value": str(field_notes.get(field_id) or ""),
+                    "present": field_id in field_notes,
+                    "required": bool(field.get("notes_required")),
+                    "category": field.get("note_category", ""),
+                    "placeholder": field.get("note_placeholder", ""),
+                },
+                "sources": {
+                    **normalized_field_context(field_sources.get(field_id)),
+                    "present": field_id in field_sources,
+                    "required": field_requires_source_links(field),
+                },
+                "exception_status": normalize_field_exception_status(field_exceptions.get(field_id)),
+                "exception_present": field_id in field_exceptions,
+                "read_only": field_id in readonly_field_ids,
+                "annotations_allowed": field_id in readonly_field_ids,
+            }
+        )
+    return module
+
+
+def explode_report_to_modules(report: dict[str, Any]) -> list[dict[str, Any]]:
+    return [
+        report_section_module_payload(report, section, ordinal)
+        for ordinal, section in enumerate(report.get("template", {}).get("schema", {}).get("sections", []), start=1)
+    ]
+
+
+def compose_report_from_modules(conn: sqlite3.Connection, report_id: int) -> dict[str, Any]:
+    report = get_report(conn, report_id)
+    if not report:
+        raise KeyError("Report not found.")
+    schema = report.get("template", {}).get("schema", {})
+    lookup = field_lookup(schema)
+    composed = dict(report)
+    responses: dict[str, Any] = {}
+    metrics: dict[str, Any] = {}
+    section_ratings: dict[str, Any] = {}
+    data_quality: dict[str, Any] = {}
+    field_sources: dict[str, Any] = {}
+    field_notes: dict[str, Any] = {}
+    field_exceptions: dict[str, Any] = {}
+    rows = conn.execute(
+        "SELECT module_json FROM report_section_modules WHERE report_id = ? ORDER BY section_ordinal, id",
+        (report_id,),
+    ).fetchall()
+    for row in rows:
+        module = load_json(row["module_json"], {})
+        section_id = str(module.get("section_id") or "")
+        section_key = section_annotation_key(section_id)
+        if module.get("section_rating") is not None:
+            section_ratings[section_id] = module.get("section_rating")
+        data_quality.update(dict(module.get("data_quality") or {}))
+        if module.get("section_notes_present"):
+            field_notes[section_key] = str(module.get("section_notes") or "")
+        if module.get("section_sources_present"):
+            field_sources[section_key] = normalized_field_context(module.get("section_sources"))
+        for entry in module.get("entries") or []:
+            if not isinstance(entry, dict):
+                continue
+            field_id = str(entry.get("field_id") or "")
+            field = lookup.get(field_id)
+            if not field:
+                continue
+            if entry.get("value_present"):
+                if metric_field(field):
+                    metrics[field_id] = entry.get("value")
+                else:
+                    responses[field_id] = entry.get("value")
+            notes = entry.get("notes") if isinstance(entry.get("notes"), dict) else {}
+            if notes.get("present"):
+                field_notes[field_id] = str(notes.get("value") or "")
+            sources = entry.get("sources") if isinstance(entry.get("sources"), dict) else {}
+            if sources.get("present"):
+                field_sources[field_id] = normalized_field_context(sources)
+            if entry.get("exception_present"):
+                field_exceptions[field_id] = normalize_field_exception_status(entry.get("exception_status"))
+    composed["responses"] = responses
+    composed["metrics"] = metrics
+    composed["section_ratings"] = section_ratings
+    composed["data_quality"] = data_quality
+    composed["field_sources"] = field_sources
+    composed["field_notes"] = field_notes
+    composed["field_exceptions"] = field_exceptions
+    return composed
+
+
+def module_summary(module: dict[str, Any]) -> dict[str, Any]:
+    completion = module.get("completion") or {}
+    return {
+        "schema_version": int(module.get("schema_version") or SECTION_MODULE_SCHEMA_VERSION),
+        "report_id": int(module.get("report_id") or 0),
+        "report_revision": int(module.get("report_revision") or 1),
+        "section_revision": int(module.get("section_revision") or 1),
+        "stage_key": str(module.get("stage_key") or ""),
+        "template_id": int(module.get("template_id") or 0),
+        "section_id": str(module.get("section_id") or ""),
+        "section_title": str(module.get("section_title") or ""),
+        "section_path": str(module.get("section_path") or ""),
+        "section_ordinal": int(module.get("section_ordinal") or 0),
+        "description": str(module.get("description") or ""),
+        "entry_count": len(module.get("entries") or []),
+        "completion": completion,
+        "resource_uri": f"funnel://reports/{module.get('report_id')}/sections/{module.get('section_id')}",
+        "api_url": f"/api/reports/{module.get('report_id')}/sections/{module.get('section_id')}",
+    }
+
+
+def upsert_template_section_modules(conn: sqlite3.Connection, template: dict[str, Any]) -> None:
+    schema = template.get("schema") or {}
+    timestamp = now_iso()
+    for ordinal, section in enumerate(schema.get("sections", []), start=1):
+        module = template_section_module_payload(template, section, ordinal)
+        module_json = dump_json(module)
+        existing = conn.execute(
+            """
+            SELECT id, stage_key, section_title, section_path, section_ordinal, schema_version, module_json
+            FROM template_section_modules
+            WHERE template_id = ? AND section_id = ?
+            """,
+            (int(template["id"]), str(section["id"])),
+        ).fetchone()
+        values = (
+            int(template["id"]),
+            str(template.get("stage_key") or ""),
+            str(section["id"]),
+            str(section.get("title") or ""),
+            str(section.get("path") or ""),
+            ordinal,
+            SECTION_MODULE_SCHEMA_VERSION,
+            module_json,
+            timestamp,
+        )
+        if existing:
+            unchanged = (
+                str(existing["stage_key"] or "") == values[1]
+                and str(existing["section_title"] or "") == values[3]
+                and str(existing["section_path"] or "") == values[4]
+                and int(existing["section_ordinal"] or 0) == values[5]
+                and int(existing["schema_version"] or 0) == values[6]
+                and str(existing["module_json"] or "") == values[7]
+            )
+            if not unchanged:
+                conn.execute(
+                    """
+                    UPDATE template_section_modules
+                    SET stage_key = ?, section_title = ?, section_path = ?, section_ordinal = ?,
+                        schema_version = ?, module_json = ?, updated_at = ?
+                    WHERE id = ?
+                    """,
+                    (values[1], values[3], values[4], values[5], values[6], values[7], timestamp, int(existing["id"])),
+                )
+        else:
+            conn.execute(
+                """
+                INSERT INTO template_section_modules
+                (template_id, stage_key, section_id, section_title, section_path, section_ordinal,
+                 schema_version, module_json, created_at, updated_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (*values, timestamp),
+            )
+
+
+def sync_report_section_modules_from_report(conn: sqlite3.Connection, report: dict[str, Any]) -> None:
+    template = report.get("template") or {}
+    schema = template.get("schema") or {}
+    timestamp = now_iso()
+    if template:
+        upsert_template_section_modules(conn, template)
+    live_section_ids = {str(section.get("id") or "") for section in schema.get("sections", [])}
+    for ordinal, section in enumerate(schema.get("sections", []), start=1):
+        existing = conn.execute(
+            """
+            SELECT id, revision, template_id, stage_key, section_title, section_path, section_ordinal, schema_version, module_json
+            FROM report_section_modules
+            WHERE report_id = ? AND section_id = ?
+            """,
+            (int(report["id"]), str(section["id"])),
+        ).fetchone()
+        section_revision = int(report.get("revision") or 1)
+        module = report_section_module_payload(report, section, ordinal, section_revision=section_revision)
+        module_json = dump_json(module)
+        if existing:
+            values = (
+                int(report["template_id"]),
+                str(report.get("stage_key") or ""),
+                str(section.get("title") or ""),
+                str(section.get("path") or ""),
+                ordinal,
+                section_revision,
+                SECTION_MODULE_SCHEMA_VERSION,
+                module_json,
+            )
+            unchanged = (
+                int(existing["template_id"] or 0) == values[0]
+                and str(existing["stage_key"] or "") == values[1]
+                and str(existing["section_title"] or "") == values[2]
+                and str(existing["section_path"] or "") == values[3]
+                and int(existing["section_ordinal"] or 0) == values[4]
+                and int(existing["revision"] or 0) == values[5]
+                and int(existing["schema_version"] or 0) == values[6]
+                and str(existing["module_json"] or "") == values[7]
+            )
+            if not unchanged:
+                conn.execute(
+                    """
+                    UPDATE report_section_modules
+                    SET template_id = ?, stage_key = ?, section_title = ?, section_path = ?, section_ordinal = ?,
+                        revision = ?, schema_version = ?, module_json = ?, updated_at = ?
+                    WHERE id = ?
+                    """,
+                    (*values, timestamp, int(existing["id"])),
+                )
+        else:
+            conn.execute(
+                """
+                INSERT INTO report_section_modules
+                (report_id, template_id, stage_key, section_id, section_title, section_path, section_ordinal,
+                 revision, schema_version, module_json, created_at, updated_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    int(report["id"]),
+                    int(report["template_id"]),
+                    str(report.get("stage_key") or ""),
+                    str(section["id"]),
+                    str(section.get("title") or ""),
+                    str(section.get("path") or ""),
+                    ordinal,
+                    section_revision,
+                    SECTION_MODULE_SCHEMA_VERSION,
+                    module_json,
+                    timestamp,
+                    timestamp,
+                ),
+            )
+    if live_section_ids:
+        placeholders = ", ".join("?" for _ in live_section_ids)
+        conn.execute(
+            f"DELETE FROM report_section_modules WHERE report_id = ? AND section_id NOT IN ({placeholders})",
+            [int(report["id"]), *sorted(live_section_ids)],
+        )
+
+
+def backfill_section_modules(conn: sqlite3.Connection) -> None:
+    for row in conn.execute("SELECT id FROM templates ORDER BY id").fetchall():
+        template = get_template(conn, int(row["id"]))
+        if template:
+            upsert_template_section_modules(conn, template)
+    for row in conn.execute("SELECT id FROM reports ORDER BY id").fetchall():
+        get_report(conn, int(row["id"]))
+    conn.commit()
+
+
+def report_with_fresh_section_modules(conn: sqlite3.Connection, report: dict[str, Any]) -> dict[str, Any]:
+    sync_report_section_modules_from_report(conn, report)
+    conn.commit()
+    rows = conn.execute(
+        """
+        SELECT revision, module_json
+        FROM report_section_modules
+        WHERE report_id = ?
+        ORDER BY section_ordinal, id
+        """,
+        (int(report["id"]),),
+    ).fetchall()
+    modules = []
+    for row in rows:
+        module = load_json(row["module_json"], {})
+        module["section_revision"] = int(row["revision"] or module.get("section_revision") or 1)
+        modules.append(module)
+    report["section_modules"] = [module_summary(module) for module in modules]
+    return report
+
+
+def list_report_sections(conn: sqlite3.Connection, report_id: int) -> dict[str, Any]:
+    report = get_report(conn, report_id)
+    if not report:
+        raise KeyError("Report not found.")
+    return {
+        "report_id": report_id,
+        "report_revision": int(report.get("revision") or 1),
+        "sections": report.get("section_modules") or [],
+    }
+
+
+def get_report_section(conn: sqlite3.Connection, report_id: int, section_id: str) -> dict[str, Any]:
+    report = get_report(conn, report_id)
+    if not report:
+        raise KeyError("Report not found.")
+    row = conn.execute(
+        """
+        SELECT revision, module_json
+        FROM report_section_modules
+        WHERE report_id = ? AND section_id = ?
+        """,
+        (report_id, section_id),
+    ).fetchone()
+    if not row:
+        raise KeyError("Report section not found.")
+    module = load_json(row["module_json"], {})
+    module["section_revision"] = int(row["revision"] or module.get("section_revision") or 1)
+    module["resource_uri"] = f"funnel://reports/{report_id}/sections/{section_id}"
+    module["api_url"] = f"/api/reports/{report_id}/sections/{section_id}"
+    return {"section": module}
+
+
+def section_patch_payload_from_module(report: dict[str, Any], section_id: str, payload: dict[str, Any]) -> dict[str, Any]:
+    schema = report.get("template", {}).get("schema", {})
+    section = next((item for item in schema.get("sections", []) if str(item.get("id") or "") == section_id), None)
+    if not section:
+        raise KeyError("Report section not found.")
+    allowed_field_ids = {str(field["id"]) for field in section.get("fields", [])}
+    responses: dict[str, Any] = {}
+    metrics: dict[str, Any] = {}
+    field_sources: dict[str, Any] = {}
+    field_notes: dict[str, Any] = {}
+    field_exceptions: dict[str, Any] = {}
+    section_ratings: dict[str, Any] = {}
+    data_quality: dict[str, Any] = {}
+    field_by_id = {str(field["id"]): field for field in section.get("fields", [])}
+
+    if "section_rating" in payload:
+        section_ratings[section_id] = payload.get("section_rating")
+    if "data_quality" in payload:
+        quality = payload.get("data_quality")
+        if isinstance(quality, dict):
+            for key, value in quality.items():
+                normalized_key = str(key)
+                if normalized_key not in allowed_field_ids and normalized_key not in {section_id, section_annotation_key(section_id)}:
+                    raise ValueError(f"data_quality references a key outside this section: {key}")
+                data_quality[normalized_key] = value
+        else:
+            data_quality[section_id] = quality
+
+    for entry in payload.get("entries") or []:
+        if not isinstance(entry, dict):
+            raise ValueError("Each entries item must be an object.")
+        field_id = str(entry.get("field_id") or "")
+        if field_id not in allowed_field_ids:
+            raise ValueError(f"Unknown section field_id: {field_id}")
+        field = field_by_id[field_id]
+        if "value" in entry:
+            if metric_field(field):
+                metrics[field_id] = entry.get("value")
+            else:
+                responses[field_id] = entry.get("value")
+        notes = entry.get("notes")
+        if isinstance(notes, dict) and "value" in notes:
+            field_notes[field_id] = str(notes.get("value") or "")
+        elif "note" in entry:
+            field_notes[field_id] = str(entry.get("note") or "")
+        sources = entry.get("sources")
+        if isinstance(sources, dict):
+            field_sources[field_id] = normalized_field_context(sources)
+        if "exception_status" in entry:
+            field_exceptions[field_id] = normalize_field_exception_status(entry.get("exception_status"))
+
+    for key, target in (("responses", responses), ("metrics", metrics), ("field_notes", field_notes), ("field_exceptions", field_exceptions)):
+        for field_id, value in dict(payload.get(key) or {}).items():
+            if str(field_id) not in allowed_field_ids:
+                raise ValueError(f"{key} references a field outside this section: {field_id}")
+            target[str(field_id)] = value
+    for field_id, value in dict(payload.get("field_sources") or {}).items():
+        if str(field_id) not in allowed_field_ids:
+            raise ValueError(f"field_sources references a field outside this section: {field_id}")
+        field_sources[str(field_id)] = normalized_field_context(value)
+
+    section_key = section_annotation_key(section_id)
+    if "section_notes" in payload:
+        field_notes[section_key] = str(payload.get("section_notes") or "")
+    if "section_sources" in payload:
+        field_sources[section_key] = normalized_field_context(payload.get("section_sources"))
+
+    return {
+        "responses": responses,
+        "metrics": metrics,
+        "section_ratings": section_ratings,
+        "data_quality": data_quality,
+        "field_sources": field_sources,
+        "field_notes": field_notes,
+        "field_exceptions": field_exceptions,
+    }
+
+
+def validate_section_revision(conn: sqlite3.Connection, report_id: int, section_id: str, expected_section_revision: Any) -> None:
+    row = conn.execute(
+        "SELECT revision FROM report_section_modules WHERE report_id = ? AND section_id = ?",
+        (report_id, section_id),
+    ).fetchone()
+    if not row:
+        raise KeyError("Report section not found.")
+    try:
+        expected = int(expected_section_revision)
+    except (TypeError, ValueError) as exc:
+        raise ValueError("expected_section_revision must be an integer.") from exc
+    current = int(row["revision"] or 1)
+    if expected != current:
+        raise ReportRevisionConflict(report_id, current, "")
+
+
+def preview_report_section(conn: sqlite3.Connection, report_id: int, section_id: str, payload: dict[str, Any]) -> dict[str, Any]:
+    report = get_report(conn, report_id)
+    if not report:
+        raise KeyError("Report not found.")
+    patch = section_patch_payload_from_module(report, section_id, payload)
+    completion_payload = {
+        "expected_revision": payload.get("expected_report_revision", report.get("revision")),
+        "finalize": False,
+        **{key: value for key, value in patch.items() if value},
+    }
+    preview = preview_report_completion(conn, report_id, completion_payload)
+    candidate = report_state_with_payload(
+        report,
+        merged_report_update_payload(report, synchronized_report_payload(report, completion_payload)),
+        persisted_result=report.get("result", "Draft"),
+    )
+    sections = list(candidate.get("template", {}).get("schema", {}).get("sections", []))
+    section = next((item for item in sections if str(item.get("id") or "") == section_id), None)
+    if not section:
+        raise KeyError("Report section not found.")
+    module = report_section_module_payload(candidate, section, sections.index(section) + 1)
+    return {
+        "section": module,
+        "completion": module["completion"],
+        "report_completion": preview["completion"],
+        "preview": preview.get("preview", {}),
+    }
+
+
+def update_report_section(conn: sqlite3.Connection, report_id: int, section_id: str, payload: dict[str, Any]) -> dict[str, Any]:
+    report = get_report(conn, report_id)
+    if not report:
+        raise KeyError("Report not found.")
+    expected_report_revision = payload.get("expected_report_revision")
+    if expected_report_revision is None:
+        raise ValueError("expected_report_revision is required.")
+    expected_section_revision = payload.get("expected_section_revision")
+    if expected_section_revision is None:
+        raise ValueError("expected_section_revision is required.")
+    validate_section_revision(conn, report_id, section_id, expected_section_revision)
+    patch = section_patch_payload_from_module(report, section_id, payload)
+    update_payload = {
+        "expected_revision": expected_report_revision,
+        "finalize": False,
+        **{key: value for key, value in patch.items() if value},
+    }
+    updated = update_report(conn, report_id, update_payload)
+    return get_report_section(conn, report_id, section_id) | {"report": updated}
 
 
 def base_agent_contract(
@@ -5230,6 +5921,7 @@ def get_report(conn: sqlite3.Connection, report_id: int) -> dict[str, Any] | Non
     if agent_contract:
         item["agent_contract"] = agent_contract
         item["completion"] = agent_contract.get("completion", {})
+    report_with_fresh_section_modules(conn, item)
     return item
 
 

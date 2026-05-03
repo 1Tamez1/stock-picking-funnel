@@ -65,6 +65,7 @@ class OwnerApiToken(Base):
     label: Mapped[str] = mapped_column(String(255), nullable=False, default="Agent Token")
     token_prefix: Mapped[str] = mapped_column(String(32), unique=True, nullable=False)
     token_hash: Mapped[str] = mapped_column(String(128), unique=True, nullable=False)
+    scopes_json: Mapped[Optional[list[str]]] = mapped_column(JSON)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     last_used_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
@@ -120,6 +121,23 @@ class Template(Base):
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
 
 
+class TemplateSectionModule(Base):
+    __tablename__ = "template_section_modules"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    workspace_id: Mapped[int] = mapped_column(ForeignKey("workspaces.id"), nullable=False)
+    template_id: Mapped[int] = mapped_column(ForeignKey("templates.id"), nullable=False)
+    stage_key: Mapped[str] = mapped_column(String(128), nullable=False, default="")
+    section_id: Mapped[str] = mapped_column(String(255), nullable=False)
+    section_title: Mapped[str] = mapped_column(String(1024), nullable=False, default="")
+    section_path: Mapped[str] = mapped_column(String(1024), nullable=False, default="")
+    section_ordinal: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    schema_version: Mapped[int] = mapped_column(Integer, nullable=False, default=2)
+    module_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+
+
 class Report(Base):
     __tablename__ = "reports"
 
@@ -151,6 +169,25 @@ class Report(Base):
     completed_at: Mapped[str] = mapped_column(String(255), nullable=False, default="")
     created_by: Mapped[str] = mapped_column(String(255), default="", nullable=False)
     updated_by: Mapped[str] = mapped_column(String(255), default="", nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+
+
+class ReportSectionModule(Base):
+    __tablename__ = "report_section_modules"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    workspace_id: Mapped[int] = mapped_column(ForeignKey("workspaces.id"), nullable=False)
+    report_id: Mapped[int] = mapped_column(ForeignKey("reports.id"), nullable=False)
+    template_id: Mapped[int] = mapped_column(ForeignKey("templates.id"), nullable=False)
+    stage_key: Mapped[str] = mapped_column(String(128), nullable=False, default="")
+    section_id: Mapped[str] = mapped_column(String(255), nullable=False)
+    section_title: Mapped[str] = mapped_column(String(1024), nullable=False, default="")
+    section_path: Mapped[str] = mapped_column(String(1024), nullable=False, default="")
+    section_ordinal: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    revision: Mapped[int] = mapped_column(Integer, nullable=False, default=1)
+    schema_version: Mapped[int] = mapped_column(Integer, nullable=False, default=2)
+    module_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
 
@@ -256,5 +293,54 @@ class EndpointSnapshot(Base):
     request_key: Mapped[str] = mapped_column(String(512), nullable=False, unique=True)
     payload_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
     source_fingerprint: Mapped[str] = mapped_column(String(255), nullable=False, default="")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+
+
+class AgentRun(Base):
+    __tablename__ = "agent_runs"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    workspace_id: Mapped[int] = mapped_column(ForeignKey("workspaces.id"), nullable=False)
+    report_id: Mapped[Optional[int]] = mapped_column(ForeignKey("reports.id"))
+    section_id: Mapped[str] = mapped_column(String(255), nullable=False, default="")
+    run_kind: Mapped[str] = mapped_column(String(128), nullable=False, default="report_completion")
+    status: Mapped[str] = mapped_column(String(64), nullable=False, default="created")
+    orchestrator: Mapped[str] = mapped_column(String(128), nullable=False, default="langgraph")
+    mcp_session_id: Mapped[str] = mapped_column(String(255), nullable=False, default="")
+    prompt_name: Mapped[str] = mapped_column(String(255), nullable=False, default="")
+    state_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    completed_at: Mapped[str] = mapped_column(String(255), nullable=False, default="")
+
+
+class AgentRunStep(Base):
+    __tablename__ = "agent_run_steps"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    workspace_id: Mapped[int] = mapped_column(ForeignKey("workspaces.id"), nullable=False)
+    run_id: Mapped[int] = mapped_column(ForeignKey("agent_runs.id"), nullable=False)
+    step_key: Mapped[str] = mapped_column(String(255), nullable=False)
+    status: Mapped[str] = mapped_column(String(64), nullable=False, default="created")
+    input_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    output_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    error: Mapped[str] = mapped_column(Text, nullable=False, default="")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+
+
+class AgentToolCall(Base):
+    __tablename__ = "agent_tool_calls"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    workspace_id: Mapped[int] = mapped_column(ForeignKey("workspaces.id"), nullable=False)
+    run_id: Mapped[Optional[int]] = mapped_column(ForeignKey("agent_runs.id"))
+    step_id: Mapped[Optional[int]] = mapped_column(ForeignKey("agent_run_steps.id"))
+    tool_name: Mapped[str] = mapped_column(String(255), nullable=False)
+    arguments_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    result_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    status: Mapped[str] = mapped_column(String(64), nullable=False, default="created")
+    request_id: Mapped[str] = mapped_column(String(255), nullable=False, default="")
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)

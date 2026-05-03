@@ -9,6 +9,8 @@ import type {
   PreviewPayload,
   ReportPayload,
   ReportsPayload,
+  ReportSectionPayload,
+  ReportSectionsPayload,
   SaveReportPayload,
   SourcePayload,
   StagesPayload,
@@ -136,6 +138,28 @@ export function getReports(path = "/api/reports?per_page=50") {
 
 export function getReport(reportId: string | number) {
   return request<ReportPayload>(`/api/reports/${reportId}`);
+}
+
+export function getReportSections(reportId: string | number) {
+  return request<ReportSectionsPayload>(`/api/reports/${reportId}/sections`);
+}
+
+export function getReportSection(reportId: string | number, sectionId: string) {
+  return request<ReportSectionPayload>(`/api/reports/${reportId}/sections/${sectionId}`);
+}
+
+export function previewReportSection(reportId: number, sectionId: string, payload: Record<string, unknown>) {
+  return request<ReportSectionPayload>(`/api/reports/${reportId}/sections/${sectionId}/preview`, {
+    method: "POST",
+    body: JSON.stringify(payload),
+  });
+}
+
+export function updateReportSection(reportId: number, sectionId: string, payload: Record<string, unknown>) {
+  return request<ReportSectionPayload>(`/api/reports/${reportId}/sections/${sectionId}`, {
+    method: "PATCH",
+    body: JSON.stringify(payload),
+  });
 }
 
 export function createReport(payload: Record<string, FormDataEntryValue | string | number>) {

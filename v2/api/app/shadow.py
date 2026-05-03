@@ -11,11 +11,16 @@ from pathlib import Path
 from typing import Any
 
 from sqlalchemy import delete
+from sqlalchemy import inspect
 from sqlalchemy import select
+from sqlalchemy import text
 from sqlalchemy.orm import Session
 
 from app.config import Settings
 from app.db.base import Base
+from app.db.models import AgentRun
+from app.db.models import AgentRunStep
+from app.db.models import AgentToolCall
 from app.db.models import BackgroundJob
 from app.db.models import Company
 from app.db.models import Document
@@ -23,9 +28,11 @@ from app.db.models import EndpointSnapshot
 from app.db.models import MonitoringRule
 from app.db.models import OwnerUser
 from app.db.models import Report
+from app.db.models import ReportSectionModule
 from app.db.models import ReportSource
 from app.db.models import Stage
 from app.db.models import Template
+from app.db.models import TemplateSectionModule
 from app.db.models import UserSession
 from app.db.models import Workspace
 from app.db.session import build_engine
@@ -47,10 +54,15 @@ TABLE_ORDER = [
     "companies",
     "templates",
     "reports",
+    "template_section_modules",
+    "report_section_modules",
     "documents",
     "report_sources",
     "background_jobs",
     "monitoring_rules",
+    "agent_runs",
+    "agent_run_steps",
+    "agent_tool_calls",
 ]
 
 
@@ -210,6 +222,7 @@ def sqlite_query_rows(conn: sqlite3.Connection, query: str) -> list[sqlite3.Row]
 
 
 def canonical_sqlite_rows(conn: sqlite3.Connection) -> dict[str, list[dict[str, Any]]]:
+    legacy_db.backfill_section_modules(conn)
     return {
         "stages": [
             {
@@ -281,6 +294,40 @@ def canonical_sqlite_rows(conn: sqlite3.Connection) -> dict[str, list[dict[str, 
                 "updated_at": canonical_timestamp(row["updated_at"]),
             }
             for row in sqlite_query_rows(conn, "SELECT * FROM reports ORDER BY id")
+        ],
+        "template_section_modules": [
+            {
+                "id": int(row["id"]),
+                "template_id": int(row["template_id"]),
+                "stage_key": row["stage_key"],
+                "section_id": row["section_id"],
+                "section_title": row["section_title"],
+                "section_path": row["section_path"],
+                "section_ordinal": int(row["section_ordinal"]),
+                "schema_version": int(row["schema_version"]),
+                "module_json": normalize_payload(json_loads(row["module_json"], {})),
+                "created_at": canonical_timestamp(row["created_at"]),
+                "updated_at": canonical_timestamp(row["updated_at"]),
+            }
+            for row in sqlite_query_rows(conn, "SELECT * FROM template_section_modules ORDER BY id")
+        ],
+        "report_section_modules": [
+            {
+                "id": int(row["id"]),
+                "report_id": int(row["report_id"]),
+                "template_id": int(row["template_id"]),
+                "stage_key": row["stage_key"],
+                "section_id": row["section_id"],
+                "section_title": row["section_title"],
+                "section_path": row["section_path"],
+                "section_ordinal": int(row["section_ordinal"]),
+                "revision": int(row["revision"]),
+                "schema_version": int(row["schema_version"]),
+                "module_json": normalize_payload(json_loads(row["module_json"], {})),
+                "created_at": canonical_timestamp(row["created_at"]),
+                "updated_at": canonical_timestamp(row["updated_at"]),
+            }
+            for row in sqlite_query_rows(conn, "SELECT * FROM report_section_modules ORDER BY id")
         ],
         "documents": [
             {
@@ -367,6 +414,52 @@ def canonical_sqlite_rows(conn: sqlite3.Connection) -> dict[str, list[dict[str, 
             }
             for row in sqlite_query_rows(conn, "SELECT * FROM monitoring_rules ORDER BY id")
         ],
+        "agent_runs": [
+            {
+                "id": int(row["id"]),
+                "report_id": int(row["report_id"]) if row["report_id"] is not None else None,
+                "section_id": row["section_id"],
+                "run_kind": row["run_kind"],
+                "status": row["status"],
+                "orchestrator": row["orchestrator"],
+                "mcp_session_id": row["mcp_session_id"],
+                "prompt_name": row["prompt_name"],
+                "state_json": normalize_payload(json_loads(row["state_json"], {})),
+                "created_at": canonical_timestamp(row["created_at"]),
+                "updated_at": canonical_timestamp(row["updated_at"]),
+                "completed_at": row["completed_at"],
+            }
+            for row in sqlite_query_rows(conn, "SELECT * FROM agent_runs ORDER BY id")
+        ],
+        "agent_run_steps": [
+            {
+                "id": int(row["id"]),
+                "run_id": int(row["run_id"]),
+                "step_key": row["step_key"],
+                "status": row["status"],
+                "input_json": normalize_payload(json_loads(row["input_json"], {})),
+                "output_json": normalize_payload(json_loads(row["output_json"], {})),
+                "error": row["error"],
+                "created_at": canonical_timestamp(row["created_at"]),
+                "updated_at": canonical_timestamp(row["updated_at"]),
+            }
+            for row in sqlite_query_rows(conn, "SELECT * FROM agent_run_steps ORDER BY id")
+        ],
+        "agent_tool_calls": [
+            {
+                "id": int(row["id"]),
+                "run_id": int(row["run_id"]) if row["run_id"] is not None else None,
+                "step_id": int(row["step_id"]) if row["step_id"] is not None else None,
+                "tool_name": row["tool_name"],
+                "arguments_json": normalize_payload(json_loads(row["arguments_json"], {})),
+                "result_json": normalize_payload(json_loads(row["result_json"], {})),
+                "status": row["status"],
+                "request_id": row["request_id"],
+                "created_at": canonical_timestamp(row["created_at"]),
+                "updated_at": canonical_timestamp(row["updated_at"]),
+            }
+            for row in sqlite_query_rows(conn, "SELECT * FROM agent_tool_calls ORDER BY id")
+        ],
     }
 
 
@@ -445,6 +538,40 @@ def shadow_rows_from_session(session: Session) -> dict[str, list[dict[str, Any]]
                 "updated_at": canonical_timestamp(row["updated_at"]),
             }
             for row in rows_for(Report)
+        ],
+        "template_section_modules": [
+            {
+                "id": int(row["id"]),
+                "template_id": int(row["template_id"]),
+                "stage_key": row["stage_key"],
+                "section_id": row["section_id"],
+                "section_title": row["section_title"],
+                "section_path": row["section_path"],
+                "section_ordinal": int(row["section_ordinal"]),
+                "schema_version": int(row["schema_version"]),
+                "module_json": normalize_payload(row["module_json"] or {}),
+                "created_at": canonical_timestamp(row["created_at"]),
+                "updated_at": canonical_timestamp(row["updated_at"]),
+            }
+            for row in rows_for(TemplateSectionModule)
+        ],
+        "report_section_modules": [
+            {
+                "id": int(row["id"]),
+                "report_id": int(row["report_id"]),
+                "template_id": int(row["template_id"]),
+                "stage_key": row["stage_key"],
+                "section_id": row["section_id"],
+                "section_title": row["section_title"],
+                "section_path": row["section_path"],
+                "section_ordinal": int(row["section_ordinal"]),
+                "revision": int(row["revision"]),
+                "schema_version": int(row["schema_version"]),
+                "module_json": normalize_payload(row["module_json"] or {}),
+                "created_at": canonical_timestamp(row["created_at"]),
+                "updated_at": canonical_timestamp(row["updated_at"]),
+            }
+            for row in rows_for(ReportSectionModule)
         ],
         "documents": [
             {
@@ -531,6 +658,52 @@ def shadow_rows_from_session(session: Session) -> dict[str, list[dict[str, Any]]
             }
             for row in rows_for(MonitoringRule)
         ],
+        "agent_runs": [
+            {
+                "id": int(row["id"]),
+                "report_id": int(row["report_id"]) if row["report_id"] is not None else None,
+                "section_id": row["section_id"],
+                "run_kind": row["run_kind"],
+                "status": row["status"],
+                "orchestrator": row["orchestrator"],
+                "mcp_session_id": row["mcp_session_id"],
+                "prompt_name": row["prompt_name"],
+                "state_json": normalize_payload(row["state_json"] or {}),
+                "created_at": canonical_timestamp(row["created_at"]),
+                "updated_at": canonical_timestamp(row["updated_at"]),
+                "completed_at": row["completed_at"],
+            }
+            for row in rows_for(AgentRun)
+        ],
+        "agent_run_steps": [
+            {
+                "id": int(row["id"]),
+                "run_id": int(row["run_id"]),
+                "step_key": row["step_key"],
+                "status": row["status"],
+                "input_json": normalize_payload(row["input_json"] or {}),
+                "output_json": normalize_payload(row["output_json"] or {}),
+                "error": row["error"],
+                "created_at": canonical_timestamp(row["created_at"]),
+                "updated_at": canonical_timestamp(row["updated_at"]),
+            }
+            for row in rows_for(AgentRunStep)
+        ],
+        "agent_tool_calls": [
+            {
+                "id": int(row["id"]),
+                "run_id": int(row["run_id"]) if row["run_id"] is not None else None,
+                "step_id": int(row["step_id"]) if row["step_id"] is not None else None,
+                "tool_name": row["tool_name"],
+                "arguments_json": normalize_payload(row["arguments_json"] or {}),
+                "result_json": normalize_payload(row["result_json"] or {}),
+                "status": row["status"],
+                "request_id": row["request_id"],
+                "created_at": canonical_timestamp(row["created_at"]),
+                "updated_at": canonical_timestamp(row["updated_at"]),
+            }
+            for row in rows_for(AgentToolCall)
+        ],
     }
 
 
@@ -584,7 +757,17 @@ class ShadowBackend:
         return self._session_factory
 
     def ensure_schema(self) -> None:
-        Base.metadata.create_all(self.engine())
+        engine = self.engine()
+        Base.metadata.create_all(engine)
+        inspector = inspect(engine)
+        if "owner_api_tokens" in inspector.get_table_names():
+            columns = {column["name"] for column in inspector.get_columns("owner_api_tokens")}
+            if "scopes_json" not in columns:
+                with engine.begin() as conn:
+                    if engine.dialect.name == "postgresql":
+                        conn.execute(text("ALTER TABLE owner_api_tokens ADD COLUMN IF NOT EXISTS scopes_json JSONB"))
+                    else:
+                        conn.execute(text("ALTER TABLE owner_api_tokens ADD COLUMN scopes_json JSON"))
 
     def close(self) -> None:
         if self._engine is not None:
@@ -613,7 +796,23 @@ class ShadowBackend:
         return hashlib.sha256(json_dump(payload).encode("utf-8")).hexdigest()
 
     def _reset_shadow_tables(self, session: Session) -> None:
-        for model in (EndpointSnapshot, MonitoringRule, BackgroundJob, ReportSource, Document, Report, Template, Company, Stage, Workspace):
+        for model in (
+            EndpointSnapshot,
+            AgentToolCall,
+            AgentRunStep,
+            AgentRun,
+            ReportSectionModule,
+            TemplateSectionModule,
+            MonitoringRule,
+            BackgroundJob,
+            ReportSource,
+            Document,
+            Report,
+            Template,
+            Company,
+            Stage,
+            Workspace,
+        ):
             session.execute(delete(model))
 
     def _import_workspace(self, session: Session, source_rows: dict[str, list[dict[str, Any]]]) -> None:
@@ -733,6 +932,50 @@ class ShadowBackend:
                 for row in source_rows["reports"]
             ],
         )
+        if source_rows.get("template_section_modules"):
+            session.bulk_insert_mappings(
+                TemplateSectionModule,
+                [
+                    {
+                        "id": row["id"],
+                        "workspace_id": SHADOW_WORKSPACE_ID,
+                        "template_id": row["template_id"],
+                        "stage_key": row["stage_key"],
+                        "section_id": row["section_id"],
+                        "section_title": row["section_title"],
+                        "section_path": row["section_path"],
+                        "section_ordinal": row["section_ordinal"],
+                        "schema_version": row["schema_version"],
+                        "module_json": row["module_json"],
+                        "created_at": parse_timestamp(row["created_at"]),
+                        "updated_at": parse_timestamp(row["updated_at"]),
+                    }
+                    for row in source_rows["template_section_modules"]
+                ],
+            )
+        if source_rows.get("report_section_modules"):
+            session.bulk_insert_mappings(
+                ReportSectionModule,
+                [
+                    {
+                        "id": row["id"],
+                        "workspace_id": SHADOW_WORKSPACE_ID,
+                        "report_id": row["report_id"],
+                        "template_id": row["template_id"],
+                        "stage_key": row["stage_key"],
+                        "section_id": row["section_id"],
+                        "section_title": row["section_title"],
+                        "section_path": row["section_path"],
+                        "section_ordinal": row["section_ordinal"],
+                        "revision": row["revision"],
+                        "schema_version": row["schema_version"],
+                        "module_json": row["module_json"],
+                        "created_at": parse_timestamp(row["created_at"]),
+                        "updated_at": parse_timestamp(row["updated_at"]),
+                    }
+                    for row in source_rows["report_section_modules"]
+                ],
+            )
 
         document_rows = []
         for row in source_rows["documents"]:
@@ -841,6 +1084,67 @@ class ShadowBackend:
                 for row in source_rows["monitoring_rules"]
             ],
         )
+        if source_rows.get("agent_runs"):
+            session.bulk_insert_mappings(
+                AgentRun,
+                [
+                    {
+                        "id": row["id"],
+                        "workspace_id": SHADOW_WORKSPACE_ID,
+                        "report_id": row["report_id"],
+                        "section_id": row["section_id"],
+                        "run_kind": row["run_kind"],
+                        "status": row["status"],
+                        "orchestrator": row["orchestrator"],
+                        "mcp_session_id": row["mcp_session_id"],
+                        "prompt_name": row["prompt_name"],
+                        "state_json": row["state_json"],
+                        "created_at": parse_timestamp(row["created_at"]),
+                        "updated_at": parse_timestamp(row["updated_at"]),
+                        "completed_at": row["completed_at"],
+                    }
+                    for row in source_rows["agent_runs"]
+                ],
+            )
+        if source_rows.get("agent_run_steps"):
+            session.bulk_insert_mappings(
+                AgentRunStep,
+                [
+                    {
+                        "id": row["id"],
+                        "workspace_id": SHADOW_WORKSPACE_ID,
+                        "run_id": row["run_id"],
+                        "step_key": row["step_key"],
+                        "status": row["status"],
+                        "input_json": row["input_json"],
+                        "output_json": row["output_json"],
+                        "error": row["error"],
+                        "created_at": parse_timestamp(row["created_at"]),
+                        "updated_at": parse_timestamp(row["updated_at"]),
+                    }
+                    for row in source_rows["agent_run_steps"]
+                ],
+            )
+        if source_rows.get("agent_tool_calls"):
+            session.bulk_insert_mappings(
+                AgentToolCall,
+                [
+                    {
+                        "id": row["id"],
+                        "workspace_id": SHADOW_WORKSPACE_ID,
+                        "run_id": row["run_id"],
+                        "step_id": row["step_id"],
+                        "tool_name": row["tool_name"],
+                        "arguments_json": row["arguments_json"],
+                        "result_json": row["result_json"],
+                        "status": row["status"],
+                        "request_id": row["request_id"],
+                        "created_at": parse_timestamp(row["created_at"]),
+                        "updated_at": parse_timestamp(row["updated_at"]),
+                    }
+                    for row in source_rows["agent_tool_calls"]
+                ],
+            )
 
     def _document_file_checks(self, source_rows: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:
         checks: list[dict[str, Any]] = []

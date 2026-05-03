@@ -61,6 +61,11 @@ def default_endpoint_policies() -> dict[str, str]:
         "report_sources.create": "postgres_primary_with_legacy_fallback",
         "report_sources.update": "postgres_primary_with_legacy_fallback",
         "report_sources.delete": "postgres_primary_with_legacy_fallback",
+        "reports.sections.list": "legacy_only",
+        "reports.sections.detail": "legacy_only",
+        "reports.sections.preview": "legacy_only",
+        "reports.sections.update": "legacy_only",
+        "mcp": "legacy_only",
     }
     return {
         "health": "legacy_only",

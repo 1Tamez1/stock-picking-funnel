@@ -571,6 +571,75 @@ def get_report(request: Request, report_id: int):
         return handle_exception(request, exc)
 
 
+@router.get("/api/reports/{report_id}/sections")
+def get_report_sections(request: Request, report_id: int):
+    bridge = bridge_from_request(request)
+    service = service_from_request(request)
+    try:
+        result = service.execute_read(
+            request,
+            "reports.sections.list",
+            extra={"report_id": report_id},
+            legacy_loader=lambda: with_db(bridge, lambda conn: legacy_db.list_report_sections(conn, report_id)),
+        )
+        return json_response(request, result.payload, extra_headers=result.headers)
+    except Exception as exc:
+        return handle_exception(request, exc)
+
+
+@router.get("/api/reports/{report_id}/sections/{section_id}")
+def get_report_section(request: Request, report_id: int, section_id: str):
+    bridge = bridge_from_request(request)
+    service = service_from_request(request)
+    try:
+        result = service.execute_read(
+            request,
+            "reports.sections.detail",
+            extra={"report_id": report_id, "section_id": section_id},
+            legacy_loader=lambda: with_db(bridge, lambda conn: legacy_db.get_report_section(conn, report_id, section_id)),
+        )
+        return json_response(request, result.payload, extra_headers=result.headers)
+    except Exception as exc:
+        return handle_exception(request, exc)
+
+
+@router.post("/api/reports/{report_id}/sections/{section_id}/preview")
+async def post_report_section_preview(request: Request, report_id: int, section_id: str):
+    bridge = bridge_from_request(request)
+    service = service_from_request(request)
+    payload = await read_json_payload(request)
+    try:
+        result = service.execute_write(
+            request,
+            "reports.sections.preview",
+            extra={"report_id": report_id, "section_id": section_id},
+            operation=lambda: with_db(bridge, lambda conn: legacy_db.preview_report_section(conn, report_id, section_id, payload)),
+        )
+        return json_response(request, result.payload, extra_headers=result.headers)
+    except Exception as exc:
+        return handle_exception(request, exc)
+
+
+@router.patch("/api/reports/{report_id}/sections/{section_id}")
+async def patch_report_section(request: Request, report_id: int, section_id: str):
+    bridge = bridge_from_request(request)
+    service = service_from_request(request)
+    payload = await read_json_payload(request)
+    try:
+        result = service.execute_write(
+            request,
+            "reports.sections.update",
+            extra={"report_id": report_id, "section_id": section_id},
+            operation=lambda: with_db(
+                bridge,
+                lambda conn: run_write(conn, lambda: legacy_db.update_report_section(conn, report_id, section_id, payload)),
+            ),
+        )
+        return json_response(request, result.payload, extra_headers=result.headers)
+    except Exception as exc:
+        return handle_exception(request, exc)
+
+
 @router.post("/api/reports")
 async def post_report(request: Request):
     bridge = bridge_from_request(request)

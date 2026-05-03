@@ -25,6 +25,8 @@ export AUTH_HEADER="Authorization: Bearer ${FUNNEL_API_TOKEN}"
 Browser use can still go through `/login`.
 CLI, agent, and runbook flows should use the bearer token header on protected `/api/*` routes.
 
+MCP bearer token scopes are `read`, `write_sources`, `write_reports`, `finalize_reports`, and `admin`. Existing unscoped bearer tokens and browser sessions behave as `admin`. New agent tokens should use the narrowest scopes needed; add `finalize_reports` only for a run that is allowed to request finalization after human approval.
+
 Useful hosted helpers now live under `v2/scripts/`:
 
 - `bootstrap_owner.py`
@@ -42,16 +44,16 @@ For a full live-stack proof run on the Docker/Caddy/Postgres/MinIO stack, use:
 
 ## If You Remember Only Ten Things
 
-1. The live report at `GET /api/reports/:id` is the source of truth.
+1. The live report at `GET /api/reports/:id` is still the compatibility source of truth.
 2. Do not use company report summaries as if they were full reports. Open the actual report.
 3. Do not use `GET /api/bootstrap` to understand templates. Bootstrap no longer includes templates.
-4. For report work, read `agent_contract`, `completion`, `workflow.latest_upstream_report`, `suggested_sources`, and `company_sources` first.
+4. For agent report work, prefer section modules: list sections, read one section, complete it, preview it, save it, then re-read it.
 5. Reuse existing company sources before creating new ones.
 6. Use `POST /api/report-sources` or the report source dialog for citable evidence. Use `POST /api/documents` only for company-level uploads that are not yet report sources.
 7. Later-stage inherited fields are intentionally read-only. Annotate them with `field_sources` and `field_notes`; do not try to overwrite them.
 8. Document normalization is asynchronous now. New uploads often start as `pending`; use `GET /api/documents/:id/status` instead of assuming the normalized view is ready immediately.
 9. URL-only sources are degraded. If you save one, you must acknowledge the snapshot guidance and write why it is still `link_only`. Cited `link_only`, `pending`, and `failed` sources block finalization.
-10. If you hit a bug, blocker, or strange behavior, add a short entry to [AGENT_ISSUES.md](AGENT_ISSUES.md) before you leave.
+10. Save after every completed section. Context compaction must not be able to erase more than one in-progress section.
 
 ## What This App Is
 
@@ -118,7 +120,22 @@ JSON error bodies include `code` and `request_id`.
 
 - `GET /api/reports/:id`
   Returns the full report working payload.
-  This is the main agent entrypoint for actual report completion.
+  This remains the full-report compatibility entrypoint.
+
+- `GET /api/reports/:id/sections`
+  Returns the modular section outline with section revisions, completion summaries, API URLs, and MCP resource URIs.
+
+- `GET /api/reports/:id/sections/:section_id`
+  Returns one canonical section JSON module. It includes every entry's question, description, value, notes, sources, exception status, read-only state, and section completion.
+
+- `PATCH /api/reports/:id/sections/:section_id`
+  Saves one section. Always send `expected_report_revision` and `expected_section_revision`. A section save increments both revisions.
+
+- `POST /api/reports/:id/sections/:section_id/preview`
+  Runs the server completion logic for one section patch without persisting it.
+
+- `POST /mcp`
+  JSON-RPC MCP endpoint for agent resources, tools, and prompts. Use it when your agent runtime supports MCP.
 
 - `GET /api/templates`
   Returns template library summaries only.
@@ -175,10 +192,11 @@ When you open a report, you already get the working context you need:
 - `suggested_sources`
 - `company_sources`
 - `workflow`
+- `section_modules`
 - source durability metadata such as `capture_state`, `capture_error`, `link_only_reason`, and `snapshot_guidance_acknowledged`
 - auto-inherited upstream fields
 
-That is the main working surface. Start there, not in repo markdown.
+That is the full compatibility surface. For new agent work, use it to orient and then move section-by-section through the modular section APIs or MCP resources.
 
 ## Where To Get Information
 
@@ -221,10 +239,11 @@ Do this for every report:
 12. Use `field_exceptions` only after investigation when a field cannot be answered cleanly. Every exception still requires a field note and a source.
 13. Use `field_notes` for caveats, uncertainty, and audit trail. Notes are required for structured answers such as selects, dates, metrics, numbers, and structured datapoints; they stay optional for narrative text unless you are documenting an exception.
 14. Before finalizing, confirm the cited source set is durable enough: cited `link_only`, `pending`, and `failed` sources block finalize; cited `limited` sources are allowed but should be checked against the original artifact.
-15. Fill the decision-specific follow-up section for the chosen result, then finalize.
+15. Save one completed section at a time, re-read that section, and confirm the saved section revision before moving on.
 16. If a normalized source is still `pending`, wait and re-check `GET /api/documents/:id/status` instead of repeatedly reopening the full report or company page.
-17. Re-open mentally or visually and confirm the report is complete enough for the next human or agent.
-18. If you hit a bug or suspicious behavior, log it in [AGENT_ISSUES.md](AGENT_ISSUES.md).
+17. Fill the decision-specific follow-up section for the chosen result, then run a report-level preview.
+18. Finalize only after report-level completion passes and a human has approved finalization.
+19. If you hit a bug or suspicious behavior, log it in [AGENT_ISSUES.md](AGENT_ISSUES.md).
 
 ## Canonical Temp-File Workflow
 
@@ -279,6 +298,7 @@ Inside that folder, the generator writes:
 - `report.live.json`
 - `report.patch.template.json`
 - `report.patch.json`
+- `sections/*.section.template.json`
 - `workspace.json`
 
 Later, the verification step writes `report.verify.json` into the same folder.
@@ -290,7 +310,21 @@ The generated `report.patch.template.json` already:
 - excludes current read-only inherited field IDs
 - carries the current `expected_revision`
 
+The generated section files are the preferred agent working payloads. Each file carries the section's current report revision, current section revision, title, section guidance, section rating, data quality, notes, sources, and one entry per field with question, description, value, notes, sources, exception status, and read-only metadata.
+
 ### C. Fill the patch file
+
+Prefer filling one file under `$WORKDIR/sections/` at a time.
+
+For each section file:
+
+- keep `expected_report_revision` and `expected_section_revision` from the live read
+- fill only that section's `entries`
+- preserve existing values, notes, sources, exceptions, section rating, and data quality unless you are intentionally changing them
+- do not add `value` to read-only entries; use `notes` and `sources` only
+- save the section before starting the next section
+
+Full-report compatibility fallback:
 
 Edit `$WORKDIR/report.patch.json` and fill:
 
@@ -327,26 +361,47 @@ Do not add inherited read-only fields back into the patch file.
 
 If you create any additional report-scoped temp files, store them in the same workspace folder.
 
-### D. Save the report
+### D. Save one section
 
-Optional manual completion preview before saving:
+Preview one section before saving:
+
+```bash
+curl -sS -H "$AUTH_HEADER" -X POST \
+  -H 'Content-Type: application/json' \
+  --data-binary @"$SECTION_FILE" \
+  "${FUNNEL_API_URL:-http://127.0.0.1:8211}/api/reports/61/sections/$SECTION_ID/preview"
+```
+
+This runs the same synchronization and completion logic as save/finalize, but does not persist anything.
+
+Draft section save:
+
+```bash
+curl -sS -H "$AUTH_HEADER" -X PATCH \
+  -H 'Content-Type: application/json' \
+  --data-binary @"$SECTION_FILE" \
+  "${FUNNEL_API_URL:-http://127.0.0.1:8211}/api/reports/61/sections/$SECTION_ID"
+```
+
+Immediately re-read the same section and verify the revision:
+
+```bash
+curl -sS -H "$AUTH_HEADER" \
+  "${FUNNEL_API_URL:-http://127.0.0.1:8211}/api/reports/61/sections/$SECTION_ID" \
+  -o "$WORKDIR/sections/${SECTION_ID}.verify.json"
+```
+
+Compare the saved `section_revision`, values, notes, sources, exceptions, section rating, and data quality before moving on.
+
+### E. Run report-level preview and finalize
+
+Optional full-report compatibility preview:
 
 ```bash
 curl -sS -H "$AUTH_HEADER" -X POST \
   -H 'Content-Type: application/json' \
   --data-binary @"$WORKDIR/report.patch.json" \
   "${FUNNEL_API_URL:-http://127.0.0.1:8211}/api/reports/61/preview"
-```
-
-This runs the same synchronization and completion logic as save/finalize, but does not persist anything.
-
-Draft save:
-
-```bash
-curl -sS -H "$AUTH_HEADER" -X PATCH \
-  -H 'Content-Type: application/json' \
-  --data-binary @"$WORKDIR/report.patch.json" \
-  "${FUNNEL_API_URL:-http://127.0.0.1:8211}/api/reports/61"
 ```
 
 Final save:
@@ -357,7 +412,9 @@ Final save:
 - if the chosen result is `Watchlist`, include at least one `watchlist_objective_rule` so a monitoring rule is created
 - set `finalize` to `true` only on the last save
 
-### E. Verify after every save
+MCP finalization uses the `finalize_report` tool and must include `approved=true`. Do not finalize through MCP without human approval.
+
+### F. Verify after every save
 
 Always re-open the live report and verify:
 
@@ -375,6 +432,33 @@ Check:
 - `readonly_field_ids`
 
 If `expected_revision` is stale, reload the report, regenerate the patch template, and retry.
+
+## MCP Report Workflow
+
+When the agent runtime supports MCP, use `/mcp` instead of hand-written curl calls.
+
+Preferred MCP sequence:
+
+1. Read `funnel://reports/{report_id}/outline`.
+2. Read `funnel://reports/{report_id}/workflow`.
+3. Read `funnel://reports/{report_id}/sources`.
+4. Read one `funnel://reports/{report_id}/sections/{section_id}` resource.
+5. Use `preview_report_section`.
+6. Use `patch_report_section`.
+7. Re-read the same section resource and verify the section revision.
+8. Repeat for the remaining sections.
+9. Use `preview_report_completion`.
+10. Use `repair_completion_blockers` until there are no blockers.
+11. Interrupt for human approval.
+12. Use `finalize_report` only with `approved=true`.
+
+Useful MCP prompts:
+
+- `complete_report_section`
+- `source_gap_analysis`
+- `repair_section_blockers`
+- `summarize_upstream_handoff`
+- `final_report_review`
 
 ## Starter Payload Files
 

@@ -24,6 +24,11 @@ def build_parser() -> argparse.ArgumentParser:
     issue = subparsers.add_parser("issue", help="Issue a new owner API token.")
     issue.add_argument("--label", default="Agent Token")
     issue.add_argument("--expires-in-days", type=int, default=0)
+    issue.add_argument(
+        "--scopes",
+        default="admin",
+        help="Comma-separated token scopes. Valid: read, write_sources, write_reports, finalize_reports, admin.",
+    )
 
     subparsers.add_parser("list", help="List issued owner API tokens.")
 
@@ -45,6 +50,7 @@ def main() -> None:
             payload = service.issue_api_token(
                 label=str(args.label or "Agent Token"),
                 expires_in_days=int(args.expires_in_days) if int(args.expires_in_days or 0) > 0 else None,
+                scopes=str(args.scopes or "admin"),
             )
         elif args.command == "list":
             payload = service.list_api_tokens()
