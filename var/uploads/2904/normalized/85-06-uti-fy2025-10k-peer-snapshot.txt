@@ -1,0 +1,31 @@
+# 06-uti-fy2025-10k-peer-snapshot.md
+
+## Metadata
+- MIME type: text/plain
+- Original file: 06-uti-fy2025-10k-peer-snapshot.md
+
+## LLM View
+Title: Universal Technical Institute FY2025 Form 10-K peer snapshot
+Source Type: Peer filing
+Evidence Grade: F
+Confidence: High
+URL: https://www.sec.gov/Archives/edgar/data/1261654/000126165425000025/uti-20250930.htm
+Citation: Universal Technical Institute, Inc. FY2025 Form 10-K; company overview and program mix.
+Tags: uti, peer, sec, 10-k, skilled-trades, education, data-collection
+---
+# Snapshot
+
+Snapshot date: 2026-04-19
+Source date: Filing date 2025-11-26; fiscal year ended 2025-09-30
+
+Key extracted points:
+
+- Universal Technical Institute describes itself as a leading workforce solutions provider in transportation, skilled trades, energy, and healthcare programs.
+- UTI operates 15 campuses in nine states within its namesake division and also owns Concorde Career Colleges.
+- Its model combines hands-on learning with classroom and blended delivery models.
+- UTI offers a relevant public-market peer for Lincoln because both are workforce and skilled-trades education platforms with transportation-related training exposure.
+
+Collection notes:
+
+- This is a peer-context source, not a direct substitute for Lincoln's own filings.
+- Use it mainly for competitive framing and scale comparison during Screening.

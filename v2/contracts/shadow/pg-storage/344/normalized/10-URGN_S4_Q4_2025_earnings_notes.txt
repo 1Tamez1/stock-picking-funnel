@@ -1,0 +1,22 @@
+# URGN_S4_Q4_2025_earnings_notes.md
+
+## Metadata
+- MIME type: text/markdown
+- Original file: URGN_S4_Q4_2025_earnings_notes.md
+
+## LLM View
+# S4 - UroGen Q4 2025 / FY2025 Earnings Release
+
+- URL: https://investors.urogen.com/news-releases/news-release-details/urogen-announces-zusduritm-launch-track-and-reports-fourth/
+- Accessed: 2026-04-18
+- Publication date: 2026-03-02
+- Reason stored: latest management commentary source located for operating momentum and Q4/FY2025 bridge.
+
+## Key takeaways
+- Management said the ZUSDURI launch remained on track and reported 2025 net sales of about $15.8 million.
+- JELMYTO net sales in 2025 were reported at about $94 million.
+- The release notes the Pharmakon refinancing and frames 2026 as a pivotal launch year.
+- Use this source for management tone, launch commentary, and the post-year-end bridge.
+
+## Caveats
+- This packet stores the release and webcast entry point, not a standalone full call transcript.

@@ -1,0 +1,33 @@
+# 03-linc-2026-def14a-snapshot.md
+
+## Metadata
+- MIME type: text/plain
+- Original file: 03-linc-2026-def14a-snapshot.md
+
+## LLM View
+Title: Lincoln Educational Services Corporation 2026 Definitive Proxy Statement filed 2026-03-26 (SEC)
+Source Type: Proxy statement
+Evidence Grade: F
+Confidence: High
+URL: https://www.sec.gov/Archives/edgar/data/1286613/000114036126011290/ny20061121x2_def14a.htm
+Citation: DEF 14A filed March 26, 2026 for the May 7, 2026 annual meeting; executive-compensation discussion and governance materials.
+Tags: linc, sec, def14a, proxy, compensation, governance, data-collection
+---
+# Snapshot
+
+Snapshot date: 2026-04-19
+Source date: Filing date 2026-03-26
+
+Key extracted points:
+
+- The proxy statement covers Lincoln Educational Services Corporation's 2026 annual meeting scheduled for May 7, 2026.
+- Shareholders were asked to elect directors, approve executive compensation on an advisory basis, and ratify Deloitte & Touche LLP as auditor.
+- The named executive officers are compensated through base salary, performance-based annual incentives, and long-term equity incentives.
+- The filing states the company continues to emphasize performance-based incentive compensation.
+- The compensation discussion references annual cash incentive structures plus time-based and performance-based restricted shares.
+- Performance-based restricted shares for senior executives are tied to adjusted EBITDA goals.
+
+Collection notes:
+
+- This is the anchor management-and-incentives source for Screening and later management underwriting.
+- Use the original proxy if exact compensation or ownership table values matter downstream.

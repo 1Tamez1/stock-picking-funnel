@@ -1,0 +1,94 @@
+# laur_financial_underwriting_snapshot_2021_2025.md
+
+## Metadata
+- MIME type: text/markdown
+- Original file: laur_financial_underwriting_snapshot_2021_2025.md
+
+## LLM View
+# laur_financial_underwriting_snapshot_2021_2025.md
+
+## Metadata
+- MIME type: text/markdown
+- Original file: laur_financial_underwriting_snapshot_2021_2025.md
+- Report date context: 2026-04-19
+- Company: Laureate Education, Inc. (LAUR)
+
+## Source Basis
+- FY2025 Form 10-K filed 2026-02-19.
+- Q3 2025 Form 10-Q filed 2025-10-30.
+- SEC companyfacts series reviewed on 2026-04-19.
+- Local Nasdaq market-data snapshot for LAUR reviewed on 2026-04-19.
+- Historical capital-allocation snapshot 2021-2024 reviewed for buyback and payout context.
+
+## Core Financial Series
+All dollar figures below are in USD millions unless noted otherwise.
+
+### Income, Cash Flow, And Shares
+| Year | Revenue | Operating Income | Net Income Attributable | Cash From Operations | Capex | D&A | SBC | Diluted Shares |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2021 | 1086.7 | -4.6 | 192.4 | -156.1 | 50.4 | 101.2 | 10.2 | 189.692 |
+| 2022 | 1242.3 | 270.0 | 69.6 | 178.2 | 52.8 | 59.1 | 8.8 | 168.268 |
+| 2023 | 1484.3 | 338.8 | 107.6 | 250.8 | 56.5 | 69.6 | 7.1 | 157.879 |
+| 2024 | 1566.6 | 374.0 | 296.5 | 232.7 | 71.9 | 68.2 | 7.8 | 153.896 |
+| 2025 | 1701.9 | 431.1 | 281.6 | 366.2 | 103.0 | 74.5 | 13.3 | 148.672 |
+
+### Balance Sheet And Obligations
+| Year | Cash | Gross AR | Allowance | AP | Deferred Revenue / Student Deposits | Gross Debt + Finance Leases | Equity | Assets |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2021 | 324.8 | 118.0 | 62.2 | 26.9 | 44.0 | 157.3 | 1140.8 | 2211.3 |
+| 2022 | 85.2 | 133.1 | 61.9 | 42.8 | 51.3 | 234.2 | 776.2 | 1972.2 |
+| 2023 | 89.4 | 173.6 | 85.0 | 43.2 | 69.4 | 211.7 | 950.1 | 2125.6 |
+| 2024 | 91.4 | 189.1 | 100.5 | 35.3 | 64.3 | 150.5 | 959.5 | 1862.1 |
+| 2025 | 146.7 | 244.1 | 125.1 | 57.1 | 80.2 | 129.1 | 1187.9 | 2206.4 |
+
+### Lease Obligations
+- 2025 operating lease liabilities: 387.8 total, including 56.0 current and 331.8 long term.
+- 2025 finance lease liabilities: 63.5 total, including 9.4 current and 54.1 long term.
+- 2025 minimum operating lease payments due during 2026: about 98.8.
+
+## Derived Financial Read
+- 2023-2025 revenue CAGR: about 7.1%.
+- 2025 gross margin from reported net revenue less direct costs: about 28.3%.
+- 2023-2025 average operating margin: about 24.0%.
+- 2025 current operating margin: about 25.3%.
+- 2023-2025 free-cash-flow margin average: about 12.9%.
+- 2025 free cash flow using CFO less full capex: about 263.2.
+- 2025 owner-earnings proxy using net income plus D&A less full capex less SBC: about 239.7.
+- 2025 owner earnings per diluted share on the full-capex proxy: about 1.61.
+- 2025 share price from local market snapshot: 33.18.
+- 2025 market capitalization from local market snapshot: about 4647.3.
+- 2025 net cash using cash less debt and finance leases: about 17.6.
+- 2025 enterprise value using market cap less net cash: about 4629.6.
+
+## Normalized Owner-Earnings View
+- Conservative low case: about 230.
+- Base case: about 245.
+- High case: about 270.
+- The base case keeps bad debt and leases fully real, uses a maintenance-capex assumption only modestly below 2025 total capex, and does not assume any heroic working-capital release.
+- The key modeling sensitivity is how much of the 2025 capex increase in Peru land, new campuses, and Mexico upgrades is growth versus maintenance.
+
+## Working-Capital And Revenue-Quality Read
+- Revenue is recognized over the academic session, net of scholarships, refunds, and waivers.
+- 2025 gross revenue was 2271.4 and discounts, waivers, and scholarships were 569.5, or roughly 33% of gross revenue.
+- 2025 student contract receivables were 244.1 versus 189.1 in 2024.
+- 2025 contract liabilities were 80.2 versus 64.3 in 2024.
+- 2025 allowance for doubtful accounts was 125.1 versus 100.5 in 2024.
+- The receivable and allowance build is large enough that collection quality and scholarship discipline remain core underwriting variables.
+
+## Debt, Liquidity, And Covenant Read
+- 2025 senior and other debt was 65.6 and finance lease obligations were 63.5.
+- There was no revolver balance outstanding at 2025-12-31.
+- Revolver size was 155.0 with maturity on 2028-09-18.
+- Additional local lines of credit available were about 64.7 at 2025-12-31.
+- The springing financial covenant on the revolver was not applicable at 2025-12-31 because utilization was below the threshold.
+- Mexican term debt remained variable-rate and local borrowing rates were roughly 4.65% to 5.00% on certain lines and about 8.85% on the modified Mexican unsecured term loan at year-end.
+
+## Segment And Mix Read
+- 2025 revenue split: Mexico 877.4, Peru 824.4.
+- 2025 direct-cost split embedded in segment disclosures still supports a high operating margin, but Peru and Mexico mix changes can move reported margins materially.
+- A hypothetical 10% adverse move in average annual FX rates would have reduced 2025 revenue by about 170.2 and operating income by about 49.7.
+
+## Financial Underwriting Takeaways
+- Laureate is not funding the equity story with heavy funded debt; it ended 2025 near net cash excluding operating leases.
+- The core caution is not a near-term refinancing problem. The core caution is that student receivables, allowance builds, lease obligations, and Peru durability can make reported earnings look cleaner than normalized owner economics.
+- Per-share economics improved through falling diluted shares and real cash generation, but the business should still be modeled conservatively because scholarship intensity, collection quality, and FX all matter.

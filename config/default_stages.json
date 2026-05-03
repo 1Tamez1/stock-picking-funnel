@@ -1,0 +1,67 @@
+{
+  "stages": [
+    {
+      "key": "data_collection",
+      "name": "Data Collection",
+      "description": "Assemble the core source pack, normalize it for research use, and hand it off to screening.",
+      "sequence": 1,
+      "template_name": "Data Collection Template",
+      "template_description": "Editable template for source collection, normalization readiness, and screening handoff.",
+      "template_source": "config/templates/data_collection.md"
+    },
+    {
+      "key": "screening",
+      "name": "Screening",
+      "description": "Initial pass/fail/watchlist screen before deeper work.",
+      "sequence": 2,
+      "template_name": "Stock Candidate Screening Questionnaire v5",
+      "template_description": "Imported from the approved v5 source candidate screening questionnaire.",
+      "template_source": "config/templates/stock_candidate_screening_questionnaire_v5.md"
+    },
+    {
+      "key": "business_underwriting",
+      "name": "Business Underwriting",
+      "description": "Underwrite the business model, moat durability, industry structure, and downside case.",
+      "sequence": 3,
+      "template_name": "Stock Candidate Business Underwriting Questionnaire v2",
+      "template_description": "Imported from the approved business underwriting questionnaire.",
+      "template_source": "config/templates/stock_candidate_business_underwriting_questionnaire_v2.md"
+    },
+    {
+      "key": "management_underwriting",
+      "name": "Management Underwriting",
+      "description": "Evaluate capital allocation, incentives, candor, governance, and owner orientation.",
+      "sequence": 4,
+      "template_name": "Stock Candidate Management Underwriting Questionnaire v1",
+      "template_description": "Imported from the approved management underwriting questionnaire.",
+      "template_source": "config/templates/stock_candidate_management_underwriting_questionnaire_v1.md"
+    },
+    {
+      "key": "financial_underwriting",
+      "name": "Financial Underwriting",
+      "description": "Normalize owner earnings, returns on capital, resilience, accounting quality, and balance sheet risk.",
+      "sequence": 5,
+      "template_name": "Stock Candidate Financial Underwriting Questionnaire v1",
+      "template_description": "Imported from the approved financial underwriting questionnaire.",
+      "template_source": "config/templates/stock_candidate_financial_underwriting_questionnaire_v1.md"
+    },
+    {
+      "key": "valuation_position_size",
+      "name": "Valuation and Position Size",
+      "description": "Estimate conservative value ranges, margin of safety, expected return, and position size.",
+      "sequence": 6,
+      "template_name": "Stock Candidate Valuation And Position Size Questionnaire v2",
+      "template_description": "Imported from the valuation and position size questionnaire.",
+      "template_source": "config/templates/stock_candidate_valuation_and_position_size_questionnaire_v2.md"
+    },
+    {
+      "key": "execution_rules",
+      "name": "Execution Rules",
+      "description": "Define buy rules, monitoring rules, sell rules, kill criteria, and review cadence.",
+      "sequence": 7,
+      "template_name": "Stock Candidate Execution Rules Questionnaire v1",
+      "template_description": "Imported from the execution rules questionnaire.",
+      "template_source": "config/templates/stock_candidate_execution_rules_questionnaire_v1.md"
+    }
+  ]
+}

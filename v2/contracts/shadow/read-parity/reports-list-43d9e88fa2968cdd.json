@@ -1,0 +1,12 @@
+{
+  "kind": "read",
+  "category": "reports.list",
+  "request_key": "{\"extra\":{\"include_drafts\":false,\"order\":null,\"page\":1,\"per_page\":50,\"result\":null,\"search\":null,\"stage_id\":null},\"method\":\"GET\",\"path\":\"/api/reports\",\"query\":{}}",
+  "status": "ok",
+  "source_fingerprint": "26acd6cd2f6a431428b88c3df222d1d737160094e1264b693ba4fce53b3a46be",
+  "state_manifest_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel-web-app/v2/contracts/shadow/migration-import-manifest.json",
+  "payload_digest": "ae1c824ed3042656090d23955855ab5e210790503420db036dac11f253ff18f5",
+  "snapshot_digest": "ae1c824ed3042656090d23955855ab5e210790503420db036dac11f253ff18f5",
+  "diffs": [],
+  "written_at": "2026-05-02T22:41:34.239360+00:00"
+}

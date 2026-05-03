@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stock Picking Funnel Legacy Parity</title>
+    <link rel="stylesheet" href="/legacy/styles.css" />
+  </head>
+  <body>
+    <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+    <div class="app-shell">
+      <aside class="sidebar" id="app-sidebar">
+        <div class="brand">
+          <div class="brand-copy">
+            <p class="eyebrow">Value Research</p>
+            <h1>Stock Picking Funnel</h1>
+          </div>
+          <button
+            class="icon-button drawer-toggle"
+            id="drawer-sidebar-toggle"
+            aria-label="Close navigation"
+            aria-controls="app-sidebar"
+            aria-expanded="false"
+            type="button"
+          >☰</button>
+        </div>
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav-button active" data-view="dashboard">Dashboard</button>
+          <button class="nav-button" data-view="pool">All Companies</button>
+          <button class="nav-button" data-view="funnel">Funnel</button>
+          <button class="nav-button" data-view="reports">Reports</button>
+          <button class="nav-button" data-view="monitoring">Monitoring</button>
+          <button class="nav-button" data-view="watchlist">Watchlist</button>
+          <button class="nav-button" data-view="archive">Archive</button>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="sidebar-note">
+            <strong>Local v0</strong>
+            <span>Templates, reports, files, and monitoring rules are saved to the local database.</span>
+          </div>
+          <button class="nav-button settings-button" id="settings-button" type="button">Settings</button>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="view-eyebrow">Research Control</p>
+            <h2 id="view-title">Dashboard</h2>
+          </div>
+          <div class="topbar-actions">
+            <button
+              class="secondary icon-button"
+              id="main-sidebar-toggle"
+              aria-label="Toggle navigation"
+              aria-controls="app-sidebar"
+              aria-expanded="false"
+              type="button"
+            >☰</button>
+          </div>
+        </header>
+
+        <section id="status" class="status" aria-live="polite"></section>
+        <section id="content" class="content"></section>
+      </main>
+    </div>
+
+    <dialog id="company-dialog" class="modal">
+      <form method="dialog" class="modal-box" id="company-form">
+        <div class="modal-header">
+          <h3>Add Company</h3>
+          <button class="icon-button" value="cancel" aria-label="Close">x</button>
+        </div>
+        <label>
+          Ticker
+          <input name="ticker" autocomplete="off" placeholder="NKE" required />
+        </label>
+        <label>
+          Company name
+          <input name="name" autocomplete="off" placeholder="Nike, Inc." />
+        </label>
+        <label>
+          Notes
+          <textarea name="notes" rows="3" placeholder="Initial source, reason for interest, or queue note"></textarea>
+        </label>
+        <div class="modal-actions">
+          <button class="secondary" value="cancel">Cancel</button>
+          <button class="primary" value="default">Create</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="settings-dialog" class="modal">
+      <div class="modal-box settings-box">
+        <div class="modal-header">
+          <div>
+            <p class="eyebrow">Workspace Settings</p>
+            <h3>Settings</h3>
+          </div>
+          <button class="icon-button" type="button" data-close-settings aria-label="Close">x</button>
+        </div>
+        <section id="settings-panel" class="settings-panel"></section>
+      </div>
+    </dialog>
+
+    <script src="/legacy/app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "category": "reports.detail",
+  "request_key": "{\"extra\":{\"report_id\":15},\"method\":\"GET\",\"path\":\"/api/reports/15\",\"query\":{}}",
+  "policy": "postgres_primary_with_legacy_fallback",
+  "primary_backend": "postgres",
+  "served_by": "legacy",
+  "fallback_used": true,
+  "reason": "postgres_unavailable",
+  "detail": "snapshot_missing",
+  "linked_artifact_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel copy-DO NOT TOUCH, IGNORE THIS FOLDER. ABSOLUTELY DO NOT ENTER UNLESS EXPLICITLY AUTHORIZED/v2/contracts/shadow/read-parity/reports-detail-554fa1ba9e407214.json",
+  "written_at": "2026-04-20T20:21:14.769342+00:00"
+}

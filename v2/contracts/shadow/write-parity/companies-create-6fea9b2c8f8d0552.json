@@ -1,0 +1,12 @@
+{
+  "kind": "write",
+  "category": "companies.create",
+  "request_key": "{\"extra\":{\"ticker\":\"SHDWART\"},\"method\":\"POST\",\"path\":\"/api/companies\",\"query\":{}}",
+  "status": "ok",
+  "source_fingerprint": "84fc6d26b6261bb578b444fb6105f327e678e2048e567c7754cd5cefa7817c32",
+  "state_manifest_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel copy-DO NOT TOUCH, IGNORE THIS FOLDER. ABSOLUTELY DO NOT ENTER UNLESS EXPLICITLY AUTHORIZED/v2/contracts/shadow/migration-import-manifest.json",
+  "payload_digest": "f82bd94483c3e7d870e9b462ce29a5da17e5822ad8bab81ec709815eef0c908b",
+  "snapshot_digest": "f82bd94483c3e7d870e9b462ce29a5da17e5822ad8bab81ec709815eef0c908b",
+  "diffs": [],
+  "written_at": "2026-04-20T22:39:28.996785+00:00"
+}

@@ -1,0 +1,32 @@
+# 07-linc-market-snapshot-stockanalysis.md
+
+## Metadata
+- MIME type: text/plain
+- Original file: 07-linc-market-snapshot-stockanalysis.md
+
+## LLM View
+Title: Lincoln Educational Services market and profile snapshot from StockAnalysis
+Source Type: Market data
+Evidence Grade: V
+Confidence: Medium
+URL: https://stockanalysis.com/stocks/linc/
+Citation: StockAnalysis LINC overview page crawled in mid-April 2026; used as a market and profile snapshot.
+Tags: linc, market-data, stockanalysis, profile, data-collection
+---
+# Snapshot
+
+Snapshot date: 2026-04-19
+Source date: Web snapshot showing data current around 2026-04-15
+
+Key extracted points:
+
+- StockAnalysis showed Lincoln Educational Services Corporation trading on Nasdaq under ticker `LINC`.
+- The overview page showed a share price around $39.77 on April 15, 2026.
+- The page showed an equity market capitalization around $1.26 billion and shares outstanding around 31.7 million.
+- The profile page describes the company as a provider of career-oriented postsecondary education services for high school graduates and working adults in the United States.
+- The profile also notes the company operates under the Lincoln Technical Institute, Lincoln College of Technology, and Nashville Auto Diesel College brands.
+
+Collection notes:
+
+- This source is useful for a quick market-value snapshot and profile cross-check, but it is third-party and can become stale quickly.
+- Do not rely on its sector classification or other taxonomy fields without checking primary filings.

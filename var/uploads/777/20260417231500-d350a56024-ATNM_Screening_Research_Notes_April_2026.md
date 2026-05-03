@@ -1,0 +1,27 @@
+# ATNM Screening Research Notes
+
+Prepared: 2026-04-18
+Analyst: Codex
+
+## Key factual anchors
+- FY2025 10-K filed March 31, 2026 reported $47.998 million of cash and cash equivalents, $48.333 million of cash plus restricted cash, $35.000 million of long-term deferred license revenue, $33.887 million net loss, and $24.580 million of operating cash outflow in 2025.
+- Actinium had 31,374,994 shares outstanding as of March 30, 2026.
+- The business remains clinical-stage with no approved products and only $90 thousand of other revenue in FY2025.
+- The pipeline story rests mainly on ATNM-400, Actimab-A, Iomab-B, and Iomab-ACT, plus the possibility of partnerships, clinical progress, and future commercialization.
+- Management disclosed that long-term funding still depends on future equity or strategic transactions; dilution remains a central risk.
+- On February 13, 2026, the company disclosed the CFO's resignation and that CEO Sandesh Seth would also serve as principal financial officer effective February 27, 2026.
+- StockAnalysis showed ATNM around $1.27 per share and roughly $39.6 million of market cap as of April 15, 2026.
+- Novartis reported 2025 sales of about $1.994 billion for Pluvicto and $816 million for Lutathera, confirming that successful radioligand products can be valuable, but not proving Actinium will reach that outcome.
+
+## Screening conclusion
+ATNM is interesting because the market cap is near or below cash and the radiopharma category is strategically validated. It still fails this funnel's operating-business screen because there is no proven cash-generating business, valuation depends on binary clinical and financing outcomes, and the apparent margin of safety can disappear through cash burn and dilution.
+
+## Source list
+- FY2025 10-K: https://ir.actiniumpharma.com/all-sec-filings/content/0001213900-26-036504/ea0279291-10k_actinium.htm
+- Q3 2025 10-Q: https://ir.actiniumpharma.com/quarterly-reports/content/0001213900-25-110979/ea0262047-10q_actinium.htm
+- DEF 14A: https://www.sec.gov/Archives/edgar/data/0001388320/000121390025106706/0001213900-25-106706-index.html
+- CFO / PFO 8-K: https://www.sec.gov/Archives/edgar/data/1388320/000121390026016559/ea0277127-8k_actinium.htm
+- Company presentations: https://ir.actiniumpharma.com/presentations-webinars
+- AACR 2026 press release: https://ir.actiniumpharma.com/press-releases/detail/514/actinium-pharmaceuticals-inc-to-present-two-abstracts-at
+- Novartis product sales: https://www.novartis.com/Investors/financial-data/product-sales
+- StockAnalysis market cap page: https://stockanalysis.com/stocks/atnm/market-cap/

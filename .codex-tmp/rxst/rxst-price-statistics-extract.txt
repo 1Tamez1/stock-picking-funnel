@@ -1,0 +1,21 @@
+Source: StockAnalysis statistics page for RxSight (RXST)
+URL: https://stockanalysis.com/stocks/rxst/statistics/
+Observed quote timestamp in page data: April 17, 2026, 4:00 PM EDT
+
+Key facts extracted for Data Collection:
+- Exchange: NASDAQ.
+- Market cap: about $314.0 million.
+- Enterprise value: about $97.0 million.
+- Shares outstanding: about 41.27 million.
+- Balance-sheet summary on the page: $228.13 million cash, $11.04 million total debt, net cash of about $217.09 million.
+- Current ratio: 10.95.
+- Last-twelve-month revenue: about $134.48 million.
+- Employee count listed: 461.
+- The page also surfaced the next estimated earnings date as May 6, 2026.
+
+Use in report:
+- Price / market data coverage row.
+- Helpful quick cross-check for cash, debt, share count, and market capitalization.
+
+Note:
+- This is a secondary aggregator, not a primary filing source, so official SEC filings should remain the priority for audited numbers.

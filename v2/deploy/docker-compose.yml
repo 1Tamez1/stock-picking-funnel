@@ -1,0 +1,100 @@
+services:
+  postgres:
+    image: postgres:17
+    restart: unless-stopped
+    env_file:
+      - .env.hosted
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-funnel_v2}
+      POSTGRES_USER: ${POSTGRES_USER:-funnel_v2}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-funnel_v2} -d ${POSTGRES_DB:-funnel_v2}"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  minio:
+    image: minio/minio:latest
+    restart: unless-stopped
+    env_file:
+      - .env.hosted
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio-data:/data
+
+  api:
+    build:
+      context: ../..
+      dockerfile: v2/deploy/Dockerfile.api
+    env_file:
+      - .env.hosted
+    volumes:
+      - uploads-data:/app/var/uploads
+      - ../contracts:/app/v2/contracts
+    depends_on:
+      postgres:
+        condition: service_healthy
+      minio:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8211/api/health').read()"]
+      interval: 15s
+      timeout: 5s
+      retries: 12
+
+  worker:
+    build:
+      context: ../..
+      dockerfile: v2/deploy/Dockerfile.worker
+    env_file:
+      - .env.hosted
+    volumes:
+      - uploads-data:/app/var/uploads
+      - ../contracts:/app/v2/contracts
+    depends_on:
+      api:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ../..
+      dockerfile: v2/deploy/Dockerfile.web
+    env_file:
+      - .env.hosted
+    volumes:
+      - ../contracts:/app/v2/contracts:ro
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/login').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 12
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      web:
+        condition: service_healthy
+
+volumes:
+  postgres-data:
+  minio-data:
+  uploads-data:
+  caddy-data:
+  caddy-config:

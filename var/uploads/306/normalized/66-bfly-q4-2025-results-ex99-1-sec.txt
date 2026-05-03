@@ -1,0 +1,347 @@
+# bfly-q4-2025-results-ex99-1-sec.html
+
+## Metadata
+- MIME type: text/html
+- Original file: bfly-q4-2025-results-ex99-1-sec.html
+
+## LLM View
+EX-99.1
+2
+bfly-20260226xexx991.htm
+EX-99.1
+
+Document
+
+Exhibit 99.1
+
+Butterfly Network Reports Fourth Quarter 2025 Financial Results
+
+Delivered Record Annual and Quarterly Revenue
+
+•Reported quarterly record Revenue of $31.5 million in Q4, representing 41% YoY growth
+
+•Generated positive net cash flow of $6.3 million in Q4 and lowest annual cash usage in company history
+
+•Midjourney partnership contributed $6.8 million of revenue in Q4, advancing Butterfly Embedded™ platform strategy
+
+BURLINGTON, Mass. & NEW YORK--(BUSINESS WIRE) -- Butterfly Network, Inc. (NYSE: BFLY) (“Butterfly” or the “Company”), a digital health company transforming care with semiconductor chip-based ultrasound devices, software and AI, today announced financial results for the fourth quarter and year ended December 31, 2025, and provided a business update.
+
+Joseph DeVivo, Butterfly's President, Chief Executive Officer and Chairman commented, “Our fourth quarter 2025 performance shows that our strategy is taking hold and our vision is becoming tangible. We delivered record quarterly revenue of $31.5 million, growing 41% year over year, and achieved the first quarter of positive operating cash flow in our company’s history. Nearly two years into our strategic plan, we are executing with financial discipline, strengthening our core point-of-care business, and now realizing material organic revenue from new initiatives.”
+
+DeVivo continued, “Butterfly is transitioning from a medical device company into a transformative semiconductor-based company building the foundation for programmable, AI-native imaging and sensing. From expanding enterprise adoption in point-of-care, to building HomeCare into a commercial business, to enabling entirely new applications through Butterfly Embedded, it’s all powered by the same proprietary Ultrasound-on-Chip™ technology. One platform and one diversified strategy that puts us in a strong position to execute and win.”
+
+Recent Operational and Strategic Highlights:
+
+•Butterfly Embedded™ Brand: centralized semiconductor co-development activities under the Butterfly Embedded brand, positioning Ultrasound-on-Chip™ as a long-term value driver for the company.
+
+•Midjourney Partnership: co-development partnership with Midjourney contributed $6.8 million in Q4 revenue, as part of a larger agreement disclosed in a Form 8-K in November 2025, which details up to $74 million in expected payments to Butterfly over a five-year term.
+
+•Compass™ AI: next generation enterprise software launch in the fourth quarter supported business with existing accounts and enterprise pipeline growth.
+
+•Cloud and Government Authorizations: achieved GovRAMP and TX-RAMP in the U.S., strengthening Butterfly’s ability to serve federal and Department of Defense markets.
+
+•Butterfly Garden Program: announced plan to release Butterfly’s proprietary digital 3D beam steering API to third parties, furthering the ability to develop new AI-enabled image acquisition applications.
+
+•HomeCare Commercialization: anticipates finalizing its first commercial HomeCare agreement by mid-2026, with revenue contributions forecasted as early as late 2026 and into 2027.
+
+•R&D Roadmap Advancement: moved the fifth-generation P5.1 chip into production and advanced Apollo development, expected to significantly increase data rate and compute performance for next-generation AI-enabled imaging and partner applications.
+
+Three Months Ended December 31, 2025 Financial Results
+
+Revenue: Total revenue was $31.5 million, representing growth of 41% from $22.4 million in the fourth quarter of 2024. U.S. revenue was $26.8 million, up 55% from prior year, driven by revenue from our new co-development partnership with Midjourney as well as increased probe sales in the current year. International revenue decreased 6% year-over-year to $4.7 million, largely resulting from increased sales in the prior year to then-new distribution partners.
+
+Gross margin and adjusted gross margin: Gross profit was $21.2 million versus $13.7 million in the prior year period, and adjusted gross profit was $21.3 million versus $13.7 million in the prior year period. Total gross margin, on a GAAP basis, increased to 67.3% from 61.4% in the prior year period, and adjusted gross margin increased to 67.5% from 61.4% in the prior year period. This increase in both GAAP gross margin and adjusted gross margin was primarily due to the relatively higher margin return on our Butterfly Embedded licensing revenue, as compared to our core business offerings, as well as a reduction in software amortization costs for our historic software development investments.
+
+Operating expenses: Operating expenses were $37.9 million, up 22% from $31.0 million in the prior year period. Total operating expenses excluding stock-based compensation and other expenses were $26.2 million, compared to $25.4 million in the fourth quarter of 2024, reflecting some of the investments we made in 2025 in our sales force and client experience function.
+
+Net loss: Net loss was $15.3 million, compared to $18.1 million in the prior year period.
+
+Adjusted EBITDA: Adjusted EBITDA loss was $3.2 million, compared to $9.1 million in the prior year period.
+
+Adjusted EPS: Adjusted EPS was $(0.02), compared to $(0.05) in the prior year period.
+
+Cash and cash equivalents: Cash and cash equivalents were $150.5 million as of December 31, 2025.
+
+Guidance
+
+Revenue Guidance and Adjusted EBITDA guidance for the Fiscal Year 2026:
+
+•Revenue of $117 million to $121 million, or approximately 20% to 24% growth
+
+•Adjusted EBITDA loss of $21 million to $25 million
+
+Reconciliation of GAAP to Adjusted
+
+Reconciliations of gross margin to adjusted gross margin and of net loss to adjusted EBITDA and adjusted EPS for the three months and year ended December 31, 2025, and 2024 is provided in the financial schedules that are part of this press release. An explanation of these non-GAAP financial measures is also included below under the heading “Non-GAAP Financial Measures.”
+
+Conference Call
+
+A conference call and webcast to discuss fourth quarter and full year 2025 financial performance and operational progress is scheduled for 8:00 am ET on February 26, 2026. The conference call will be broadcast live in listen-only mode via a webcast on Butterfly’s Investor Relations website at Events & Presentations. Individuals interested in listening to the conference call on your telephone may do so by dialing approximately ten minutes prior to start time:
+
+United States (Local): +1 646 844 6383
+
+United States (Toll-Free): +1 833 470 1428
+
+Global Dial-In Numbers: https://www.netroadshow.com/events/global-numbers?confId=91551
+
+Access Code: 965970
+
+After the live webcast, the call will be archived on Butterfly’s Investor Relations page. In addition, a telephone replay of the call will be available until March 5, 2026, by dialing:
+
+United States (Local): +1 929 458 6194
+
+United States (Toll-Free): +1 866 813 9403
+
+Access Code: 270376
+
+About Butterfly Network
+
+Butterfly Network, Inc. (NYSE: BFLY) is a healthcare company driving a digital revolution in medical imaging with its proprietary Ultrasound-on-Chip™ semiconductor technology and ultrasound software solutions. In 2018, Butterfly launched the world’s first handheld, single-probe, whole-body ultrasound system, Butterfly iQ. The iQ+ followed in 2020, and the iQ3 in 2024, each with improved processing power and performance by leveraging Moore’s Law. The iQ3 earned Best Medical Technology at the 2024 Prix Galien USA Awards, a prestigious honor and one of the highest accolades in healthcare. Butterfly’s innovations have also been recognized by Fierce 50, TIME’s Best Inventions and Fast Company’s World Changing Ideas, among other achievements.
+
+Butterfly combines advanced hardware, intelligent software, AI, services, and education to drive adoption of affordable, accessible imaging. Clinical publications demonstrate that its handheld ultrasound probes paired with Compass™ enterprise workflow software, can help hospital systems improve care workflows, reduce costs, and enhance provider economics. With a cloud-based solution that enables care anywhere through next-generation mobility, Butterfly aims to democratize healthcare by addressing critical global healthcare challenges. Butterfly devices are commercially available to trained healthcare practitioners in areas including, but not limited to, parts of Africa, Asia, Australia, Europe, the Middle East, North America and South America; to learn more about available countries, visit: https://www.butterflynetwork.com/choose-your-country.
+
+Non-GAAP Financial Measures
+
+In addition to providing financial measures based on generally accepted accounting principles in the United States of America (“GAAP”), we provide additional financial measures that are not prepared in accordance with GAAP (“non-GAAP”). The non-GAAP financial measures included in this press release are adjusted gross profit, adjusted gross margin, adjusted EBITDA, and adjusted EPS. We present non-GAAP financial measures in order to assist readers of our financial statements in understanding the core operating results that our management uses to evaluate the business and for financial planning purposes. Our non-GAAP financial measures provide an additional tool for investors to use in comparing our financial performance over multiple periods.
+
+The non-GAAP financial measures included in this press release are key performance measures that our management uses to assess our operating performance. These non-GAAP measures facilitate internal comparisons of our operating performance on a more consistent basis. We use these performance measures for business planning purposes and forecasting. We believe that these non-GAAP measures enhance an investor’s understanding of our financial performance as they are useful in assessing our operating performance from period-to-period by excluding certain items that we believe are not representative of our core business.
+
+The non-GAAP financial measures included in this press release may not be comparable to similarly titled measures of other companies because they may not calculate these measures in the same manner. These non-GAAP financial measures are not prepared in accordance with GAAP and should not be considered in isolation of, or as an alternative to, measures prepared in accordance with GAAP. When evaluating the Company’s performance, you should consider adjusted gross profit, adjusted gross margin, adjusted EBITDA, and adjusted EPS alongside other financial performance measures prepared in accordance with GAAP, including gross profit or loss, gross margin, net loss, and EPS.
+
+The non-GAAP financial measures do not replace the presentation of our GAAP financial results and should only be used as a supplement to, not as a substitute for, our financial results presented in accordance with GAAP. In this press release, we have provided reconciliations of adjusted gross profit to gross profit or loss, adjusted gross margin to gross margin, and adjusted EBITDA and adjusted EPS to net loss, the most directly comparable GAAP financial measures. Reconciliations of our non-GAAP financial measures to corresponding GAAP measures are not available on a forward-looking basis because we are unable to predict with reasonable certainty the non-cash component of employee compensation expense, changes in our working capital needs, variances in our supply chain, the impact of earnings or charges resulting from matters we consider not to be reflective, on a recurring basis, of our ongoing operations, and other such items without unreasonable effort. These items are uncertain, depend on various factors, and could be material to our results computed in accordance with GAAP. Management strongly encourages investors to review our financial statements and publicly filed reports in their entirety and not to rely on any single financial measure.
+
+Forward Looking Statements
+
+This press release includes “forward-looking statements” within the meaning of the “safe harbor” provisions of the United States Private Securities Litigation Reform Act of 1995. Our actual results may differ from our expectations, estimates, and projections and, consequently, you should not rely on these forward-looking statements as predictions of future events. Words such as “expect,” “estimate,” “project,” “budget,” “forecast,” “anticipate,” “intend,” “plan,” “may,” “will,” “could,” “should,” “believe,” “predict,” “potential,” “continue,” and similar expressions (or the negative versions of such words or expressions) are intended to identify such forward-looking statements. These forward-looking statements include, without limitation, our expectations with respect to financial results, revenue growth, future performance of our ultrasound business and Embedded opportunities (inclusive of co-development, revenue share/commercialization revenue, chip purchases, and/or chip licensing opportunities through the Embedded program), commercialization and plans to deploy our products and services, including expectations regarding the launches of our Compass AI software, our P5 and Apollo chips and fourth-generation technology, finalizing our first commercial HomeCare agreement, development of products and services, and the size and potential growth of current or future markets for our products and services. Forward-looking statements are based on our current beliefs and assumptions and on information currently available to us. These forward-looking statements involve significant known and unknown risks and uncertainties and other factors that could cause the actual results to differ materially from those discussed in the forward-looking statements. Most of these factors are outside our control and are difficult to predict. Factors that may cause such differences include, but are not limited to: our ability to grow and manage growth effectively; the success, cost, and timing of our product and service development activities; the potential attributes and benefits of our products and services; the degree to which our products and services are accepted by healthcare practitioners and patients for their approved uses; our ability to obtain and maintain regulatory approval for our products, as applicable, and any related restrictions and limitations on the use of any authorized product; our ability to identify, in-license, or acquire additional technology; our ability to maintain our existing license, manufacturing, supply, and distribution agreements; the success, cost, and timing of our efforts to out-license our intellectual property to third parties; our ability to compete with other companies currently marketing or engaged in the development of ultrasound imaging devices, many of which have greater financial and marketing resources than us; changes in applicable laws or regulations; the size and growth potential of the markets for our products and services, and our ability to serve those markets, either alone or in partnership with others; the pricing of our products and services, and reimbursement for medical procedures conducted using our products and services; our estimates regarding expenses, revenue, capital requirements, and needs for additional financing; our financial performance; our ability to attract and retain customers; our ability to manage our growth effectively; our ability to protect or enforce our intellectual property rights; our ability to maintain the listing of our Class A common stock on the New York Stock Exchange; and other risks and uncertainties indicated from time to time in our most recent Annual Report on Form 10-K or in subsequent filings that we make with the Securities and Exchange Commission. We caution that the foregoing list of factors is not exclusive. We caution you not to place undue reliance upon any forward-looking statements, which speak only as of the date of this press release. We do not undertake or accept any obligation or undertake to release publicly any updates or revisions to any forward-looking statements to reflect any change in our expectations or any change in events, conditions, or circumstances on which any such statement is based.
+
+Contacts:
+
+Investors
+
+John Doherty
+
+Chief Financial Officer, Butterfly
+
+investors@butterflynetwork.com
+
+Media
+
+Liz Snyder
+
+Director, PR & Communications, Butterfly
+
+media@butterflynetinc.com
+
+BUTTERFLY NETWORK, INC.
+
+CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS AND COMPREHENSIVE LOSS
+
+(In thousands, except share and per share amounts)
+
+(Unaudited)
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Three months ended December 31, |  | Year ended December 31, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Revenue: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product | $ | 18,102 |  |  | $ | 14,723 |  |  | $ | 63,443 |  |  | $ | 54,200 |  |  |  |  |  |  |  |  |  |
+| Software and other services | 13,412 |  |  | 7,628 |  |  | 34,167 |  |  | 27,856 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total revenue | 31,514 |  |  | 22,351 |  |  | 97,610 |  |  | 82,056 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Cost of revenue: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product | 8,018 |  |  | 6,641 |  |  | 44,065 |  |  | 24,380 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Software and other services | 2,275 |  |  | 1,976 |  |  | 7,811 |  |  | 8,845 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total cost of revenue | 10,293 |  |  | 8,617 |  |  | 51,876 |  |  | 33,225 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Gross profit | 21,221 |  |  | 13,734 |  |  | 45,734 |  |  | 48,831 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Operating expenses: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Research and development | 9,320 |  |  | 8,826 |  |  | 36,262 |  |  | 37,800 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Sales and marketing | 12,417 |  |  | 11,854 |  |  | 45,876 |  |  | 41,567 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| General and administrative | 10,870 |  |  | 9,943 |  |  | 39,235 |  |  | 39,810 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other | 5,325 |  |  | 426 |  |  | 10,776 |  |  | 4,065 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total operating expenses | 37,932 |  |  | 31,049 |  |  | 132,149 |  |  | 123,242 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Loss from operations | (16,711) |  |  | (17,315) |  |  | (86,415) |  |  | (74,411) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Interest income | 1,314 |  |  | 997 |  |  | 5,911 |  |  | 5,020 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Interest expense | (390) |  |  | (334) |  |  | (1,490) |  |  | (1,261) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Change in fair value of warrant liabilities | 620 |  |  | (1,033) |  |  | 2,272 |  |  | (1,859) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other income (expense), net | (59) |  |  | (526) |  |  | 2,768 |  |  | (13) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Loss before provision for income taxes | (15,226) |  |  | (18,211) |  |  | (76,954) |  |  | (72,524) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Provision (benefit) for income taxes | 66 |  |  | (109) |  |  | 110 |  |  | (32) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Net loss and comprehensive loss | $ | (15,292) |  |  | $ | (18,102) |  |  | $ | (77,064) |  |  | $ | (72,492) |  |  |  |  |  |  |  |  |  |
+| Net loss per common share attributable to Class A and B common stockholders, basic and diluted | $ | (0.06) |  |  | $ | (0.08) |  |  | $ | (0.31) |  |  | $ | (0.34) |  |  |  |  |  |  |  |  |  |
+| Weighted-average shares used to compute net loss per share attributable to Class A and B common stockholders, basic and diluted | 252,841,134 |  | 213,389,209 |  | 247,124,365 |  | 211,682,760 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+BUTTERFLY NETWORK, INC.
+
+CONDENSED CONSOLIDATED BALANCE SHEETS
+
+(In thousands, except share and per share amounts)
+
+(Unaudited)
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | December 31, |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |  |
+| Assets |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Current assets: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Cash and cash equivalents | $ | 150,489 |  |  | $ | 88,775 |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Accounts receivable, net of allowance for credit losses of $1,389 and $2,583 at December 31, 2025 and December 31, 2024, respectively | 26,744 |  |  | 20,793 |  |  |  |  |  |  |  |  |  |  |
+| Inventories | 61,389 |  |  | 70,789 |  |  |  |  |  |  |  |  |  |  |
+| Current portion of vendor advances | 2,063 |  |  | 5,547 |  |  |  |  |  |  |  |  |  |  |
+| Prepaid expenses and other current assets | 8,418 |  |  | 6,709 |  |  |  |  |  |  |  |  |  |  |
+| Total current assets | 249,103 |  |  | 192,613 |  |  |  |  |  |  |  |  |  |  |
+| Property and equipment, net | 16,587 |  |  | 19,518 |  |  |  |  |  |  |  |  |  |  |
+| Intangible assets, net | 7,516 |  |  | 8,916 |  |  |  |  |  |  |  |  |  |  |
+| Non-current portion of vendor advances | 5,008 |  |  | 15,042 |  |  |  |  |  |  |  |  |  |  |
+| Operating lease assets | 12,652 |  |  | 14,233 |  |  |  |  |  |  |  |  |  |  |
+| Other non-current assets | 5,667 |  |  | 5,760 |  |  |  |  |  |  |  |  |  |  |
+| Total assets | $ | 296,533 |  |  | $ | 256,082 |  |  |  |  |  |  |  |  |
+| Liabilities and stockholders’ equity |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Current liabilities: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Accounts payable | $ | 5,442 |  |  | $ | 4,250 |  |  |  |  |  |  |  |  |
+| Deferred revenue, current | 26,909 |  |  | 16,139 |  |  |  |  |  |  |  |  |  |  |
+| Accrued purchase commitments, current | 131 |  |  | 131 |  |  |  |  |  |  |  |  |  |  |
+| Warrant liabilities, current | 413 |  |  | — |  |  |  |  |  |  |  |  |  |  |
+| Accrued expenses and other current liabilities | 32,222 |  |  | 27,695 |  |  |  |  |  |  |  |  |  |  |
+| Total current liabilities | 65,117 |  |  | 48,215 |  |  |  |  |  |  |  |  |  |  |
+| Deferred revenue, non-current | 9,391 |  |  | 7,315 |  |  |  |  |  |  |  |  |  |  |
+| Warrant liabilities, non-current | — |  |  | 2,685 |  |  |  |  |  |  |  |  |  |  |
+| Operating lease liabilities | 17,721 |  |  | 20,398 |  |  |  |  |  |  |  |  |  |  |
+| Other non-current liabilities | 8,325 |  |  | 8,637 |  |  |  |  |  |  |  |  |  |  |
+| Total liabilities | 100,554 |  |  | 87,250 |  |  |  |  |  |  |  |  |  |  |
+| Commitments and contingencies |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Stockholders’ equity: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Class A common stock $.0001 par value; 600,000,000 shares authorized at December 31, 2025 and December 31, 2024; 227,318,426 and 188,626,154 shares issued and outstanding at December 31, 2025 and December 31, 2024, respectively | 23 |  |  | 19 |  |  |  |  |  |  |  |  |  |  |
+| Class B common stock $.0001 par value; 27,000,000 shares authorized at December 31, 2025 and December 31, 2024; 26,426,937 shares issued and outstanding at December 31, 2025 and December 31, 2024 | 3 |  |  | 3 |  |  |  |  |  |  |  |  |  |  |
+| Additional paid-in capital | 1,075,147 |  |  | 970,940 |  |  |  |  |  |  |  |  |  |  |
+| Accumulated deficit | (879,194) |  |  | (802,130) |  |  |  |  |  |  |  |  |  |  |
+| Total stockholders’ equity | 195,979 |  |  | 168,832 |  |  |  |  |  |  |  |  |  |  |
+| Total liabilities and stockholders’ equity | $ | 296,533 |  |  | $ | 256,082 |  |  |  |  |  |  |  |  |
+
+BUTTERFLY NETWORK, INC.
+
+CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS
+
+(In thousands)
+
+(Unaudited)
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Year ended December 31, |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |
+| Cash flows from operating activities: |  |  |  |  |  |  |  |  |  |  |  |
+| Net loss | $ | (77,064) |  |  | $ | (72,492) |  |  |  |  |  |
+| Adjustments to reconcile net loss to net cash used in operating activities: |  |  |  |  |  |  |  |  |  |  |  |
+| Depreciation, amortization, and impairments | 8,081 |  |  | 10,342 |  |  |  |  |  |  |  |
+| Non-cash interest expense | 1,490 |  |  | 1,256 |  |  |  |  |  |  |  |
+| Write-down of inventories | 7,975 |  |  | 15 |  |  |  |  |  |  |  |
+| Write-down of vendor advances | 9,621 |  |  | — |  |  |  |  |  |  |  |
+| Stock-based compensation expense | 23,435 |  |  | 21,032 |  |  |  |  |  |  |  |
+| Change in fair value of warrant liabilities | (2,272) |  |  | 1,859 |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Other | 799 |  |  | 1,102 |  |  |  |  |  |  |  |
+| Changes in operating assets and liabilities: |  |  |  |  |  |  |  |  |  |  |  |
+| Accounts receivable | (6,753) |  |  | (8,503) |  |  |  |  |  |  |  |
+| Inventories | 1,425 |  |  | 2,218 |  |  |  |  |  |  |  |
+| Prepaid expenses and other assets | (1,616) |  |  | 1,304 |  |  |  |  |  |  |  |
+| Vendor advances | 3,897 |  |  | (2,498) |  |  |  |  |  |  |  |
+| Accounts payable | 1,195 |  |  | (841) |  |  |  |  |  |  |  |
+| Deferred revenue | 12,846 |  |  | 435 |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Change in operating lease assets and liabilities | (855) |  |  | (750) |  |  |  |  |  |  |  |
+| Accrued expenses and other liabilities | 5,096 |  |  | 3,814 |  |  |  |  |  |  |  |
+| Net cash used in operating activities | (12,700) |  |  | (41,707) |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Cash flows from investing activities: |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Purchases of property, equipment, and intangible assets, including capitalized software | (3,348) |  |  | (2,694) |  |  |  |  |  |  |  |
+| Sales of property and equipment | — |  |  | 36 |  |  |  |  |  |  |  |
+| Net cash used in investing activities | (3,348) |  |  | (2,658) |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Cash flows from financing activities: |  |  |  |  |  |  |  |  |  |  |  |
+| Proceeds from exercise of stock options | 816 |  |  | 64 |  |  |  |  |  |  |  |
+| Proceeds from employee stock purchase plan | 1,415 |  |  | 495 |  |  |  |  |  |  |  |
+| Net proceeds from share offering | 81,006 |  |  | — |  |  |  |  |  |  |  |
+| Payments to tax authorities for restricted stock units withheld | (2,784) |  |  | (739) |  |  |  |  |  |  |  |
+| Payments on technology license commitment | (2,691) |  |  | (1,315) |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Net cash provided by (used in) financing activities | 77,762 |  |  | (1,495) |  |  |  |  |  |  |  |
+| Net increase (decrease) in cash, cash equivalents, and restricted cash | 61,714 |  |  | (45,860) |  |  |  |  |  |  |  |
+| Cash, cash equivalents, and restricted cash, beginning of period | 92,790 |  |  | 138,650 |  |  |  |  |  |  |  |
+| Cash, cash equivalents, and restricted cash, end of period | $ | 154,504 |  |  | $ | 92,790 |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Supplementary cash flow disclosures: |  |  |  |  |  |  |  |  |  |  |  |
+| Interest paid | $ | 810 |  |  | $ | 190 |  |  |  |  |  |
+| Non-cash investing and financing activities: |  |  |  |  |  |  |  |  |  |  |  |
+| Acquisition of property, equipment, and intangible assets, including capitalized software | $ | 396 |  |  | $ | 470 |  |  |  |  |  |
+
+BUTTERFLY NETWORK, INC.
+
+ADJUSTED GROSS PROFIT AND ADJUSTED GROSS MARGIN
+
+(In thousands)
+
+(Unaudited)
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Three months ended December 31, |  | Year ended December 31, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Revenue | $ | 31,514 |  |  | $ | 22,351 |  |  | $ | 97,610 |  |  | $ | 82,056 |  |  |  |  |  |  |  |  |  |
+| Cost of revenue | 10,293 |  |  | 8,617 |  |  | 51,876 |  |  | 33,225 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Gross profit | $ | 21,221 |  |  | $ | 13,734 |  |  | $ | 45,734 |  |  | $ | 48,831 |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Gross margin | 67.3 | % |  | 61.4 | % |  | 46.9 | % |  | 59.5 | % |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Add: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Write-downs and write-offs of inventories and vendor advances | 43 |  |  | — |  |  | 17,596 |  |  | 97 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Adjusted gross profit | $ | 21,264 |  |  | $ | 13,734 |  |  | $ | 63,330 |  |  | $ | 48,928 |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Adjusted gross margin | 67.5 | % |  | 61.4 | % |  | 64.9 | % |  | 59.6 | % |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Depreciation and amortization | $ | 750 |  |  | $ | 1,536 |  |  | $ | 4,155 |  |  | $ | 6,398 |  |  |  |  |  |  |  |  |  |
+| % of revenue | 2.4 | % |  | 6.9 | % |  | 4.3 | % |  | 7.8 | % |  |  |  |  |  |  |  |  |  |  |  |  |
+
+BUTTERFLY NETWORK, INC.
+
+ADJUSTED EBITDA AND ADJUSTED EPS
+
+(In thousands, except share and per share amounts)
+
+(Unaudited)
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Included on the condensed consolidated statements of operations and comprehensive loss as: | Three months ended December 31, |  | Year ended December 31, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | 2025 |  | 2024 |  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Net loss | Net loss | $ | (15,292) |  |  | $ | (18,102) |  |  | $ | (77,064) |  |  | $ | (72,492) |  |  |  |  |  |  |  |  |  |  |  |
+| Stock-based compensation | Cost of revenue, R&D, S&M, and G&A | 6,361 |  |  | 5,238 |  |  | 23,435 |  |  | 21,032 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Write-downs and write-offs of inventories and vendor advances | Cost of revenue | 43 |  |  | — |  |  | 17,596 |  |  | 97 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Change in fair value of warrant liabilities | Change in fair value of warrant liabilities | (620) |  |  | 1,033 |  |  | (2,272) |  |  | 1,859 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other | Other | 5,325 |  |  | 426 |  |  | 10,776 |  |  | 4,065 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other expense (income), net | Other income (expense), net | 59 |  |  | 526 |  |  | (2,768) |  |  | 13 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Adjusted net loss |  | (4,124) |  |  | (10,879) |  |  | (30,297) |  |  | (45,426) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Interest income | Interest income | (1,314) |  |  | (997) |  |  | (5,911) |  |  | (5,020) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Interest expense | Interest expense | 390 |  |  | 334 |  |  | 1,490 |  |  | 1,261 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Provision (benefit) for income taxes | Provision (benefit) for income taxes | 66 |  |  | (109) |  |  | 110 |  |  | (32) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Depreciation and amortization | Cost of revenue, R&D, S&M, and G&A | 1,754 |  |  | 2,507 |  |  | 8,081 |  |  | 10,342 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Adjusted EBITDA |  | $ | (3,228) |  |  | $ | (9,144) |  |  | $ | (26,527) |  |  | $ | (38,875) |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Adjusted EPS |  | $ | (0.02) |  |  | $ | (0.05) |  |  | $ | (0.12) |  |  | $ | (0.21) |  |  |  |  |  |  |  |  |  |  |  |
+| Weighted average shares used to compute adjusted EPS |  | 252,841,134 |  | 213,389,209 |  | 247,124,365 |  | 211,682,760 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |

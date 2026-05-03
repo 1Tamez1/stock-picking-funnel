@@ -1,0 +1,23 @@
+# rxst-investor-presentation-extract.txt
+
+## Metadata
+- MIME type: text/plain
+- Original file: rxst-investor-presentation-extract.txt
+
+## LLM View
+Source: RxSight Investor Presentation
+URL: https://investors.rxsight.com/static-files/a10b3e31-3004-4af9-be8b-4323a07623cd
+Publication date surfaced in search results: August 7, 2025
+
+Key facts extracted from accessible search snippet:
+- The document is labeled "RxSight Investor Presentation."
+- The presentation includes forward-looking statements about adoption trends, cataract procedure volume, premium IOL market opportunity, competitive positioning, international expansion, and future business performance.
+- The presentation says it uses a mix of internal estimates plus academic, industry, publication, survey, study, and governmental-agency data.
+- The presentation specifically references the August 7, 2025 RxSight press release and the August 7, 2025 Form 10-Q risk factors for additional detail.
+
+Limitations:
+- Direct download of the hosted investor-presentation asset was blocked in this environment, so this extract preserves the accessible metadata and what the search surface exposed.
+
+Use in report:
+- Investor presentation / investor day coverage row.
+- Supplemental source for how management frames TAM, adoption, and positioning.

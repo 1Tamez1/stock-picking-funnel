@@ -1,0 +1,1642 @@
+{
+  "mode": "shadow-import",
+  "backend_mode": "postgres_verify",
+  "reason": "postgres-services",
+  "shadow_database_url": "sqlite+pysqlite:////Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel-web-app/v2/contracts/shadow/verify-shadow.db",
+  "source_fingerprint": "6632fd8f54f5d57553f4d4d907af7c4eba2fdd130a01319e35ef516318b70287",
+  "status": "ok",
+  "tables": {
+    "stages": {
+      "source_count": 7,
+      "shadow_count": 7,
+      "source_digest": "0dd10e841db93c65932a62ee4d6f0ffaca243258e51347e942f9f75eed1003bd",
+      "shadow_digest": "0dd10e841db93c65932a62ee4d6f0ffaca243258e51347e942f9f75eed1003bd",
+      "status": "ok",
+      "diff_count": 0,
+      "diffs": []
+    },
+    "companies": {
+      "source_count": 2904,
+      "shadow_count": 2904,
+      "source_digest": "70c51937fed2dcb725ea7e1599d7ce29b10f1c37d481f09735540922452df7f0",
+      "shadow_digest": "70c51937fed2dcb725ea7e1599d7ce29b10f1c37d481f09735540922452df7f0",
+      "status": "ok",
+      "diff_count": 0,
+      "diffs": []
+    },
+    "templates": {
+      "source_count": 13,
+      "shadow_count": 13,
+      "source_digest": "0ea2a3e3528325448947b2e49bb8d1f13603a7c3768b1859aef2bbec79fc0bfb",
+      "shadow_digest": "0ea2a3e3528325448947b2e49bb8d1f13603a7c3768b1859aef2bbec79fc0bfb",
+      "status": "ok",
+      "diff_count": 0,
+      "diffs": []
+    },
+    "reports": {
+      "source_count": 42,
+      "shadow_count": 42,
+      "source_digest": "aa6a6469a54781b31a06bacb15d04c59760e6b7073aa8cf2c5285b25ff13941a",
+      "shadow_digest": "aa6a6469a54781b31a06bacb15d04c59760e6b7073aa8cf2c5285b25ff13941a",
+      "status": "ok",
+      "diff_count": 0,
+      "diffs": []
+    },
+    "documents": {
+      "source_count": 87,
+      "shadow_count": 87,
+      "source_digest": "cba90d7e6071a789b6599e8be90e8eccf55ec6a99dfbbafd19bd689e7a476939",
+      "shadow_digest": "cba90d7e6071a789b6599e8be90e8eccf55ec6a99dfbbafd19bd689e7a476939",
+      "status": "ok",
+      "diff_count": 0,
+      "diffs": []
+    },
+    "report_sources": {
+      "source_count": 114,
+      "shadow_count": 114,
+      "source_digest": "c40b9ac93a455b0c7ac73c0003d58ba63eac38772860f4f7cdf793e428a75d3f",
+      "shadow_digest": "c40b9ac93a455b0c7ac73c0003d58ba63eac38772860f4f7cdf793e428a75d3f",
+      "status": "ok",
+      "diff_count": 0,
+      "diffs": []
+    },
+    "background_jobs": {
+      "source_count": 0,
+      "shadow_count": 0,
+      "source_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "shadow_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": "ok",
+      "diff_count": 0,
+      "diffs": []
+    },
+    "monitoring_rules": {
+      "source_count": 8,
+      "shadow_count": 8,
+      "source_digest": "e321ce6735a078cdd52d2e0ac599d4c0fc3ac6f0cb0595e8dfd88145faa750d0",
+      "shadow_digest": "e321ce6735a078cdd52d2e0ac599d4c0fc3ac6f0cb0595e8dfd88145faa750d0",
+      "status": "ok",
+      "diff_count": 0,
+      "diffs": []
+    }
+  },
+  "diffs": [],
+  "document_file_checks": [
+    {
+      "document_id": 1,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2902/20260417114320-e13707093f-NIKE_Screening_April_2026.md",
+      "storage_sha256": "66988f64cf8a0c2d30c91d76019d0908d470505653a3fcf1c321389a77d273e7",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2902/normalized/1-20260417114320-e13707093f-NIKE_Screening_April_2026.txt",
+      "normalized_sha256": "845a67d2a0de369d6631b7f31b76133016bae79543bfb681e5feb63760cb848f"
+    },
+    {
+      "document_id": 2,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2902/20260417133226-2bdf99ce0d-BCI-IngClinica.pdf",
+      "storage_sha256": "401469385ae1b1976c26f80157cde211f92912af429067e38ce58f34c94bcc73",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2902/normalized/2-20260417133226-2bdf99ce0d-BCI-IngClinica.txt",
+      "normalized_sha256": "81647e0d99bd10ae7bade3e34da0eb65e1bf7c82aa2bd83da1dafb95b545f475"
+    },
+    {
+      "document_id": 3,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2902/20260417133233-9a436c653d-Grupos_trabajos_2025_2BB_presentaciones.pdf",
+      "storage_sha256": "6bd4a636574183b5dc0c2776979c221c8844e54377e7f26088ab00f8192cdc7a",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2902/normalized/3-20260417133233-9a436c653d-Grupos_trabajos_2025_2BB_presentaciones.txt",
+      "normalized_sha256": "1626cb3c176bce6d4dd5b49081edd9747ef5911ab637288d15cd296ae66a3a00"
+    },
+    {
+      "document_id": 4,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2902/20260417133253-3d1fa6ab1d-Grupos_trabajos_2025_2AB_presentaciones.pdf",
+      "storage_sha256": "e3d3f79193c1c0c137fc9fd8edf8eb47ab930242a9c7e0d05fb015eed625acbd",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2902/normalized/4-20260417133253-3d1fa6ab1d-Grupos_trabajos_2025_2AB_presentaciones.txt",
+      "normalized_sha256": "6814f29f8e63c0ae0606a51bfec316c2de030a653df37efe0b8235e20dd16fbd"
+    },
+    {
+      "document_id": 5,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2902/20260417190905-e515b556c2-NKE_nasdaq_snapshot_2026-04-17.json",
+      "storage_sha256": "7180472438bc09990258f47017ec86fac9dcb84d52eaea98f62aee20fefcf3e2",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2902/normalized/5-20260417190905-e515b556c2-NKE_nasdaq_snapshot_2026-04-17.txt",
+      "normalized_sha256": "e707c72fdc6375d4eb7e3fc3d96e7dbcc5e718558a642cb0e382850a867d0186"
+    },
+    {
+      "document_id": 6,
+      "storage_path": "var/uploads/777/20260417231500-d350a56024-ATNM_Screening_Research_Notes_April_2026.md",
+      "storage_sha256": "0a882a5c8493ad7c95706972e40a1349d7af92330470fdd8d6b6aea61d8a0cf1",
+      "normalized_text_path": "var/uploads/777/normalized/6-ATNM_Screening_Research_Notes_April_2026.txt",
+      "normalized_sha256": "7f540b682738557246a87fbe1d4a60e055c5c9151dc7b365190fcacfb87b0a9d"
+    },
+    {
+      "document_id": 7,
+      "storage_path": "var/uploads/344/20260418083253-91e319c16a-URGN_S1_FY2025_10K_notes.md",
+      "storage_sha256": "226f8242173117ff91de422145319ff3f26e0b50a621934db81349baef20eff1",
+      "normalized_text_path": "var/uploads/344/normalized/7-URGN_S1_FY2025_10K_notes.txt",
+      "normalized_sha256": "1e4164c5b4dc42ee1007ac801dc8370286e55412922f3f443f55e8a03d3d2743"
+    },
+    {
+      "document_id": 8,
+      "storage_path": "var/uploads/344/20260418083636-7e5aa30028-URGN_S2_Q3_2025_10Q_notes.md",
+      "storage_sha256": "02beb158536f9c4e4a967374b45c65771ff99859078bbb46e87f0355fb4fc6a3",
+      "normalized_text_path": "var/uploads/344/normalized/8-URGN_S2_Q3_2025_10Q_notes.txt",
+      "normalized_sha256": "6a61512c888932e6c99df2b7285a00afea5ec320be84c68a22df665bf313f796"
+    },
+    {
+      "document_id": 9,
+      "storage_path": "var/uploads/344/20260418083636-c9a6f1da8e-URGN_S3_2025_proxy_notes.md",
+      "storage_sha256": "a8b5f5017e17e6312bc7ef9f9e1eeb071d5a19525d11c690d96485044247806f",
+      "normalized_text_path": "var/uploads/344/normalized/9-URGN_S3_2025_proxy_notes.txt",
+      "normalized_sha256": "f13332daf270506bb5c70be4ca152bf86cd8470fc456f76d6bd5562e7f4e9daf"
+    },
+    {
+      "document_id": 10,
+      "storage_path": "var/uploads/344/20260418083636-8e34ae01bd-URGN_S4_Q4_2025_earnings_notes.md",
+      "storage_sha256": "995ad017b457ff958975e4f5af3dd77603b6f117ec8816b311cc435ebc46aba9",
+      "normalized_text_path": "var/uploads/344/normalized/10-URGN_S4_Q4_2025_earnings_notes.txt",
+      "normalized_sha256": "b1f7be7be27831aa2c9d45038efbec1993aab95a0a8cf3146cb72e258428f339"
+    },
+    {
+      "document_id": 11,
+      "storage_path": "var/uploads/344/20260418083636-fe386dfb94-URGN_S5_March_2026_corporate_presentation_notes.md",
+      "storage_sha256": "331ceb088a36dab9257ea59ba735d9b01b6aff26441d7ff8df9f342f00db2376",
+      "normalized_text_path": "var/uploads/344/normalized/11-URGN_S5_March_2026_corporate_presentation_notes.txt",
+      "normalized_sha256": "061410fb8459a7a7bbdb2a5206089b6cfca1497855b7519eea1b46085fcb78b2"
+    },
+    {
+      "document_id": 12,
+      "storage_path": "var/uploads/344/20260418083636-580f278db6-URGN_S6_CGON_FY2025_10K_notes.md",
+      "storage_sha256": "a3c53ce589768b55a8007f5c9161043c178fe978ff4a61faf335e246e88ccb17",
+      "normalized_text_path": "var/uploads/344/normalized/12-URGN_S6_CGON_FY2025_10K_notes.txt",
+      "normalized_sha256": "2d8abf897feabc06ed4c0350dc870f669b3b363a248a9d082df5c4abe6aa0ce2"
+    },
+    {
+      "document_id": 13,
+      "storage_path": "var/uploads/344/20260418083636-7bba5a41db-URGN_S7_market_data_notes.md",
+      "storage_sha256": "ce2a15428eecf503c38e72f7ba49b534f244a2929fd4b6261f790859dea28e44",
+      "normalized_text_path": "var/uploads/344/normalized/13-URGN_S7_market_data_notes.txt",
+      "normalized_sha256": "8b477ae2cbc93467ee9db22269580b94965b6ce01114807e151ce589208b517d"
+    },
+    {
+      "document_id": 14,
+      "storage_path": "var/uploads/344/20260418083636-b49f6c2676-URGN_S8_March_2026_8K_debt_notes.md",
+      "storage_sha256": "43ad74f341986572afe686e3779b3ef905662c5ca13e80876e6a385b352d73a7",
+      "normalized_text_path": "var/uploads/344/normalized/14-URGN_S8_March_2026_8K_debt_notes.txt",
+      "normalized_sha256": "103ec15a40daa7221bd9c9c73eb1a685813b5aacc0024745952c68bbd44af19e"
+    },
+    {
+      "document_id": 15,
+      "storage_path": "var/uploads/344/20260418083636-1069a8e413-URGN_S9_BCAN_2026_survey_notes.md",
+      "storage_sha256": "9a29c7ef8b27c48e2d09604772a50350626b1eaa918c9ecc5e07930c5ecb7289",
+      "normalized_text_path": "var/uploads/344/normalized/15-URGN_S9_BCAN_2026_survey_notes.txt",
+      "normalized_sha256": "f723b38b00ae4c0640fecd599d8e8e9c68f0ff5561036e5061cbb6276611e046"
+    },
+    {
+      "document_id": 24,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/20260418121951-a4fda2742e-36_leidos_fy2025_10k.html",
+      "storage_sha256": "3889471c4bbf7561d6a2d91e30d38fc584d01b422bc2ab2bff7bf8ec27320992",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/normalized/24-36_leidos_fy2025_10k.txt",
+      "normalized_sha256": "acb803e243729047a3336815aae0431b0759122e1260886e3c96af5090fda775"
+    },
+    {
+      "document_id": 25,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/20260418121951-462effda51-37_leidos_fy2025_results.html",
+      "storage_sha256": "e52804d76a3a91a5420196819feb9dbb6f414ade37a3f552a5ec47753b399e3a",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/normalized/25-37_leidos_fy2025_results.txt",
+      "normalized_sha256": "60cde3e49cc1deb7916d071401b4168646c87513d74f36380e0bfc28f31efbdb"
+    },
+    {
+      "document_id": 26,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/20260418121951-c968765f7b-38_leidos_entrust_8k.html",
+      "storage_sha256": "f31b783fbe09b17358fb66dad5f17fac19c6288c71113d3f39888039920620e5",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/normalized/26-38_leidos_entrust_8k.txt",
+      "normalized_sha256": "8dec2bd4563bdfbd2bfaf54d003232303b2833f4eaade0e5e55b86681ca466f2"
+    },
+    {
+      "document_id": 27,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/20260418121951-35b376879a-39_leidos_proxy_2026.html",
+      "storage_sha256": "ca8beb1099298055a011e75eaa1ffa22dcfc8d14d21e29f0fd7c2cb179a2da83",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/normalized/27-39_leidos_proxy_2026.txt",
+      "normalized_sha256": "d5af941202f7cb093df09ffd116e2b044e635c49a1653dc07b07e94b5e29dd00"
+    },
+    {
+      "document_id": 28,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/20260418121951-3e653ad644-40_saic_fy2026_results.html",
+      "storage_sha256": "77f6ac55a379fc7cb00ff9620140904349d1f0f39dce5f62c17df3768f23f109",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/normalized/28-40_saic_fy2026_results.txt",
+      "normalized_sha256": "4b012e122a2b57342807f86cc546f8d099e0cb32bd276f1b22d0423f28a1bd1b"
+    },
+    {
+      "document_id": 29,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/20260418121951-de5a840ecd-41_caci_fy2025_annual_report.html",
+      "storage_sha256": "405cbb315377e1ccbc00d3fe83aa9a74068a9f5f5132fae4eb2f50785e713e0e",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/normalized/29-41_caci_fy2025_annual_report.txt",
+      "normalized_sha256": "9eac446e82af5c6d0cea86efc0cfeeb26f6a4cf470eb9a352aeb07fcea69eb55"
+    },
+    {
+      "document_id": 30,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/20260418122328-49d9b54580-17_ldos_statistics.html",
+      "storage_sha256": "6b55aa8aedbbed5e87a0032a44d0624d4b303f4f431b1f3c9a534d84ead0c058",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2313/normalized/30-17_ldos_statistics.txt",
+      "normalized_sha256": "07d3beb26f77bb3acfee6686447bbf3c89a6240e488da02be3c2af6547fcaac4"
+    },
+    {
+      "document_id": 31,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/20260418122427-36073ecfa9-wmt_10k_fy2026.html",
+      "storage_sha256": "276a6accff6066f00342ba03b390c6c2bd51aa7246f0346df22df0b839a5bf5c",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/normalized/31-wmt_10k_fy2026.txt",
+      "normalized_sha256": "79dd4724d6d571d1eca8105cc4bc456221e4c676e37632c3ea21641b76115153"
+    },
+    {
+      "document_id": 32,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/20260418122434-290586d883-wmt_10q_q3fy2026.html",
+      "storage_sha256": "9da85be327191215c65788832d731bdbe855656a4f474c5511c4a24b733cad69",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/normalized/32-wmt_10q_q3fy2026.txt",
+      "normalized_sha256": "e95b6ac3e8c908ebc34b7f480335858ba3d09cdebfa6d80ce3ab519826874627"
+    },
+    {
+      "document_id": 33,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/20260418122441-9cb78e43d0-wmt_def14a_2025.html",
+      "storage_sha256": "3a4df885f6bd00e881023a43a0ff3c1630985b0c1eb6a368bd8389929e5597b9",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/normalized/33-wmt_def14a_2025.txt",
+      "normalized_sha256": "7ad492507573c8eeadad371922764681cb2b048f12876ec9fd2a2c4490f1c392"
+    },
+    {
+      "document_id": 34,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/20260418122446-b1a271df16-wmt_8k_20260219.html",
+      "storage_sha256": "9f648869ebae7b5de4cfe6671b0699def549d5f6f4f726202f49003027af49db",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/normalized/34-wmt_8k_20260219.txt",
+      "normalized_sha256": "ab15bbf42ca6b06ee688fea5a061a60cbfa6ec7b35abf2bef73fbd15c0c2ca01"
+    },
+    {
+      "document_id": 35,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/20260418122452-a9352fc43e-wmt_q4fy26_earnings_call_transcript.pdf",
+      "storage_sha256": "c9aa38de784bc2a529bb41efea8b80b90a18e4b9ec8eaf5bfe90ef3ef630d608",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/normalized/35-wmt_q4fy26_earnings_call_transcript.txt",
+      "normalized_sha256": "5eead9657231855e2ccd677393c6afc01e0001f5083bc70bc6db23a2b619c9c6"
+    },
+    {
+      "document_id": 36,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/20260418122458-00b6404034-wmt_earnings_presentation_fy26.html",
+      "storage_sha256": "f0b6ad112331e120e5288d89eb15ff2e58cf9dbd653001d8e7439d06e064ab12",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/normalized/36-wmt_earnings_presentation_fy26.txt",
+      "normalized_sha256": "7e2b5e23c19e092e660ee038296083917aca6b25b38ed96d738e6f7a9a46caa4"
+    },
+    {
+      "document_id": 37,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/20260418122504-d7c8a344c6-costco_10k_fy2025.html",
+      "storage_sha256": "2cf71f4336c8f36b008a584403551d95ab3b7e4addc9179a99b62029810f7c9a",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/normalized/37-costco_10k_fy2025.txt",
+      "normalized_sha256": "6f96e51b366bc0c061a223a7a09ed4426e3c0c1fa596afe81aff4c3c477d48bc"
+    },
+    {
+      "document_id": 38,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/20260418122512-8e079a8fdf-wmt_quote_and_chart.html",
+      "storage_sha256": "e95849b5c7491d268894441502c03f224c740c9cb1e73258d63a693e32c02f3e",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/normalized/38-wmt_quote_and_chart.txt",
+      "normalized_sha256": "79e71873c2c6131ff7df16372e8a9de6ab67b24e65f4f1b1da5b0d82fbcb4353"
+    },
+    {
+      "document_id": 39,
+      "storage_path": "var/uploads/2313/20260418123125-d8ed809d17-leidos_fy2025_10k_sec.htm",
+      "storage_sha256": "dd29d99087a59e316269fe23480d0530e1fe8ef0da1e2969671053ececc1620e",
+      "normalized_text_path": "var/uploads/2313/normalized/39-leidos_fy2025_10k_sec.txt",
+      "normalized_sha256": "bc622fab73999b08ab4ca3221a5ccc2582209d531e9311267064c575598325b6"
+    },
+    {
+      "document_id": 40,
+      "storage_path": "var/uploads/2313/20260418123125-8affdef512-leidos_q3_fy2025_10q_sec.htm",
+      "storage_sha256": "c348e4230600784fc5207ea8c7e5fb0bee1448c9bd8a1d8a23fbbf8b6b4284ad",
+      "normalized_text_path": "var/uploads/2313/normalized/40-leidos_q3_fy2025_10q_sec.txt",
+      "normalized_sha256": "c3b70a449f009a635eb7f65e9fd2dff3f4a53edacefa00a18272e471655012ae"
+    },
+    {
+      "document_id": 41,
+      "storage_path": "var/uploads/2313/20260418123125-4ac37bc4c1-leidos_2026_proxy_sec.htm",
+      "storage_sha256": "e2a186ab726904a8c625a37342a79b50be2ede3556e243e5a62d4346e81733aa",
+      "normalized_text_path": "var/uploads/2313/normalized/41-leidos_2026_proxy_sec.txt",
+      "normalized_sha256": "c5bd2766e7da5d1ac1ba4a0b4baaff7a5c38d125fae2bb5b634c7c2c0e202423"
+    },
+    {
+      "document_id": 42,
+      "storage_path": "var/uploads/2313/20260418123126-7b89a4f2c4-leidos_fy2025_results_ex991_sec.htm",
+      "storage_sha256": "93e9207ab698ec7819e383b8e3120185e7838275d18f6cb4ab027e73d55b7419",
+      "normalized_text_path": "var/uploads/2313/normalized/42-leidos_fy2025_results_ex991_sec.txt",
+      "normalized_sha256": "c778353db47539221b48c5a9039fd2f4c51ae8c9dee8ca16456fbbd0acd4585b"
+    },
+    {
+      "document_id": 43,
+      "storage_path": "var/uploads/2313/20260418123126-e5538e814a-leidos_entrust_8k_sec.htm",
+      "storage_sha256": "6ff4a4440db9d3eda63b5409959542553cc5bb14b4876862983a77a63fb6b5d7",
+      "normalized_text_path": "var/uploads/2313/normalized/43-leidos_entrust_8k_sec.txt",
+      "normalized_sha256": "48f917e4d4549dd31dd291ec68f8ba4d8f28eb8b713d5ce450f53ccf5f34d97f"
+    },
+    {
+      "document_id": 44,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/20260418123432-9cc3e0619b-wmt_stooq_daily_quote.csv",
+      "storage_sha256": "9948947a809193286d2ee1b7640092c4c05548d1117bd70b935aed5c2991d88e",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1055/normalized/44-wmt_stooq_daily_quote.txt",
+      "normalized_sha256": "ef94107ac213069bbc1ee43f340f1d3c8d2df01ae12bf1afa441dd1a6425f59d"
+    },
+    {
+      "document_id": 45,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/20260418123728-84003cd19a-ares-sec-recent-filings-2026-04-18.md",
+      "storage_sha256": "f639364ca25b68e6dfc99a2eb9581d65bc175f03e361bf8d3ef16ff378a22fb6",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/normalized/45-ares-sec-recent-filings-2026-04-18.txt",
+      "normalized_sha256": "14be0695a469349bbfc647d988a963c6a46bc6f3e7bb07c03a113e5ede3ce5b0"
+    },
+    {
+      "document_id": 46,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/20260418123728-ea8396d3cf-ares-fy2025-10k-snapshot.md",
+      "storage_sha256": "c63aa6edf610b29fcd4c23f5ac75aef59a0e030672ca0244f2a052114fe583a8",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/normalized/46-ares-fy2025-10k-snapshot.txt",
+      "normalized_sha256": "6b677211dca96d65cf1c2c317ce4a84510ef2134e55d37922e8d54ce1c9f10b4"
+    },
+    {
+      "document_id": 47,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/20260418123728-49bdb7d8a6-ares-q3-2025-10q-snapshot.md",
+      "storage_sha256": "e658eceb19d9b6148e270f13308201c98910e50a98293b6ef42486b2befc8705",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/normalized/47-ares-q3-2025-10q-snapshot.txt",
+      "normalized_sha256": "134e93994038017c26df882b237f673c5a50e7690fee0107cfe2104af410000c"
+    },
+    {
+      "document_id": 48,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/20260418123728-759985a16b-ares-2025-proxy-snapshot.md",
+      "storage_sha256": "0141abef9fa0589debf258e74398c2bfe1359bf9e3fd32110c0cb0a5c2a4dcf9",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/normalized/48-ares-2025-proxy-snapshot.txt",
+      "normalized_sha256": "88e76d4cf578b016f40b472c5dff22011cf130ec7426f30ee3fb4234651bc8a8"
+    },
+    {
+      "document_id": 49,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/20260418123728-2e41b9de48-ares-q4-fy2025-8k-snapshot.md",
+      "storage_sha256": "03ce1140ac1f874254cffa90fd2e040e77b3d6d73f691ef4ea4ed5b1e33f17cd",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/normalized/49-ares-q4-fy2025-8k-snapshot.txt",
+      "normalized_sha256": "0171cd90ea147cd2140fa2ced188f006b7516db23fb81eb7f09f8e10e5e45616"
+    },
+    {
+      "document_id": 50,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/20260418123728-3889aebc52-ares-q4-fy2025-presentation-snapshot.md",
+      "storage_sha256": "0b88c879b48d8bd9d5165e6e0d59431dfdb9400216d1df9e7423ce35359414d0",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/normalized/50-ares-q4-fy2025-presentation-snapshot.txt",
+      "normalized_sha256": "03d098ec2d9fae7bdb24cd47dcfe31c90cb64e2ae1f4fef61b4315da801db43c"
+    },
+    {
+      "document_id": 51,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/20260418123728-9086110053-apollo-fy2025-10k-snapshot.md",
+      "storage_sha256": "e8934fa2441390cd3a270928c61959f115645dc0ca473ff1a2bf987a06f49b0a",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/normalized/51-apollo-fy2025-10k-snapshot.txt",
+      "normalized_sha256": "b4743a2d6f8b1e57256f5fb49e8505ec9b5ddadc86b60cd097fa3d00e7b4ca06"
+    },
+    {
+      "document_id": 52,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/20260418123728-70374f0fae-ares-market-data-snapshot.md",
+      "storage_sha256": "583b92de293ebd730de0bcb79cf4d1a6d0727d7a8654290bf0863628c3249ddc",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/normalized/52-ares-market-data-snapshot.txt",
+      "normalized_sha256": "9ddd3076cd32ed5b2fe498a7d6496aa9589ff639cfea7a4eac59ee42c0fd3600"
+    },
+    {
+      "document_id": 53,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/20260418123728-070e5a66d2-private-credit-2026-outlook-snapshot.md",
+      "storage_sha256": "9d091cf4ba2d60b096ea47df936aecc9b626197e42bc6d626d5da1adda32a0d4",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/normalized/53-private-credit-2026-outlook-snapshot.txt",
+      "normalized_sha256": "a6c7662dae3cfd3144e6bd226cc8ed026dc0759374a8c3b7d54706d8168ea9eb"
+    },
+    {
+      "document_id": 54,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/20260418125600-b7a69a20b3-ares-statistics-valuation-snapshot.md",
+      "storage_sha256": "229844185560cb7d73683c7edfa66f33269c07fa247f823176e2dbadcefeb6b0",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/1374/normalized/54-ares-statistics-valuation-snapshot.txt",
+      "normalized_sha256": "b73a81797827cfc4d2b5736e016a5c41f949ef78a072a964ac899725e552793a"
+    },
+    {
+      "document_id": 55,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/20260418201532-aa6c719af7-rxst-2025-10k-extract.txt",
+      "storage_sha256": "9f7595fb3c51a0bcbbef0f6b3064c7b74cc2ed3f810c61e0d339a42539e159ac",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/normalized/55-rxst-2025-10k-extract.txt",
+      "normalized_sha256": "ced26f31b198738a5795982b4fca9ef763abea03e97648848ebf74f701541e7c"
+    },
+    {
+      "document_id": 56,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/20260418201818-5c91ec4623-rxst-2025-q3-10q-extract.txt",
+      "storage_sha256": "297a76ad0e902ce7fdc9bb4cc7a7e5fcfed3d22db869d061ec51bc535b98686c",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/normalized/56-rxst-2025-q3-10q-extract.txt",
+      "normalized_sha256": "05997432e6b45c721adbd5c75e8e1cb2c019bd7420a6b166e759f57e4bfac039"
+    },
+    {
+      "document_id": 57,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/20260418201818-8e95158d60-rxst-2025-proxy-extract.txt",
+      "storage_sha256": "c8b9eecd2945b78f479a7584fe752ce8787768435db4b24063946e77afcba839",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/normalized/57-rxst-2025-proxy-extract.txt",
+      "normalized_sha256": "770626f5b07a46ea3d9c17a48bab2990873c89c1aaa1256b678a6bc535c6440d"
+    },
+    {
+      "document_id": 58,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/20260418201818-f975f5a595-rxst-2026-q4-results-extract.txt",
+      "storage_sha256": "46d1849055ac7c5a06561cecd32a3501f507c7e0283c8428958f2a5a3ac768e9",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/normalized/58-rxst-2026-q4-results-extract.txt",
+      "normalized_sha256": "0cba8df9fa767bc38a8851fe178063ce341534e322628c2b17a8a635e609659e"
+    },
+    {
+      "document_id": 59,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/20260418201818-5d36107e5f-rxst-investor-presentation-extract.txt",
+      "storage_sha256": "45dbdbcd8f2215a3baf9212cdf1452d6d5f5c9c88221f1f51d9f6af76f429b71",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/normalized/59-rxst-investor-presentation-extract.txt",
+      "normalized_sha256": "2e8d4fe3ec03bc69b4252a2c13a68e34405cd2483599fb098b5ed84c61232f86"
+    },
+    {
+      "document_id": 60,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/20260418201818-a68dee1034-staa-2025-10k-extract.txt",
+      "storage_sha256": "71cc2948ee178816af0d079e83e7c4d075a89c8ff0905e352ad9a361e971e5be",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/normalized/60-staa-2025-10k-extract.txt",
+      "normalized_sha256": "001653fb3a2b3e1bdd8468e8c809067e8f9cdb2f3b565bcc6bd019c5acf3cbf0"
+    },
+    {
+      "document_id": 61,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/20260418201818-afb02d04f9-rxst-price-statistics-extract.txt",
+      "storage_sha256": "e02c946bb65ced626acc28275e08e58fb06a1d0acad2f49efaa6ef44e1d40e74",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/normalized/61-rxst-price-statistics-extract.txt",
+      "normalized_sha256": "17a8fd52a79e00481408d3496f846b8836614bfce5a252a461003bcc27f0987c"
+    },
+    {
+      "document_id": 62,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/20260418201818-637086e3f5-premium-cataract-market-2025-extract.txt",
+      "storage_sha256": "e9625684d2656412684ecfbe5670f750e18039805cd451284e03a65a0ceccd9f",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/517/normalized/62-premium-cataract-market-2025-extract.txt",
+      "normalized_sha256": "1b9c804ab2f8da6e0efcfd26cb20ef783860f4b697b2f86958a5a9644a69b217"
+    },
+    {
+      "document_id": 63,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/20260418211143-e131cf7ca7-bfly-2025-10k-sec.html",
+      "storage_sha256": "77d78e0d37385f922434ddd4f8420670e69725e74bba02defde80410bc06f0ab",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/normalized/63-bfly-2025-10k-sec.txt",
+      "normalized_sha256": "0c416cc93af3e99793a7d39e5182fe4138b4fd8bac5843d96cca0e4df36cf5e3"
+    },
+    {
+      "document_id": 64,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/20260418211143-414a39e1f4-bfly-2025-q3-10q-sec.html",
+      "storage_sha256": "9246513cb104b535809d2273db50a17f9eb3bf6a82b25c0ff796f3b88a7d3cbb",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/normalized/64-bfly-2025-q3-10q-sec.txt",
+      "normalized_sha256": "5412dda81c1405bd1834259cbb1003a43144f009973ad1113e73543226f9454d"
+    },
+    {
+      "document_id": 65,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/20260418211143-744cd241fe-bfly-2025-def14a-sec.html",
+      "storage_sha256": "2cc3686abcff84b59ec6a2b0302d895446cb2658e62822d20e20e9d305db109e",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/normalized/65-bfly-2025-def14a-sec.txt",
+      "normalized_sha256": "9a164710b5ae4d54a153324c547bcec2617c958ccbb35caf2dddf329eab91d47"
+    },
+    {
+      "document_id": 66,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/20260418211143-f75c53b289-bfly-q4-2025-results-ex99-1-sec.html",
+      "storage_sha256": "7f88706a148ee218b2f8a6b2869f52859551f7ce2caaf215abc71412236aa163",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/normalized/66-bfly-q4-2025-results-ex99-1-sec.txt",
+      "normalized_sha256": "83fab06e677bd430f8d399da8fe4cb64695e1a4c0c7028c5a4a12a3504bef925"
+    },
+    {
+      "document_id": 67,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/20260418211143-94fea39fe2-bfly-jpm-2026-investor-presentation.pdf",
+      "storage_sha256": "f182803337b8a999efce7f1eb918f94686b0a1a3662bca81c4a42b081cb9472a",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/normalized/67-bfly-jpm-2026-investor-presentation.txt",
+      "normalized_sha256": "4dee1021423e0aedbf385f4cfc0af68967023d0cc746a4ab3700307f97beedd3"
+    },
+    {
+      "document_id": 68,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/20260418211143-f49799a79b-ge-vscan-air-peer-source.html",
+      "storage_sha256": "81f1d6c86bdf2b3f3250e9d0405fdf26d86a475e29706f736d2f311a5da9db1f",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/normalized/68-ge-vscan-air-peer-source.txt",
+      "normalized_sha256": "f5c26c5b4b6e2210faa5ba7388902e9251090ae723b0794f6d7acc3205686246"
+    },
+    {
+      "document_id": 69,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/20260418211143-c6072e23db-stockanalysis-bfly-company.html",
+      "storage_sha256": "ccd60e5c2c8d8b4cd7c15de04c8b08d63b07fead739b189fbb03bee1c17d01d4",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/normalized/69-stockanalysis-bfly-company.txt",
+      "normalized_sha256": "1f6d0f4a438c63c35088cb8b3282c2c44719d266b6156ae7f2ee0f8aa771b401"
+    },
+    {
+      "document_id": 70,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/20260418211143-3aa0a74c2e-yahoo-finance-bfly-q4-results.html",
+      "storage_sha256": "b672bc56cd3073da978e48f2f704e301ef3e6070a6901eb386ad2c9e715c8b37",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/306/normalized/70-yahoo-finance-bfly-q4-results.txt",
+      "normalized_sha256": "9706d370d186415baa90c076b169aeabe2d39467b1e61aaed819d4f8b34306ef"
+    },
+    {
+      "document_id": 71,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419124301-867a410373-laur_fy2025_10k_snapshot.md",
+      "storage_sha256": "00e66963326208af6cf7408e14555c903f660e166a6507b51dd8e765944b756d",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/71-laur_fy2025_10k_snapshot.txt",
+      "normalized_sha256": "755e7f1f82e43f3b6ca8e4921751dcf2820992b2232d30cb2f4fd269a9a99f14"
+    },
+    {
+      "document_id": 72,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419124301-d09e432ecf-laur_2026_proxy_snapshot.md",
+      "storage_sha256": "88a436db587d7bf4c037b42f37cd0e458cc38e789e1d0d39f74e5212f6cb3fdb",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/72-laur_2026_proxy_snapshot.txt",
+      "normalized_sha256": "bace375e40bc75cd443fb7c70c156d6a06d7fd63d92488244115750ee6529f19"
+    },
+    {
+      "document_id": 73,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419124301-c05b5d2f10-laur_q4fy2025_earnings_release_snapshot.md",
+      "storage_sha256": "4925286f474d9213c63c615540a187dd32c5e01d880cee1659784239bf5581c7",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/73-laur_q4fy2025_earnings_release_snapshot.txt",
+      "normalized_sha256": "23cdd21586bbe65bbe7ab4977ca60967c6668afe5d1176117789883199251faa"
+    },
+    {
+      "document_id": 74,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419124301-70db28a53a-laur_fy2025_earnings_presentation_snapshot.md",
+      "storage_sha256": "ace077e5f94fcaea0b347a3d690d35ba2605eb328739133ba587932da4f4bbae",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/74-laur_fy2025_earnings_presentation_snapshot.txt",
+      "normalized_sha256": "60aaf6835f92e95d34f14a880f11a907eccfc1192d15434b3ed8f93b59930e6c"
+    },
+    {
+      "document_id": 75,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419124301-7741d50174-atge_fy2025_10k_peer_snapshot.md",
+      "storage_sha256": "9a613c663bbd9e1e432835a631be92581c26e8db0dca4b2f45abca5e26599781",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/75-atge_fy2025_10k_peer_snapshot.txt",
+      "normalized_sha256": "0b489e4b1ff1d582fd68c441f2cd5cca92937f68d2ca0d61b8f0f2c041b2b440"
+    },
+    {
+      "document_id": 76,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419124301-5ca723eb86-oecd_mexico_education_2025_snapshot.md",
+      "storage_sha256": "74f1426b89a28faefd42fc71e3512f9577db5d9c34909efc91cbbb4df28e17d2",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/76-oecd_mexico_education_2025_snapshot.txt",
+      "normalized_sha256": "a5b274303c38b530b7026eecca22268c21022d41f44ecbd4092c39190cb11d00"
+    },
+    {
+      "document_id": 77,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419124301-eef0ec0b47-laur_market_data_snapshot_2026-04-19.md",
+      "storage_sha256": "2cb1a4adf8fc4990a8f0a34b84626c070d6f6aee7fafa9c7a549ad14a4c19b0a",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/77-laur_market_data_snapshot_2026-04-19.txt",
+      "normalized_sha256": "3e6920c9283414044a49e054ab1d954bd9806c47737a08628aa64108b2efce3f"
+    },
+    {
+      "document_id": 78,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419124340-8a5e4df44a-laur_q3_2025_10q_snapshot.md",
+      "storage_sha256": "63569bedd139fd3b90df3d037673332b580bee007f5ad5a669c30309c2d457fe",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/78-laur_q3_2025_10q_snapshot.txt",
+      "normalized_sha256": "b13ea48cd98e8f98571c783c18e191ece9fb17a65f496f91c1ba32ee1e728ac4"
+    },
+    {
+      "document_id": 79,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419124340-09a6b9c756-laur_fy2025_10k_snapshot.md",
+      "storage_sha256": "2ddf6fd5637cfac1961842bedc80a35fd9e4d9ac85ac5475070edc134a429423",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/79-laur_fy2025_10k_snapshot.txt",
+      "normalized_sha256": "975cb6650b3c0dc94cab0f28c23897c0294fb94e09ccb2f049f43e93f12ed216"
+    },
+    {
+      "document_id": 80,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/20260419124430-90cc440bee-01-linc-fy2025-10k-snapshot.md",
+      "storage_sha256": "5e389c9a03b1331531aefbf9c8ac28b8bf420800cbd31a13368066c02ce70fab",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/normalized/80-01-linc-fy2025-10k-snapshot.txt",
+      "normalized_sha256": "cefbe0fa24b22b74cc9bec3399074b2553f6890505cda6e63c0eb18f37ad1977"
+    },
+    {
+      "document_id": 81,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/20260419124452-95c7670e06-02-linc-q3-2025-10q-snapshot.md",
+      "storage_sha256": "0a6e959e9e3c8361030ce16be907a9e58a6fb8d8ef954b4b14b558a2fad26ffa",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/normalized/81-02-linc-q3-2025-10q-snapshot.txt",
+      "normalized_sha256": "7dcefe469ae42f45729b786689edd7963356c399660947613fff0693a8d360a6"
+    },
+    {
+      "document_id": 82,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/20260419124452-11fc8f1d2c-03-linc-2026-def14a-snapshot.md",
+      "storage_sha256": "9bc6845c5f5b11197d17d5f72a92b72201e961c2e384b1407078cb6fa4df1059",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/normalized/82-03-linc-2026-def14a-snapshot.txt",
+      "normalized_sha256": "f786efd58a52da63ee3a460bef1e214192288a10e1de61f247b8f80288460636"
+    },
+    {
+      "document_id": 83,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/20260419124452-aebcf1a4a1-04-linc-fy2025-results-ex99-1-snapshot.md",
+      "storage_sha256": "212915e52b15237e03132e2f6cecbc399fdd92ae4dc9bd106ce7455f362afc86",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/normalized/83-04-linc-fy2025-results-ex99-1-snapshot.txt",
+      "normalized_sha256": "be64d32ebf7ebb6b74a0bc4232e0223e74d20450377e76530f643a219781b222"
+    },
+    {
+      "document_id": 84,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/20260419124452-ec263a3a80-05-linc-investor-day-2026-presentation-snapshot.md",
+      "storage_sha256": "4c1cd6b343c8c34dc6f45f449c4ee209442c656457265daa2127bba40a5ccac6",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/normalized/84-05-linc-investor-day-2026-presentation-snapshot.txt",
+      "normalized_sha256": "9d08b51a7f85a2d95a5e54dd494df87606d65a1b160488b6e569ba8853573bfc"
+    },
+    {
+      "document_id": 85,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/20260419124502-2ab414e14c-06-uti-fy2025-10k-peer-snapshot.md",
+      "storage_sha256": "dc663eb6268df0229ddc621afa6c193ba32f6170804e8b08d9a4633a366f9e68",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/normalized/85-06-uti-fy2025-10k-peer-snapshot.txt",
+      "normalized_sha256": "7e2b0e1b99704d2a9e39b817043d935699f13810b54356071f696d09b8bcac76"
+    },
+    {
+      "document_id": 86,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/20260419124502-9b4029597d-07-linc-market-snapshot-stockanalysis.md",
+      "storage_sha256": "f7a60f55b05b8308c961bf2383a94a4404f17bb930977e0688eb6039dc56f0cd",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/normalized/86-07-linc-market-snapshot-stockanalysis.txt",
+      "normalized_sha256": "737f759d6a65a85bd1a53761ecf3ecf77f0a4b10120d68ad841e1409003c2a88"
+    },
+    {
+      "document_id": 87,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/20260419124502-bb3f300e1d-08-bls-electricians-outlook-snapshot.md",
+      "storage_sha256": "f2e90b0160e55d8a32b6bf5739ab473be0c49280f3fee35c71637c65097562cb",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/normalized/87-08-bls-electricians-outlook-snapshot.txt",
+      "normalized_sha256": "3a09adb5bb68fa4de857cdfec663f0a08e4238e0be1f0d1cdc9ce635e23b2585"
+    },
+    {
+      "document_id": 88,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419131729-fc07c4e240-laur_sec_companyfacts_quant_snapshot.md",
+      "storage_sha256": "cbd422624ada13c1b2074d4fd032790e3805a3a884ff39e090512adf9fd0087f",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/88-laur_sec_companyfacts_quant_snapshot.txt",
+      "normalized_sha256": "1e02fdff3dc296ebceb296b45795582abbf222ee2fa8212b82dde4d73a394bcb"
+    },
+    {
+      "document_id": 89,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/20260419132154-afe75f36a7-09-linc-credit-facility-8k-snapshot.md",
+      "storage_sha256": "b06c20495da8efc6e2ac23fa53faa5f7c65bd01b75e5e5cf04250cac1e665a4b",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2904/normalized/89-09-linc-credit-facility-8k-snapshot.txt",
+      "normalized_sha256": "c4efbacbeb66adca4aee55b8aa9f04204e611d475c84ba0052a8f733a70ca825"
+    },
+    {
+      "document_id": 90,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419133717-76145df06f-laur_mexico_rvoe_snapshot.md",
+      "storage_sha256": "b78f9afcd434c833a778b33e44fa9b5774b14771f5cd20d3052481dd246e3b80",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/90-laur_mexico_rvoe_snapshot.txt",
+      "normalized_sha256": "1c14ab8cc8a9c4e37cbb3b2c49747892024bbf212c248aceb37a88bbeaa63163"
+    },
+    {
+      "document_id": 91,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419133717-3fec2ca779-laur_peru_regulatory_snapshot.md",
+      "storage_sha256": "97dd1ddca3986b149000fe1d85f7ee74561ebacbc7a8ca9cd71fc917ee8ec9fc",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/91-laur_peru_regulatory_snapshot.txt",
+      "normalized_sha256": "9d5c42b5e61904c66a0d0cbc82a1798dc30a09916c705ab2b8b75e05fca9ae03"
+    },
+    {
+      "document_id": 92,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419133717-89dcd8feb2-laur_qs_profiles_snapshot.md",
+      "storage_sha256": "eb739de73d44143ee5960746fbbd87f17a068e838bdf6ee567c4e8c7bdab6f95",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/92-laur_qs_profiles_snapshot.txt",
+      "normalized_sha256": "782355fedbe06433316f20864af047c5a79a7d770b80cf5495985d612e9d73bd"
+    },
+    {
+      "document_id": 93,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419142736-40a6d7693b-laur_historical_capital_allocation_snapshot.md",
+      "storage_sha256": "f4a13c563dbd40739efbbee3c40f5a0cdde4dbb54b005c5c4d1a0312e4316381",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/93-laur_historical_capital_allocation_snapshot.txt",
+      "normalized_sha256": "76fcb113ebef54991b1f383da869e325ce28903f0815d128ae0e7a7009455054"
+    },
+    {
+      "document_id": 94,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419145325-8817930199-laur_financial_underwriting_snapshot_2021_2025.md",
+      "storage_sha256": "2eaf74fa53ffda9b09c766a6349967460dff7f83723c539f5cef7dfc875750ec",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/94-laur_financial_underwriting_snapshot_2021_2025.txt",
+      "normalized_sha256": "35d758b3e3408e3a3b0a38c61bc4fec2b068e5d249b3cbbf1a81faa7a77272f4"
+    },
+    {
+      "document_id": 95,
+      "storage_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/20260419173932-ba5e941c0a-laur_valuation_snapshot_2026_04_19.md",
+      "storage_sha256": "4527d0b8d1e3499d47ae927bc82122fd87f9e278fad57d18e5b621472b5869c3",
+      "normalized_text_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel/var/uploads/2903/normalized/95-laur_valuation_snapshot_2026_04_19.txt",
+      "normalized_sha256": "3d73f692c7810b6e56925bd8c50092db7cca781d597dbf3e0406f7370e667e31"
+    }
+  ],
+  "upload_files": [
+    {
+      "path": ".DS_Store",
+      "size_bytes": 6148,
+      "sha256": "e317cf46afd55bee092a0b5d579fdc3adc432fc063cb866d8c9fadde942daa43"
+    },
+    {
+      "path": ".gitkeep",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "1/20241012180352-6d72f04233-promotion.txt",
+      "size_bytes": 18,
+      "sha256": "6080177e2219635d71b34953cfb2b7e0c46b65862b07ff13315f5566354712a7"
+    },
+    {
+      "path": "1055/.DS_Store",
+      "size_bytes": 6148,
+      "sha256": "534fb3be8831eae3f8c8fec52504972c84ec37c463e11231e2f2ddb74600d383"
+    },
+    {
+      "path": "1055/20260418122427-36073ecfa9-wmt_10k_fy2026.html",
+      "size_bytes": 2323981,
+      "sha256": "276a6accff6066f00342ba03b390c6c2bd51aa7246f0346df22df0b839a5bf5c"
+    },
+    {
+      "path": "1055/20260418122434-290586d883-wmt_10q_q3fy2026.html",
+      "size_bytes": 1573761,
+      "sha256": "9da85be327191215c65788832d731bdbe855656a4f474c5511c4a24b733cad69"
+    },
+    {
+      "path": "1055/20260418122441-9cb78e43d0-wmt_def14a_2025.html",
+      "size_bytes": 2729810,
+      "sha256": "3a4df885f6bd00e881023a43a0ff3c1630985b0c1eb6a368bd8389929e5597b9"
+    },
+    {
+      "path": "1055/20260418122446-b1a271df16-wmt_8k_20260219.html",
+      "size_bytes": 37938,
+      "sha256": "9f648869ebae7b5de4cfe6671b0699def549d5f6f4f726202f49003027af49db"
+    },
+    {
+      "path": "1055/20260418122452-a9352fc43e-wmt_q4fy26_earnings_call_transcript.pdf",
+      "size_bytes": 326909,
+      "sha256": "c9aa38de784bc2a529bb41efea8b80b90a18e4b9ec8eaf5bfe90ef3ef630d608"
+    },
+    {
+      "path": "1055/20260418122458-00b6404034-wmt_earnings_presentation_fy26.html",
+      "size_bytes": 78815,
+      "sha256": "f0b6ad112331e120e5288d89eb15ff2e58cf9dbd653001d8e7439d06e064ab12"
+    },
+    {
+      "path": "1055/20260418122504-d7c8a344c6-costco_10k_fy2025.html",
+      "size_bytes": 1438962,
+      "sha256": "2cf71f4336c8f36b008a584403551d95ab3b7e4addc9179a99b62029810f7c9a"
+    },
+    {
+      "path": "1055/20260418122512-8e079a8fdf-wmt_quote_and_chart.html",
+      "size_bytes": 98419,
+      "sha256": "e95849b5c7491d268894441502c03f224c740c9cb1e73258d63a693e32c02f3e"
+    },
+    {
+      "path": "1055/20260418123432-9cc3e0619b-wmt_stooq_daily_quote.csv",
+      "size_bytes": 61,
+      "sha256": "9948947a809193286d2ee1b7640092c4c05548d1117bd70b935aed5c2991d88e"
+    },
+    {
+      "path": "1055/normalized/31-wmt_10k_fy2026.txt",
+      "size_bytes": 464390,
+      "sha256": "79dd4724d6d571d1eca8105cc4bc456221e4c676e37632c3ea21641b76115153"
+    },
+    {
+      "path": "1055/normalized/32-wmt_10q_q3fy2026.txt",
+      "size_bytes": 209559,
+      "sha256": "e95b6ac3e8c908ebc34b7f480335858ba3d09cdebfa6d80ce3ab519826874627"
+    },
+    {
+      "path": "1055/normalized/33-wmt_def14a_2025.txt",
+      "size_bytes": 642535,
+      "sha256": "7ad492507573c8eeadad371922764681cb2b048f12876ec9fd2a2c4490f1c392"
+    },
+    {
+      "path": "1055/normalized/34-wmt_8k_20260219.txt",
+      "size_bytes": 6664,
+      "sha256": "ab15bbf42ca6b06ee688fea5a061a60cbfa6ec7b35abf2bef73fbd15c0c2ca01"
+    },
+    {
+      "path": "1055/normalized/35-wmt_q4fy26_earnings_call_transcript.txt",
+      "size_bytes": 105649,
+      "sha256": "5eead9657231855e2ccd677393c6afc01e0001f5083bc70bc6db23a2b619c9c6"
+    },
+    {
+      "path": "1055/normalized/36-wmt_earnings_presentation_fy26.txt",
+      "size_bytes": 60078,
+      "sha256": "7e2b5e23c19e092e660ee038296083917aca6b25b38ed96d738e6f7a9a46caa4"
+    },
+    {
+      "path": "1055/normalized/37-costco_10k_fy2025.txt",
+      "size_bytes": 265788,
+      "sha256": "6f96e51b366bc0c061a223a7a09ed4426e3c0c1fa596afe81aff4c3c477d48bc"
+    },
+    {
+      "path": "1055/normalized/38-wmt_quote_and_chart.txt",
+      "size_bytes": 41145,
+      "sha256": "79e71873c2c6131ff7df16372e8a9de6ab67b24e65f4f1b1da5b0d82fbcb4353"
+    },
+    {
+      "path": "1055/normalized/44-wmt_stooq_daily_quote.txt",
+      "size_bytes": 311,
+      "sha256": "ef94107ac213069bbc1ee43f340f1d3c8d2df01ae12bf1afa441dd1a6425f59d"
+    },
+    {
+      "path": "1374/20260418123728-070e5a66d2-private-credit-2026-outlook-snapshot.md",
+      "size_bytes": 433,
+      "sha256": "9d091cf4ba2d60b096ea47df936aecc9b626197e42bc6d626d5da1adda32a0d4"
+    },
+    {
+      "path": "1374/20260418123728-2e41b9de48-ares-q4-fy2025-8k-snapshot.md",
+      "size_bytes": 346,
+      "sha256": "03ce1140ac1f874254cffa90fd2e040e77b3d6d73f691ef4ea4ed5b1e33f17cd"
+    },
+    {
+      "path": "1374/20260418123728-3889aebc52-ares-q4-fy2025-presentation-snapshot.md",
+      "size_bytes": 345,
+      "sha256": "0b88c879b48d8bd9d5165e6e0d59431dfdb9400216d1df9e7423ce35359414d0"
+    },
+    {
+      "path": "1374/20260418123728-49bdb7d8a6-ares-q3-2025-10q-snapshot.md",
+      "size_bytes": 383,
+      "sha256": "e658eceb19d9b6148e270f13308201c98910e50a98293b6ef42486b2befc8705"
+    },
+    {
+      "path": "1374/20260418123728-70374f0fae-ares-market-data-snapshot.md",
+      "size_bytes": 269,
+      "sha256": "583b92de293ebd730de0bcb79cf4d1a6d0727d7a8654290bf0863628c3249ddc"
+    },
+    {
+      "path": "1374/20260418123728-759985a16b-ares-2025-proxy-snapshot.md",
+      "size_bytes": 281,
+      "sha256": "0141abef9fa0589debf258e74398c2bfe1359bf9e3fd32110c0cb0a5c2a4dcf9"
+    },
+    {
+      "path": "1374/20260418123728-84003cd19a-ares-sec-recent-filings-2026-04-18.md",
+      "size_bytes": 412,
+      "sha256": "f639364ca25b68e6dfc99a2eb9581d65bc175f03e361bf8d3ef16ff378a22fb6"
+    },
+    {
+      "path": "1374/20260418123728-9086110053-apollo-fy2025-10k-snapshot.md",
+      "size_bytes": 199,
+      "sha256": "e8934fa2441390cd3a270928c61959f115645dc0ca473ff1a2bf987a06f49b0a"
+    },
+    {
+      "path": "1374/20260418123728-ea8396d3cf-ares-fy2025-10k-snapshot.md",
+      "size_bytes": 455,
+      "sha256": "c63aa6edf610b29fcd4c23f5ac75aef59a0e030672ca0244f2a052114fe583a8"
+    },
+    {
+      "path": "1374/20260418125600-b7a69a20b3-ares-statistics-valuation-snapshot.md",
+      "size_bytes": 610,
+      "sha256": "229844185560cb7d73683c7edfa66f33269c07fa247f823176e2dbadcefeb6b0"
+    },
+    {
+      "path": "1374/normalized/45-ares-sec-recent-filings-2026-04-18.txt",
+      "size_bytes": 560,
+      "sha256": "14be0695a469349bbfc647d988a963c6a46bc6f3e7bb07c03a113e5ede3ce5b0"
+    },
+    {
+      "path": "1374/normalized/46-ares-fy2025-10k-snapshot.txt",
+      "size_bytes": 583,
+      "sha256": "6b677211dca96d65cf1c2c317ce4a84510ef2134e55d37922e8d54ce1c9f10b4"
+    },
+    {
+      "path": "1374/normalized/47-ares-q3-2025-10q-snapshot.txt",
+      "size_bytes": 513,
+      "sha256": "134e93994038017c26df882b237f673c5a50e7690fee0107cfe2104af410000c"
+    },
+    {
+      "path": "1374/normalized/48-ares-2025-proxy-snapshot.txt",
+      "size_bytes": 409,
+      "sha256": "88e76d4cf578b016f40b472c5dff22011cf130ec7426f30ee3fb4234651bc8a8"
+    },
+    {
+      "path": "1374/normalized/49-ares-q4-fy2025-8k-snapshot.txt",
+      "size_bytes": 478,
+      "sha256": "0171cd90ea147cd2140fa2ced188f006b7516db23fb81eb7f09f8e10e5e45616"
+    },
+    {
+      "path": "1374/normalized/50-ares-q4-fy2025-presentation-snapshot.txt",
+      "size_bytes": 497,
+      "sha256": "03d098ec2d9fae7bdb24cd47dcfe31c90cb64e2ae1f4fef61b4315da801db43c"
+    },
+    {
+      "path": "1374/normalized/51-apollo-fy2025-10k-snapshot.txt",
+      "size_bytes": 331,
+      "sha256": "b4743a2d6f8b1e57256f5fb49e8505ec9b5ddadc86b60cd097fa3d00e7b4ca06"
+    },
+    {
+      "path": "1374/normalized/52-ares-market-data-snapshot.txt",
+      "size_bytes": 399,
+      "sha256": "9ddd3076cd32ed5b2fe498a7d6496aa9589ff639cfea7a4eac59ee42c0fd3600"
+    },
+    {
+      "path": "1374/normalized/53-private-credit-2026-outlook-snapshot.txt",
+      "size_bytes": 585,
+      "sha256": "a6c7662dae3cfd3144e6bd226cc8ed026dc0759374a8c3b7d54706d8168ea9eb"
+    },
+    {
+      "path": "1374/normalized/54-ares-statistics-valuation-snapshot.txt",
+      "size_bytes": 758,
+      "sha256": "b73a81797827cfc4d2b5736e016a5c41f949ef78a072a964ac899725e552793a"
+    },
+    {
+      "path": "2313/20260418121951-35b376879a-39_leidos_proxy_2026.html",
+      "size_bytes": 4819,
+      "sha256": "ca8beb1099298055a011e75eaa1ffa22dcfc8d14d21e29f0fd7c2cb179a2da83"
+    },
+    {
+      "path": "2313/20260418121951-3e653ad644-40_saic_fy2026_results.html",
+      "size_bytes": 531,
+      "sha256": "77f6ac55a379fc7cb00ff9620140904349d1f0f39dce5f62c17df3768f23f109"
+    },
+    {
+      "path": "2313/20260418121951-462effda51-37_leidos_fy2025_results.html",
+      "size_bytes": 528,
+      "sha256": "e52804d76a3a91a5420196819feb9dbb6f414ade37a3f552a5ec47753b399e3a"
+    },
+    {
+      "path": "2313/20260418121951-a4fda2742e-36_leidos_fy2025_10k.html",
+      "size_bytes": 447,
+      "sha256": "3889471c4bbf7561d6a2d91e30d38fc584d01b422bc2ab2bff7bf8ec27320992"
+    },
+    {
+      "path": "2313/20260418121951-c968765f7b-38_leidos_entrust_8k.html",
+      "size_bytes": 397,
+      "sha256": "f31b783fbe09b17358fb66dad5f17fac19c6288c71113d3f39888039920620e5"
+    },
+    {
+      "path": "2313/20260418121951-de5a840ecd-41_caci_fy2025_annual_report.html",
+      "size_bytes": 4816,
+      "sha256": "405cbb315377e1ccbc00d3fe83aa9a74068a9f5f5132fae4eb2f50785e713e0e"
+    },
+    {
+      "path": "2313/20260418122328-49d9b54580-17_ldos_statistics.html",
+      "size_bytes": 112154,
+      "sha256": "6b55aa8aedbbed5e87a0032a44d0624d4b303f4f431b1f3c9a534d84ead0c058"
+    },
+    {
+      "path": "2313/20260418123125-4ac37bc4c1-leidos_2026_proxy_sec.htm",
+      "size_bytes": 2795015,
+      "sha256": "e2a186ab726904a8c625a37342a79b50be2ede3556e243e5a62d4346e81733aa"
+    },
+    {
+      "path": "2313/20260418123125-8affdef512-leidos_q3_fy2025_10q_sec.htm",
+      "size_bytes": 1712230,
+      "sha256": "c348e4230600784fc5207ea8c7e5fb0bee1448c9bd8a1d8a23fbbf8b6b4284ad"
+    },
+    {
+      "path": "2313/20260418123125-d8ed809d17-leidos_fy2025_10k_sec.htm",
+      "size_bytes": 2735978,
+      "sha256": "dd29d99087a59e316269fe23480d0530e1fe8ef0da1e2969671053ececc1620e"
+    },
+    {
+      "path": "2313/20260418123126-7b89a4f2c4-leidos_fy2025_results_ex991_sec.htm",
+      "size_bytes": 898518,
+      "sha256": "93e9207ab698ec7819e383b8e3120185e7838275d18f6cb4ab027e73d55b7419"
+    },
+    {
+      "path": "2313/20260418123126-e5538e814a-leidos_entrust_8k_sec.htm",
+      "size_bytes": 26634,
+      "sha256": "6ff4a4440db9d3eda63b5409959542553cc5bb14b4876862983a77a63fb6b5d7"
+    },
+    {
+      "path": "2313/normalized/24-36_leidos_fy2025_10k.txt",
+      "size_bytes": 388,
+      "sha256": "acb803e243729047a3336815aae0431b0759122e1260886e3c96af5090fda775"
+    },
+    {
+      "path": "2313/normalized/25-37_leidos_fy2025_results.txt",
+      "size_bytes": 445,
+      "sha256": "60cde3e49cc1deb7916d071401b4168646c87513d74f36380e0bfc28f31efbdb"
+    },
+    {
+      "path": "2313/normalized/26-38_leidos_entrust_8k.txt",
+      "size_bytes": 354,
+      "sha256": "8dec2bd4563bdfbd2bfaf54d003232303b2833f4eaade0e5e55b86681ca466f2"
+    },
+    {
+      "path": "2313/normalized/27-39_leidos_proxy_2026.txt",
+      "size_bytes": 4178,
+      "sha256": "d5af941202f7cb093df09ffd116e2b044e635c49a1653dc07b07e94b5e29dd00"
+    },
+    {
+      "path": "2313/normalized/28-40_saic_fy2026_results.txt",
+      "size_bytes": 440,
+      "sha256": "4b012e122a2b57342807f86cc546f8d099e0cb32bd276f1b22d0423f28a1bd1b"
+    },
+    {
+      "path": "2313/normalized/29-41_caci_fy2025_annual_report.txt",
+      "size_bytes": 4410,
+      "sha256": "9eac446e82af5c6d0cea86efc0cfeeb26f6a4cf470eb9a352aeb07fcea69eb55"
+    },
+    {
+      "path": "2313/normalized/30-17_ldos_statistics.txt",
+      "size_bytes": 20961,
+      "sha256": "07d3beb26f77bb3acfee6686447bbf3c89a6240e488da02be3c2af6547fcaac4"
+    },
+    {
+      "path": "2313/normalized/39-leidos_fy2025_10k_sec.txt",
+      "size_bytes": 544115,
+      "sha256": "bc622fab73999b08ab4ca3221a5ccc2582209d531e9311267064c575598325b6"
+    },
+    {
+      "path": "2313/normalized/40-leidos_q3_fy2025_10q_sec.txt",
+      "size_bytes": 187155,
+      "sha256": "c3b70a449f009a635eb7f65e9fd2dff3f4a53edacefa00a18272e471655012ae"
+    },
+    {
+      "path": "2313/normalized/41-leidos_2026_proxy_sec.txt",
+      "size_bytes": 576908,
+      "sha256": "c5bd2766e7da5d1ac1ba4a0b4baaff7a5c38d125fae2bb5b634c7c2c0e202423"
+    },
+    {
+      "path": "2313/normalized/42-leidos_fy2025_results_ex991_sec.txt",
+      "size_bytes": 85832,
+      "sha256": "c778353db47539221b48c5a9039fd2f4c51ae8c9dee8ca16456fbbd0acd4585b"
+    },
+    {
+      "path": "2313/normalized/43-leidos_entrust_8k_sec.txt",
+      "size_bytes": 5280,
+      "sha256": "48f917e4d4549dd31dd291ec68f8ba4d8f28eb8b713d5ce450f53ccf5f34d97f"
+    },
+    {
+      "path": "2521/20260418110937-65-RCAT_S1_FY2025_10K.html",
+      "size_bytes": 4819,
+      "sha256": "ce21c17013d6c275c9de063e14c441cb2b3fa3a04753a7975ddc3b19de98132f"
+    },
+    {
+      "path": "2521/20260418110937-66-RCAT_S2_FY2025_10Q.html",
+      "size_bytes": 1159977,
+      "sha256": "30171bfc429a08584c96ba8b9c5cd46e2d0701eca16d37bfaea4a250006f253e"
+    },
+    {
+      "path": "2521/20260418110937-67-RCAT_S3_2025_DEF14A.html",
+      "size_bytes": 44005,
+      "sha256": "ef3c0cb1b9eb4a00e9b9f0f0ae0fe330c90644fec65b0da4639544d18349c0b6"
+    },
+    {
+      "path": "2521/20260418110937-68-RCAT_S4_Management_commentary.html",
+      "size_bytes": 4819,
+      "sha256": "6ae26da6d87009c9c441c271496cbbc776091711fe42458108e4efa4914c36c2"
+    },
+    {
+      "path": "2521/20260418110937-69-RCAT_S5_Investor_Presentation.pdf",
+      "size_bytes": 3994076,
+      "sha256": "bc0f7773b4e09273f93cecbd05f75b0b17ef4568b55d47e24f2cfb9acbb2d3ac"
+    },
+    {
+      "path": "2521/20260418110937-70-RCAT_S6_AeroVironment_10K.html",
+      "size_bytes": 4819,
+      "sha256": "6c02f1962cef8b23e67af29e9d2b13db37c50bfa7704852a9ea23ba45799ce68"
+    },
+    {
+      "path": "2521/20260418110937-71-RCAT_S7_Market_Capitalization.html",
+      "size_bytes": 81087,
+      "sha256": "136715a7b7545e08414e94234d4fc300d138a793be8226a941b0fd8c8d18b635"
+    },
+    {
+      "path": "2521/20260418110937-72-RCAT_S8_10Q_debt_and_liquidity.html",
+      "size_bytes": 1159977,
+      "sha256": "30171bfc429a08584c96ba8b9c5cd46e2d0701eca16d37bfaea4a250006f253e"
+    },
+    {
+      "path": "2521/20260418110937-73-RCAT_S9_unmanned_systems_market_report.html",
+      "size_bytes": 226435,
+      "sha256": "ac7f0dcdb57ee085b1b04c7fb0aea5aff38e5d0d1f1ddefd104a8b834c191c63"
+    },
+    {
+      "path": "2902/20260417114320-e13707093f-NIKE_Screening_April_2026.md",
+      "size_bytes": 47617,
+      "sha256": "66988f64cf8a0c2d30c91d76019d0908d470505653a3fcf1c321389a77d273e7"
+    },
+    {
+      "path": "2902/20260417133226-2bdf99ce0d-BCI-IngClinica.pdf",
+      "size_bytes": 37992,
+      "sha256": "401469385ae1b1976c26f80157cde211f92912af429067e38ce58f34c94bcc73"
+    },
+    {
+      "path": "2902/20260417133233-9a436c653d-Grupos_trabajos_2025_2BB_presentaciones.pdf",
+      "size_bytes": 166432,
+      "sha256": "6bd4a636574183b5dc0c2776979c221c8844e54377e7f26088ab00f8192cdc7a"
+    },
+    {
+      "path": "2902/20260417133253-3d1fa6ab1d-Grupos_trabajos_2025_2AB_presentaciones.pdf",
+      "size_bytes": 185226,
+      "sha256": "e3d3f79193c1c0c137fc9fd8edf8eb47ab930242a9c7e0d05fb015eed625acbd"
+    },
+    {
+      "path": "2902/20260417190905-e515b556c2-NKE_nasdaq_snapshot_2026-04-17.json",
+      "size_bytes": 389,
+      "sha256": "7180472438bc09990258f47017ec86fac9dcb84d52eaea98f62aee20fefcf3e2"
+    },
+    {
+      "path": "2902/normalized/1-20260417114320-e13707093f-NIKE_Screening_April_2026.txt",
+      "size_bytes": 47747,
+      "sha256": "845a67d2a0de369d6631b7f31b76133016bae79543bfb681e5feb63760cb848f"
+    },
+    {
+      "path": "2902/normalized/2-20260417133226-2bdf99ce0d-BCI-IngClinica.txt",
+      "size_bytes": 2546,
+      "sha256": "81647e0d99bd10ae7bade3e34da0eb65e1bf7c82aa2bd83da1dafb95b545f475"
+    },
+    {
+      "path": "2902/normalized/3-20260417133233-9a436c653d-Grupos_trabajos_2025_2BB_presentaciones.txt",
+      "size_bytes": 4336,
+      "sha256": "1626cb3c176bce6d4dd5b49081edd9747ef5911ab637288d15cd296ae66a3a00"
+    },
+    {
+      "path": "2902/normalized/4-20260417133253-3d1fa6ab1d-Grupos_trabajos_2025_2AB_presentaciones.txt",
+      "size_bytes": 6628,
+      "sha256": "6814f29f8e63c0ae0606a51bfec316c2de030a653df37efe0b8235e20dd16fbd"
+    },
+    {
+      "path": "2902/normalized/5-20260417190905-e515b556c2-NKE_nasdaq_snapshot_2026-04-17.txt",
+      "size_bytes": 537,
+      "sha256": "e707c72fdc6375d4eb7e3fc3d96e7dbcc5e718558a642cb0e382850a867d0186"
+    },
+    {
+      "path": "2903/20260419124301-5ca723eb86-oecd_mexico_education_2025_snapshot.md",
+      "size_bytes": 954,
+      "sha256": "74f1426b89a28faefd42fc71e3512f9577db5d9c34909efc91cbbb4df28e17d2"
+    },
+    {
+      "path": "2903/20260419124301-70db28a53a-laur_fy2025_earnings_presentation_snapshot.md",
+      "size_bytes": 959,
+      "sha256": "ace077e5f94fcaea0b347a3d690d35ba2605eb328739133ba587932da4f4bbae"
+    },
+    {
+      "path": "2903/20260419124301-7741d50174-atge_fy2025_10k_peer_snapshot.md",
+      "size_bytes": 898,
+      "sha256": "9a613c663bbd9e1e432835a631be92581c26e8db0dca4b2f45abca5e26599781"
+    },
+    {
+      "path": "2903/20260419124301-867a410373-laur_fy2025_10k_snapshot.md",
+      "size_bytes": 1539,
+      "sha256": "00e66963326208af6cf7408e14555c903f660e166a6507b51dd8e765944b756d"
+    },
+    {
+      "path": "2903/20260419124301-c05b5d2f10-laur_q4fy2025_earnings_release_snapshot.md",
+      "size_bytes": 1146,
+      "sha256": "4925286f474d9213c63c615540a187dd32c5e01d880cee1659784239bf5581c7"
+    },
+    {
+      "path": "2903/20260419124301-d09e432ecf-laur_2026_proxy_snapshot.md",
+      "size_bytes": 1485,
+      "sha256": "88a436db587d7bf4c037b42f37cd0e458cc38e789e1d0d39f74e5212f6cb3fdb"
+    },
+    {
+      "path": "2903/20260419124301-eef0ec0b47-laur_market_data_snapshot_2026-04-19.md",
+      "size_bytes": 657,
+      "sha256": "2cb1a4adf8fc4990a8f0a34b84626c070d6f6aee7fafa9c7a549ad14a4c19b0a"
+    },
+    {
+      "path": "2903/20260419124340-09a6b9c756-laur_fy2025_10k_snapshot.md",
+      "size_bytes": 1622,
+      "sha256": "2ddf6fd5637cfac1961842bedc80a35fd9e4d9ac85ac5475070edc134a429423"
+    },
+    {
+      "path": "2903/20260419124340-8a5e4df44a-laur_q3_2025_10q_snapshot.md",
+      "size_bytes": 1247,
+      "sha256": "63569bedd139fd3b90df3d037673332b580bee007f5ad5a669c30309c2d457fe"
+    },
+    {
+      "path": "2903/20260419131729-fc07c4e240-laur_sec_companyfacts_quant_snapshot.md",
+      "size_bytes": 2726,
+      "sha256": "cbd422624ada13c1b2074d4fd032790e3805a3a884ff39e090512adf9fd0087f"
+    },
+    {
+      "path": "2903/20260419133717-3fec2ca779-laur_peru_regulatory_snapshot.md",
+      "size_bytes": 2034,
+      "sha256": "97dd1ddca3986b149000fe1d85f7ee74561ebacbc7a8ca9cd71fc917ee8ec9fc"
+    },
+    {
+      "path": "2903/20260419133717-76145df06f-laur_mexico_rvoe_snapshot.md",
+      "size_bytes": 1495,
+      "sha256": "b78f9afcd434c833a778b33e44fa9b5774b14771f5cd20d3052481dd246e3b80"
+    },
+    {
+      "path": "2903/20260419133717-89dcd8feb2-laur_qs_profiles_snapshot.md",
+      "size_bytes": 1928,
+      "sha256": "eb739de73d44143ee5960746fbbd87f17a068e838bdf6ee567c4e8c7bdab6f95"
+    },
+    {
+      "path": "2903/20260419142736-40a6d7693b-laur_historical_capital_allocation_snapshot.md",
+      "size_bytes": 4492,
+      "sha256": "f4a13c563dbd40739efbbee3c40f5a0cdde4dbb54b005c5c4d1a0312e4316381"
+    },
+    {
+      "path": "2903/20260419145325-8817930199-laur_financial_underwriting_snapshot_2021_2025.md",
+      "size_bytes": 5534,
+      "sha256": "2eaf74fa53ffda9b09c766a6349967460dff7f83723c539f5cef7dfc875750ec"
+    },
+    {
+      "path": "2903/20260419173932-ba5e941c0a-laur_valuation_snapshot_2026_04_19.md",
+      "size_bytes": 3574,
+      "sha256": "4527d0b8d1e3499d47ae927bc82122fd87f9e278fad57d18e5b621472b5869c3"
+    },
+    {
+      "path": "2903/normalized/71-laur_fy2025_10k_snapshot.txt",
+      "size_bytes": 1667,
+      "sha256": "755e7f1f82e43f3b6ca8e4921751dcf2820992b2232d30cb2f4fd269a9a99f14"
+    },
+    {
+      "path": "2903/normalized/72-laur_2026_proxy_snapshot.txt",
+      "size_bytes": 1613,
+      "sha256": "bace375e40bc75cd443fb7c70c156d6a06d7fd63d92488244115750ee6529f19"
+    },
+    {
+      "path": "2903/normalized/73-laur_q4fy2025_earnings_release_snapshot.txt",
+      "size_bytes": 1304,
+      "sha256": "23cdd21586bbe65bbe7ab4977ca60967c6668afe5d1176117789883199251faa"
+    },
+    {
+      "path": "2903/normalized/74-laur_fy2025_earnings_presentation_snapshot.txt",
+      "size_bytes": 1123,
+      "sha256": "60aaf6835f92e95d34f14a880f11a907eccfc1192d15434b3ed8f93b59930e6c"
+    },
+    {
+      "path": "2903/normalized/75-atge_fy2025_10k_peer_snapshot.txt",
+      "size_bytes": 1036,
+      "sha256": "0b489e4b1ff1d582fd68c441f2cd5cca92937f68d2ca0d61b8f0f2c041b2b440"
+    },
+    {
+      "path": "2903/normalized/76-oecd_mexico_education_2025_snapshot.txt",
+      "size_bytes": 1104,
+      "sha256": "a5b274303c38b530b7026eecca22268c21022d41f44ecbd4092c39190cb11d00"
+    },
+    {
+      "path": "2903/normalized/77-laur_market_data_snapshot_2026-04-19.txt",
+      "size_bytes": 809,
+      "sha256": "3e6920c9283414044a49e054ab1d954bd9806c47737a08628aa64108b2efce3f"
+    },
+    {
+      "path": "2903/normalized/78-laur_q3_2025_10q_snapshot.txt",
+      "size_bytes": 1377,
+      "sha256": "b13ea48cd98e8f98571c783c18e191ece9fb17a65f496f91c1ba32ee1e728ac4"
+    },
+    {
+      "path": "2903/normalized/79-laur_fy2025_10k_snapshot.txt",
+      "size_bytes": 1750,
+      "sha256": "975cb6650b3c0dc94cab0f28c23897c0294fb94e09ccb2f049f43e93f12ed216"
+    },
+    {
+      "path": "2903/normalized/88-laur_sec_companyfacts_quant_snapshot.txt",
+      "size_bytes": 2878,
+      "sha256": "1e02fdff3dc296ebceb296b45795582abbf222ee2fa8212b82dde4d73a394bcb"
+    },
+    {
+      "path": "2903/normalized/90-laur_mexico_rvoe_snapshot.txt",
+      "size_bytes": 1625,
+      "sha256": "1c14ab8cc8a9c4e37cbb3b2c49747892024bbf212c248aceb37a88bbeaa63163"
+    },
+    {
+      "path": "2903/normalized/91-laur_peru_regulatory_snapshot.txt",
+      "size_bytes": 2172,
+      "sha256": "9d5c42b5e61904c66a0d0cbc82a1798dc30a09916c705ab2b8b75e05fca9ae03"
+    },
+    {
+      "path": "2903/normalized/92-laur_qs_profiles_snapshot.txt",
+      "size_bytes": 2058,
+      "sha256": "782355fedbe06433316f20864af047c5a79a7d770b80cf5495985d612e9d73bd"
+    },
+    {
+      "path": "2903/normalized/93-laur_historical_capital_allocation_snapshot.txt",
+      "size_bytes": 4657,
+      "sha256": "76fcb113ebef54991b1f383da869e325ce28903f0815d128ae0e7a7009455054"
+    },
+    {
+      "path": "2903/normalized/94-laur_financial_underwriting_snapshot_2021_2025.txt",
+      "size_bytes": 5706,
+      "sha256": "35d758b3e3408e3a3b0a38c61bc4fec2b068e5d249b3cbbf1a81faa7a77272f4"
+    },
+    {
+      "path": "2903/normalized/95-laur_valuation_snapshot_2026_04_19.txt",
+      "size_bytes": 3722,
+      "sha256": "3d73f692c7810b6e56925bd8c50092db7cca781d597dbf3e0406f7370e667e31"
+    },
+    {
+      "path": "2904/20260419124430-90cc440bee-01-linc-fy2025-10k-snapshot.md",
+      "size_bytes": 2012,
+      "sha256": "5e389c9a03b1331531aefbf9c8ac28b8bf420800cbd31a13368066c02ce70fab"
+    },
+    {
+      "path": "2904/20260419124452-11fc8f1d2c-03-linc-2026-def14a-snapshot.md",
+      "size_bytes": 1513,
+      "sha256": "9bc6845c5f5b11197d17d5f72a92b72201e961c2e384b1407078cb6fa4df1059"
+    },
+    {
+      "path": "2904/20260419124452-95c7670e06-02-linc-q3-2025-10q-snapshot.md",
+      "size_bytes": 1308,
+      "sha256": "0a6e959e9e3c8361030ce16be907a9e58a6fb8d8ef954b4b14b558a2fad26ffa"
+    },
+    {
+      "path": "2904/20260419124452-aebcf1a4a1-04-linc-fy2025-results-ex99-1-snapshot.md",
+      "size_bytes": 1751,
+      "sha256": "212915e52b15237e03132e2f6cecbc399fdd92ae4dc9bd106ce7455f362afc86"
+    },
+    {
+      "path": "2904/20260419124452-ec263a3a80-05-linc-investor-day-2026-presentation-snapshot.md",
+      "size_bytes": 1490,
+      "sha256": "4c1cd6b343c8c34dc6f45f449c4ee209442c656457265daa2127bba40a5ccac6"
+    },
+    {
+      "path": "2904/20260419124502-2ab414e14c-06-uti-fy2025-10k-peer-snapshot.md",
+      "size_bytes": 1222,
+      "sha256": "dc663eb6268df0229ddc621afa6c193ba32f6170804e8b08d9a4633a366f9e68"
+    },
+    {
+      "path": "2904/20260419124502-9b4029597d-07-linc-market-snapshot-stockanalysis.md",
+      "size_bytes": 1375,
+      "sha256": "f7a60f55b05b8308c961bf2383a94a4404f17bb930977e0688eb6039dc56f0cd"
+    },
+    {
+      "path": "2904/20260419124502-bb3f300e1d-08-bls-electricians-outlook-snapshot.md",
+      "size_bytes": 1224,
+      "sha256": "f2e90b0160e55d8a32b6bf5739ab473be0c49280f3fee35c71637c65097562cb"
+    },
+    {
+      "path": "2904/20260419132154-afe75f36a7-09-linc-credit-facility-8k-snapshot.md",
+      "size_bytes": 1647,
+      "sha256": "b06c20495da8efc6e2ac23fa53faa5f7c65bd01b75e5e5cf04250cac1e665a4b"
+    },
+    {
+      "path": "2904/normalized/80-01-linc-fy2025-10k-snapshot.txt",
+      "size_bytes": 2143,
+      "sha256": "cefbe0fa24b22b74cc9bec3399074b2553f6890505cda6e63c0eb18f37ad1977"
+    },
+    {
+      "path": "2904/normalized/81-02-linc-q3-2025-10q-snapshot.txt",
+      "size_bytes": 1441,
+      "sha256": "7dcefe469ae42f45729b786689edd7963356c399660947613fff0693a8d360a6"
+    },
+    {
+      "path": "2904/normalized/82-03-linc-2026-def14a-snapshot.txt",
+      "size_bytes": 1646,
+      "sha256": "f786efd58a52da63ee3a460bef1e214192288a10e1de61f247b8f80288460636"
+    },
+    {
+      "path": "2904/normalized/83-04-linc-fy2025-results-ex99-1-snapshot.txt",
+      "size_bytes": 1904,
+      "sha256": "be64d32ebf7ebb6b74a0bc4232e0223e74d20450377e76530f643a219781b222"
+    },
+    {
+      "path": "2904/normalized/84-05-linc-investor-day-2026-presentation-snapshot.txt",
+      "size_bytes": 1661,
+      "sha256": "9d08b51a7f85a2d95a5e54dd494df87606d65a1b160488b6e569ba8853573bfc"
+    },
+    {
+      "path": "2904/normalized/85-06-uti-fy2025-10k-peer-snapshot.txt",
+      "size_bytes": 1361,
+      "sha256": "7e2b0e1b99704d2a9e39b817043d935699f13810b54356071f696d09b8bcac76"
+    },
+    {
+      "path": "2904/normalized/86-07-linc-market-snapshot-stockanalysis.txt",
+      "size_bytes": 1526,
+      "sha256": "737f759d6a65a85bd1a53761ecf3ecf77f0a4b10120d68ad841e1409003c2a88"
+    },
+    {
+      "path": "2904/normalized/87-08-bls-electricians-outlook-snapshot.txt",
+      "size_bytes": 1373,
+      "sha256": "3a09adb5bb68fa4de857cdfec663f0a08e4238e0be1f0d1cdc9ce635e23b2585"
+    },
+    {
+      "path": "2904/normalized/89-09-linc-credit-facility-8k-snapshot.txt",
+      "size_bytes": 1794,
+      "sha256": "c4efbacbeb66adca4aee55b8aa9f04204e611d475c84ba0052a8f733a70ca825"
+    },
+    {
+      "path": "306/.DS_Store",
+      "size_bytes": 6148,
+      "sha256": "86d3a72e43bfda5963b1694f822fcfa2de79bb9daba63f769d9dc24fe323bd41"
+    },
+    {
+      "path": "306/20260418211143-3aa0a74c2e-yahoo-finance-bfly-q4-results.html",
+      "size_bytes": 1501759,
+      "sha256": "b672bc56cd3073da978e48f2f704e301ef3e6070a6901eb386ad2c9e715c8b37"
+    },
+    {
+      "path": "306/20260418211143-414a39e1f4-bfly-2025-q3-10q-sec.html",
+      "size_bytes": 1068029,
+      "sha256": "9246513cb104b535809d2273db50a17f9eb3bf6a82b25c0ff796f3b88a7d3cbb"
+    },
+    {
+      "path": "306/20260418211143-744cd241fe-bfly-2025-def14a-sec.html",
+      "size_bytes": 1062543,
+      "sha256": "2cc3686abcff84b59ec6a2b0302d895446cb2658e62822d20e20e9d305db109e"
+    },
+    {
+      "path": "306/20260418211143-94fea39fe2-bfly-jpm-2026-investor-presentation.pdf",
+      "size_bytes": 2423066,
+      "sha256": "f182803337b8a999efce7f1eb918f94686b0a1a3662bca81c4a42b081cb9472a"
+    },
+    {
+      "path": "306/20260418211143-c6072e23db-stockanalysis-bfly-company.html",
+      "size_bytes": 69055,
+      "sha256": "ccd60e5c2c8d8b4cd7c15de04c8b08d63b07fead739b189fbb03bee1c17d01d4"
+    },
+    {
+      "path": "306/20260418211143-e131cf7ca7-bfly-2025-10k-sec.html",
+      "size_bytes": 1944276,
+      "sha256": "77d78e0d37385f922434ddd4f8420670e69725e74bba02defde80410bc06f0ab"
+    },
+    {
+      "path": "306/20260418211143-f49799a79b-ge-vscan-air-peer-source.html",
+      "size_bytes": 541366,
+      "sha256": "81f1d6c86bdf2b3f3250e9d0405fdf26d86a475e29706f736d2f311a5da9db1f"
+    },
+    {
+      "path": "306/20260418211143-f75c53b289-bfly-q4-2025-results-ex99-1-sec.html",
+      "size_bytes": 237625,
+      "sha256": "7f88706a148ee218b2f8a6b2869f52859551f7ce2caaf215abc71412236aa163"
+    },
+    {
+      "path": "306/normalized/63-bfly-2025-10k-sec.txt",
+      "size_bytes": 448211,
+      "sha256": "0c416cc93af3e99793a7d39e5182fe4138b4fd8bac5843d96cca0e4df36cf5e3"
+    },
+    {
+      "path": "306/normalized/64-bfly-2025-q3-10q-sec.txt",
+      "size_bytes": 144659,
+      "sha256": "5412dda81c1405bd1834259cbb1003a43144f009973ad1113e73543226f9454d"
+    },
+    {
+      "path": "306/normalized/65-bfly-2025-def14a-sec.txt",
+      "size_bytes": 205384,
+      "sha256": "9a164710b5ae4d54a153324c547bcec2617c958ccbb35caf2dddf329eab91d47"
+    },
+    {
+      "path": "306/normalized/66-bfly-q4-2025-results-ex99-1-sec.txt",
+      "size_bytes": 33174,
+      "sha256": "83fab06e677bd430f8d399da8fe4cb64695e1a4c0c7028c5a4a12a3504bef925"
+    },
+    {
+      "path": "306/normalized/67-bfly-jpm-2026-investor-presentation.txt",
+      "size_bytes": 27211,
+      "sha256": "4dee1021423e0aedbf385f4cfc0af68967023d0cc746a4ab3700307f97beedd3"
+    },
+    {
+      "path": "306/normalized/68-ge-vscan-air-peer-source.txt",
+      "size_bytes": 72730,
+      "sha256": "f5c26c5b4b6e2210faa5ba7388902e9251090ae723b0794f6d7acc3205686246"
+    },
+    {
+      "path": "306/normalized/69-stockanalysis-bfly-company.txt",
+      "size_bytes": 11632,
+      "sha256": "1f6d0f4a438c63c35088cb8b3282c2c44719d266b6156ae7f2ee0f8aa771b401"
+    },
+    {
+      "path": "306/normalized/70-yahoo-finance-bfly-q4-results.txt",
+      "size_bytes": 928079,
+      "sha256": "9706d370d186415baa90c076b169aeabe2d39467b1e61aaed819d4f8b34306ef"
+    },
+    {
+      "path": "344/.DS_Store",
+      "size_bytes": 6148,
+      "sha256": "67c5a07a5435c3099a22a520dc6027b85fb8cedf5d7b2077ec8dd51bff65a5d5"
+    },
+    {
+      "path": "344/20260418083253-91e319c16a-URGN_S1_FY2025_10K_notes.md",
+      "size_bytes": 1007,
+      "sha256": "226f8242173117ff91de422145319ff3f26e0b50a621934db81349baef20eff1"
+    },
+    {
+      "path": "344/20260418083636-1069a8e413-URGN_S9_BCAN_2026_survey_notes.md",
+      "size_bytes": 770,
+      "sha256": "9a29c7ef8b27c48e2d09604772a50350626b1eaa918c9ecc5e07930c5ecb7289"
+    },
+    {
+      "path": "344/20260418083636-580f278db6-URGN_S6_CGON_FY2025_10K_notes.md",
+      "size_bytes": 753,
+      "sha256": "a3c53ce589768b55a8007f5c9161043c178fe978ff4a61faf335e246e88ccb17"
+    },
+    {
+      "path": "344/20260418083636-7bba5a41db-URGN_S7_market_data_notes.md",
+      "size_bytes": 588,
+      "sha256": "ce2a15428eecf503c38e72f7ba49b534f244a2929fd4b6261f790859dea28e44"
+    },
+    {
+      "path": "344/20260418083636-7e5aa30028-URGN_S2_Q3_2025_10Q_notes.md",
+      "size_bytes": 694,
+      "sha256": "02beb158536f9c4e4a967374b45c65771ff99859078bbb46e87f0355fb4fc6a3"
+    },
+    {
+      "path": "344/20260418083636-8e34ae01bd-URGN_S4_Q4_2025_earnings_notes.md",
+      "size_bytes": 814,
+      "sha256": "995ad017b457ff958975e4f5af3dd77603b6f117ec8816b311cc435ebc46aba9"
+    },
+    {
+      "path": "344/20260418083636-b49f6c2676-URGN_S8_March_2026_8K_debt_notes.md",
+      "size_bytes": 742,
+      "sha256": "43ad74f341986572afe686e3779b3ef905662c5ca13e80876e6a385b352d73a7"
+    },
+    {
+      "path": "344/20260418083636-c9a6f1da8e-URGN_S3_2025_proxy_notes.md",
+      "size_bytes": 731,
+      "sha256": "a8b5f5017e17e6312bc7ef9f9e1eeb071d5a19525d11c690d96485044247806f"
+    },
+    {
+      "path": "344/20260418083636-fe386dfb94-URGN_S5_March_2026_corporate_presentation_notes.md",
+      "size_bytes": 805,
+      "sha256": "331ceb088a36dab9257ea59ba735d9b01b6aff26441d7ff8df9f342f00db2376"
+    },
+    {
+      "path": "344/normalized/10-URGN_S4_Q4_2025_earnings_notes.txt",
+      "size_bytes": 954,
+      "sha256": "b1f7be7be27831aa2c9d45038efbec1993aab95a0a8cf3146cb72e258428f339"
+    },
+    {
+      "path": "344/normalized/11-URGN_S5_March_2026_corporate_presentation_notes.txt",
+      "size_bytes": 979,
+      "sha256": "061410fb8459a7a7bbdb2a5206089b6cfca1497855b7519eea1b46085fcb78b2"
+    },
+    {
+      "path": "344/normalized/12-URGN_S6_CGON_FY2025_10K_notes.txt",
+      "size_bytes": 891,
+      "sha256": "2d8abf897feabc06ed4c0350dc870f669b3b363a248a9d082df5c4abe6aa0ce2"
+    },
+    {
+      "path": "344/normalized/13-URGN_S7_market_data_notes.txt",
+      "size_bytes": 718,
+      "sha256": "8b477ae2cbc93467ee9db22269580b94965b6ce01114807e151ce589208b517d"
+    },
+    {
+      "path": "344/normalized/14-URGN_S8_March_2026_8K_debt_notes.txt",
+      "size_bytes": 886,
+      "sha256": "103ec15a40daa7221bd9c9c73eb1a685813b5aacc0024745952c68bbd44af19e"
+    },
+    {
+      "path": "344/normalized/15-URGN_S9_BCAN_2026_survey_notes.txt",
+      "size_bytes": 910,
+      "sha256": "f723b38b00ae4c0640fecd599d8e8e9c68f0ff5561036e5061cbb6276611e046"
+    },
+    {
+      "path": "344/normalized/7-URGN_S1_FY2025_10K_notes.txt",
+      "size_bytes": 1135,
+      "sha256": "1e4164c5b4dc42ee1007ac801dc8370286e55412922f3f443f55e8a03d3d2743"
+    },
+    {
+      "path": "344/normalized/8-URGN_S2_Q3_2025_10Q_notes.txt",
+      "size_bytes": 824,
+      "sha256": "6a61512c888932e6c99df2b7285a00afea5ec320be84c68a22df665bf313f796"
+    },
+    {
+      "path": "344/normalized/9-URGN_S3_2025_proxy_notes.txt",
+      "size_bytes": 859,
+      "sha256": "f13332daf270506bb5c70be4ca152bf86cd8470fc456f76d6bd5562e7f4e9daf"
+    },
+    {
+      "path": "517/20260418201532-aa6c719af7-rxst-2025-10k-extract.txt",
+      "size_bytes": 1764,
+      "sha256": "9f7595fb3c51a0bcbbef0f6b3064c7b74cc2ed3f810c61e0d339a42539e159ac"
+    },
+    {
+      "path": "517/20260418201818-5c91ec4623-rxst-2025-q3-10q-extract.txt",
+      "size_bytes": 1125,
+      "sha256": "297a76ad0e902ce7fdc9bb4cc7a7e5fcfed3d22db869d061ec51bc535b98686c"
+    },
+    {
+      "path": "517/20260418201818-5d36107e5f-rxst-investor-presentation-extract.txt",
+      "size_bytes": 1154,
+      "sha256": "45dbdbcd8f2215a3baf9212cdf1452d6d5f5c9c88221f1f51d9f6af76f429b71"
+    },
+    {
+      "path": "517/20260418201818-637086e3f5-premium-cataract-market-2025-extract.txt",
+      "size_bytes": 995,
+      "sha256": "e9625684d2656412684ecfbe5670f750e18039805cd451284e03a65a0ceccd9f"
+    },
+    {
+      "path": "517/20260418201818-8e95158d60-rxst-2025-proxy-extract.txt",
+      "size_bytes": 1248,
+      "sha256": "c8b9eecd2945b78f479a7584fe752ce8787768435db4b24063946e77afcba839"
+    },
+    {
+      "path": "517/20260418201818-a68dee1034-staa-2025-10k-extract.txt",
+      "size_bytes": 1248,
+      "sha256": "71cc2948ee178816af0d079e83e7c4d075a89c8ff0905e352ad9a361e971e5be"
+    },
+    {
+      "path": "517/20260418201818-afb02d04f9-rxst-price-statistics-extract.txt",
+      "size_bytes": 940,
+      "sha256": "e02c946bb65ced626acc28275e08e58fb06a1d0acad2f49efaa6ef44e1d40e74"
+    },
+    {
+      "path": "517/20260418201818-f975f5a595-rxst-2026-q4-results-extract.txt",
+      "size_bytes": 1116,
+      "sha256": "46d1849055ac7c5a06561cecd32a3501f507c7e0283c8428958f2a5a3ac768e9"
+    },
+    {
+      "path": "517/normalized/55-rxst-2025-10k-extract.txt",
+      "size_bytes": 1885,
+      "sha256": "ced26f31b198738a5795982b4fca9ef763abea03e97648848ebf74f701541e7c"
+    },
+    {
+      "path": "517/normalized/56-rxst-2025-q3-10q-extract.txt",
+      "size_bytes": 1252,
+      "sha256": "05997432e6b45c721adbd5c75e8e1cb2c019bd7420a6b166e759f57e4bfac039"
+    },
+    {
+      "path": "517/normalized/57-rxst-2025-proxy-extract.txt",
+      "size_bytes": 1373,
+      "sha256": "770626f5b07a46ea3d9c17a48bab2990873c89c1aaa1256b678a6bc535c6440d"
+    },
+    {
+      "path": "517/normalized/58-rxst-2026-q4-results-extract.txt",
+      "size_bytes": 1251,
+      "sha256": "0cba8df9fa767bc38a8851fe178063ce341534e322628c2b17a8a635e609659e"
+    },
+    {
+      "path": "517/normalized/59-rxst-investor-presentation-extract.txt",
+      "size_bytes": 1301,
+      "sha256": "2e8d4fe3ec03bc69b4252a2c13a68e34405cd2483599fb098b5ed84c61232f86"
+    },
+    {
+      "path": "517/normalized/60-staa-2025-10k-extract.txt",
+      "size_bytes": 1369,
+      "sha256": "001653fb3a2b3e1bdd8468e8c809067e8f9cdb2f3b565bcc6bd019c5acf3cbf0"
+    },
+    {
+      "path": "517/normalized/61-rxst-price-statistics-extract.txt",
+      "size_bytes": 1077,
+      "sha256": "17a8fd52a79e00481408d3496f846b8836614bfce5a252a461003bcc27f0987c"
+    },
+    {
+      "path": "517/normalized/62-premium-cataract-market-2025-extract.txt",
+      "size_bytes": 1146,
+      "sha256": "1b9c804ab2f8da6e0efcfd26cb20ef783860f4b697b2f86958a5a9644a69b217"
+    },
+    {
+      "path": "777/20260417231500-d350a56024-ATNM_Screening_Research_Notes_April_2026.md",
+      "size_bytes": 2614,
+      "sha256": "0a882a5c8493ad7c95706972e40a1349d7af92330470fdd8d6b6aea61d8a0cf1"
+    },
+    {
+      "path": "777/normalized/6-ATNM_Screening_Research_Notes_April_2026.txt",
+      "size_bytes": 2774,
+      "sha256": "7f540b682738557246a87fbe1d4a60e055c5c9151dc7b365190fcacfb87b0a9d"
+    }
+  ],
+  "written_at": "2026-05-02T22:41:35.852609+00:00"
+}

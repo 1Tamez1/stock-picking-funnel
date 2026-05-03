@@ -1,0 +1,26 @@
+Source: Laureate Education, Inc. Exhibit 99.1 earnings release
+URL: https://www.sec.gov/Archives/edgar/data/912766/000162828026009478/laur12312025earningsreleas.htm
+Filed: 2026-02-19
+
+Snapshot notes:
+
+- Laureate says it operates five higher-education institutions across Mexico and Peru and serves about 500,000 students through campus-based and online learning.
+- Fourth-quarter 2025 highlights:
+  - Revenue: $541.4 million, up 28% reported.
+  - Operating income: $179.5 million.
+  - Net income: $171.5 million.
+  - Adjusted EBITDA: $204.3 million.
+- Full-year 2025 highlights:
+  - New enrollments up 8%.
+  - Total enrollments up 5%.
+  - Revenue: $1,701.9 million, up 9% reported.
+  - Total Laureate enrollments at 2025-12-31: 497,700.
+  - Mexico total enrollments: 269,400.
+  - Peru total enrollments: 228,300.
+- 2026 outlook in the release:
+  - Total enrollments expected at 516,000 to 521,000.
+  - Management describes continued growth momentum and margin opportunities.
+
+Why this matters for Screening:
+
+- This is the cleanest management-commentary source for near-term momentum, enrollment growth, and the company's 2026 operating outlook.

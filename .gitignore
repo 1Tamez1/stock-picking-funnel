@@ -1,0 +1,10 @@
+node_modules/
+.next/
+__pycache__/
+*.pyc
+.env
+.env.*
+.DS_Store
+v2/contracts/backups/
+v2/contracts/debug/
+v2/contracts/shadow/*.db

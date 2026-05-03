@@ -1,0 +1,14 @@
+Source: OECD Education at a Glance 2025: Mexico
+URL: https://www.oecd.org/en/publications/education-at-a-glance-2025_1a3543e2-en/mexico_3b36a6f6-en.html
+Published: 2025-09-09
+
+Snapshot notes:
+
+- The OECD country note says it summarizes key characteristics of Mexico's education system with an emphasis on tertiary education.
+- The note says the share of young adults in Mexico without upper-secondary attainment fell from 49% to 41% between 2019 and 2024.
+- The note says educational attainment in Mexico still has a strong relationship with wages and labor-market outcomes, although unemployment patterns differ from OECD averages.
+- The note says only 2% of Mexican 25-34 year-olds hold a master's or equivalent degree versus a 16% OECD average.
+
+Why this matters for Screening:
+
+- This is a secondary macro source for Mexican tertiary-education demand and labor-market context, which matters because Mexico is Laureate's larger segment by enrollment.

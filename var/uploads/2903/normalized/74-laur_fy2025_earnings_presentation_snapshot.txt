@@ -1,0 +1,25 @@
+# laur_fy2025_earnings_presentation_snapshot.md
+
+## Metadata
+- MIME type: text/markdown
+- Original file: laur_fy2025_earnings_presentation_snapshot.md
+
+## LLM View
+Source: Laureate Education, Inc. Exhibit 99.2 earnings presentation
+URL: https://www.sec.gov/Archives/edgar/data/912766/000162828026009478/laureateq42025earningspr.htm
+Filed: 2026-02-19
+
+Snapshot notes:
+
+- The FY2025 presentation frames 2026 as another year of revenue growth and margin expansion.
+- Laureate's stated 2026 guidance in the presentation:
+  - Total enrollment: 516,000 to 521,000.
+  - Revenue: $1.890 billion to $1.905 billion.
+  - Adjusted EBITDA: $583 million to $593 million.
+  - Adjusted EPS: $1.95 to $2.03.
+- The deck says 2026 revenue growth is expected at 11% to 12% reported, or 6% to 7% on an organic constant-currency basis.
+- The deck says 2026 adjusted EBITDA growth is expected at 12% to 14% reported, or 7% to 9% on an organic constant-currency basis.
+
+Why this matters for Screening:
+
+- This is the investor-facing presentation source for guidance framing, management messaging, and a quick visual summary of the year-end story.

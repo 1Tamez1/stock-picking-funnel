@@ -1,0 +1,1444 @@
+# bfly-2025-q3-10q-sec.html
+
+## Metadata
+- MIME type: text/html
+- Original file: bfly-2025-q3-10q-sec.html
+
+## LLM View
+bfly-20250930
+
+0001804176false2025Q3--12-310.3333http://fasb.org/us-gaap/2025#PrepaidExpenseAndOtherAssetsCurrenthttp://fasb.org/us-gaap/2025#PrepaidExpenseAndOtherAssetsCurrenthttp://fasb.org/us-gaap/2025#OtherAssetsNoncurrenthttp://fasb.org/us-gaap/2025#OtherAssetsNoncurrenthttp://fasb.org/us-gaap/2025#AccruedLiabilitiesAndOtherLiabilitieshttp://fasb.org/us-gaap/2025#AccruedLiabilitiesAndOtherLiabilities413xbrli:sharesiso4217:USDiso4217:USDxbrli:sharesbfly:segmentxbrli:purebfly:offering00018041762025-01-012025-09-300001804176us-gaap:CommonClassAMember2025-01-012025-09-300001804176bfly:WarrantsToPurchaseMember2025-01-012025-09-300001804176us-gaap:CommonClassAMember2025-10-210001804176us-gaap:CommonClassBMember2025-10-2100018041762025-09-3000018041762024-12-310001804176us-gaap:CommonClassAMember2024-12-310001804176us-gaap:CommonClassAMember2025-09-300001804176us-gaap:CommonClassBMember2024-12-310001804176us-gaap:CommonClassBMember2025-09-300001804176us-gaap:ProductMember2025-07-012025-09-300001804176us-gaap:ProductMember2024-07-012024-09-300001804176us-gaap:ProductMember2025-01-012025-09-300001804176us-gaap:ProductMember2024-01-012024-09-300001804176bfly:SoftwareAndOtherServicesMember2025-07-012025-09-300001804176bfly:SoftwareAndOtherServicesMember2024-07-012024-09-300001804176bfly:SoftwareAndOtherServicesMember2025-01-012025-09-300001804176bfly:SoftwareAndOtherServicesMember2024-01-012024-09-3000018041762025-07-012025-09-3000018041762024-07-012024-09-3000018041762024-01-012024-09-300001804176us-gaap:CommonClassAMemberus-gaap:CommonStockMember2025-06-300001804176us-gaap:CommonClassBMemberus-gaap:CommonStockMember2025-06-300001804176us-gaap:AdditionalPaidInCapitalMember2025-06-300001804176us-gaap:RetainedEarningsMember2025-06-3000018041762025-06-300001804176us-gaap:RetainedEarningsMember2025-07-012025-09-300001804176us-gaap:CommonClassAMemberus-gaap:CommonStockMember2025-07-012025-09-300001804176us-gaap:AdditionalPaidInCapitalMember2025-07-012025-09-300001804176us-gaap:CommonClassAMemberus-gaap:CommonStockMember2025-09-300001804176us-gaap:CommonClassBMemberus-gaap:CommonStockMember2025-09-300001804176us-gaap:AdditionalPaidInCapitalMember2025-09-300001804176us-gaap:RetainedEarningsMember2025-09-300001804176us-gaap:CommonClassAMemberus-gaap:CommonStockMember2024-06-300001804176us-gaap:CommonClassBMemberus-gaap:CommonStockMember2024-06-300001804176us-gaap:AdditionalPaidInCapitalMember2024-06-300001804176us-gaap:RetainedEarningsMember2024-06-3000018041762024-06-300001804176us-gaap:RetainedEarningsMember2024-07-012024-09-300001804176us-gaap:CommonClassAMemberus-gaap:CommonStockMember2024-07-012024-09-300001804176us-gaap:AdditionalPaidInCapitalMember2024-07-012024-09-300001804176us-gaap:CommonClassAMemberus-gaap:CommonStockMember2024-09-300001804176us-gaap:CommonClassBMemberus-gaap:CommonStockMember2024-09-300001804176us-gaap:AdditionalPaidInCapitalMember2024-09-300001804176us-gaap:RetainedEarningsMember2024-09-3000018041762024-09-300001804176us-gaap:CommonClassAMemberus-gaap:CommonStockMember2024-12-310001804176us-gaap:CommonClassBMemberus-gaap:CommonStockMember2024-12-310001804176us-gaap:AdditionalPaidInCapitalMember2024-12-310001804176us-gaap:RetainedEarningsMember2024-12-310001804176us-gaap:RetainedEarningsMember2025-01-012025-09-300001804176us-gaap:CommonClassAMemberus-gaap:CommonStockMember2025-01-012025-09-300001804176us-gaap:AdditionalPaidInCapitalMember2025-01-012025-09-300001804176us-gaap:CommonClassAMemberus-gaap:CommonStockMember2023-12-310001804176us-gaap:CommonClassBMemberus-gaap:CommonStockMember2023-12-310001804176us-gaap:AdditionalPaidInCapitalMember2023-12-310001804176us-gaap:RetainedEarningsMember2023-12-3100018041762023-12-310001804176us-gaap:RetainedEarningsMember2024-01-012024-09-300001804176us-gaap:CommonClassAMemberus-gaap:CommonStockMember2024-01-012024-09-300001804176us-gaap:AdditionalPaidInCapitalMember2024-01-012024-09-300001804176bfly:ReportableSegmentMember2025-07-012025-09-300001804176bfly:ReportableSegmentMember2024-07-012024-09-300001804176bfly:ReportableSegmentMember2025-01-012025-09-300001804176bfly:ReportableSegmentMember2024-01-012024-09-300001804176us-gaap:InventoryValuationAndObsolescenceMember2025-07-012025-09-300001804176us-gaap:InventoryValuationAndObsolescenceMember2025-01-012025-09-300001804176country:US2025-07-012025-09-300001804176country:US2024-07-012024-09-300001804176country:US2025-01-012025-09-300001804176country:US2024-01-012024-09-300001804176us-gaap:NonUsMember2025-07-012025-09-300001804176us-gaap:NonUsMember2024-07-012024-09-300001804176us-gaap:NonUsMember2025-01-012025-09-300001804176us-gaap:NonUsMember2024-01-012024-09-300001804176srt:MinimumMember2025-01-012025-09-300001804176srt:MaximumMember2025-01-012025-09-3000018041762025-10-012025-09-3000018041762026-01-012025-09-300001804176bfly:PublicWarrantsMember2025-09-300001804176bfly:PrivateWarrantsMember2025-09-300001804176bfly:PublicWarrantsMemberus-gaap:FairValueMeasurementsRecurringMember2025-09-300001804176bfly:PublicWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel1Member2025-09-300001804176bfly:PublicWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel2Member2025-09-300001804176bfly:PublicWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel3Member2025-09-300001804176bfly:PrivateWarrantsMemberus-gaap:FairValueMeasurementsRecurringMember2025-09-300001804176bfly:PrivateWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel1Member2025-09-300001804176bfly:PrivateWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel2Member2025-09-300001804176bfly:PrivateWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel3Member2025-09-300001804176us-gaap:FairValueMeasurementsRecurringMember2025-09-300001804176us-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel1Member2025-09-300001804176us-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel2Member2025-09-300001804176us-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel3Member2025-09-300001804176bfly:PublicWarrantsMemberus-gaap:FairValueMeasurementsRecurringMember2024-12-310001804176bfly:PublicWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel1Member2024-12-310001804176bfly:PublicWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel2Member2024-12-310001804176bfly:PublicWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel3Member2024-12-310001804176bfly:PrivateWarrantsMemberus-gaap:FairValueMeasurementsRecurringMember2024-12-310001804176bfly:PrivateWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel1Member2024-12-310001804176bfly:PrivateWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel2Member2024-12-310001804176bfly:PrivateWarrantsMemberus-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel3Member2024-12-310001804176us-gaap:FairValueMeasurementsRecurringMember2024-12-310001804176us-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel1Member2024-12-310001804176us-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel2Member2024-12-310001804176us-gaap:FairValueMeasurementsRecurringMemberus-gaap:FairValueInputsLevel3Member2024-12-310001804176bfly:PublicWarrantsMember2025-01-012025-09-300001804176us-gaap:CommonClassAMemberbfly:PublicShareOfferingMember2025-01-312025-01-310001804176bfly:PublicShareOfferingMember2025-01-310001804176bfly:PublicShareOfferingMember2025-01-312025-01-3100018041762025-01-012025-01-010001804176us-gaap:RestrictedStockUnitsRSUMember2024-12-310001804176us-gaap:RestrictedStockUnitsRSUMember2025-01-012025-09-300001804176us-gaap:RestrictedStockUnitsRSUMember2025-09-300001804176us-gaap:RestrictedStockUnitsRSUMember2025-04-012025-06-300001804176bfly:EmployeeStockPurchasePlan2024Member2024-06-300001804176bfly:EmployeeStockPurchasePlan2024Member2025-01-010001804176bfly:EmployeeStockPurchasePlan2024Member2025-01-012025-09-300001804176bfly:EmployeeStockPurchasePlan2024Member2025-07-012025-09-300001804176bfly:SoftwareAndOtherServicesMember2025-07-012025-09-300001804176bfly:SoftwareAndOtherServicesMember2024-07-012024-09-300001804176bfly:SoftwareAndOtherServicesMember2025-01-012025-09-300001804176bfly:SoftwareAndOtherServicesMember2024-01-012024-09-300001804176us-gaap:ResearchAndDevelopmentExpenseMember2025-07-012025-09-300001804176us-gaap:ResearchAndDevelopmentExpenseMember2024-07-012024-09-300001804176us-gaap:ResearchAndDevelopmentExpenseMember2025-01-012025-09-300001804176us-gaap:ResearchAndDevelopmentExpenseMember2024-01-012024-09-300001804176us-gaap:SellingAndMarketingExpenseMember2025-07-012025-09-300001804176us-gaap:SellingAndMarketingExpenseMember2024-07-012024-09-300001804176us-gaap:SellingAndMarketingExpenseMember2025-01-012025-09-300001804176us-gaap:SellingAndMarketingExpenseMember2024-01-012024-09-300001804176us-gaap:GeneralAndAdministrativeExpenseMember2025-07-012025-09-300001804176us-gaap:GeneralAndAdministrativeExpenseMember2024-07-012024-09-300001804176us-gaap:GeneralAndAdministrativeExpenseMember2025-01-012025-09-300001804176us-gaap:GeneralAndAdministrativeExpenseMember2024-01-012024-09-300001804176us-gaap:CommonClassAMember2025-07-012025-09-300001804176us-gaap:CommonClassBMember2025-07-012025-09-300001804176us-gaap:CommonClassAMember2024-07-012024-09-300001804176us-gaap:CommonClassBMember2024-07-012024-09-300001804176us-gaap:CommonClassBMember2025-01-012025-09-300001804176us-gaap:CommonClassAMember2024-01-012024-09-300001804176us-gaap:CommonClassBMember2024-01-012024-09-300001804176us-gaap:EmployeeStockOptionMember2025-01-012025-09-300001804176us-gaap:EmployeeStockOptionMember2024-01-012024-09-300001804176us-gaap:RestrictedStockUnitsRSUMember2025-01-012025-09-300001804176us-gaap:RestrictedStockUnitsRSUMember2024-01-012024-09-300001804176bfly:EmployeeStockPurchasePlanOptionsMember2025-01-012025-09-300001804176bfly:EmployeeStockPurchasePlanOptionsMember2024-01-012024-09-300001804176us-gaap:WarrantMember2025-01-012025-09-300001804176us-gaap:WarrantMember2024-01-012024-09-300001804176us-gaap:InventoriesMember2025-01-012025-09-300001804176us-gaap:InventoriesMember2025-09-300001804176bfly:StevenCashmanMember2025-07-012025-09-300001804176bfly:StevenCashmanMember2025-09-30
+
+Table of Contents
+
+### HTML table
+
+|  |  |  |
+| --- | --- | --- |
+|  |  |  |
+
+UNITED STATES
+
+SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+____________________________________________
+
+FORM 10-Q
+
+____________________________________________
+
+(Mark One)
+
+x               QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES
+
+EXCHANGE ACT OF 1934
+
+For the quarterly period ended September 30, 2025
+
+or
+
+o               TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES
+
+EXCHANGE ACT OF 1934
+
+For the transition period from __________ to
+
+Commission File Number: 001-39292
+
+____________________________________________
+
+Butterfly Network, Inc.
+
+(Exact name of registrant as specified in its charter)
+
+____________________________________________
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Delaware |  | 84-4618156 |  |  |  |  |  |  |
+| (State or other jurisdiction of incorporation or organization) |  | (IRS Employer Identification No.) |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+| 1600 District AvenueBurlington, Massachusetts |  | 01803 |  |  |  |  |  |  |
+| (Address of principal executive offices) |  | (Zip Code) |  |  |  |  |  |  |
+
+(781) 557-4800
+
+(Registrant’s telephone number, including area code)
+
+### HTML table
+
+|  |  |  |
+| --- | --- | --- |
+|  |  |  |
+| Securities registered pursuant to Section 12(b) of the Act: |  |  |
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Title of each class |  | TradingSymbol(s) |  | Name of each exchangeon which registered |  |  |  |  |  |  |  |  |  |  |
+| Class A common stock, par value $0.0001 per share |  | BFLY |  | The New York Stock Exchange |  |  |  |  |  |  |  |  |  |  |
+| Warrants to purchase one share of Class A common stock, each at an exercise price of $11.50 per share |  | BFLY WS |  | The New York Stock Exchange |  |  |  |  |  |  |  |  |  |  |
+
+____________________________________________
+
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days.     Yes   x     No   o
+
+Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files).      Yes   x     No   o
+
+Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of “large accelerated filer,” “accelerated filer,” “smaller reporting company,” and “emerging growth company” in Rule 12b-2 of the Exchange Act.
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Large accelerated filer | o | Accelerated filer | o |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Non-accelerated filer | x | Smaller reporting company | x |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  | Emerging growth company | o |  |  |  |  |  |  |  |  |  |  |
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. o
+
+Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).     Yes   o     No   x
+
+As of October 21, 2025, the registrant had 226,175,175 shares of Class A common stock outstanding and 26,426,937 shares of Class B common stock outstanding.
+
+### HTML table
+
+|  |  |  |
+| --- | --- | --- |
+|  |  |  |
+
+Table of Contents
+
+TABLE OF CONTENTS
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  | Page |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | Cautionary Statement Regarding Forward-Looking Statements |  | 3 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Part I |  | Financial Information |  | 4 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Item 1. |  | Financial Statements |  | 4 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | Condensed Consolidated Balance Sheets (Unaudited) |  | 4 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | Condensed Consolidated Statements of Operations and Comprehensive Loss (Unaudited) |  | 5 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | Condensed Consolidated Statements of Changes in Stockholders’ Equity (Unaudited) |  | 6 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | Condensed Consolidated Statements of Cash Flows (Unaudited) |  | 7 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | Notes to Condensed Consolidated Financial Statements (Unaudited) |  | 8 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Item 2. |  | Management’s Discussion and Analysis of Financial Condition and Results of Operations |  | 19 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Item 3. |  | Quantitative and Qualitative Disclosures About Market Risk |  | 27 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Item 4. |  | Controls and Procedures |  | 28 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Part II |  | Other Information |  | 28 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Item 1. |  | Legal Proceedings |  | 28 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Item 1A. |  | Risk Factors |  | 28 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Item 2. |  | Unregistered Sales of Equity Securities and Use of Proceeds |  | 28 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Item 5. |  | Other Information |  | 29 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Item 6. |  | Exhibits |  | 29 |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Signatures |  |  |  | 32 |  |  |  |  |  |  |  |  |  |  |
+
+In this Quarterly Report on Form 10-Q, the terms “we,” “us,” “our,” the “Company,” and “Butterfly” mean Butterfly Network, Inc. and our subsidiaries.
+
+2
+
+Table of Contents
+
+CAUTIONARY STATEMENT REGARDING FORWARD-LOOKING STATEMENTS
+
+This Quarterly Report on Form 10-Q includes forward-looking statements within the meaning of Section 27A of the Securities Act of 1933, as amended (the “Securities Act”), and Section 21E of the Securities Exchange Act of 1934, as amended (the “Exchange Act”), that relate to future events or our future financial performance regarding, among other things, our plans, strategies, and prospects, both business and financial. These statements are based on the beliefs and assumptions of our management team. Generally, statements that are not historical facts, including statements concerning possible or assumed future actions, business strategies, events, or results of operations, are forward-looking statements. Forward-looking statements contained in this Quarterly Report on Form 10-Q include, but are not limited to, statements about:
+
+•the success, cost, and timing of our product development activities, including the development of additional potential products;
+
+•the potential attributes and benefits of our products and services;
+
+•our ability to obtain and maintain regulatory authorization for our products, and any related restrictions and limitations on the use of any authorized product;
+
+•our ability to identify, in-license, or acquire additional technology;
+
+•our ability to maintain our existing license, manufacturing, and supply agreements;
+
+•our ability to compete with other companies currently marketing or engaged in the development of ultrasound imaging devices, many of which have greater financial and marketing resources than us;
+
+•the size and growth potential of the markets for our products and services, and the ability of each to serve those markets, either alone or in partnership with others;
+
+•our estimates regarding expenses, revenue, capital requirements, and needs for additional financing; and
+
+•our financial performance.
+
+These statements may be preceded by, followed by, or include the words “believes,” “estimates,” “expects,” “projects,” “forecasts,” “may,” “will,” “should,” “seeks,” “plans,” “scheduled,” “anticipates,” or “intends” or similar expressions or phrases, or the negative of those expressions or phrases. The forward-looking statements are based on projections prepared by, and are the responsibility of, our management. Although we believe that our plans, intentions, and expectations reflected in or suggested by these forward-looking statements are reasonable, we cannot assure you that we will achieve or realize these plans, intentions, or expectations. Forward-looking statements are inherently subject to risks, uncertainties, and assumptions relating to, among other things:
+
+•our growth depends on our ability to attract and retain customers;
+
+•our business could be harmed if we fail to manage our growth effectively;
+
+•our current expectations and assumptions are subject to risks, assumptions, estimates, and uncertainties;
+
+•our business is subject to a variety of U.S. and foreign laws, which are subject to change and could adversely affect our business;
+
+•the pricing of our products and services, and reimbursement for medical procedures conducted using our products and services;
+
+•changes in applicable laws or regulations;
+
+•our ability to protect or enforce our intellectual property rights;
+
+•the ability to maintain the listing of our Class A common stock on the New York Stock Exchange; and
+
+•economic downturns and political and market conditions beyond our control, including the imposition of tariffs.
+
+These and other risks and uncertainties are described in greater detail under the caption “Risk Factors” in Item 1A of Part I of our Annual Report on Form 10-K for the year ended December 31, 2024 (the “2024 Annual Report on Form 10-K”), in Item 1A of Part II of this Quarterly Report on Form 10-Q, and in other filings that we make with the Securities and Exchange Commission (“SEC”). The risks described under the caption “Risk Factors” are not exhaustive. New risk factors emerge from time to time, and it is not possible to predict all such risk factors, nor can we assess the impact of all such risk factors on our business or the extent to which any factor or combination of factors may cause actual results to differ materially from those contained in any forward-looking statements. Forward-looking statements are not guarantees of performance. You should not put undue reliance on these statements, which speak only as of the date hereof. All forward-looking statements attributable to the Company or persons acting on the Company’s behalf are expressly qualified in their entirety by the foregoing cautionary statements. We undertake no obligations to update or revise publicly any forward-looking statements, whether as a result of new information, future events, or otherwise, except as required by law.
+
+3
+
+Table of Contents
+
+PART I — FINANCIAL INFORMATION
+
+Item 1. Financial Statements
+
+BUTTERFLY NETWORK, INC.
+
+CONDENSED CONSOLIDATED BALANCE SHEETS
+
+(In thousands, except share and per share amounts)
+
+(Unaudited)
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | September 30,2025 |  | December 31,2024 |  |  |  |  |  |  |  |  |
+| Assets |  |  |  |  |  |  |  |  |  |  |  |
+| Current assets: |  |  |  |  |  |  |  |  |  |  |  |
+| Cash and cash equivalents | $ | 144,233 |  |  | $ | 88,775 |  |  |  |  |  |
+| Accounts receivable, net of allowance for doubtful accounts of $2,252 and $2,583 at September 30, 2025 and December 31, 2024, respectively | 24,418 |  |  | 20,793 |  |  |  |  |  |  |  |
+| Inventories | 62,232 |  |  | 70,789 |  |  |  |  |  |  |  |
+| Current portion of vendor advances | 2,646 |  |  | 5,547 |  |  |  |  |  |  |  |
+| Prepaid expenses and other current assets | 7,862 |  |  | 6,709 |  |  |  |  |  |  |  |
+| Total current assets | 241,391 |  |  | 192,613 |  |  |  |  |  |  |  |
+| Property and equipment, net | 16,849 |  |  | 19,518 |  |  |  |  |  |  |  |
+| Intangible assets, net | 7,866 |  |  | 8,916 |  |  |  |  |  |  |  |
+| Non-current portion of vendor advances | 5,114 |  |  | 15,042 |  |  |  |  |  |  |  |
+| Operating lease assets | 13,061 |  |  | 14,233 |  |  |  |  |  |  |  |
+| Other non-current assets | 5,721 |  |  | 5,760 |  |  |  |  |  |  |  |
+| Total assets | $ | 290,002 |  |  | $ | 256,082 |  |  |  |  |  |
+| Liabilities and stockholders’ equity |  |  |  |  |  |  |  |  |  |  |  |
+| Current liabilities: |  |  |  |  |  |  |  |  |  |  |  |
+| Accounts payable | $ | 3,308 |  |  | $ | 4,250 |  |  |  |  |  |
+| Deferred revenue, current | 16,379 |  |  | 16,139 |  |  |  |  |  |  |  |
+| Accrued purchase commitments, current | 131 |  |  | 131 |  |  |  |  |  |  |  |
+| Warrant liabilities, current | 1,033 |  |  | — |  |  |  |  |  |  |  |
+| Accrued expenses and other current liabilities | 29,480 |  |  | 27,695 |  |  |  |  |  |  |  |
+| Total current liabilities | 50,331 |  |  | 48,215 |  |  |  |  |  |  |  |
+| Deferred revenue, non-current | 7,907 |  |  | 7,315 |  |  |  |  |  |  |  |
+| Warrant liabilities, non-current | — |  |  | 2,685 |  |  |  |  |  |  |  |
+| Operating lease liabilities | 18,414 |  |  | 20,398 |  |  |  |  |  |  |  |
+| Other non-current liabilities | 9,520 |  |  | 8,637 |  |  |  |  |  |  |  |
+| Total liabilities | 86,172 |  |  | 87,250 |  |  |  |  |  |  |  |
+| Commitments and contingencies (Note 12) |  |  |  |  |  |  |  |  |  |  |  |
+| Stockholders’ equity: |  |  |  |  |  |  |  |  |  |  |  |
+| Class A common stock $.0001 par value; 600,000,000 shares authorized at September 30, 2025 and December 31, 2024; 226,107,253 and 188,626,154 shares issued and outstanding at September 30, 2025 and December 31, 2024, respectively | 23 |  |  | 19 |  |  |  |  |  |  |  |
+| Class B common stock $.0001 par value; 27,000,000 shares authorized at September 30, 2025 and December 31, 2024; 26,426,937 shares issued and outstanding at September 30, 2025 and December 31, 2024 | 3 |  |  | 3 |  |  |  |  |  |  |  |
+| Additional paid-in capital | 1,067,706 |  |  | 970,940 |  |  |  |  |  |  |  |
+| Accumulated deficit | (863,902) |  |  | (802,130) |  |  |  |  |  |  |  |
+| Total stockholders’ equity | 203,830 |  |  | 168,832 |  |  |  |  |  |  |  |
+| Total liabilities and stockholders’ equity | $ | 290,002 |  |  | $ | 256,082 |  |  |  |  |  |
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+4
+
+Table of Contents
+
+BUTTERFLY NETWORK, INC.
+
+CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS AND COMPREHENSIVE LOSS
+
+(In thousands, except share and per share amounts)
+
+(Unaudited)
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Three months ended September 30, |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Revenue: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product | $ | 14,556 |  |  | $ | 13,538 |  |  | $ | 45,341 |  |  | $ | 39,478 |  |  |  |  |  |  |  |  |  |
+| Software and other services | 6,933 |  |  | 7,023 |  |  | 20,755 |  |  | 20,227 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total revenue | 21,489 |  |  | 20,561 |  |  | 66,096 |  |  | 59,705 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Cost of revenue: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product | 23,552 |  |  | 6,065 |  |  | 36,047 |  |  | 17,739 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Software and other services | 1,694 |  |  | 2,263 |  |  | 5,536 |  |  | 6,870 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total cost of revenue | 25,246 |  |  | 8,328 |  |  | 41,583 |  |  | 24,609 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Gross profit (loss) | (3,757) |  |  | 12,233 |  |  | 24,513 |  |  | 35,096 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Operating expenses: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Research and development | 8,703 |  |  | 8,844 |  |  | 26,942 |  |  | 28,975 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Sales and marketing | 10,626 |  |  | 9,607 |  |  | 33,805 |  |  | 29,713 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| General and administrative | 9,289 |  |  | 9,353 |  |  | 28,018 |  |  | 29,868 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other | 2,759 |  |  | 1,675 |  |  | 5,451 |  |  | 3,639 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total operating expenses | 31,377 |  |  | 29,479 |  |  | 94,216 |  |  | 92,195 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Loss from operations | (35,134) |  |  | (17,246) |  |  | (69,703) |  |  | (57,099) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Interest income | 1,443 |  |  | 1,221 |  |  | 4,598 |  |  | 4,023 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Interest expense | (385) |  |  | (319) |  |  | (1,100) |  |  | (928) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Change in fair value of warrant liabilities | 207 |  |  | (1,239) |  |  | 1,652 |  |  | (826) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other income (expense), net | (86) |  |  | 717 |  |  | 2,824 |  |  | 517 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Loss before provision for income taxes | (33,955) |  |  | (16,866) |  |  | (61,729) |  |  | (54,313) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Provision for income taxes | 16 |  |  | 58 |  |  | 43 |  |  | 78 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Net loss and comprehensive loss | $ | (33,971) |  |  | $ | (16,924) |  |  | $ | (61,772) |  |  | $ | (54,391) |  |  |  |  |  |  |  |  |  |
+| Net loss per common share attributable to Class A and B common stockholders, basic and diluted | $ | (0.13) |  |  | $ | (0.08) |  |  | $ | (0.25) |  |  | $ | (0.26) |  |  |  |  |  |  |  |  |  |
+| Weighted-average shares used to compute net loss per share attributable to Class A and B common stockholders, basic and diluted | 252,087,541 |  | 212,774,085 |  | 245,197,834 |  | 211,109,792 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+5
+
+Table of Contents
+
+BUTTERFLY NETWORK, INC.
+
+CONDENSED CONSOLIDATED STATEMENTS OF CHANGES IN STOCKHOLDERS’ EQUITY
+
+(In thousands, except share amounts)
+
+(Unaudited)
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Three months ended September 30, 2025 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Class ACommonStock |  | Class BCommonStock |  | AdditionalPaid-InCapital |  | AccumulatedDeficit |  | TotalStockholders’Equity |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Shares |  | Amount |  | Shares |  | Amount |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| June 30, 2025 | 224,609,833 |  | $ | 22 |  |  | 26,426,937 |  | $ | 3 |  |  | $ | 1,062,712 |  |  | $ | (829,931) |  |  | $ | 232,806 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Net loss | — |  | — |  |  | — |  | — |  |  | — |  |  | (33,971) |  |  | (33,971) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Common stock issued upon vesting of restricted stock units | 1,497,420 |  | 1 |  |  | — |  | — |  |  | — |  |  | — |  |  | 1 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Stock-based compensation expense | — |  | — |  |  | — |  | — |  |  | 4,994 |  |  | — |  |  | 4,994 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| September 30, 2025 | 226,107,253 |  | $ | 23 |  |  | 26,426,937 |  | $ | 3 |  |  | $ | 1,067,706 |  |  | $ | (863,902) |  |  | $ | 203,830 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Three months ended September 30, 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Class ACommonStock |  | Class BCommonStock |  | AdditionalPaid-InCapital |  | AccumulatedDeficit |  | TotalStockholders’Equity |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Shares |  | Amount |  | Shares |  | Amount |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| June 30, 2024 | 186,037,697 |  | $ | 19 |  |  | 26,426,937 |  | $ | 3 |  |  | $ | 961,363 |  |  | $ | (767,105) |  |  | $ | 194,280 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Net loss | — |  | — |  |  | — |  | — |  |  | — |  |  | (16,924) |  |  | (16,924) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Common stock issued upon vesting of restricted stock units | 519,824 |  | — |  |  | — |  | — |  |  | — |  |  | — |  |  | — |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Stock-based compensation expense | — |  | — |  |  | — |  | — |  |  | 4,476 |  |  | — |  |  | 4,476 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| September 30, 2024 | 186,557,521 |  | $ | 19 |  |  | 26,426,937 |  | $ | 3 |  |  | $ | 965,839 |  |  | $ | (784,029) |  |  | $ | 181,832 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Nine months ended September 30, 2025 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Class ACommonStock |  | Class BCommonStock |  | AdditionalPaid-InCapital |  | AccumulatedDeficit |  | TotalStockholders’Equity |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Shares |  | Amount |  | Shares |  | Amount |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| December 31, 2024 | 188,626,154 |  | $ | 19 |  |  | 26,426,937 |  | $ | 3 |  |  | $ | 970,940 |  |  | $ | (802,130) |  |  | $ | 168,832 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Net loss | — |  | — |  |  | — |  | — |  |  | — |  |  | (61,772) |  |  | (61,772) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Net proceeds from share offering | 27,600,000 |  | 3 |  |  | — |  | — |  |  | 81,003 |  |  | — |  |  | 81,006 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Common stock issued upon exercise of stock options | 179,503 |  | — |  |  | — |  | — |  |  | 274 |  |  | — |  |  | 274 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Common stock issued upon vesting of restricted stock units, net | 8,574,842 |  | 1 |  |  | — |  | — |  |  | (2,775) |  |  | — |  |  | (2,774) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Common stock issued for employee stock purchase plan | 1,126,754 |  | — |  |  | — |  | — |  |  | 949 |  |  | — |  |  | 949 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Stock-based compensation expense | — |  | — |  |  | — |  | — |  |  | 17,315 |  |  | — |  |  | 17,315 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| September 30, 2025 | 226,107,253 |  | $ | 23 |  |  | 26,426,937 |  | $ | 3 |  |  | $ | 1,067,706 |  |  | $ | (863,902) |  |  | $ | 203,830 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Nine months ended September 30, 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Class ACommonStock |  | Class BCommonStock |  | AdditionalPaid-InCapital |  | AccumulatedDeficit |  | TotalStockholders’Equity |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Shares |  | Amount |  | Shares |  | Amount |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| December 31, 2023 | 181,221,794 |  | $ | 18 |  |  | 26,426,937 |  | $ | 3 |  |  | $ | 949,670 |  |  | $ | (729,638) |  |  | $ | 220,053 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Net loss | — |  | — |  |  | — |  | — |  |  | — |  |  | (54,391) |  |  | (54,391) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Common stock issued upon vesting of restricted stock units | 5,335,727 |  | 1 |  |  | — |  | — |  |  | — |  |  | — |  |  | 1 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Stock-based compensation expense | — |  | — |  |  | — |  | — |  |  | 16,169 |  |  | — |  |  | 16,169 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| September 30, 2024 | 186,557,521 |  | $ | 19 |  |  | 26,426,937 |  | $ | 3 |  |  | $ | 965,839 |  |  | $ | (784,029) |  |  | $ | 181,832 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+6
+
+Table of Contents
+
+BUTTERFLY NETWORK, INC.
+
+CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS
+
+(In thousands)
+
+(Unaudited)
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |
+| Cash flows from operating activities: |  |  |  |  |  |  |  |  |  |  |  |
+| Net loss | $ | (61,772) |  |  | $ | (54,391) |  |  |  |  |  |
+| Adjustments to reconcile net loss to net cash used in operating activities: |  |  |  |  |  |  |  |  |  |  |  |
+| Depreciation, amortization, and impairments | 6,327 |  |  | 7,835 |  |  |  |  |  |  |  |
+| Non-cash interest expense | 1,099 |  |  | 926 |  |  |  |  |  |  |  |
+| Write-down of inventories | 7,931 |  |  | 15 |  |  |  |  |  |  |  |
+| Write-down of vendor advances | 9,621 |  |  | — |  |  |  |  |  |  |  |
+| Stock-based compensation expense | 17,074 |  |  | 15,794 |  |  |  |  |  |  |  |
+| Change in fair value of warrant liabilities | (1,652) |  |  | 826 |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Other | 346 |  |  | 945 |  |  |  |  |  |  |  |
+| Changes in operating assets and liabilities: |  |  |  |  |  |  |  |  |  |  |  |
+| Accounts receivable | (3,972) |  |  | (8,158) |  |  |  |  |  |  |  |
+| Inventories | 626 |  |  | (264) |  |  |  |  |  |  |  |
+| Prepaid expenses and other assets | (1,114) |  |  | 681 |  |  |  |  |  |  |  |
+| Vendor advances | 3,208 |  |  | (1,342) |  |  |  |  |  |  |  |
+| Accounts payable | (943) |  |  | (1,440) |  |  |  |  |  |  |  |
+| Deferred revenue | 832 |  |  | 441 |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Change in operating lease assets and liabilities | (633) |  |  | (549) |  |  |  |  |  |  |  |
+| Accrued expenses and other liabilities | 1,291 |  |  | 94 |  |  |  |  |  |  |  |
+| Net cash used in operating activities | (21,731) |  |  | (38,587) |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Cash flows from investing activities: |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Purchases of property, equipment, and intangible assets, including capitalized software | (2,265) |  |  | (2,286) |  |  |  |  |  |  |  |
+| Sales of property and equipment | — |  |  | 36 |  |  |  |  |  |  |  |
+| Net cash used in investing activities | (2,265) |  |  | (2,250) |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| Cash flows from financing activities: |  |  |  |  |  |  |  |  |  |  |  |
+| Proceeds from exercise of stock options | 274 |  |  | — |  |  |  |  |  |  |  |
+| Proceeds from employee stock purchase plan | 949 |  |  | — |  |  |  |  |  |  |  |
+| Net proceeds from share offering | 81,006 |  |  | — |  |  |  |  |  |  |  |
+| Payments to tax authorities for restricted stock units withheld | (2,775) |  |  | — |  |  |  |  |  |  |  |
+| Net cash provided by financing activities | 79,454 |  |  | — |  |  |  |  |  |  |  |
+| Net increase (decrease) in cash, cash equivalents, and restricted cash | 55,458 |  |  | (40,837) |  |  |  |  |  |  |  |
+| Cash, cash equivalents, and restricted cash, beginning of period | 92,790 |  |  | 138,650 |  |  |  |  |  |  |  |
+| Cash, cash equivalents, and restricted cash, end of period | $ | 148,248 |  |  | $ | 97,813 |  |  |  |  |  |
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+7
+
+Table of Contents
+
+BUTTERFLY NETWORK, INC.
+
+NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS
+
+(Unaudited)
+
+Note 1. Organization and Description of Business
+
+Butterfly Network, Inc., formerly known as Longview Acquisition Corp., was incorporated in Delaware on February 4, 2020. The Company is an innovative digital health business transforming care through a unique combination of portable, semiconductor-based ultrasound technology, intuitive software, services and educational offerings that can make medical imaging more accessible than ever before. Butterfly’s solution enables the practical application of ultrasound information into the clinical workflow through affordable hardware that fits in a healthcare professional’s pocket and is paired with cloud-connected software that is easily accessed through a mobile application.
+
+The Company operates wholly-owned subsidiaries in the United States, Australia, Germany, the Netherlands, Taiwan, and the United Kingdom.
+
+Note 2. Summary of Significant Accounting Policies
+
+Basis of Presentation and Principles of Consolidation
+
+The accompanying condensed consolidated financial statements include the accounts of the Company and its wholly-owned subsidiaries and have been prepared in accordance with U.S. generally accepted accounting principles (“U.S. GAAP”) and the accounting disclosure rules and regulations of the SEC regarding interim financial reporting. Certain information and note disclosures normally included in the annual financial statements prepared in accordance with U.S. GAAP have been condensed or omitted pursuant to such rules and regulations. Therefore, these condensed consolidated financial statements should be read in conjunction with the consolidated financial statements and notes included in the 2024 Annual Report on Form 10-K. All intercompany balances and transactions are eliminated upon consolidation.
+
+The condensed consolidated balance sheet as of December 31, 2024, included herein, was derived from the audited consolidated financial statements as of that date but does not include all disclosures, including certain notes, required by U.S. GAAP for annual reporting.
+
+In the opinion of management, the accompanying condensed consolidated financial statements reflect all normal and recurring adjustments necessary to present fairly the financial position, results of operations, and cash flows for the interim periods. The results for the three and nine months ended September 30, 2025 are not necessarily indicative of the results to be expected for any subsequent quarter, the year ending December 31, 2025, or any other period.
+
+Concentration of Credit Risk
+
+Financial instruments that potentially subject the Company to concentration of credit risk consist principally of cash and cash equivalents and accounts receivable. As of September 30, 2025, substantially all of the Company’s cash and cash equivalents were invested in money market accounts with one financial institution. The Company also maintains balances in various operating accounts above federally insured limits. The Company has not experienced any significant losses on such accounts and does not believe it is exposed to any significant credit risk of its cash and cash equivalents.
+
+As of September 30, 2025 and December 31, 2024, no customer and one customer accounted for more than 10% of the Company’s accounts receivable, respectively. No customer accounted for more than 10% of the Company’s total revenue for the three and nine months ended September 30, 2025 and 2024.
+
+Segment Reporting
+
+The Company has determined that it operates in one reportable segment, which includes all activities related to the development, manufacture, and sale of the Company's products, software, and other services. The Company’s chief operating decision maker ("CODM"), its Chief Executive Officer, regularly reviews the Company's consolidated net loss, which is reported as net loss and comprehensive loss on the condensed consolidated statements of operations and comprehensive loss, for purposes of evaluating the Company's financial performance, including reviewing budget versus actual results, and determining changes in the Company's allocation of resources across the Company's strategic initiatives. The Company's measure of segment assets is total assets, as reported on the condensed consolidated balance sheets, and substantially all of the Company’s long-lived assets are located in the United States.
+
+8
+
+Table of Contents
+
+In addition to the operating expenses presented on the condensed consolidated statements of operations and comprehensive loss, the CODM also reviews certain significant segment expenses. The following table summarizes the Company's segment revenue and significant segment expenses included in consolidated net loss (in thousands):
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Three months ended September 30, |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Revenue | $ | 21,489 |  |  | $ | 20,561 |  |  | $ | 66,096 |  |  | $ | 59,705 |  |  |  |  |  |  |  |  |  |
+| Less: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Cost of revenue (excluding write-downs of inventories and vendor advances) | 7,760 |  |  | 8,231 |  |  | 24,031 |  |  | 24,594 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Write-downs of inventories and vendor advances | 17,486 |  |  | 97 |  |  | 17,552 |  |  | 15 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Payroll operating expenses | 13,041 |  |  | 13,521 |  |  | 40,508 |  |  | 41,960 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Stock-based compensation operating expenses | 4,825 |  |  | 4,412 |  |  | 16,974 |  |  | 15,794 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Non-payroll operating expenses | 10,752 |  |  | 9,871 |  |  | 31,283 |  |  | 30,802 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other | 2,759 |  |  | 1,675 |  |  | 5,451 |  |  | 3,639 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other segment items | (1,163) |  |  | (322) |  |  | (7,931) |  |  | (2,708) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Net loss | $ | (33,971) |  |  | $ | (16,924) |  |  | $ | (61,772) |  |  | $ | (54,391) |  |  |  |  |  |  |  |  |  |
+
+Other segment items include interest income, interest expense, the change in fair value of warrant liabilities, other income (expense), net, and the provision for income taxes.
+
+Because the Company operates in one reportable segment, other required segment disclosures are included on the Company's condensed consolidated financial statements. Interest income, interest expense, and the provision for income taxes are included on the condensed consolidated statements of operations and comprehensive loss. Depreciation, amortization, and impairments; write-down of inventories; and purchases of property, equipment, and intangible assets, including capitalized software, are included on the consolidated statements of cash flows.
+
+Use of Estimates
+
+The Company makes estimates and assumptions about future events that affect the amounts reported in its condensed consolidated financial statements and accompanying notes. Future events and their effects cannot be determined with certainty. On an ongoing basis, management evaluates these estimates and assumptions.
+
+The Company bases these estimates on historical and anticipated results and trends and on various other assumptions that the Company believes are reasonable under the circumstances, including assumptions about future events. Changes in estimates are recorded in the period in which they become known. Actual results could differ from those estimates, and any such differences may be material to the Company’s condensed consolidated financial statements.
+
+The Company revised its estimates of the net realizable value of inventory and demand and future use of inventory during the three and nine months ended September 30, 2025, resulting in the following effects on captions in the condensed consolidated statements of comprehensive income (in thousands, except per-share amounts):
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Three months ended September 30, 2025 |  | Nine months ended September 30, 2025 |  |  |  |  |  |  |  |  |
+| Loss from operations | $ | (17,486) |  |  | $ | (17,552) |  |  |  |  |  |
+| Net loss and comprehensive loss | $ | (17,486) |  |  | $ | (17,552) |  |  |  |  |  |
+| Net loss per common share attributable to Class A and B common stockholders, basic and diluted | $ | (0.07) |  |  | $ | (0.07) |  |  |  |  |  |
+
+See Note 5 "Inventories" for additional information on the charges related to these revised estimates. There have been no other material changes to the Company’s use of estimates as described in the consolidated financial statements for the year ended December 31, 2024.
+
+9
+
+Table of Contents
+
+Operating Expenses – Other
+
+The Company classifies certain operating expenses that are not representative of the Company’s ongoing operations as other on the condensed consolidated statements of operations and comprehensive loss. These include costs related to the Company’s business transformation initiative, reductions in force, litigation, and legal settlements.
+
+The following table summarizes the types of expenses classified as other in the Company’s condensed consolidated statements of operations and comprehensive loss (in thousands):
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Three months ended September 30, |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Employment-related expenses | $ | 447 |  |  | $ | 1,254 |  |  | $ | 966 |  |  | $ | 1,224 |  |  |  |  |  |  |  |  |  |
+| Legal-related expenses | 2,312 |  |  | 421 |  |  | 4,485 |  |  | 2,415 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total other | $ | 2,759 |  |  | $ | 1,675 |  |  | $ | 5,451 |  |  | $ | 3,639 |  |  |  |  |  |  |  |  |  |
+
+Recent Accounting Pronouncements Issued but Not Yet Adopted
+
+In December 2023, the Financial Accounting Standards Board ("FASB") issued Accounting Standards Update ("ASU") 2023-09, Income Taxes (Topic 740): Improvements to Income Tax Disclosures, which introduced new guidance on disclosures for income taxes, including enhancements to the rate reconciliation and income taxes paid disclosures. This guidance is effective for the Company for annual reporting periods beginning January 1, 2025. The Company is currently evaluating the impact that the adoption of this pronouncement will have on the Company’s consolidated financial statements and disclosures.
+
+In November 2024, the FASB issued ASU 2024-03, Income Statement—Reporting Comprehensive Income—Expense Disaggregation Disclosures (Subtopic 220-40): Disaggregation of Income Statement Expenses, which introduced new guidance on disclosures of specified information about certain costs and expenses included within expenses presented on the face or the income statements, such as purchases of inventory and employee compensation. This guidance is effective for the Company for annual reporting periods beginning January 1, 2027 and interim reporting periods beginning January 1, 2028. The Company is currently evaluating the impact that the adoption of this pronouncement will have on the Company's consolidated financial statements and disclosures.
+
+In September 2025, the FASB issued ASU 2025-06, Intangibles—Goodwill and Other—Internal-Use Software (Subtopic 350-40): Targeted Improvements to the Accounting for Internal-Use Software, which introduced new guidance to modernize the accounting for internal-use software development costs by removing references to prescriptive and sequential software development stages and providing additional considerations when evaluating the probable-to-complete recognition threshold. This guidance is effective for the Company for both annual and interim periods beginning January 1, 2028. The new guidance may be adopted using either a prospective, modified, or retrospective transition approach. The Company is currently evaluating the impact that the adoption of this pronouncement will have on the Company's consolidated financial statements and disclosures, including which transition approach the Company expects to use.
+
+Note 3. Revenue Recognition
+
+Disaggregation of Revenue
+
+The Company disaggregates revenue from contracts with customers by product type and by geographical market. The Company believes that these categories aggregate the payor types by nature, amount, timing, and uncertainty of its revenue streams. The following table summarizes the Company’s disaggregated revenue (in thousands):
+
+10
+
+Table of Contents
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Pattern ofRecognition |  | Three months ended September 30, |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | 2025 |  | 2024 |  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| By product type: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Hardware | Point-in-time |  | $ | 14,556 |  |  | $ | 13,538 |  |  | $ | 45,341 |  |  | $ | 39,478 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Software and other services | Over time |  | 6,933 |  |  | 7,023 |  |  | 20,755 |  |  | 20,227 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total revenue |  |  | $ | 21,489 |  |  | $ | 20,561 |  |  | $ | 66,096 |  |  | $ | 59,705 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| By geographical market: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| United States |  |  | $ | 16,090 |  |  | $ | 15,366 |  |  | $ | 50,669 |  |  | $ | 46,141 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| International |  |  | 5,399 |  |  | 5,195 |  |  | 15,427 |  |  | 13,564 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total revenue |  |  | $ | 21,489 |  |  | $ | 20,561 |  |  | $ | 66,096 |  |  | $ | 59,705 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+Contract Balances
+
+Contract balances represent amounts presented in the condensed consolidated balance sheets when the Company has either transferred goods or services to the customer or the customer has paid consideration to the Company under the contract. These contract balances include trade accounts receivable and deferred revenue. The Company recognizes a receivable when it has an unconditional right to payment, and payment terms are typically 30 to 90 days for sales on credit of product, software, and other services. For the three months ended September 30, 2025 and 2024, the Company recognized $5.2 million and $5.7 million, respectively, of revenue that was included in the deferred revenue balance at the beginning of the period. For the nine months ended September 30, 2025 and 2024, the Company recognized $14.2 million and $14.3 million, respectively, of revenue that was included in the deferred revenue balance at the beginning of the period.
+
+Transaction Price Allocated to Remaining Performance Obligations
+
+As of September 30, 2025 and December 31, 2024, the Company had $42.2 million and $33.3 million, respectively, of remaining performance obligations. As of September 30, 2025, the Company expects to recognize 49% of its remaining performance obligations as revenue in the next twelve months and an additional 51% thereafter.
+
+Note 4. Fair Value of Financial Instruments
+
+Fair value estimates of financial instruments are made at a specific point in time, based on relevant information about financial markets and specific financial instruments. As these estimates are subjective in nature, involving uncertainties and matters of significant judgment, they cannot be determined with precision. Changes in assumptions can significantly affect estimated fair value.
+
+The Company measures fair value as the price that would be received to sell an asset or paid to transfer a liability (an exit price) in an orderly transaction between market participants at the reporting date. The Company utilizes a three-tier hierarchy, which prioritizes the inputs used in the valuation methodologies in measuring fair value:
+
+•Level 1 — Valuations based on quoted prices in active markets for identical assets or liabilities that an entity has the ability to access.
+
+•Level 2 — Valuations based on quoted prices for similar assets or liabilities, quoted prices for identical assets or liabilities in markets that are not active, or other inputs that are observable or can be corroborated by observable data for substantially the full term of the assets or liabilities.
+
+•Level 3 — Valuations based on inputs that are supported by little or no market activity and that are significant to the fair value of the assets or liabilities. The Company has no assets or liabilities valued with Level 3 inputs.
+
+The carrying values of cash and cash equivalents, accounts receivable, accounts payable, and accrued expenses approximate their fair values due to the short-term or on-demand nature of these instruments.
+
+There were no transfers between fair value measurement levels during the periods ended September 30, 2025 and December 31, 2024.
+
+The Company’s outstanding warrants include publicly traded warrants (the “Public Warrants”) which were issued as one-third of a warrant per unit during Longview’s initial public offering and warrants sold in a private placement to Longview’s
+
+11
+
+Table of Contents
+
+sponsor (the “Private Warrants”). As of September 30, 2025, there were an aggregate of 13,799,357 and 6,853,333 outstanding Public Warrants and Private Warrants, respectively. Each whole warrant entitles the registered holder to purchase one share of Class A common stock at an exercise price of $11.50 per share, subject to adjustment per the warrant agreements. The warrants will expire on February 12, 2026 or earlier upon redemption or liquidation. The Company recognizes the change in fair value of warrant liabilities in the condensed consolidated statements of operations and comprehensive loss. No warrants were exercised during the three and nine months ended September 30, 2025 and 2024.
+
+The Company measures its Public Warrants using Level 1 fair value inputs based on quoted prices in active markets for the Public Warrants. Because any transfer of Private Warrants from the initial holder of the Private Warrants would result in the Private Warrants having substantially the same terms as the Public Warrants, management determined that the fair value of each Private Warrant is the same as that of a Public Warrant. Accordingly, the Company measures its Private Warrants using Level 2 fair value inputs based on quoted prices in active markets for the Public Warrants.
+
+The following table summarizes the Company’s assets and liabilities that are measured at fair value on a recurring basis, by level within the fair value hierarchy (in thousands):
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  | Fair Value Measurement Level |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Total |  | Level 1 |  | Level 2 |  | Level 3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| September 30, 2025: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Warrants: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Public Warrants | $ | 690 |  |  | $ | 690 |  |  | $ | — |  |  | $ | — |  |  |  |  |  |  |  |  |  |
+| Private Warrants | 343 |  |  | — |  |  | 343 |  |  | — |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total liabilities at fair value on a recurring basis | $ | 1,033 |  |  | $ | 690 |  |  | $ | 343 |  |  | $ | — |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| December 31, 2024: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Warrants: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Public Warrants | $ | 1,794 |  |  | $ | 1,794 |  |  | $ | — |  |  | $ | — |  |  |  |  |  |  |  |  |  |
+| Private Warrants | 891 |  |  | — |  |  | 891 |  |  | — |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total liabilities at fair value on a recurring basis | $ | 2,685 |  |  | $ | 1,794 |  |  | $ | 891 |  |  | $ | — |  |  |  |  |  |  |  |  |  |
+
+Note 5. Inventories
+
+The following table summarizes the Company’s inventories (in thousands):
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | September 30,2025 |  | December 31,2024 |  |  |  |  |  |  |  |  |
+| Raw materials | $ | 39,121 |  |  | $ | 47,642 |  |  |  |  |  |
+| Work-in-progress | 6,078 |  |  | 4,736 |  |  |  |  |  |  |  |
+| Finished goods | 17,033 |  |  | 18,411 |  |  |  |  |  |  |  |
+| Total inventories | $ | 62,232 |  |  | $ | 70,789 |  |  |  |  |  |
+
+Work-in-progress represents inventory items in intermediate stages of production by third-party manufacturers. For the three and nine months ended September 30, 2025, the Company recognized net realizable value inventory adjustments and excess and obsolete inventory charges totaling $17.5 million and $17.6 million, respectively, in product cost of revenue. Of those amounts for the three and nine months ended September 30, 2025, $9.6 million related to prepaid inventory that the Company will receive in the future, resulting in a write-down of the non-current portion of vendor advances on the condensed consolidated balance sheets. For the three and nine months ended September 30, 2024, net realizable value inventory adjustments and excess and obsolete inventory charges were not significant and were recognized in product cost of revenue. See Note 12 “Commitments and Contingencies” for additional information regarding the Company’s inventory supply arrangements.
+
+12
+
+Table of Contents
+
+Note 6. Property and Equipment, Net
+
+The following table summarizes the Company’s property and equipment, net (in thousands):
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | September 30,2025 |  | December 31,2024 |  |  |  |  |  |  |  |  |
+| Property and equipment, gross | $ | 48,799 |  |  | $ | 46,415 |  |  |  |  |  |
+| Less: accumulated depreciation and amortization | (31,950) |  |  | (26,897) |  |  |  |  |  |  |  |
+| Property and equipment, net | $ | 16,849 |  |  | $ | 19,518 |  |  |  |  |  |
+
+Note 7. Restricted Cash
+
+The following table reconciles cash, cash equivalents, and restricted cash from the condensed consolidated balance sheets to the condensed consolidated statements of cash flows (in thousands):
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | September 30, |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |
+| Reconciliation of cash, cash equivalents and restricted cash: |  |  |  |  |  |  |  |  |  |  |  |
+| Cash and cash equivalents | $ | 144,233 |  |  | $ | 93,758 |  |  |  |  |  |
+| Restricted cash included within prepaid expenses and other current assets | — |  |  | 40 |  |  |  |  |  |  |  |
+| Restricted cash included within other non-current assets | 4,015 |  |  | 4,015 |  |  |  |  |  |  |  |
+| Total cash, cash equivalents and restricted cash shown in the condensed consolidated statements of cash flows | $ | 148,248 |  |  | $ | 97,813 |  |  |  |  |  |
+
+Restricted cash included within prepaid expenses and other current assets was restricted by an agreement with the Bill & Melinda Gates Foundation. As of December 31, 2024, the Company has fulfilled all of its obligations in the agreement, and all of the restrictions on these funds have lapsed. Restricted cash included within other non-current assets is held as collateral to secure a letter of credit for one of our office leases and is expected to be maintained as a security deposit throughout the duration of the lease.
+
+Note 8. Accrued Expenses and Other Current Liabilities
+
+The following table summarizes the Company’s accrued expenses and other current liabilities (in thousands):
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | September 30,2025 |  | December 31,2024 |  |  |  |  |  |  |  |  |
+| Employee compensation | $ | 8,374 |  |  | $ | 11,192 |  |  |  |  |  |
+| Customer deposits | 2,147 |  |  | 1,909 |  |  |  |  |  |  |  |
+| Accrued warranty liability | 420 |  |  | 498 |  |  |  |  |  |  |  |
+| Non-income tax | 2,376 |  |  | 2,356 |  |  |  |  |  |  |  |
+| Professional fees | 5,308 |  |  | 2,015 |  |  |  |  |  |  |  |
+| Current portion of operating lease liabilities | 2,616 |  |  | 2,437 |  |  |  |  |  |  |  |
+| Other | 8,239 |  |  | 7,288 |  |  |  |  |  |  |  |
+| Total accrued expenses and other current liabilities | $ | 29,480 |  |  | $ | 27,695 |  |  |  |  |  |
+
+The following table summarizes warranty expense activity (in thousands):
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Three months ended September 30, |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Balance, beginning of period | $ | 916 |  |  | $ | 812 |  |  | $ | 1,023 |  |  | $ | 697 |  |  |  |  |  |  |  |  |  |
+| Warranty provision charged to operations | 492 |  |  | 401 |  |  | 955 |  |  | 884 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Warranty claims | (331) |  |  | (242) |  |  | (901) |  |  | (610) |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Balance, end of period | $ | 1,077 |  |  | $ | 971 |  |  | $ | 1,077 |  |  | $ | 971 |  |  |  |  |  |  |  |  |  |
+
+13
+
+Table of Contents
+
+The Company classifies its accrued warranty liability based on the timing of expected warranty activity. The future costs of expected activity greater than one year are recorded within other non-current liabilities on the condensed consolidated balance sheets.
+
+Note 9. Stockholders' Equity
+
+Public Share Offering
+
+On January 31, 2025, the Company issued and sold 27.6 million shares of its Class A common stock in a public offering at a price of $3.15 per share. The Company received gross proceeds of $86.9 million and incurred $5.2 million of underwriting discounts and commissions as well as $0.7 million of other incremental expenses paid by the Company. The net proceeds to the Company, after deducting expenses, was $81.0 million, which has been recognized as increases in cash and cash equivalents and stockholders' equity on the condensed consolidated balance sheets.
+
+Equity Incentive Plans
+
+For the three and nine months ended September 30, 2025, there were no significant changes to the Company’s 2012 Employee, Director and Consultant Equity Incentive Plan, as amended, (the “2012 Plan”) and the Company’s Amended and Restated 2020 Equity Incentive Plan (the “2020 Plan”). On January 1, 2025, pursuant to the terms of the 2020 Plan, the number of shares reserved for issuance was increased automatically by 4% of the number of outstanding shares of common stock as of January 1, 2025.
+
+Stock Option Activity
+
+The following table summarizes the changes in the Company’s outstanding stock options:
+
+### HTML table
+
+|  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  | Number ofOptions |  |  |  |  |
+| Outstanding at December 31, 2024 | 6,560,736 |  |  |  |  |
+| Granted | — |  |  |  |  |
+| Exercised | (179,503) |  |  |  |  |
+| Forfeited | (468,885) |  |  |  |  |
+| Outstanding at September 30, 2025 | 5,912,348 |  |  |  |  |
+
+Generally, each award vests based on continued service per the award agreement. The grant date fair value of the award is recognized as stock-based compensation expense over the requisite service period. The grant date fair value was determined using similar methods and assumptions as those previously disclosed by the Company.
+
+Restricted Stock Unit Activity
+
+The following table summarizes the changes in the Company’s outstanding restricted stock units (“RSUs”):
+
+### HTML table
+
+|  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  | Number ofRSUs |  |  |  |  |
+| Outstanding at December 31, 2024 | 21,250,230 |  |  |  |  |
+| Granted | 10,213,362 |  |  |  |  |
+| Vested | (9,490,802) |  |  |  |  |
+| Forfeited | (1,924,452) |  |  |  |  |
+| Outstanding at September 30, 2025 | 20,048,338 |  |  |  |  |
+
+Generally, each award vests based on continued service per the award agreement. The grant date fair value of the award is recognized as stock-based compensation expense over the requisite service period. The grant date fair value was determined based on the fair market value of the Company’s Class A common stock on the grant date.
+
+Included in the table above are market-based RSUs granted between 2023 and 2025 that include a service condition. The market-based conditions for these awards are objective metrics related to the Company’s stock price defined in the award agreements. The service condition for these awards is satisfied by providing service to the Company through the
+
+14
+
+Table of Contents
+
+achievement date of the market-based conditions. The grant date fair value of the awards is recognized as stock-based compensation expense over the derived service period. The grant date fair value and derived service period were determined by using a Monte Carlo simulation with similar risk-free interest rate, expected dividend yield, and expected volatility assumptions as those used by the Company for determining the grant date fair value of its stock options.
+
+Award Accelerations and Modifications
+
+During the second quarter of 2025, certain service-based RSUs of a departing employee had their vesting accelerated pursuant to a separation agreement. In total, 0.4 million RSUs had their vesting accelerated. For the nine months ended September 30, 2025, the incremental stock-based compensation expense resulting from the acceleration was $0.5 million.
+
+Employee Stock Purchase Plan
+
+The Company’s 2024 Employee Stock Purchase Plan (the “ESPP”) was approved by the Board and the Company’s stockholders in the second quarter of 2024, with 4.2 million shares of Class A common stock initially reserved and available for issuance. On January 1, 2025, pursuant to the terms of the ESPP, the number of shares reserved for issuance was increased automatically by 1% of the number of shares of common stock issued and outstanding on December 31, 2023. Under the ESPP, each eligible employee is granted an option to purchase shares of common stock, with the purchase price paid through payroll deductions, subject to the plan’s limitations on the number and value of shares purchasable. Each offering period under the ESPP has an expected duration of 24 months, divided into four six-month purchase periods, with purchases occurring in June and December. The purchase price per share is equal to the lower of 85% of the closing market price on the first day of the offering period, or 85% of the closing market price on the applicable purchase date. Proceeds received from the issuance of shares are credited to stockholders’ equity in the period that the shares are issued. The grant date fair value of the awards is recognized as stock-based compensation expense over the requisite service period. The grant date fair value was determined using similar methods and assumptions as those used for the Company’s stock option awards granted under its equity incentive plans. No shares of common stock were issued under the ESPP during the three months ended September 30, 2025. 1.1 million shares of common stock were issued under the ESPP during the nine months ended September 30, 2025.
+
+Stock-Based Compensation Expense
+
+The following table summarizes the Company’s stock-based compensation expense (in thousands):
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | Three months ended September 30, |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Cost of revenue – software and other services | $ | 100 |  |  | $ | — |  |  | $ | 100 |  |  | $ | — |  |  |  |  |  |  |  |  |  |
+| Research and development | 1,370 |  |  | 1,559 |  |  | 5,066 |  |  | 5,521 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Sales and marketing | 1,202 |  |  | 905 |  |  | 4,998 |  |  | 3,166 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| General and administrative | 2,253 |  |  | 1,948 |  |  | 6,910 |  |  | 7,107 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total stock-based compensation expense | $ | 4,925 |  |  | $ | 4,412 |  |  | $ | 17,074 |  |  | $ | 15,794 |  |  |  |  |  |  |  |  |  |
+
+Note 10. Net Loss Per Share
+
+We compute net loss per share of Class A and Class B common stock using the two-class method. Basic net loss per share is computed by dividing the net loss by the weighted-average number of shares of each class of the Company’s common stock outstanding during the period. Diluted net loss per share is computed by giving effect to all potential shares of the Company’s common stock, including those presented in the table below, to the extent dilutive. Basic and diluted net loss per share were the same for each period presented as the inclusion of all potential shares of the Company’s common stock outstanding would have been anti-dilutive.
+
+15
+
+Table of Contents
+
+As the Company uses the two-class method required for companies with multiple classes of common stock, the following tables present the calculation of basic and diluted net loss per share for each class of the Company’s common stock outstanding (in thousands, except share and per share amounts):
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Three months ended September 30, 2025 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Class A |  | Class B |  | TotalCommon Stock |  |  |  |  |  |  |  |  |  |  |  |  |
+| Numerator: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Allocation of undistributed earnings | $ | (30,410) |  |  | $ | (3,561) |  |  | $ | (33,971) |  |  |  |  |  |  |  |
+| Numerator for basic and diluted net loss per share – loss available to common stockholders | $ | (30,410) |  |  | $ | (3,561) |  |  | $ | (33,971) |  |  |  |  |  |  |  |
+| Denominator: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Weighted-average common shares outstanding | 225,660,604 |  | 26,426,937 |  | 252,087,541 |  |  |  |  |  |  |  |  |  |  |  |  |
+| Denominator for basic and diluted net loss per share – weighted-average common stock | 225,660,604 |  | 26,426,937 |  | 252,087,541 |  |  |  |  |  |  |  |  |  |  |  |  |
+| Basic and diluted net loss per share | $ | (0.13) |  |  | $ | (0.13) |  |  | $ | (0.13) |  |  |  |  |  |  |  |
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Three months ended September 30, 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Class A |  | Class B |  | TotalCommon Stock |  |  |  |  |  |  |  |  |  |  |  |  |
+| Numerator: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Allocation of undistributed earnings | $ | (14,822) |  |  | $ | (2,102) |  |  | $ | (16,924) |  |  |  |  |  |  |  |
+| Numerator for basic and diluted net loss per share – loss available to common stockholders | $ | (14,822) |  |  | $ | (2,102) |  |  | $ | (16,924) |  |  |  |  |  |  |  |
+| Denominator: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Weighted-average common shares outstanding | 186,347,148 |  | 26,426,937 |  | 212,774,085 |  |  |  |  |  |  |  |  |  |  |  |  |
+| Denominator for basic and diluted net loss per share – weighted-average common stock | 186,347,148 |  | 26,426,937 |  | 212,774,085 |  |  |  |  |  |  |  |  |  |  |  |  |
+| Basic and diluted net loss per share | $ | (0.08) |  |  | $ | (0.08) |  |  | $ | (0.08) |  |  |  |  |  |  |  |
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Nine months ended September 30, 2025 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Class A |  | Class B |  | TotalCommon Stock |  |  |  |  |  |  |  |  |  |  |  |  |
+| Numerator: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Allocation of undistributed earnings | $ | (55,114) |  |  | $ | (6,658) |  |  | $ | (61,772) |  |  |  |  |  |  |  |
+| Numerator for basic and diluted net loss per share – loss available to common stockholders | $ | (55,114) |  |  | $ | (6,658) |  |  | $ | (61,772) |  |  |  |  |  |  |  |
+| Denominator: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Weighted-average common shares outstanding | 218,770,897 |  | 26,426,937 |  | 245,197,834 |  |  |  |  |  |  |  |  |  |  |  |  |
+| Denominator for basic and diluted net loss per share – weighted-average common stock | 218,770,897 |  | 26,426,937 |  | 245,197,834 |  |  |  |  |  |  |  |  |  |  |  |  |
+| Basic and diluted net loss per share | $ | (0.25) |  |  | $ | (0.25) |  |  | $ | (0.25) |  |  |  |  |  |  |  |
+
+16
+
+Table of Contents
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Nine months ended September 30, 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | Class A |  | Class B |  | TotalCommon Stock |  |  |  |  |  |  |  |  |  |  |  |  |
+| Numerator: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Allocation of undistributed earnings | $ | (47,582) |  |  | $ | (6,809) |  |  | $ | (54,391) |  |  |  |  |  |  |  |
+| Numerator for basic and diluted net loss per share – loss available to common stockholders | $ | (47,582) |  |  | $ | (6,809) |  |  | $ | (54,391) |  |  |  |  |  |  |  |
+| Denominator: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Weighted-average common shares outstanding | 184,682,855 |  | 26,426,937 |  | 211,109,792 |  |  |  |  |  |  |  |  |  |  |  |  |
+| Denominator for basic and diluted net loss per share – weighted-average common stock | 184,682,855 |  | 26,426,937 |  | 211,109,792 |  |  |  |  |  |  |  |  |  |  |  |  |
+| Basic and diluted net loss per share | $ | (0.26) |  |  | $ | (0.26) |  |  | $ | (0.26) |  |  |  |  |  |  |  |
+
+For the periods presented above, the net loss per share amounts are the same for Class A and Class B common stock because the holders of each class are entitled to equal per share dividends or distributions in liquidation in accordance with the Company's certificate of incorporation, as amended and restated. The undistributed earnings for each year are allocated based on the contractual participation rights of the Class A and Class B common stock as if the earnings for the year had been distributed. As the liquidation and dividend rights are identical, the undistributed earnings are allocated on a proportionate basis.
+
+The following table summarizes the Company’s anti-dilutive common equivalent shares:
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | September 30, |  |  |  |  |  |  |  |  |  |  |
+|  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |
+| Outstanding options to purchase common stock | 5,912,348 |  | 6,892,924 |  |  |  |  |  |  |  |  |
+| Outstanding restricted stock units | 20,048,338 |  | 22,752,688 |  |  |  |  |  |  |  |  |
+| Outstanding employee stock purchase plan options | 1,794,222 |  | 2,717,307 |  |  |  |  |  |  |  |  |
+| Outstanding warrants | 20,652,690 |  | 20,652,690 |  |  |  |  |  |  |  |  |
+| Total anti-dilutive common equivalent shares | 48,407,598 |  | 53,015,609 |  |  |  |  |  |  |  |  |
+
+Note 11. 401(k) Retirement Plan
+
+The Company sponsors a 401(k) defined contribution plan covering all eligible U.S. employees. Contributions to the 401(k) plan are discretionary. For the three months ended September 30, 2025 and 2024, expenses for matching 401(k) contributions were $0.1 million and $0.1 million, respectively. For the nine months ended September 30, 2025 and 2024, expenses for matching 401(k) contributions were $0.4 million and $0.4 million, respectively.
+
+Note 12. Commitments and Contingencies
+
+Commitments
+
+Leases:
+
+The Company primarily enters into leases for office space that are classified as operating leases. For the three months ended September 30, 2025 and 2024, total lease cost was $0.8 million and $0.7 million, respectively. For the nine months ended September 30, 2025 and 2024, total lease cost was $2.2 million and $2.2 million, respectively. Total lease cost was primarily composed of operating lease costs.
+
+Purchase Commitments:
+
+The Company enters into inventory purchase commitments with third-party manufacturers in the ordinary course of business, including a non-cancellable inventory supply agreement with a certain third-party manufacturing vendor. The provisions of the agreement allowed the Company, once it reached a certain cumulative purchase threshold in the fourth quarter of 2021, to pay for a portion of the subsequent inventory purchases using an advance previously paid to the vendor. As of September 30, 2025, the aggregate amount of minimum inventory purchase commitments is $4.5 million, and the Company has a vendor advance asset of $0.9 million, net of write-downs, and an accrued purchase commitment liability of
+
+17
+
+Table of Contents
+
+$0.1 million related to the agreement. The portion of the balances that is expected to be utilized in the next 12 months is included in current assets and current liabilities in the accompanying condensed consolidated balance sheets.
+
+The Company applied the guidance in Accounting Standards Codification Topic 330, Inventory to assess the purchase commitment and related loss, using such factors as Company-specific forecasts which are reliant on the Company’s limited sales history, agreement-specific provisions, macroeconomic factors, and market and industry trends. For the three and nine months ended September 30, 2025 and 2024, the Company did not recognize any additions to the accrued purchase commitment liability, or any related losses, based on its purchase commitment assessment as there were no significant changes to the assessment factors.
+
+The Company reviews its inventory on hand, including inventory acquired under the purchase commitments, for excess and obsolescence (“E&O”) on a quarterly basis. Any E&O inventory acquired that was previously accounted for as a purchase commitment liability accrual or vendor advance write down is recorded at zero value. During the three and nine months ended September 30, 2025 and 2024, the Company did not acquire a significant amount of such E&O inventory.
+
+Contingencies
+
+The Company is involved in litigation and legal matters from time to time, which have arisen in the normal course of business. The Company accrues an estimated liability for legal contingencies when the Company considers a potential loss probable and can reasonably estimate the amount of the potential loss. Although the ultimate results of these matters are not currently determinable, management does not expect that they will have a material effect on the Company’s condensed consolidated balance sheets, statements of operations and comprehensive loss, or statements of cash flows.
+
+On February 16, 2022, a putative class action lawsuit, styled Rose v. Butterfly Network, Inc., et al. was filed in the United States District Court for the District of New Jersey. The claims are against the Company and certain of its directors and previous management as well as members of the board of directors of the Company prior to the completion of the Business Combination, alleging that the defendants made false and misleading statements and/or omissions about its post-Business Combination business and financial prospects. The alleged class consists of all persons or entities who purchased or otherwise acquired the Company’s stock between January 12, 2021 and November 15, 2021, persons who exchanged Longview shares for the Company’s common stock, and persons who purchased Longview stock pursuant, or traceable to, the Proxy/Registration Statement filed with the SEC on November 27, 2020 or any amendment thereto. The Company intends to vigorously defend against this action. The lawsuit seeks unspecified damages, together with interest thereon, as well as the costs and expenses of litigation. There is no assurance that the Company will be successful in the defense of the litigation or that insurance will be available or adequate to fund any potential settlement or judgment or the litigation costs of the action. The Company is unable to predict the outcome or reasonably estimate a range of possible loss at this time.
+
+On June 21, 2022, a stockholder derivative action, styled Koenig v. Todd M. Fruchterman, et al. was filed in the United States District Court for the District of Delaware against the Company’s board of directors and the Company as nominal defendant. On November 28, 2023, a stockholder derivative action, styled Bhavsar v. Todd M. Fruchterman, et al. was filed in the United States District Court for the District of Delaware against the board of directors and the Company as nominal defendant. Both these actions allege violation of Section 14(a) of the Exchange Act, as amended, and Rule 14a-9 promulgated thereunder, and claims for breach of fiduciary duty, contribution and indemnification, aiding and abetting, and gross mismanagement. The lawsuits are premised upon allegedly inadequate internal controls and purportedly misleading representations regarding the Company’s financial condition, business prospects, and the Company’s November 2021 earnings announcement. The Company intends to vigorously defend against these actions. The lawsuit seeks unspecified damages, disgorgement, and restitution, together with interest thereon, as well as the costs and expenses of litigation. There is no assurance that the Company will be successful in the defense of the litigation or that insurance will be available or adequate to fund any potential settlement or judgment or the litigation costs of the action. The Company is unable to predict the outcome or reasonably estimate a range of possible loss at this time.
+
+18
+
+Table of Contents
+
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+The following discussion and analysis provides information which management believes is relevant to an assessment and understanding of our condensed consolidated results of operations and financial condition. The discussion should be read in conjunction with the unaudited condensed consolidated financial statements and notes thereto contained in this Quarterly Report on Form 10-Q and the consolidated financial statements and notes thereto contained in our 2024 Annual Report on Form 10-K. This discussion contains forward-looking statements and involves numerous risks and uncertainties, including, but not limited to, those described under the caption “Risk Factors” in Item 1A of Part I of our 2024 Annual Report on Form 10-K. Actual results may differ materially from those contained in any forward-looking statements.
+
+Overview
+
+We are an innovative digital health business transforming care through a unique combination of portable, semiconductor-based ultrasound technology, intuitive software, services, and educational offerings that can make medical imaging more accessible than ever before. Butterfly’s solution enables the practical application of ultrasound information into the clinical workflow through affordable hardware that fits in a healthcare professional’s pocket and is paired with cloud-connected software that is easily accessed through a mobile application.
+
+Butterfly developed ultrasound devices that can perform whole-body imaging in a single handheld probe because they are powered by our proprietary semiconductor technology instead of piezoelectric crystals. Our Ultrasound-on-Chip™ makes ultrasound more accessible outside of large healthcare institutions, while our software is intended to make the product easy to use, fully integrated with the clinical workflow, and accessible on a user’s smartphone, tablet, and almost any hospital computer system connected to the Internet. We aim to enable the delivery of imaging information anywhere at point-of-care to drive earlier detection throughout the body and remote management of health conditions. We market and sell the Butterfly system, which includes probes, related accessories, and software subscriptions, to healthcare systems, physicians, and healthcare providers through a direct sales force, distributors, and our eCommerce channel.
+
+Since 2022, we have taken significant actions to reduce our cost of operations and extend our cash runway and have reduced our annual cash requirements by approximately $180 million, to less than $50 million annually. As we look forward, we expect to continue to invest in our business in order to grow revenue. On January 31, 2025, we raised additional capital through the issuance and sale in a public offering of 27.6 million shares of our Class A common stock, generating proceeds of $81.0 million, net of underwriting costs and related expenses.
+
+Key Performance Measures
+
+We review the key performance measures discussed below to evaluate the business and measure performance, identify trends, formulate plans, and make strategic decisions. Our key performance measures may fluctuate over time as the adoption of our devices increases, which may shift the revenue mix more toward software and other services. The quarterly measures may be impacted by the timing of device sales.
+
+Units fulfilled
+
+We define units fulfilled as the number of devices whereby control is transferred to a customer. We do not adjust this measure for returns as our volume of returns has historically been low. We view units fulfilled as a key indicator of the growth of our business. We believe that this measure is useful to investors because it presents our core growth and the performance of our business period over period.
+
+19
+
+Table of Contents
+
+For the three months ended
+
+Units fulfilled increased by 221 units, or 4.7%, for the three months ended September 30, 2025 compared to the three months ended September 30, 2024. The increase was driven by higher probe sales volume in our US sales channels.
+
+Software and other services mix
+
+We define software and other services mix as a percentage of our total revenue recognized in a reporting period that is based on software subscriptions and other services, consisting primarily of our software as a service (“SaaS”) offering. We view software and other services mix as a key indicator of the profitability of our business, and thus we believe that this measure is useful to investors.
+
+Software and other services mix decreased by 1.9 percentage points, to 32.3%, for the three months ended September 30, 2025 compared to the three months ended September 30, 2024. This decrease is primarily a reflection of the increases in both our product revenue and total revenue shifting the mix more towards hardware.
+
+20
+
+Table of Contents
+
+Description of Certain Components of Financial Data
+
+Revenue
+
+Revenue consists of revenue from the sale of products, such as medical devices, accessories, and semiconductor chips, and the sale of software and other services. Our software and related service offerings include SaaS subscriptions, product support and maintenance (“Support”), software development kits ("SDKs") which may be perpetual or term-based, and partnership support services. SaaS subscriptions include licenses for teams and individuals as well as enterprise-level subscriptions. For sales of products and perpetual SDKs, revenue is recognized at a point in time upon transfer of control to the customer. SaaS subscriptions, Support, and term-based SDKs are generally related to stand-ready obligations and are recognized ratably over time.
+
+Over time, as adoption of our devices increases through further market penetration and as practitioners in the Butterfly network continue to use our devices, we expect our annual revenue mix to shift more toward software and other services. The quarterly revenue mix may be impacted by the timing of device sales. Recently, due in part to the continued success of our next-generation iQ3 probe and the delivery of semiconductor chips to one of our partners, our software and other services mix as a percentage of total revenue has been decreasing in comparison to comparative periods in prior years.
+
+To date, we have invested in building out our commercial footprint, with the ultimate goal of growing adoption at large-scale healthcare systems and driving awareness of the usability of ultrasound. As we expand our healthcare system software offerings and develop relationships with larger healthcare systems, we continue to expect a higher proportion of our sales in healthcare systems compared to eCommerce.
+
+Cost of revenue
+
+Cost of product revenue consists of product costs including manufacturing costs, personnel costs and benefits, inbound freight, packaging, warranty replacement costs, payment processing fees, and inventory obsolescence and write-offs. We expect our cost of product revenue to fluctuate over time due to the level of units fulfilled in any given period and fluctuate as a percentage of product revenue over time as our focus on operational efficiencies in our supply chain may be offset by increased prices of certain inventory components.
+
+Cost of software and other services revenue consists of personnel costs, cloud hosting costs and payment processing fees. Because the costs and associated expenses to deliver our SaaS offerings are less than the costs and associated expenses of manufacturing and selling our devices, we anticipate an improvement in profitability and margin expansion over time as our revenue mix shifts increasingly towards software and other services. We plan to continue to invest additional resources to expand and further develop our SaaS and other service offerings which will be reflected in cost of revenue as amortization expense.
+
+Research and development
+
+Research and development expenses primarily consist of personnel costs and benefits, professional services, facilities-related expenses and depreciation, fabrication services, and software costs. Most of our research and development expenses are related to developing new products and services that have not reached the point of commercialization and improving our products and services that have been commercialized. Fabrication services include certain third-party engineering costs, product testing, and test boards. Research and development expenses are expensed as incurred. We expect to continue to make substantial investments in our product and software development, clinical, and regulatory capabilities.
+
+Sales and marketing
+
+Sales and marketing expenses primarily consist of personnel costs and benefits, advertising, conferences and events, facilities-related expenses, and software costs. We expect to increase our investments in our commercial capabilities.
+
+General and administrative
+
+General and administrative expenses primarily consist of personnel costs and benefits, insurance, patent fees, software costs, facilities-related expenses, and outside services. Outside services consist of professional services, legal fees and other professional fees.
+
+21
+
+Table of Contents
+
+Other
+
+Operating expenses classified as other are expenses which we do not consider representative of our ongoing operations. These other expenses primarily consist of employee severance and benefits costs related to reductions in force, business transformation initiatives, litigation costs, and legal settlements.
+
+Results of Operations
+
+We operate as a single reportable segment to reflect the way our CODM reviews and assesses the performance of the business. The accounting policies are described in Note 2 “Summary of Significant Accounting Policies” in our condensed consolidated financial statements included in this Quarterly Report on Form 10-Q.
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Three months ended September 30, |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | 2025 |  | 2024 |  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | Dollars |  | % ofrevenue |  | Dollars |  | % ofrevenue |  | Dollars |  | % ofrevenue |  | Dollars |  | % ofrevenue |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Revenue: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product |  | $ | 14,556 |  |  | 67.7 | % |  | $ | 13,538 |  |  | 65.8 | % |  | $ | 45,341 |  |  | 68.6 | % |  | $ | 39,478 |  |  | 66.1 | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Software and other services |  | 6,933 |  |  | 32.3 |  |  | 7,023 |  |  | 34.2 |  |  | 20,755 |  |  | 31.4 |  |  | 20,227 |  |  | 33.9 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total revenue |  | 21,489 |  |  | 100.0 |  |  | 20,561 |  |  | 100.0 |  |  | 66,096 |  |  | 100.0 |  |  | 59,705 |  |  | 100.0 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Cost of revenue: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product |  | 23,552 |  |  | 109.6 |  |  | 6,065 |  |  | 29.5 |  |  | 36,047 |  |  | 54.5 |  |  | 17,739 |  |  | 29.7 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Software and other services |  | 1,694 |  |  | 7.9 |  |  | 2,263 |  |  | 11.0 |  |  | 5,536 |  |  | 8.4 |  |  | 6,870 |  |  | 11.5 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total cost of revenue |  | 25,246 |  |  | 117.5 |  |  | 8,328 |  |  | 40.5 |  |  | 41,583 |  |  | 62.9 |  |  | 24,609 |  |  | 41.2 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Gross profit (loss) |  | (3,757) |  |  | (17.5) |  |  | 12,233 |  |  | 59.5 |  |  | 24,513 |  |  | 37.1 |  |  | 35,096 |  |  | 58.8 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Operating expenses: |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Research and development |  | 8,703 |  |  | 40.5 |  |  | 8,844 |  |  | 43.0 |  |  | 26,942 |  |  | 40.8 |  |  | 28,975 |  |  | 48.5 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Sales and marketing |  | 10,626 |  |  | 49.4 |  |  | 9,607 |  |  | 46.7 |  |  | 33,805 |  |  | 51.1 |  |  | 29,713 |  |  | 49.8 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| General and administrative |  | 9,289 |  |  | 43.2 |  |  | 9,353 |  |  | 45.5 |  |  | 28,018 |  |  | 42.4 |  |  | 29,868 |  |  | 50.0 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other |  | 2,759 |  |  | 12.8 |  |  | 1,675 |  |  | 8.1 |  |  | 5,451 |  |  | 8.2 |  |  | 3,639 |  |  | 6.1 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Total operating expenses |  | 31,377 |  |  | 146.0 |  |  | 29,479 |  |  | 143.4 |  |  | 94,216 |  |  | 142.5 |  |  | 92,195 |  |  | 154.4 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Loss from operations |  | (35,134) |  |  | (163.5) |  |  | (17,246) |  |  | (83.9) |  |  | (69,703) |  |  | (105.5) |  |  | (57,099) |  |  | (95.6) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Interest income |  | 1,443 |  |  | 6.7 |  |  | 1,221 |  |  | 5.9 |  |  | 4,598 |  |  | 7.0 |  |  | 4,023 |  |  | 6.7 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Interest expense |  | (385) |  |  | (1.8) |  |  | (319) |  |  | (1.6) |  |  | (1,100) |  |  | (1.7) |  |  | (928) |  |  | (1.6) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Change in fair value of warrant liabilities |  | 207 |  |  | 1.0 |  |  | (1,239) |  |  | (6.0) |  |  | 1,652 |  |  | 2.5 |  |  | (826) |  |  | (1.4) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other income (expense), net |  | (86) |  |  | (0.4) |  |  | 717 |  |  | 3.5 |  |  | 2,824 |  |  | 4.3 |  |  | 517 |  |  | 0.9 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Loss before provision for income taxes |  | (33,955) |  |  | (158.0) |  |  | (16,866) |  |  | (82.0) |  |  | (61,729) |  |  | (93.4) |  |  | (54,313) |  |  | (91.0) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Provision for income taxes |  | 16 |  |  | 0.1 |  |  | 58 |  |  | 0.3 |  |  | 43 |  |  | 0.1 |  |  | 78 |  |  | 0.1 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Net loss and comprehensive loss |  | $ | (33,971) |  |  | (158.1) | % |  | $ | (16,924) |  |  | (82.3) | % |  | $ | (61,772) |  |  | (93.5) | % |  | $ | (54,391) |  |  | (91.1) | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+Comparison of the three months ended September 30, 2025 and 2024
+
+Revenue
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Three months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product |  | $ | 14,556 |  |  | $ | 13,538 |  |  | $ | 1,018 |  |  | 7.5 | % |  |  |  |  |  |  |  |  |  |  |  |
+| Software and other services |  | 6,933 |  |  | 7,023 |  |  | (90) |  |  | (1.3) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | $ | 21,489 |  |  | $ | 20,561 |  |  | $ | 928 |  |  | 4.5 | % |  |  |  |  |  |  |  |  |  |  |  |
+
+Product revenue increased by $1.0 million, or 7.5%, for the three months ended September 30, 2025 compared to the three months ended September 30, 2024. This increase was primarily driven by higher average selling prices in our international
+
+22
+
+Table of Contents
+
+markets given the international launch of our iQ3 probe in the third quarter last year. We also had increased sales volume within our eCommerce and vet channels.
+
+Software and other services revenue remained relatively flat for the three months ended September 30, 2025 compared to the three months ended September 30, 2024, decreasing by $0.1 million, or 1.3%. This decrease was primarily driven by lower renewals of individual subscriptions and lower revenue from extended warranties  due to the standard warranty of our iQ3 probe being longer than our prior models. These decreases were partially offset by increases in our licensing and services revenue from our partnerships.
+
+Cost of revenue
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Three months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product |  | $ | 23,552 |  |  | $ | 6,065 |  |  | $ | 17,487 |  |  | 288.3 | % |  |  |  |  |  |  |  |  |  |  |  |
+| Software and other services |  | 1,694 |  |  | 2,263 |  |  | (569) |  |  | (25.1) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | $ | 25,246 |  |  | $ | 8,328 |  |  | $ | 16,918 |  |  | 203.1 | % |  |  |  |  |  |  |  |  |  |  |  |
+| Percentage of revenue |  | 117.5 | % |  | 40.5 | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+Cost of product revenue increased by $17.5 million, or 288.3%, for the three months ended September 30, 2025 compared to the three months ended September 30, 2024, driven by a non-recurring $17.4 million charge during the three months ended September 30, 2025 for excess and obsolete inventory due to technological advancements in the underlying components of our devices and changes in our product portfolio.
+
+Cost of software and other services revenue decreased by $0.6 million, or 25.1%, for the three months ended September 30, 2025 compared to the three months ended September 30, 2024, primarily driven by a $0.7 million decrease in amortization expense for software development investments that we made in prior years.
+
+Cost of revenue as a percentage of revenue increased from 40.5% to 117.5% for the three months ended September 30, 2025 compared to the three months ended September 30, 2024, primarily due to the $17.4 million excess and obsolete inventory charge, which is 80.8% as a percentage of revenue for the three months ended September 30, 2025.
+
+Research and development
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Three months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Research and development |  | $ | 8,703 |  |  | $ | 8,844 |  |  | $ | (141) |  |  | (1.6) | % |  |  |  |  |  |  |  |  |  |  |  |
+| Percentage of revenue |  | 40.5 | % |  | 43.0 | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+Research and development expenses remained relatively flat for the three months ended September 30, 2025 compared to the three months ended September 30, 2024, decreasing by $0.1 million, or 1.6%. This decrease was primarily driven by reduced personnel and product engineering costs that were partially offset by higher professional services costs.
+
+Sales and marketing
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Three months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Sales and marketing |  | $ | 10,626 |  |  | $ | 9,607 |  |  | $ | 1,019 |  |  | 10.6 | % |  |  |  |  |  |  |  |  |  |  |  |
+| Percentage of revenue |  | 49.4 | % |  | 46.7 | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+Sales and marketing expenses increased by $1.0 million, or 10.6%, for the three months ended September 30, 2025 compared to the three months ended September 30, 2024. The most significant drivers of this increase were $0.4 million of higher personnel costs and $0.1 million of higher professional services costs, both resulting from investments in our sales force and client experience function in order to support continued revenue growth.
+
+23
+
+Table of Contents
+
+General and administrative
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Three months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| General and administrative |  | $ | 9,289 |  |  | $ | 9,353 |  |  | $ | (64) |  |  | (0.7) | % |  |  |  |  |  |  |  |  |  |  |  |
+| Percentage of revenue |  | 43.2 | % |  | 45.5 | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+General and administrative expenses remained relatively flat for the three months ended September 30, 2025 compared to the three months ended September 30, 2024, decreasing by $0.1 million, or 0.7%. This decrease was primarily driven by reduced insurance costs, largely offset by higher personnel costs due to increased headcount.
+
+Other
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Three months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other |  | $ | 2,759 |  |  | $ | 1,675 |  |  | $ | 1,084 |  |  | 64.7 | % |  |  |  |  |  |  |  |  |  |  |  |
+| Percentage of revenue |  | 12.8 | % |  | 8.1 | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+Other increased by $1.1 million, or 64.7%, for the three months ended September 30, 2025 compared to the three months ended September 30, 2024. This increase was driven by $1.9 million of higher legal costs due to litigation, partially offset by $0.8 million of lower employment-related costs. These costs are not representative of our ongoing operations.
+
+Comparison of the nine months ended September 30, 2025 and 2024
+
+Revenue
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product |  | $ | 45,341 |  |  | $ | 39,478 |  |  | $ | 5,863 |  |  | 14.9 | % |  |  |  |  |  |  |  |  |  |  |  |
+| Software and other services |  | 20,755 |  |  | 20,227 |  |  | 528 |  |  | 2.6 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | $ | 66,096 |  |  | $ | 59,705 |  |  | $ | 6,391 |  |  | 10.7 | % |  |  |  |  |  |  |  |  |  |  |  |
+
+Product revenue increased by $5.9 million, or 14.9%, for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024. This increase was primarily driven by deliveries of semiconductor chips to one of our Octiv partners in the current year as well as higher average selling prices in our international markets given the international launch of our iQ3 probe in the third quarter last year.
+
+Software and other services revenue increased by $0.5 million, or 2.6%, for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024. This increase was primarily driven by increases in licensing and services revenue from our partnerships and licensing revenue from our US sales channels, partially offset by a decrease in software and other services revenue from our international sales channels.
+
+Cost of revenue
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product |  | $ | 36,047 |  |  | $ | 17,739 |  |  | $ | 18,308 |  |  | 103.2 | % |  |  |  |  |  |  |  |  |  |  |  |
+| Software and other services |  | 5,536 |  |  | 6,870 |  |  | (1,334) |  |  | (19.4) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  | $ | 41,583 |  |  | $ | 24,609 |  |  | $ | 16,974 |  |  | 69.0 | % |  |  |  |  |  |  |  |  |  |  |  |
+| Percentage of revenue |  | 62.9 | % |  | 41.2 | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+Cost of product revenue increased by $18.3 million, or 103.2%, for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024, driven by a non-recurring $17.4 million charge during the nine months ended September 30, 2025 for excess and obsolete inventory due to technological advancements in the underlying components of our devices and changes in our product portfolio.
+
+24
+
+Table of Contents
+
+Cost of software and other services revenue decreased by $1.3 million, or 19.4%, for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024, primarily driven by a $1.4 million decrease in amortization expense for software development investments that we made in prior years.
+
+Cost of revenue as a percentage of revenue increased from 41.2% to 62.9% for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024, primarily due to the $17.4 million excess and obsolete inventory charge, which is 26.3% as a percentage of revenue for the nine months ended September 30, 2025.
+
+Research and development
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Research and development |  | $ | 26,942 |  |  | $ | 28,975 |  |  | $ | (2,033) |  |  | (7.0) | % |  |  |  |  |  |  |  |  |  |  |  |
+| Percentage of revenue |  | 40.8 | % |  | 48.5 | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+Research and development expenses decreased by $2.0 million, or 7.0%, for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024. This decrease was primarily driven by a reduction of $2.4 million in personnel costs as a result of our business transformation initiative in 2024 to optimize our non-specialized technical functions, a reduction of $0.6 million in product engineering costs, and an offsetting increase of $1.2 million in professional services costs for software development and regulatory compliance.
+
+Sales and marketing
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Sales and marketing |  | $ | 33,805 |  |  | $ | 29,713 |  |  | $ | 4,092 |  |  | 13.8 | % |  |  |  |  |  |  |  |  |  |  |  |
+| Percentage of revenue |  | 51.1 | % |  | 49.8 | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+Sales and marketing expenses increased by $4.1 million, or 13.8%, for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024. This increase was primarily driven by $3.0 million of higher personnel and other employment-related costs and $0.2 million of higher professional services costs, both resulting from investments in our sales force and client experience function in order to support continued revenue growth.
+
+General and administrative
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| General and administrative |  | $ | 28,018 |  |  | $ | 29,868 |  |  | $ | (1,850) |  |  | (6.2) | % |  |  |  |  |  |  |  |  |  |  |  |
+| Percentage of revenue |  | 42.4 | % |  | 50.0 | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+General and administrative expenses decreased by $1.9 million, or 6.2%, for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024. This decrease was primarily driven by reductions of $0.7 million in insurance costs, $0.5 million in personnel costs partly due to lower stock-based compensation expense, and $0.3 million in external accounting and audit fees.
+
+Other
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  | Change |  | % Change |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Other |  | $ | 5,451 |  |  | $ | 3,639 |  |  | $ | 1,812 |  |  | 49.8 | % |  |  |  |  |  |  |  |  |  |  |  |
+| Percentage of revenue |  | 8.2 | % |  | 6.1 | % |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+Other increased by $1.8 million, or 49.8%, for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024. This increase was driven by $2.1 million of higher legal costs due to litigation, partially offset by $0.3 million of lower employment-related costs. These costs are not representative of our ongoing operations.
+
+25
+
+Table of Contents
+
+Liquidity and Capital Resources
+
+Since our inception, our primary sources of liquidity are cash flows from operations and proceeds from stock issuances and the Business Combination. Our primary uses of liquidity are operating expenses, working capital requirements, and capital expenditures.
+
+On January 31, 2025, we raised $81.0 million, net of underwriting costs and related expenses, through the issuance and sale in a public offering of 27.6 million shares of our Class A common stock. During the three months ended September 30, 2025, the Company utilized $3.9 million of cash and cash equivalents for ongoing operations. As of September 30, 2025, our cash and cash equivalents balance was $144.2 million. Our future spending will depend on various factors, including our rate of revenue growth and the timing and extent of spending on strategic business initiatives. We expect that our existing cash and cash flows from operations will be sufficient to meet our liquidity, capital expenditure, and anticipated working capital requirements and fund our operations for at least the next 12 months.
+
+As of September 30, 2025, we have restricted cash of $4.0 million to secure a letter of credit for one of our leases, which is expected to be maintained as a security deposit for the duration of the lease.
+
+Our material cash requirements include contractual obligations with third parties for office leases, technology licensing agreements, inventory supply agreements, and outsourced services. Our fixed office lease payment obligations were $25.2 million as of September 30, 2025, with $3.7 million payable within the next 12 months. Our fixed technology license payment obligations were $14.0 million as of September 30, 2025, with $3.5 million payable within the next 12 months. Our fixed purchase obligations for inventory supply agreements, net of vendor advances, were $3.6 million as of September 30, 2025, all of which is payable within the next 12 months. Our fixed outsourced services payment obligations were $4.5 million as of September 30, 2025, with $1.4 million payable within the next 12 months.
+
+As of September 30, 2025, we had no obligations, assets or liabilities, which would be considered off-balance sheet arrangements.
+
+Cash flows
+
+Comparison of the nine months ended September 30, 2025 and 2024
+
+The following table summarizes our sources and uses of cash for the nine months ended September 30, 2025 and 2024:
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Nine months ended September 30, |  |  |  |  |  |  |  |  |  |  |  |  |
+| (in thousands) |  | 2025 |  | 2024 |  |  |  |  |  |  |  |  |  |  |
+| Net cash used in operating activities |  | $ | (21,731) |  |  | $ | (38,587) |  |  |  |  |  |  |  |
+| Net cash used in investing activities |  | (2,265) |  |  | (2,250) |  |  |  |  |  |  |  |  |  |
+| Net cash provided by financing activities |  | 79,454 |  |  | — |  |  |  |  |  |  |  |  |  |
+| Net increase (decrease) in cash, cash equivalents, and restricted cash |  | $ | 55,458 |  |  | $ | (40,837) |  |  |  |  |  |  |  |
+
+Net cash used in operating activities
+
+Net cash used in operating activities represents the cash receipts and disbursements related to our activities other than investing and financing activities. We expect cash provided by historical financing activities will continue to be our primary source of funds to support operating and capital expenditure needs for the foreseeable future.
+
+Net cash used in operating activities decreased by $16.9 million, or 43.7%, for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024. The decrease was comprised of improvements of $7.0 million in net loss adjusted for certain non-cash items and $9.9 million in net working capital cash usage. The improvement in net working capital cash usage was primarily driven by a $5.5 million improvement in cash provided by changes in our inventory and the related vendor advances, a $4.2 million improvement in cash used for changes in accounts receivable, and a $1.7 million improvement in cash provided by changes in accounts payable and accrued expenses. These improvements were partially offset by a $1.8 million increase in cash used for changes in prepaid expenses and other assets.
+
+26
+
+Table of Contents
+
+Net cash used in investing activities
+
+Net cash used in investing activities remained relatively flat for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024, increasing by 0.7%. There were no significant changes in purchases of property, equipment, and intangible assets, including capitalized software or sales of property and equipment.
+
+Net cash provided by financing activities
+
+Net cash provided by financing activities increased by $79.5 million for the nine months ended September 30, 2025 compared to the nine months ended September 30, 2024. This increase was primarily comprised of $81.0 million provided by the net proceeds from the public share offering in January 2025 as well as $1.2 million provided by stock plan transactions, partially offset by $2.8 million in cash used for payments of taxes for restricted stock units. We did not have any financing activities during the nine months ended September 30, 2024.
+
+Critical Accounting Policies and Significant Judgments and Estimates
+
+This discussion and analysis of our financial condition and results of operations are based on our condensed consolidated financial statements which have been prepared in accordance with U.S. GAAP. The preparation of these condensed consolidated financial statements requires us to make estimates and assumptions that affect the reported amounts of assets, liabilities, revenue, contingent assets and liabilities, and related disclosures. Our estimates are based on our historical experience and various other factors that we believe are reasonable under the circumstances, and these form the basis for making judgments about items that are not readily apparent from other sources. Actual results may differ from these estimates under different assumptions or conditions.
+
+As of September 30, 2025, we concluded that a revision to our estimates of the net realizable value of our inventories and of excess and obsolete inventory was appropriate due to technological advancements in the underlying components of our devices and changes in our product portfolio. As a result, we recognized an additional $17.4 million non-recurring charge for excess and obsolete inventory in our cost of product revenue during the three and nine months ended September 30, 2025. This was in addition to the insignificant, recurring net realizable value and excess and obsolete inventory adjustments we typically recognize.
+
+For our condensed consolidated financial statements included in this Quarterly Report on Form 10-Q, there have been no other material changes to the critical accounting policies and estimates disclosed in our 2024 Annual Report on Form 10-K.
+
+Recently Adopted Accounting Pronouncements
+
+The Company did not identify any significant recently issued accounting pronouncements that may potentially impact our financial position and results of operations.
+
+Item 3. Quantitative and Qualitative Disclosures About Market Risk
+
+Interest Rate Risk
+
+We did not have any floating rate debt as of September 30, 2025. Our cash and cash equivalents are comprised primarily of bank deposits and money market accounts. The primary objective of our investments is the preservation of capital to fulfill liquidity needs. We do not enter into investments for trading or speculative purposes. Due to the short-term nature and low risk profile of these investments, we do not expect cash flows to be affected to any significant degree by a sudden change in market interest rates, including an immediate change of 100 basis points, or one percentage point. Declines in interest rates, however, would reduce future investment income.
+
+Inflation Risk
+
+We do not believe that inflation has had a material effect on our business, financial condition, or results of operations, other than its impact on the general economy. Nonetheless, to the extent our costs are impacted by general inflationary pressures, including as a result of tariffs, we may not be able to fully offset such higher costs through price increases or manufacturing efficiencies. Our inability or failure to do so could harm our business, financial condition, and results of operations.
+
+27
+
+Table of Contents
+
+Foreign Exchange Risk
+
+We operate our business primarily within the United States and currently execute the majority of our transactions in U.S. dollars. We have not utilized hedging strategies with respect to such foreign exchange exposure. This limited foreign currency translation risk is not expected to have a material impact on our condensed consolidated financial statements.
+
+Item 4. Controls and Procedures
+
+Evaluation of Disclosure Controls and Procedures
+
+Under the supervision and with the participation of our management, including our principal executive officer and principal financial officer, we conducted an evaluation of the effectiveness of the design and operation of our disclosure controls and procedures, as defined in Rules 13a-15(e) and 15d-15(e) under the Exchange Act as of the end of the period covered by this Quarterly Report on Form 10-Q.
+
+Disclosure controls and procedures are designed to ensure that information required to be disclosed in our reports filed or submitted under the Exchange Act is recorded, processed, summarized, and reported within the time periods specified in the SEC’s rules and forms. Disclosure controls and procedures include controls and procedures designed to ensure that information required to be disclosed in our reports filed under the Exchange Act is accumulated and communicated to management, including our Chief Executive Officer and Interim Chief Financial Officer, to allow timely decisions regarding required disclosure. Management recognizes that any controls and procedures, no matter how well designed and operated, can provide only reasonable assurance of achieving the desired control objectives, and management necessarily applies its judgment in evaluating the cost-benefit relationship of possible controls and procedures.
+
+Based on the evaluation of our disclosure controls and procedures, our Chief Executive Officer and Interim Chief Financial Officer concluded that our disclosure controls and procedures were effective as of September 30, 2025.
+
+Changes in Internal Control over Financial Reporting
+
+There were no changes in our internal control over financial reporting identified in connection with the evaluation required by Rules 13a-15(d) and 15d-15(d) of the Exchange Act that occurred during the three months ended September 30, 2025 that have materially affected, or are reasonably likely to materially affect, our internal control over financial reporting.
+
+PART II — OTHER INFORMATION
+
+Item 1. Legal Proceedings
+
+We are currently and may in the future be subject to legal proceedings, claims, and regulatory actions arising in the ordinary course of business. The outcome of any such matters, regardless of the merits, is inherently uncertain.
+
+For more information about our legal proceedings and this item, see Note 12 “Commitments and Contingencies” in the Notes to Condensed Consolidated Financial Statements in Part I, Item 1 “Financial Statements” of this Quarterly Report on Form 10-Q, which is incorporated herein by reference.
+
+Item 1A. Risk Factors
+
+Our business, results of operations, and financial condition are subject to various risks and uncertainties including the risk factors described under the caption “Risk Factors” in our 2024 Annual Report on Form 10-K. There have been no material changes to the risk factors described in the 2024 Annual Report on Form 10-K.
+
+Item 2. Unregistered Sales of Equity Securities and Use of Proceeds
+
+Unregistered Sales of Equity Securities
+
+Not applicable.
+
+Issuer Purchases of Equity Securities
+
+We did not repurchase any of our equity securities during the three months ended September 30, 2025.
+
+28
+
+Table of Contents
+
+Item 5. Other Information
+
+Rule 10b5-1 Trading Arrangements
+
+On September 12, 2025, Steven Cashman, our Chief Business Officer, adopted a “Rule 10b5-1 trading arrangement” (as such term is defined in Item 408 of Regulation S-K), pursuant to which Mr. Cashman has authorized the sale of up to 450,000 shares of our Class A common stock during a period beginning on February 26, 2026, and ending on October 30, 2026. This trading plan was entered into in accordance with the Company’s policies regarding transactions in our securities.
+
+During the three months ended September 30, 2025, none of our other directors or officers (as defined in Rule 16a-1(f) of the Exchange Act) of the Company adopted, modified, or terminated a “Rule 10b5-1 trading arrangement” or “non-Rule 10b5-1 trading arrangement”, as each term is defined in Item 408 of Regulation S-K.
+
+Item 6. Exhibits
+
+See Exhibit Index.
+
+29
+
+Table of Contents
+
+EXHIBIT INDEX
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Exhibit Number |  | Exhibit Description |  | Filed Herewith |  | Incorporated by Reference herein from Form or Schedule |  | Filing Date |  | SEC File/ Reg. Number |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 3.1 |  | Third Amended and Restated Certificate of Incorporation, as amended, of the Registrant, as filed with the Secretary of the State of Delaware on June 7, 2024. |  |  |  | Form 8-K(Exhibit 3.1) |  | 6/13/2024 |  | 001-39292 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 3.2 |  | Amended and Restated Bylaws of Butterfly Network, Inc. |  |  |  | Form 8-K(Exhibit 3.2) |  | 2/16/2021 |  | 001-39292 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 10.1+ |  | Promotion Letter for Megan Carlson, dated as of July 14, 2025 |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 10.2+ |  | Retention Award Letter, dated as of October 8, 2025, by and between Butterfly Network, Inc. and Megan Carlson |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 10.3+ |  | Promotion Letter for Nick Caezza, dated as of February 2, 2024 |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 10.4+ |  | Offer Letter, dated as of August 26, 2025, by and between Butterfly Network, Inc. and Victor Ku |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 31.1 |  | Certification of the Principal Executive Officer pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 31.2 |  | Certification of the Principal Financial Officer pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 32.1 |  | Certifications of the Chief Executive Officer and Chief Financial Officer pursuant to Section 906 of the Sarbanes-Oxley Act of 2002 |  | X* |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 101.INS |  | Inline XBRL Instance Document - The instance document does not appear in the Interactive Data File because its Inline XBRL tags are embedded within the Inline XBRL document. |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 101.SCH |  | Inline XBRL Taxonomy Extension Schema Document. |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+30
+
+Table of Contents
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Exhibit Number |  | Exhibit Description |  | Filed Herewith |  | Incorporated by Reference herein from Form or Schedule |  | Filing Date |  | SEC File/ Reg. Number |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 101.CAL |  | Inline XBRL Taxonomy Extension Calculation Linkbase Document. |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 101.DEF |  | Inline XBRL Taxonomy Extension Definition Linkbase Document. |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 101.LAB |  | Inline XBRL Taxonomy Extension Label Linkbase Document. |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 101.PRE |  | Inline XBRL Taxonomy Extension Presentation Linkbase Document. |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 104 |  | Cover Page Interactive Data File (formatted in Inline XBRL and contained in Exhibit 101) |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
++    Management contract or compensatory plan or arrangement.
+
+*    Furnished herewith.
+
+31
+
+Table of Contents
+
+SIGNATURES
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned thereunto duly authorized.
+
+### HTML table
+
+|  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | BUTTERFLY NETWORK, INC. |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+| Date: October 31, 2025 | By: | /s/ Megan Carlson, CPA |  |  |  |  |  |  |
+|  |  | Megan Carlson, CPA |  |  |  |  |  |  |
+|  |  | Interim Chief Financial Officer |  |  |  |  |  |  |
+
+32

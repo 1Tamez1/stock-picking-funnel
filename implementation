@@ -1,0 +1,153 @@
+Implementation Record
+=====================
+
+Planned Changes Before Coding
+-----------------------------
+
+This phase will stay entirely inside this folder and will preserve the current compatibility backend as the source of truth.
+
+Planned work:
+
+1. Replace the remaining primary legacy-framed routes with native Next.js pages:
+   - `/dashboard`
+   - `/pool`
+   - `/funnel`
+   - `/reports`
+   - `/watchlist`
+   - `/archive`
+   - improve `/companies`
+
+2. Keep the hidden `/__legacy/...` routes unchanged as the parity fallback and comparison surface.
+
+3. Add shared native route infrastructure for list pages:
+   - query-param driven filters
+   - ordering
+   - pagination
+   - search
+   - stable links into company and report detail pages
+
+4. Build native dashboard cards from `/api/bootstrap` without changing payload contracts.
+
+5. Build native company-list and report-list surfaces that mirror backend semantics instead of inventing a new client-side model.
+
+6. Update parity metadata and route tests so the repo records that these routes are now native primary routes with hidden legacy fallback.
+
+7. Run the V2 verification flow again after coding and record the result below.
+
+Completed Implementation
+------------------------
+
+Implemented in this phase:
+
+1. Replaced the remaining primary legacy-framed routes with native Next.js routes:
+   - `v2/web/app/dashboard/page.tsx`
+   - `v2/web/app/pool/page.tsx`
+   - `v2/web/app/funnel/page.tsx`
+   - `v2/web/app/reports/page.tsx`
+   - `v2/web/app/watchlist/page.tsx`
+   - `v2/web/app/archive/page.tsx`
+   - upgraded `v2/web/app/companies/page.tsx`
+
+2. Kept the hidden fallback routes unchanged under `/__legacy/...`, so every migrated primary route still has the preserved comparison surface available.
+
+3. Added shared native route support files:
+   - `v2/web/lib/list-options.ts`
+     Contains the route-level ordering and bucket filter options used by the native list pages so the same list semantics are reused consistently.
+   - `v2/web/components/native-company-create-form.tsx`
+     Adds a native company creation surface that calls the preserved `POST /api/companies` contract and then routes directly into the created company page.
+
+4. Preserved backend authority instead of rebuilding list behavior in the browser:
+   - The native pages parse URL query parameters with the existing `v2/web/lib/query.ts` helpers.
+   - Each page builds the exact compatibility API request path with `buildQueryPath(...)`.
+   - Company list pages still read from `GET /api/companies`.
+   - Report list pages still read from `GET /api/reports`.
+   - The dashboard still reads from `GET /api/bootstrap`.
+   - No new client-side data model or derived API layer was introduced.
+
+5. Added native creation and filtering behavior instead of dropping legacy functionality:
+   - `/pool` and `/companies` now expose native company creation.
+   - `/pool` and `/companies` preserve status filtering, search, ordering, pagination, and company-open routing.
+   - `/funnel` preserves stage filtering, search, ordering, pagination, and direct stage deep links.
+   - `/watchlist` preserves watchlist summaries and objective monitoring-rule visibility.
+   - `/archive` preserves archive red-flag summaries.
+   - `/reports` preserves stage filtering, result filtering, include-drafts behavior, ordering, pagination, and routed report opening.
+
+6. Updated parity enforcement:
+   - `v2/scripts/build_parity_matrix.py`
+     Route migration status now records `/dashboard`, `/pool`, `/funnel`, `/reports`, `/watchlist`, and `/archive` as `native_primary_with_legacy_fallback`.
+   - `v2/tests/test_web_parity_routes.py`
+     The tests now fail if the primary routes fall back to `LegacyParityFrame`.
+     The tests also verify that fallback-backed routes still use `SurfaceHeader`, and that the hidden `/__legacy/...` pages still use the legacy frame host.
+
+7. Extended styling in `v2/web/app/globals.css` for the native route surfaces:
+   - toolbar layout
+   - pagination layout
+   - empty states
+   - metric-card links
+   - support grids
+   - company-create form layout
+   - status/result pill tones
+
+How the implementation was done:
+
+- I first documented the intended change set in this file before touching the code, to satisfy the requirement that the full planned implementation be recorded before coding.
+- I then inspected the current V2 route files and confirmed that the remaining top-level routes were still backed by `LegacyParityFrame`.
+- I inspected the existing typed API layer, query helpers, route helpers, and route-surface components to avoid inventing a second browser-side model.
+- I verified the legacy route semantics from the preserved app and backend:
+  - `/pool` uses `GET /api/companies` with optional bucket/status filtering.
+  - `/funnel` uses `GET /api/companies?bucket=funnel` with optional `stage_id`.
+  - `/watchlist` and `/archive` use their corresponding company buckets.
+  - `/reports` uses `GET /api/reports` with search, stage, result, include-drafts, order, and pagination controls.
+- I then rewrote the primary page files to be native server components that:
+  - read `searchParams`
+  - normalize them through `parseStringParam`, `parseIntegerParam`, and `parseBooleanParam`
+  - construct backend request URLs with `buildQueryPath`
+  - fetch from the preserved compatibility API via `getBootstrap`, `getCompanies`, `getReports`, and `getStages`
+  - render the results with the shared native route-surface components
+  - keep a direct “Open Preserved Legacy Surface” link through `SurfaceHeader`
+- I added `native-company-create-form.tsx` because company creation existed in the preserved UI and would otherwise have been silently lost when `/pool` and `/companies` stopped being legacy-hosted.
+  - The component posts to the existing `createCompany(...)` API helper.
+  - On success, it routes to the new company detail URL using `companyHref(...)`.
+  - On failure, it shows the preserved backend error message.
+- I updated the parity-matrix generator and the route tests so the migration state is enforceable in CI rather than just described in prose.
+- I expanded the shared CSS only where the new native route surfaces needed layout or tone classes; I did not change the data contracts or backend logic.
+
+Verification:
+
+- `./v2/scripts/verify_v2.sh` passed.
+- The verification flow rebuilt:
+  - the V1 backup manifest
+  - the parity matrix
+  - the parity fixtures
+  - the SQLite-to-PostgreSQL dry-run manifest
+- The Python suite passed with `17` tests.
+- The Next.js production build passed.
+- The built route output now shows native primary routes for:
+  - `/dashboard`
+  - `/pool`
+  - `/funnel`
+  - `/reports`
+  - `/companies`
+  - `/companies/[companyHandle]`
+  - `/reports/[reportHandle]`
+  - `/monitoring`
+  - `/watchlist`
+  - `/archive`
+  - `/templates`
+- The built route output also still shows the hidden legacy fallbacks for:
+  - `/__legacy/dashboard`
+  - `/__legacy/pool`
+  - `/__legacy/funnel`
+  - `/__legacy/reports`
+  - `/__legacy/monitoring`
+  - `/__legacy/watchlist`
+  - `/__legacy/archive`
+  - `/__legacy/templates`
+  - `/__legacy/companies/[companyHandle]`
+  - `/__legacy/reports/[reportHandle]`
+
+Remaining limits after this phase:
+
+- The hidden `/__legacy/...` fallbacks are intentionally still present.
+- This phase does not replace the compatibility backend, SQLite authority, agent contracts, or runbook semantics.
+- The native report detail page remains the higher-risk surface for future stage-specific UI fidelity work, but the top-level routed list and dashboard surfaces are now native.

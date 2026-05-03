@@ -1,0 +1,68 @@
+{
+  "source_name": "Nasdaq stock screener",
+  "source_url": "https://api.nasdaq.com/api/screener/stocks?download=true",
+  "target_count": 10000,
+  "priority_categories": [
+    {
+      "key": "healthcare",
+      "label": "Healthcare",
+      "sector_any": ["Health Care"],
+      "industry_any": []
+    },
+    {
+      "key": "biotech",
+      "label": "Biotech",
+      "sector_any": [],
+      "industry_contains": ["biotechnology", "biological products", "diagnostic substances", "commercial physical & biological"]
+    },
+    {
+      "key": "pharma",
+      "label": "Pharma",
+      "sector_any": [],
+      "industry_contains": ["pharmaceutical", "medicinal chemicals", "botanical products", "drug"]
+    },
+    {
+      "key": "retail",
+      "label": "Retail",
+      "sector_any": [],
+      "industry_contains": ["retail", "stores", "food chains", "catalog", "e-commerce", "apparel", "restaurants"]
+    },
+    {
+      "key": "finance",
+      "label": "Finance",
+      "sector_any": ["Finance"],
+      "industry_any": []
+    },
+    {
+      "key": "health_related",
+      "label": "Health Related",
+      "sector_any": [],
+      "industry_contains": ["medical", "hospital", "health", "life sciences", "laboratory", "diagnostic", "dental", "surgical", "therapeutics"]
+    },
+    {
+      "key": "technology",
+      "label": "Technology",
+      "sector_any": ["Technology"],
+      "industry_any": []
+    }
+  ],
+  "exclude_symbol_contains": ["^", "/"],
+  "exclude_name_contains": [
+    " warrant",
+    " warrants",
+    " rights",
+    " units",
+    " preferred",
+    " preference",
+    " depositary shares each representing",
+    " notes due",
+    " senior notes",
+    " bond",
+    " etf",
+    " etn",
+    " fund",
+    " trust preferred"
+  ],
+  "exclude_industry_contains": ["blank checks"],
+  "exclude_zero_market_cap": true
+}

@@ -1,0 +1,28 @@
+# laur_2026_proxy_snapshot.md
+
+## Metadata
+- MIME type: text/markdown
+- Original file: laur_2026_proxy_snapshot.md
+
+## LLM View
+Source: Laureate Education, Inc. Definitive Proxy Statement
+URL: https://www.sec.gov/Archives/edgar/data/912766/000162828026024338/a2026proxystatement.htm
+Filed / dated: 2026-04-09
+
+Snapshot notes:
+
+- Laureate's 2026 annual meeting is scheduled for 2026-05-21.
+- Laureate says its executive pay program is mainly composed of base salary, an annual incentive plan, and a long-term equity incentive plan, with a stated emphasis on variable pay.
+- The proxy states CEO Eilif Serck-Hanssen's annual base salary is $1,000,000 effective 2025-01-01, with a target bonus opportunity equal to 130% of base salary.
+- The proxy also describes a one-time retention RSU grant with a grant-date value of $5,000,000, vesting 50% on 2025-12-12 and 50% on 2026-12-12.
+- Laureate reports 2025 performance results used in compensation scoring that include adjusted EBITDA margin of 30.5% and total enrollment of 497,700, above the 150% payout targets disclosed for the 2025 tranche.
+- Laureate says 96.6% of votes cast supported the prior say-on-pay proposal.
+- CEO pay ratio disclosure:
+  - Median compensated employee annual total compensation: $6,883.
+  - CEO annual total compensation: $10,975,343.
+  - Reported pay ratio: 1,595 to 1.
+  - Workforce at 2025-12-31: about 31,251 employees, of which about 99.86% were outside the U.S.
+
+Why this matters for Screening:
+
+- This is the anchor source for management incentives, retention structure, pay-for-performance claims, and global workforce context.

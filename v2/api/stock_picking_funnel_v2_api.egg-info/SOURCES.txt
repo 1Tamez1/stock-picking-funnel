@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+app/__init__.py
+app/config.py
+app/legacy_bridge.py
+app/main.py
+stock_picking_funnel_v2_api.egg-info/PKG-INFO
+stock_picking_funnel_v2_api.egg-info/SOURCES.txt
+stock_picking_funnel_v2_api.egg-info/dependency_links.txt
+stock_picking_funnel_v2_api.egg-info/requires.txt
+stock_picking_funnel_v2_api.egg-info/top_level.txt

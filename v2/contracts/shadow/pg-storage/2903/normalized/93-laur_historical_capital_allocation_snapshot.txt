@@ -1,0 +1,67 @@
+# laur_historical_capital_allocation_snapshot.md
+
+## Metadata
+- MIME type: text/markdown
+- Original file: laur_historical_capital_allocation_snapshot.md
+
+## LLM View
+# laur_historical_capital_allocation_snapshot.md
+
+## Metadata
+- MIME type: text/markdown
+- Original file: laur_historical_capital_allocation_snapshot.md
+
+## LLM View
+Source: Laureate historical investor-relations capital-allocation snapshot
+Report date context: 2026-04-19
+
+Primary pages reviewed:
+
+- FY2021 results and 2022 outlook, dated 2022-02-24:
+  - https://investors.laureate.net/news/news-details/2022/Laureate-Education-Reports-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2021-and-Provides-2022-Outlook/default.aspx
+- FY2022 results and 2023 outlook, dated 2023-02-23:
+  - https://investors.laureate.net/news/news-details/2023/Laureate-Education-Reports-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2022-Outlines-Strategic-Priorities-and-Provides-2023-Outlook/default.aspx
+- Q3 2023 results and special dividend, dated 2023-11-02:
+  - https://investors.laureate.net/news/news-details/2023/Laureate-Education-Reports-Financial-Results-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2023/default.aspx
+- FY2023 results and 2024 outlook, dated 2024-02-22:
+  - https://investors.laureate.net/news/news-details/2024/Laureate-Education-Reports-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2023-and-Provides-2024-Outlook/
+- FY2024 results and 2025 outlook, dated 2025-02-20:
+  - https://investors.laureate.net/news/news-details/2025/Laureate-Education-Reports-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2024-and-Provides-2025-Outlook/
+
+Snapshot notes:
+
+- FY2021 release:
+  - Continuing-operations revenue was about $1.09 billion and operating loss was about $4.6 million.
+  - Cash was about $324.8 million and gross debt was about $157.3 million at 2021-12-31.
+  - Management highlighted digital-capability investment and post-COVID recovery trends.
+  - After the Walden sale, Laureate made two special cash distributions in late 2021 totaling roughly $1.4 billion and had fully repaid the senior notes.
+
+- FY2022 release:
+  - Revenue rose to about $1.24 billion and operating income to about $270.0 million.
+  - Cash was about $85.2 million and gross debt about $234.2 million at 2022-12-31.
+  - Laureate paid a special cash distribution of about $136.6 million in October 2022 and a special cash dividend of about $112 million in November 2022.
+  - In November 2022, Laureate repurchased about 8.0 million shares for roughly $75 million in connection with a secondary offering.
+  - Management also set medium-term targets including 30%+ adjusted EBITDA margin, capex below 5% of revenue, and about 50% adjusted EBITDA to unlevered free cash flow conversion.
+
+- Q3 2023 release:
+  - Management explicitly described Peru as having a more subdued backdrop because of economic softness while still calling Mexico robust.
+  - Laureate announced a special cash dividend of $0.70 per share, about $110 million in aggregate.
+  - Cash was about $130.9 million and gross debt about $134.7 million at 2023-09-30, so net debt was close to flat.
+
+- FY2023 release:
+  - Revenue rose to about $1.48 billion and operating income to about $338.8 million.
+  - Management acknowledged a softer Peru market backdrop for early 2024.
+  - Laureate announced a new $100 million stock repurchase authorization and framed it as returning excess capital supported by high free cash flow and a strong balance sheet.
+
+- FY2024 release:
+  - Revenue rose to about $1.57 billion and operating income to about $374.0 million.
+  - Laureate said it repurchased about $102 million of stock during 2024 under the existing repurchase programs.
+  - Cash was about $91.4 million and gross debt about $102.1 million at 2024-12-31, leaving net debt near $10.7 million.
+  - Management stated that returning excess capital to shareholders would remain a priority for 2025.
+
+Management-read implications:
+
+- The 2021-2024 pattern is not acquisition-led empire building. After major portfolio simplification, capital allocation leaned toward debt cleanup, large special distributions, and later repurchases once the operating business was clearer.
+- Management did acknowledge weaker Peru conditions in public releases rather than pretending both markets were equally strong.
+- The biggest stewardship positive is the willingness to return excess capital instead of chasing scale through acquisitions.
+- The biggest agency caution is that management language still leans heavily on adjusted EBITDA, enrollment, and growth framing, so owner orientation is visible but not pristine.

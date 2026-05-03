@@ -1,0 +1,1264 @@
+{
+  "created_at": "2026-05-02T22:41:47Z",
+  "sqlite_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel-web-app/var/funnel.db",
+  "upload_root": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel-web-app/var/uploads",
+  "backend_mode": "legacy",
+  "storage_mode": "legacy_local",
+  "totals": {
+    "datasets": 2,
+    "templates": 14,
+    "reports": 84,
+    "issue_count": 86,
+    "critical_issue_count": 0,
+    "blocking_dataset_count": 1,
+    "blocking_issue_count": 43,
+    "source_issue_count": 43,
+    "source_critical_issue_count": 0
+  },
+  "datasets": [
+    {
+      "dataset": "sqlite_source",
+      "templates": 7,
+      "reports": 42,
+      "issue_count": 43,
+      "critical_issue_count": 0,
+      "issues": [
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "9",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Result"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "8",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Date",
+              "Decision",
+              "Is the moat widening, stable, narrowing, or unproven?",
+              "Is this potentially better than cash, an index, and current portfolio alternatives?",
+              "Next funnel stage",
+              "Notes",
+              "Result",
+              "Rough normalized owner earnings"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-person-source",
+          "path": "fields[47]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-person-source-2-5eed3b6f"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-business-question-tested",
+          "path": "fields[48]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-business-question-tested-2-1a0d67d7"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-what-it-said",
+          "path": "fields[49]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-what-it-said-2-eeb14785"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-supports-weakens-mixed",
+          "path": "fields[50]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-supports-weakens-mixed-2-b1b6a078"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-evidence-grade",
+          "path": "fields[51]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-evidence-grade-2-28981794"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-confidence",
+          "path": "fields[52]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-confidence-2-d0c76a13"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-person-source",
+          "path": "fields[59]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-person-source-2-8a14659e"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-business-question-tested",
+          "path": "fields[60]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-business-question-tested-2-5caa455b"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-what-it-said",
+          "path": "fields[61]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-what-it-said-2-e3b5d0b6"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-supports-weakens-mixed",
+          "path": "fields[62]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-supports-weakens-mixed-2-5a09bcb6"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-evidence-grade",
+          "path": "fields[63]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-evidence-grade-2-79a3eeff"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-confidence",
+          "path": "fields[64]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-confidence-2-77b3e4f9"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Business type",
+              "Competitor - Business question tested",
+              "Competitor - Confidence",
+              "Competitor - Evidence Grade",
+              "Competitor - Person / source",
+              "Competitor - Supports / Weakens / Mixed",
+              "Competitor - What it said",
+              "Customer / user - Business question tested",
+              "Customer / user - Confidence",
+              "Customer / user - Evidence Grade",
+              "Customer / user - Person / source",
+              "Customer / user - Supports / Weakens / Mixed",
+              "Customer / user - What it said",
+              "Date",
+              "Decision",
+              "Main disconfirming evidence",
+              "Next funnel stage",
+              "Notes",
+              "Primary source of advantage",
+              "Result"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-person-source",
+          "path": "fields[58]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-person-source-2-cdbaa552"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-management-question-tested",
+          "path": "fields[59]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-management-question-tested-2-02fe5d23"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-what-it-said-or-did",
+          "path": "fields[60]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-what-it-said-or-did-2-4c0ca134"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-supports-weakens-mixed",
+          "path": "fields[61]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-supports-weakens-mixed-2-55ce6e76"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-evidence-grade",
+          "path": "fields[62]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-evidence-grade-2-c0098bbd"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-confidence",
+          "path": "fields[63]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-confidence-2-49e32ddf"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Are promising younger executives being developed in real depth?",
+              "Date",
+              "Decision",
+              "Does management welcome contrary suggestions and bad news from below?",
+              "Filing / proxy / letter - Confidence",
+              "Filing / proxy / letter - Evidence Grade",
+              "Filing / proxy / letter - Management question tested",
+              "Filing / proxy / letter - Person / source",
+              "Filing / proxy / letter - Supports / Weakens / Mixed",
+              "Filing / proxy / letter - What it said or did",
+              "Is authority delegated intelligently, or hoarded at the top?",
+              "Main Financial Underwriting task",
+              "Management category",
+              "Next funnel stage",
+              "Notes",
+              "Result"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-revenue-recognition-contract-assets-channel-stuffi",
+          "path": "fields[348]",
+          "details": {
+            "field_label": "Revenue recognition / contract assets / channel stuffing risk - Severity",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-revenue-recognition-contract-assets-channel-stuffi",
+          "path": "fields[349]",
+          "details": {
+            "field_label": "Revenue recognition / contract assets / channel stuffing risk - Evidence Grade",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-revenue-recognition-contract-assets-channel-stuffi",
+          "path": "fields[350]",
+          "details": {
+            "field_label": "Revenue recognition / contract assets / channel stuffing risk - Source",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-revenue-recognition-contract-assets-channel-stuffi",
+          "path": "fields[351]",
+          "details": {
+            "field_label": "Revenue recognition / contract assets / channel stuffing risk - Notes / Next check",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalization-depreciation-maintenance-capex-mism",
+          "path": "fields[358]",
+          "details": {
+            "field_label": "Capitalization / depreciation / maintenance-capex mismatch - Severity",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalization-depreciation-maintenance-capex-mism",
+          "path": "fields[359]",
+          "details": {
+            "field_label": "Capitalization / depreciation / maintenance-capex mismatch - Evidence Grade",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalization-depreciation-maintenance-capex-mism",
+          "path": "fields[360]",
+          "details": {
+            "field_label": "Capitalization / depreciation / maintenance-capex mismatch - Source",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalization-depreciation-maintenance-capex-mism",
+          "path": "fields[361]",
+          "details": {
+            "field_label": "Capitalization / depreciation / maintenance-capex mismatch - Notes / Next check",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalized-r-d-software-customer-acquisition-cont",
+          "path": "fields[363]",
+          "details": {
+            "field_label": "Capitalized R&D / software / customer-acquisition / content costs - Severity",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalized-r-d-software-customer-acquisition-cont",
+          "path": "fields[364]",
+          "details": {
+            "field_label": "Capitalized R&D / software / customer-acquisition / content costs - Evidence Grade",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalized-r-d-software-customer-acquisition-cont",
+          "path": "fields[365]",
+          "details": {
+            "field_label": "Capitalized R&D / software / customer-acquisition / content costs - Source",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalized-r-d-software-customer-acquisition-cont",
+          "path": "fields[366]",
+          "details": {
+            "field_label": "Capitalized R&D / software / customer-acquisition / content costs - Notes / Next check",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-supplier-finance-factoring-off-balance-sheet-finan",
+          "path": "fields[403]",
+          "details": {
+            "field_label": "Supplier finance / factoring / off-balance-sheet financing - Severity",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-supplier-finance-factoring-off-balance-sheet-finan",
+          "path": "fields[404]",
+          "details": {
+            "field_label": "Supplier finance / factoring / off-balance-sheet financing - Evidence Grade",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-supplier-finance-factoring-off-balance-sheet-finan",
+          "path": "fields[405]",
+          "details": {
+            "field_label": "Supplier finance / factoring / off-balance-sheet financing - Source",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-supplier-finance-factoring-off-balance-sheet-finan",
+          "path": "fields[406]",
+          "details": {
+            "field_label": "Supplier finance / factoring / off-balance-sheet financing - Notes / Next check",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-derivatives-asset-liability-mismatch-if-relevant-s",
+          "path": "fields[418]",
+          "details": {
+            "field_label": "Derivatives / asset-liability mismatch, if relevant - Severity",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-derivatives-asset-liability-mismatch-if-relevant-s",
+          "path": "fields[420]",
+          "details": {
+            "field_label": "Derivatives / asset-liability mismatch, if relevant - Source",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Analyst",
+              "Company",
+              "Date",
+              "Decision",
+              "Earnings quality - Confidence",
+              "Earnings quality - Rating",
+              "Financial pattern",
+              "Next funnel stage",
+              "Normalized reinvestment rate",
+              "Notes",
+              "Other sources reviewed",
+              "Result",
+              "Returns on capital - Confidence",
+              "Returns on capital - Rating",
+              "Rough normalized owner earnings",
+              "Ticker",
+              "What valuation can safely assume",
+              "What valuation must not assume",
+              "Working-capital quality - Evidence Grade",
+              "Working-capital quality - Source"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "13",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "At what price does it become attractive?",
+              "At what price is it clearly cheap enough to size up?",
+              "At what price is it too expensive, even if the business is excellent?",
+              "Attractive / starter buy range",
+              "Attractive price",
+              "Base normalized owner earnings inherited",
+              "Base worth per share",
+              "Clearly cheap enough to size up",
+              "Conservative worth per share",
+              "Current price",
+              "Date",
+              "Decision",
+              "Diluted share count inherited",
+              "Hard maximum weight",
+              "High normalized owner earnings inherited",
+              "High worth per share",
+              "Low normalized owner earnings inherited",
+              "Main thing to verify before buying",
+              "Maximum buy price",
+              "Net debt / net cash inherited",
+              "Next funnel stage",
+              "No-buy above",
+              "Normalized maintenance capex inherited",
+              "Normalized working-capital need inherited",
+              "Opportunity cost",
+              "Proposed full weight",
+              "Proposed initial weight",
+              "Result",
+              "Too expensive, even if the business is excellent",
+              "What assumption would collapse the gap between price and value?",
+              "What is the business worth conservatively?",
+              "What valuation can safely assume",
+              "What valuation must not assume"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "14",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Attractive / starter buy range",
+              "Base worth per share",
+              "Clearly cheap enough to size up",
+              "Conservative worth per share",
+              "Current price",
+              "Decision",
+              "Execution pattern",
+              "Hard max weight",
+              "High worth per share",
+              "Main fact that would force exit",
+              "Main fact that would stop buying",
+              "Next action",
+              "No-buy-above line",
+              "Opportunity cost",
+              "Primary reason"
+            ]
+          }
+        }
+      ],
+      "role": "rollback_source",
+      "blocking": false
+    },
+    {
+      "dataset": "postgres_legacy_view",
+      "templates": 7,
+      "reports": 42,
+      "issue_count": 43,
+      "critical_issue_count": 0,
+      "issues": [
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "9",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Result"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "8",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Date",
+              "Decision",
+              "Is the moat widening, stable, narrowing, or unproven?",
+              "Is this potentially better than cash, an index, and current portfolio alternatives?",
+              "Next funnel stage",
+              "Notes",
+              "Result",
+              "Rough normalized owner earnings"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-person-source",
+          "path": "fields[47]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-person-source-2-5eed3b6f"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-business-question-tested",
+          "path": "fields[48]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-business-question-tested-2-1a0d67d7"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-what-it-said",
+          "path": "fields[49]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-what-it-said-2-eeb14785"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-supports-weakens-mixed",
+          "path": "fields[50]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-supports-weakens-mixed-2-b1b6a078"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-evidence-grade",
+          "path": "fields[51]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-evidence-grade-2-28981794"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.customer-user-confidence",
+          "path": "fields[52]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-customer-user-confidence-2-d0c76a13"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-person-source",
+          "path": "fields[59]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-person-source-2-8a14659e"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-business-question-tested",
+          "path": "fields[60]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-business-question-tested-2-5caa455b"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-what-it-said",
+          "path": "fields[61]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-what-it-said-2-e3b5d0b6"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-supports-weakens-mixed",
+          "path": "fields[62]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-supports-weakens-mixed-2-5a09bcb6"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-evidence-grade",
+          "path": "fields[63]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-evidence-grade-2-79a3eeff"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Duplicate field path: 2-evidence-log.competitor-confidence",
+          "path": "fields[64]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-competitor-confidence-2-77b3e4f9"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "10",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Business type",
+              "Competitor - Business question tested",
+              "Competitor - Confidence",
+              "Competitor - Evidence Grade",
+              "Competitor - Person / source",
+              "Competitor - Supports / Weakens / Mixed",
+              "Competitor - What it said",
+              "Customer / user - Business question tested",
+              "Customer / user - Confidence",
+              "Customer / user - Evidence Grade",
+              "Customer / user - Person / source",
+              "Customer / user - Supports / Weakens / Mixed",
+              "Customer / user - What it said",
+              "Date",
+              "Decision",
+              "Main disconfirming evidence",
+              "Next funnel stage",
+              "Notes",
+              "Primary source of advantage",
+              "Result"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-person-source",
+          "path": "fields[58]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-person-source-2-cdbaa552"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-management-question-tested",
+          "path": "fields[59]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-management-question-tested-2-02fe5d23"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-what-it-said-or-did",
+          "path": "fields[60]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-what-it-said-or-did-2-4c0ca134"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-supports-weakens-mixed",
+          "path": "fields[61]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-supports-weakens-mixed-2-55ce6e76"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-evidence-grade",
+          "path": "fields[62]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-evidence-grade-2-c0098bbd"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_path",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Duplicate field path: 2-evidence-log.filing-proxy-letter-confidence",
+          "path": "fields[63]",
+          "details": {
+            "field_id": "2-evidence-log-c5936ddf-filing-proxy-letter-confidence-2-49e32ddf"
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "11",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Are promising younger executives being developed in real depth?",
+              "Date",
+              "Decision",
+              "Does management welcome contrary suggestions and bad news from below?",
+              "Filing / proxy / letter - Confidence",
+              "Filing / proxy / letter - Evidence Grade",
+              "Filing / proxy / letter - Management question tested",
+              "Filing / proxy / letter - Person / source",
+              "Filing / proxy / letter - Supports / Weakens / Mixed",
+              "Filing / proxy / letter - What it said or did",
+              "Is authority delegated intelligently, or hoarded at the top?",
+              "Main Financial Underwriting task",
+              "Management category",
+              "Next funnel stage",
+              "Notes",
+              "Result"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-revenue-recognition-contract-assets-channel-stuffi",
+          "path": "fields[348]",
+          "details": {
+            "field_label": "Revenue recognition / contract assets / channel stuffing risk - Severity",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-revenue-recognition-contract-assets-channel-stuffi",
+          "path": "fields[349]",
+          "details": {
+            "field_label": "Revenue recognition / contract assets / channel stuffing risk - Evidence Grade",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-revenue-recognition-contract-assets-channel-stuffi",
+          "path": "fields[350]",
+          "details": {
+            "field_label": "Revenue recognition / contract assets / channel stuffing risk - Source",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-revenue-recognition-contract-assets-channel-stuffi",
+          "path": "fields[351]",
+          "details": {
+            "field_label": "Revenue recognition / contract assets / channel stuffing risk - Notes / Next check",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalization-depreciation-maintenance-capex-mism",
+          "path": "fields[358]",
+          "details": {
+            "field_label": "Capitalization / depreciation / maintenance-capex mismatch - Severity",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalization-depreciation-maintenance-capex-mism",
+          "path": "fields[359]",
+          "details": {
+            "field_label": "Capitalization / depreciation / maintenance-capex mismatch - Evidence Grade",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalization-depreciation-maintenance-capex-mism",
+          "path": "fields[360]",
+          "details": {
+            "field_label": "Capitalization / depreciation / maintenance-capex mismatch - Source",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalization-depreciation-maintenance-capex-mism",
+          "path": "fields[361]",
+          "details": {
+            "field_label": "Capitalization / depreciation / maintenance-capex mismatch - Notes / Next check",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalized-r-d-software-customer-acquisition-cont",
+          "path": "fields[363]",
+          "details": {
+            "field_label": "Capitalized R&D / software / customer-acquisition / content costs - Severity",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalized-r-d-software-customer-acquisition-cont",
+          "path": "fields[364]",
+          "details": {
+            "field_label": "Capitalized R&D / software / customer-acquisition / content costs - Evidence Grade",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalized-r-d-software-customer-acquisition-cont",
+          "path": "fields[365]",
+          "details": {
+            "field_label": "Capitalized R&D / software / customer-acquisition / content costs - Source",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-capitalized-r-d-software-customer-acquisition-cont",
+          "path": "fields[366]",
+          "details": {
+            "field_label": "Capitalized R&D / software / customer-acquisition / content costs - Notes / Next check",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-supplier-finance-factoring-off-balance-sheet-finan",
+          "path": "fields[403]",
+          "details": {
+            "field_label": "Supplier finance / factoring / off-balance-sheet financing - Severity",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-supplier-finance-factoring-off-balance-sheet-finan",
+          "path": "fields[404]",
+          "details": {
+            "field_label": "Supplier finance / factoring / off-balance-sheet financing - Evidence Grade",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-supplier-finance-factoring-off-balance-sheet-finan",
+          "path": "fields[405]",
+          "details": {
+            "field_label": "Supplier finance / factoring / off-balance-sheet financing - Source",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-supplier-finance-factoring-off-balance-sheet-finan",
+          "path": "fields[406]",
+          "details": {
+            "field_label": "Supplier finance / factoring / off-balance-sheet financing - Notes / Next check",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-derivatives-asset-liability-mismatch-if-relevant-s",
+          "path": "fields[418]",
+          "details": {
+            "field_label": "Derivatives / asset-liability mismatch, if relevant - Severity",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_field_id",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Duplicate field id: part-vii-accounting-and-red-flag-log-167cd4dc-derivatives-asset-liability-mismatch-if-relevant-s",
+          "path": "fields[420]",
+          "details": {
+            "field_label": "Derivatives / asset-liability mismatch, if relevant - Source",
+            "compatibility_preserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "12",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Analyst",
+              "Company",
+              "Date",
+              "Decision",
+              "Earnings quality - Confidence",
+              "Earnings quality - Rating",
+              "Financial pattern",
+              "Next funnel stage",
+              "Normalized reinvestment rate",
+              "Notes",
+              "Other sources reviewed",
+              "Result",
+              "Returns on capital - Confidence",
+              "Returns on capital - Rating",
+              "Rough normalized owner earnings",
+              "Ticker",
+              "What valuation can safely assume",
+              "What valuation must not assume",
+              "Working-capital quality - Evidence Grade",
+              "Working-capital quality - Source"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "13",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "At what price does it become attractive?",
+              "At what price is it clearly cheap enough to size up?",
+              "At what price is it too expensive, even if the business is excellent?",
+              "Attractive / starter buy range",
+              "Attractive price",
+              "Base normalized owner earnings inherited",
+              "Base worth per share",
+              "Clearly cheap enough to size up",
+              "Conservative worth per share",
+              "Current price",
+              "Date",
+              "Decision",
+              "Diluted share count inherited",
+              "Hard maximum weight",
+              "High normalized owner earnings inherited",
+              "High worth per share",
+              "Low normalized owner earnings inherited",
+              "Main thing to verify before buying",
+              "Maximum buy price",
+              "Net debt / net cash inherited",
+              "Next funnel stage",
+              "No-buy above",
+              "Normalized maintenance capex inherited",
+              "Normalized working-capital need inherited",
+              "Opportunity cost",
+              "Proposed full weight",
+              "Proposed initial weight",
+              "Result",
+              "Too expensive, even if the business is excellent",
+              "What assumption would collapse the gap between price and value?",
+              "What is the business worth conservatively?",
+              "What valuation can safely assume",
+              "What valuation must not assume"
+            ]
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "duplicate_labels",
+          "entity": "template",
+          "entity_id": "14",
+          "message": "Template contains duplicate labels that can confuse UI summaries or operator review.",
+          "path": "",
+          "details": {
+            "labels": [
+              "Attractive / starter buy range",
+              "Base worth per share",
+              "Clearly cheap enough to size up",
+              "Conservative worth per share",
+              "Current price",
+              "Decision",
+              "Execution pattern",
+              "Hard max weight",
+              "High worth per share",
+              "Main fact that would force exit",
+              "Main fact that would stop buying",
+              "Next action",
+              "No-buy-above line",
+              "Opportunity cost",
+              "Primary reason"
+            ]
+          }
+        }
+      ],
+      "role": "authoritative_candidate",
+      "blocking": true
+    }
+  ]
+}

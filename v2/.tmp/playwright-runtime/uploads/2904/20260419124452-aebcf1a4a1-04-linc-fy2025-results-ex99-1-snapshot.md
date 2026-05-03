@@ -1,0 +1,30 @@
+Title: Lincoln Educational Services FY2025 results press release filed 2026-02-23 as Exhibit 99.1 (SEC)
+Source Type: Earnings release
+Evidence Grade: F
+Confidence: High
+URL: https://www.sec.gov/Archives/edgar/data/1286613/000114036126006394/ef20066307_ex99-1.htm
+Citation: Exhibit 99.1 to Form 8-K filed February 23, 2026 reporting Q4 and full-year 2025 results.
+Tags: linc, sec, 8-k, earnings-release, management-commentary, data-collection
+---
+# Snapshot
+
+Snapshot date: 2026-04-19
+Source date: Filing date 2026-02-23
+
+Key extracted points:
+
+- Lincoln reported fourth-quarter 2025 revenue of $142.9 million, up 19.7% year over year.
+- Fourth-quarter 2025 net income increased to $12.7 million, or $0.40 per diluted share, from $6.8 million, or $0.22 per diluted share.
+- Fourth-quarter adjusted EBITDA was $29.1 million, up 51.2% year over year.
+- Full-year 2025 revenue rose to $518.2 million, up 17.8%.
+- Full-year 2025 net income was $20.0 million versus $9.9 million in the prior year.
+- Full-year 2025 adjusted EBITDA increased to $67.1 million.
+- Student starts grew 15.2% for the full year excluding the Transitional segment, while student population rose 14.9%.
+- Management said 2026 revenue could approach $600 million.
+- Total liquidity was reported at roughly $88.5 million as of December 31, 2025, with no debt outstanding under the revolving credit facility.
+- The release also highlighted new program and employer-relationship developments, including electrical-program launch activity and employer partnerships.
+
+Collection notes:
+
+- This is the freshest year-end management commentary in the packet.
+- Use it with the 10-K because it is more current on momentum, guidance, and operating commentary, but it is not an audited filing.

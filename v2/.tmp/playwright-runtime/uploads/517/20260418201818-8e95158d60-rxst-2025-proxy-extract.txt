@@ -1,0 +1,14 @@
+Source: RxSight, Inc. Definitive Proxy Statement (DEF 14A)
+URL: https://www.sec.gov/Archives/edgar/data/1111485/000095017025056319/rxst-20250421.htm
+Filed: April 21, 2025
+
+Key facts extracted for Data Collection:
+- The proxy identifies four named executive officers for 2024: Ron Kurtz (President and CEO), Shelley Thunen (Co-President and CFO), Eric Weinberg (Co-President and Chief Commercial Officer), and Ilya Goldshleger (Co-President and Chief Operating Officer).
+- The proxy includes executive compensation, governance, board, and committee information.
+- Compensation section says Ron Kurtz's annual base salary was increased 6.2% to $685,000 effective March 1, 2024.
+- Other named executive officers had annual base salaries increased 5.4% to $485,000 effective March 1, 2024.
+- The proxy's business overview repeats the core product description: LAL/LAL+ plus LDD, and the positioning as the only commercially available premium cataract technology with postoperative adjustability.
+- 2024 business highlights in the proxy include 98,055 LALs sold in 2024 and an installed base of 971 LDDs at year-end 2024.
+
+Use in report:
+- Anchor source for management, incentives, and governance coverage before Screening or later underwriting stages.

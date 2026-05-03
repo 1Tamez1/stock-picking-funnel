@@ -1,0 +1,21 @@
+# URGN_S9_BCAN_2026_survey_notes.md
+
+## Metadata
+- MIME type: text/markdown
+- Original file: URGN_S9_BCAN_2026_survey_notes.md
+
+## LLM View
+# S9 - BCAN 2026 Bladder Cancer Patient Survey
+
+- URL: https://bcan.org/bladder-cancer-patients-report-delayed-diagnosis-and-gaps-in-support/
+- Accessed: 2026-04-18
+- Publication date: 2026-03-09
+- Reason stored: external context on bladder-cancer recurrence burden and unmet need.
+
+## Key takeaways
+- BCAN described major gaps in diagnosis, mental-health support, and financial protection.
+- The survey covered more than 1,100 patients across 49 states and Puerto Rico.
+- BCAN described bladder cancer as a large persistent disease burden with many patients living under recurrence risk.
+
+## Caveats
+- This is an advocacy and survey source, not a filing or peer-reviewed paper. Use it for context, not as the sole evidence for market sizing or product efficacy claims.

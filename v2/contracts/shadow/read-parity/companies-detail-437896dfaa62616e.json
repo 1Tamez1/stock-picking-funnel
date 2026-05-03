@@ -1,0 +1,12 @@
+{
+  "kind": "read",
+  "category": "companies.detail",
+  "request_key": "{\"extra\":{\"company_id\":1},\"method\":\"GET\",\"path\":\"/api/companies/1\",\"query\":{}}",
+  "status": "ok",
+  "source_fingerprint": "26acd6cd2f6a431428b88c3df222d1d737160094e1264b693ba4fce53b3a46be",
+  "state_manifest_path": "/Users/Diego/Everything/Projectos_Personales/Value_Investing/stock-picking-funnel-web-app/v2/contracts/shadow/migration-import-manifest.json",
+  "payload_digest": "0c07dad8baa37d8e47f678ba9fb2f96e93888a91ac38cb5d2fe85494e14a8352",
+  "snapshot_digest": "0c07dad8baa37d8e47f678ba9fb2f96e93888a91ac38cb5d2fe85494e14a8352",
+  "diffs": [],
+  "written_at": "2026-05-02T22:41:34.615579+00:00"
+}

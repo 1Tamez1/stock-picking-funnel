@@ -1,0 +1,83 @@
+{
+  "generated_from": "active live templates",
+  "api_url": "http://127.0.0.1:8211",
+  "templates": [
+    {
+      "stage_id": 109,
+      "stage_key": "data_collection",
+      "stage_name": "Data Collection",
+      "template_id": 9,
+      "template_name": "Data Collection Template",
+      "field_count": 55,
+      "generated_patch_key_count": 55,
+      "auto_inherited_field_count": 0,
+      "file": "01-data_collection.patch.template.json"
+    },
+    {
+      "stage_id": 1,
+      "stage_key": "screening",
+      "stage_name": "Screening",
+      "template_id": 8,
+      "template_name": "Stock Candidate Screening Questionnaire v5",
+      "field_count": 407,
+      "generated_patch_key_count": 407,
+      "auto_inherited_field_count": 0,
+      "file": "02-screening.patch.template.json"
+    },
+    {
+      "stage_id": 2,
+      "stage_key": "business_underwriting",
+      "stage_name": "Business Underwriting",
+      "template_id": 10,
+      "template_name": "Stock Candidate Business Underwriting Questionnaire v2",
+      "field_count": 364,
+      "generated_patch_key_count": 364,
+      "auto_inherited_field_count": 24,
+      "file": "03-business_underwriting.patch.template.json"
+    },
+    {
+      "stage_id": 3,
+      "stage_key": "management_underwriting",
+      "stage_name": "Management Underwriting",
+      "template_id": 11,
+      "template_name": "Stock Candidate Management Underwriting Questionnaire v1",
+      "field_count": 530,
+      "generated_patch_key_count": 530,
+      "auto_inherited_field_count": 25,
+      "file": "04-management_underwriting.patch.template.json"
+    },
+    {
+      "stage_id": 4,
+      "stage_key": "financial_underwriting",
+      "stage_name": "Financial Underwriting",
+      "template_id": 12,
+      "template_name": "Stock Candidate Financial Underwriting Questionnaire v1",
+      "field_count": 575,
+      "generated_patch_key_count": 557,
+      "auto_inherited_field_count": 22,
+      "file": "05-financial_underwriting.patch.template.json"
+    },
+    {
+      "stage_id": 5,
+      "stage_key": "valuation_position_size",
+      "stage_name": "Valuation and Position Size",
+      "template_id": 13,
+      "template_name": "Stock Candidate Valuation And Position Size Questionnaire v2",
+      "field_count": 535,
+      "generated_patch_key_count": 535,
+      "auto_inherited_field_count": 38,
+      "file": "06-valuation_position_size.patch.template.json"
+    },
+    {
+      "stage_id": 6,
+      "stage_key": "execution_rules",
+      "stage_name": "Execution Rules",
+      "template_id": 14,
+      "template_name": "Stock Candidate Execution Rules Questionnaire v1",
+      "field_count": 370,
+      "generated_patch_key_count": 370,
+      "auto_inherited_field_count": 0,
+      "file": "07-execution_rules.patch.template.json"
+    }
+  ]
+}

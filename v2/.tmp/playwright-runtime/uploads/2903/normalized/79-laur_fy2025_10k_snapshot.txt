@@ -1,0 +1,29 @@
+# laur_fy2025_10k_snapshot.md
+
+## Metadata
+- MIME type: text/markdown
+- Original file: laur_fy2025_10k_snapshot.md
+
+## LLM View
+Source: Laureate Education, Inc. Form 10-K
+URL: https://www.sec.gov/Archives/edgar/data/912766/000162828026009479/laur-20251231.htm
+Filing date: 2026-02-19
+Period end: 2025-12-31
+
+Snapshot notes:
+
+- Laureate says it operates private higher-education institutions in Mexico and Peru and serves traditional and non-traditional students through multiple brands, price points, and teaching modalities.
+- Laureate says the higher-education markets in Mexico and Peru are attractive because demand exceeds affordable supply and the markets, excluding technical-vocational institutes, remain underpenetrated at about 34% in Mexico and 42% in Peru, versus about 55% in the United States.
+- Laureate says demand for online and hybrid learning in Mexico and Peru is increasing and that its target is for 40% to 60% of student credit hours to be taken online over time.
+- Laureate reports two operating segments: Mexico and Peru.
+- Institution and enrollment snapshot at 2025-12-31:
+  - Mexico: UVM 132,200 and UNITEC 137,200, or 269,400 combined.
+  - Peru: UPC 78,400, UPN 129,900, and CIBERTEC 20,000, or 228,300 combined.
+- Laureate defines enrollment as its lead revenue indicator and notes that Peru's primary intake is in Q1 while Mexico's primary intake is in Q3.
+- 2025 segment financial snapshot:
+  - Mexico revenue: $877.4 million; adjusted EBITDA: $229.4 million.
+  - Peru revenue: $824.4 million; adjusted EBITDA: $328.6 million.
+
+Why this matters for Screening:
+
+- This is the anchor source for Laureate's business model, operating footprint, segment structure, enrollment cadence, and the first pass at geographic mix.

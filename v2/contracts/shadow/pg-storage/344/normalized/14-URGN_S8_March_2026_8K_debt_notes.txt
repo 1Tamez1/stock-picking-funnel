@@ -1,0 +1,22 @@
+# URGN_S8_March_2026_8K_debt_notes.md
+
+## Metadata
+- MIME type: text/markdown
+- Original file: URGN_S8_March_2026_8K_debt_notes.md
+
+## LLM View
+# S8 - UroGen March 2026 8-K Debt Refinancing
+
+- URL: https://www.sec.gov/Archives/edgar/data/1668243/000119312526084282/d59490d8k.htm
+- Accessed: 2026-04-18
+- Filing date: 2026-03-02
+- Event date: 2026-02-26
+- Reason stored: capital-structure and debt source after FY2025 year-end.
+
+## Key takeaways
+- UroGen entered into a new loan agreement providing for up to $250 million of term loans in two tranches.
+- The obligations are secured by substantially all tangible and intangible assets, including intellectual property, subject to exceptions.
+- The filing says the agreement has no financial covenants.
+
+## Caveats
+- Legal terms should be checked directly in the original filing before any deeper capital-structure conclusions are drawn.

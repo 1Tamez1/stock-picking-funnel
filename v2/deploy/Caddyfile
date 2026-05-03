@@ -1,0 +1,11 @@
+{
+  email {$ACME_EMAIL}
+}
+
+{$FUNNEL_V2_HOSTNAME} {
+  encode gzip zstd
+
+  reverse_proxy /api/* api:8211
+  reverse_proxy /login* web:3000
+  reverse_proxy /* web:3000
+}

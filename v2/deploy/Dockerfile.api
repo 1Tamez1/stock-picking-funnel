@@ -1,0 +1,16 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+ENV PYTHONUNBUFFERED=1
+
+COPY . /app
+
+RUN pip install --no-cache-dir -e /app/v2/api
+
+COPY v2/deploy/api-entrypoint.sh /usr/local/bin/api-entrypoint.sh
+RUN chmod +x /usr/local/bin/api-entrypoint.sh
+
+EXPOSE 8211
+
+ENTRYPOINT ["/usr/local/bin/api-entrypoint.sh"]

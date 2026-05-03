@@ -1,0 +1,18 @@
+Source: RxSight, Inc. Form 10-K for the year ended December 31, 2025
+URL: https://www.sec.gov/Archives/edgar/data/1111485/000119312526071775/rxst-20251231.htm
+Filed: February 25, 2026
+
+Key facts extracted for Data Collection:
+- RxSight describes itself as a commercial-stage medical technology company focused on customized vision after cataract surgery.
+- The core system is the RxSight Light Adjustable Lens (LAL/LAL+) plus the Light Delivery Device (LDD) and related accessories.
+- Management says the system is the first and only commercially available premium cataract technology that enables postoperative customization of visual acuity.
+- The business model is effectively a razor-and-razor-blade model: install LDDs at practices and drive recurring LAL procedure volume.
+- As of December 31, 2025, RxSight reported an installed base of 1,134 LDDs and approximately 300,000 LALs implanted since inception.
+- The filing says 2025 premium cataract procedures in the U.S. represented about 21% of all cataract procedures and generated about $860 million in revenue, citing the Market Scope 2025 Premium Cataract Surgery Market Report.
+- Liquidity section: cash and cash equivalents were $19.9 million and short-term investments were $208.2 million as of December 31, 2025.
+- The filing states current cash, cash equivalents, and short-term investments are expected to fund operations for at least the next 12 months.
+- The company says it does not anticipate needing additional capital or debt to reach profitability based on current plans, though it may raise capital opportunistically.
+
+Use in report:
+- Anchor source for business description and latest annual filing coverage.
+- Also useful for capital structure/liquidity context and installed-base scale.

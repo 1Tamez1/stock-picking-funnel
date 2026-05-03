@@ -1,0 +1,19 @@
+# URGN_S7_market_data_notes.md
+
+## Metadata
+- MIME type: text/markdown
+- Original file: URGN_S7_market_data_notes.md
+
+## LLM View
+# S7 - CompaniesMarketCap URGN Market Data
+
+- URL: https://companiesmarketcap.com/urogen-pharma/marketcap/
+- Accessed: 2026-04-18
+- Reason stored: quick market-cap and price context for screening setup.
+
+## Key takeaways
+- The page reported market capitalization of roughly $1.04 billion in April 2026 and a share price around $21.51 on 2026-04-15.
+- This is useful for coarse sizing context before valuation work starts.
+
+## Caveats
+- This is a third-party aggregation source and should be cross-checked against a live broker or exchange feed before any valuation or position-size work.

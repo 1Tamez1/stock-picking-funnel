@@ -1,0 +1,1779 @@
+# ge-vscan-air-peer-source.html
+
+## Metadata
+- MIME type: text/html
+- Original file: ge-vscan-air-peer-source.html
+
+## LLM View
+Handheld Ultrasound | GE HealthCare (United States)
+
+    
+    
+        
+            
+    
+
+    
+        
+        
+            
+            
+                
+                
+
+                
+                
+            
+            
+            
+        
+    
+
+            
+        
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+     
+     
+     
+
+	  			
+
+    
+    
+        
+    
+    
+    
+        function hDMIE(imgElement) {
+            const prevSibling = imgElement.previousElementSibling;
+            // update all the src with default fallback image.
+            if (prevSibling !== undefined && prevSibling !== null) {
+                const defaultUrl = prevSibling.getAttribute('srcset').split(':')[1];
+                if(defaultUrl === undefined || defaultUrl === null) return;
+                // get parent picture tag
+                const parentPicture = imgElement.parentElement;
+                const childSourceTag = parentPicture.children;
+                Array.from(childSourceTag).forEach(child => {
+                    if (child.tagName === "SOURCE") {
+                        child.setAttribute("srcset", defaultUrl);
+                    }
+                });
+            }
+        }
+    
+
+    
+
+    
+        
+        
+            window.gehc = window.gehc || {};
+            window.gehc.dataLayerEnabled = 'https:\/\/assets.adobedtm.com\/ea870d125975\/cd1fd0edb5dc\/launch\u002Dea2ccb37c28e.min.js';
+            window.gehc.launchScript = 'https://assets.adobedtm.com/ea870d125975/cd1fd0edb5dc/launch-ea2ccb37c28e.min.js';
+            window.gehc.qualifiedEnabled = 'true' === 'true';
+            window.gehc.qualifiedScriptUrl = 'https://js.qualified.com/qualified.js?token=ktqfQUZYxKDjrhhN';
+            window.gehc.marketoMunchkinId = '005-SHS-767'
+            window.gehc.qualifiedExperienceId = '';
+        
+        
+            (function (id) {
+            function append(scriptid, url, async) {
+                var d = document, sn = 'script', f = d.getElementsByTagName(sn)[0];
+                if (!f) f = d.head;
+                var s = d.createElement(sn);
+                s.async = async;
+                s.id = scriptid;
+                s.src = url;
+                s.charset = 'utf-8';
+                f.parentNode.insertBefore(s, f);
+            }
+
+            function is2parttld(value) {
+                var tldindicators = ['co', 'com', 'info', 'web', 'info', 'gov', 'edu', 'biz', 'net', 'org'];
+                var countryindicators = ['uk', 'us', 'fr', 'es', 'de', 'at', 'au', 'ae', 'be', 'br', 'ca', 'ch', 'cn', 'co', 'cz', 'dk', 'eg', 'eu', 'fi', 'gb', 'gr', 'hk', 'hr', 'hu', 'ie', 'in', 'jp', 'mx', 'nl', 'no', 'nz', 'pl', 'ro', 'ru', 'se'];
+                return (tldindicators.indexOf(value) !== -1 || countryindicators.indexOf(value) !== -1);
+            }
+
+            function getRootDomain() {
+                var parts = window.location.hostname.split('.');
+                if (parts.length === 2) rootDomain = parts[0];
+                else if (parts.length > 2) {
+                    // see if the next to last value is a common tld
+                    var part = parts[parts.length - 2];
+                    if (is2parttld(part)) {
+                        rootDomain = parts[parts.length - 3]; // go back one more
+                    }
+                    else {
+                        rootDomain = part;
+                    }
+                }
+
+                return rootDomain;
+            }
+
+            window.evidon = {};
+            window.evidon.id = id;
+            window.evidon.test = false;  // set to true for non-production testing.
+            //window.evidon.userid = '';
+
+            var cdn = '//c.evidon.com/', rootDomain = getRootDomain(), noticecdn = cdn + 'sitenotice/';
+            append('evidon-notice', noticecdn + 'evidon-sitenotice-tag.js', false);
+            append('evidon-location', cdn + 'geo/country.js', true);
+            append('evidon-themes', noticecdn + id + '/snthemes.js', true);
+            if (rootDomain) append('evidon-settings', noticecdn + id + '/' + rootDomain + (window.evidon.test ? '/test' : '') + '/settingsV2.js', true);
+
+            window.evidon.handleAnalyticsProvider = function () {
+                if (window.gehc.dataLayerEnabled && window.gehc.dataLayerEnabled !== '') { 
+         	   				append('adobe', window.gehc.launchScript);    
+                }
+         		}
+         
+            window.evidon.priorConsentCallback = function (categories, vendors, cookies) {
+                var handlers = {
+                    'analytics': 'handleAnalyticsProvider',
+					'marketing and personalization': 'handleMarketingPerformance'
+                };
+                if (!!categories['all']) {
+                    var handler = window.evidon.allProvider;
+                    if (typeof handler === 'function') handler();
+                    return;
+                }
+                for (var category in categories) {
+                    if (!categories[category]) continue;
+                    var handler = window.evidon[handlers[category]];
+                    if (typeof handler === 'function') handler();
+                }
+							}
+
+            window.evidon.closeCallback = function () {
+                // this is executed if the user closed a UI element without either Accepting (providing consent)
+                // or Declining (declining to provide consent).
+            }
+
+            window.evidon.consentWithdrawnCallback = function () {
+                // this is exeucted if the user withdraws consent and elects to
+                // no longer allow technologies to run on the site.
+            }
+            
+            // start of qualified-chat-consent-logic
+            window.evidon.handleChatConsent = function () { 
+                if (window.gehc.qualifiedEnabled && window.gehc.qualifiedScriptUrl !== '') {
+                    append('qualified-chat', window.gehc.qualifiedScriptUrl);
+                    (function(w,q){w['QualifiedObject']=q;w[q]=w[q]||function(){
+                        (w[q].q=w[q].q||[]).push(arguments)};})(window,'qualified');
+                    (function(){
+                        if (window.gehc.qualifiedExperienceId !== '') {
+                            qualified('showExperience', 'experience-' + window.gehc.qualifiedExperienceId);
+                        }
+                    })();
+                }
+            }
+            // end of qualified-chat-consent-logic
+			window.evidon.handleMarketingPerformance = function () {
+               window.evidon.handleChatConsent();
+	        }
+
+            window.evidon.allProvider = function () {
+            	window.evidon.handleAnalyticsProvider();
+				window.evidon.handleMarketingPerformance();
+            }
+            
+            window.evidon.consentDeclinedCallback = function () {
+                window.evidon.notice.dropSuppressionCookie(365); // 365 days
+                // this is executed if the user explicitly declines giving consent by
+                // using a Decline button
+            }
+            let styleTag = document.createElement('style');
+            styleTag.type = 'text/css';
+            styleTag.textContent = '.slideron{ background-color: #6022A6 !important; }' + '.evidon-prefdiag-message a{ color: #6022A6 !important; }';
+            document.head.appendChild(styleTag);
+        })(8523);
+        
+    
+    
+    
+     {
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer', 'GTM-W4V7GZG');
+    } 
+
+    
+     {
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer', 'GTM-58LKHLP');
+    } 
+    
+    
+   
+
+	     		
+	  
+	  	 
+	   	
+	   		window.adobeDataLayer = window.adobeDataLayer || [];
+	   		let pageLoadData = JSON.parse("{\x22event\x22:\x22pageLoad\x22,\x22pageInfo\x22:{\x22pageName\x22:\x22gehealthcare\u002Dus|products|ultrasound|handheld\u002Dultrasound\x22,\x22pageType\x22:\x22Family Page Template\x22,\x22siteName\x22:\x22gehealthcare\u002Dus\x22,\x22globalPageName\x22:\x22gehealthcare|products|ultrasound|handheld\u002Dultrasound\x22,\x22siteSectionL1\x22:\x22products\x22,\x22siteSectionL2\x22:\x22products|ultrasound\x22,\x22siteSectionL3\x22:\x22products|ultrasound|handheld\u002Dultrasound\x22,\x22siteCountry\x22:\x22us\x22,\x22siteLanguage\x22:\x22en\x22,\x22pageTitle\x22:\x22Handheld Ultrasound\x22,\x22siteSection\x22:\x22Family Page Template\x22},\x22pageCategory\x22:{\x22modality\x22:\x22\x22,\x22productFamily\x22:\x22\x22},\x22userInfo\x22:{\x22loginStatus\x22:\x22not logged in\x22}}");
+	   		function updatePageLoadData(pageLoadData){
+						pageLoadData["pageInfo"]["pageURL"] = window.location.href;
+						pageLoadData["pageInfo"]["pageCleanURL"] = window.location.href.replace(window.location.search+window.location.hash,'').replace(window.location.protocol+'//','');
+					if(window.location.hash){
+	   				if(!pageLoadData["pageInfo"].hasOwnProperty("queryString")) pageLoadData["pageInfo"]["queryString"] = '';
+	   				pageLoadData["pageInfo"]["queryString"] = pageLoadData["pageInfo"]["queryString"] + window.location.hash;
+	   			}
+	   			return pageLoadData;
+	   		}
+	   		pageLoadData = updatePageLoadData(pageLoadData);
+	     	window.adobeDataLayer.push(pageLoadData);
+	   	   	
+	  
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+ 
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+
+    
+        
+          var dataLayerName = 'adobeDataLayer' || 'adobeDataLayer';
+          window[dataLayerName] = window[dataLayerName] || [];
+          window[dataLayerName].push({
+              page: JSON.parse("{\x22page\u002D2934663dc4\x22:{\x22@type\x22:\x22gehealthcare\/components\/structure\/page\x22,\x22repo:modifyDate\x22:\x222026\u002D04\u002D13T04:40:04Z\x22,\x22dc:title\x22:\x22Handheld Ultrasound\x22,\x22dc:description\x22:\x22Discover the power of the Vscan™  family of handheld ultrasound systems, transforming patient care with portable, pocket\u002Dsized devices providing quick diagnostic decisions.\x22,\x22xdm:template\x22:\x22\/conf\/gehealthcare\/settings\/wcm\/templates\/family\u002Dpage\u002Dtemplate\x22,\x22xdm:language\x22:\x22en\x22,\x22xdm:tags\x22:[],\x22repo:path\x22:\x22\/content\/gehealthcare\/us\/en\/products\/ultrasound\/handheld\u002Dultrasound.html\x22}}"),
+              event:'cmp:show',
+              eventInfo: {
+                  path: 'page.page\u002D2934663dc4'
+              }
+          });
+
+Select another country or region to view content specific to your location.
+
+United States
+
+Africa (EN)
+
+Africa (FR)
+
+Australia-New Zealand
+
+Austria
+
+Belgium (EN)
+
+Belgium (FR)
+
+Brazil
+
+Canada (EN)
+
+Canada (FR)
+
+China
+
+Denmark
+
+Finland
+
+France
+
+Germany
+
+Global EN
+
+Greece
+
+Hungary
+
+India
+
+Italy
+
+Japan
+
+Korea
+
+Malaysia
+
+Middle East
+
+Netherlands
+
+Norway
+
+Other LATAM
+
+Philippines
+
+Poland
+
+Romania
+
+Russia
+
+Serbia
+
+Singapore
+
+Spain
+
+Sweden
+
+Switzerland (DE)
+
+Switzerland (FR)
+
+Thailand
+
+Turkey
+
+United Kingdom
+
+United States
+
+No Result Found
+
+Continue
+
+AI Solutions
+
+Products
+
+Imaging
+
+All Imaging
+Advanced Visualization
+Bone & Metabolic Health
+Computed Tomography
+Fluoroscopy
+Imaging operations
+Image Guiding Solutions
+Invasive Cardiology
+Magnetic Resonance Imaging
+Mammography
+Molecular Imaging
+Post-processing
+Radiography (X-ray)
+Surgical Imaging
+
+Ultrasound
+
+All Ultrasound
+Breast Ultrasound
+Cardiovascular | Vivid
+Digital & AI Ultrasound Solutions | Verisound
+General Imaging | LOGIQ
+Handheld Ultrasound | Vscan
+Point of Care | Venue
+Primary Care | Versana
+Surgical Visualization and Guidance
+Urology
+Women's Health | Voluson
+Ultrasound Developer Program
+
+Patient Care Solutions
+
+All Patient Care Solutions
+Anesthesia Solutions
+Diagnostic ECG
+Maternal & Infant Care
+Patient Monitoring
+Clinical Accessories
+Critical care equipment services
+
+Pharmaceutical Imaging Agents
+
+All Pharmaceutical Diagnostics
+Contrast Media
+Molecular Imaging Agents
+Pharma Services
+
+Software and AI Solutions
+
+All Software and AI Solutions
+Advanced Visualization | AW
+Cardiology IT | Centricity
+Cybersecurity
+Enterprise Imaging (VNA) | Datalogue
+Hospital Operations | Command Center
+Imaging Operations | Imaging 360
+Integrated Care Applications | CareIntellect
+PACS & AI Orchestration
+Ultrasound Digital & AI Solutions | Verisound
+
+Refurbished Systems
+
+Parts and Accessories
+
+Clinical Accessories
+Imaging Accessories
+Service Shop
+
+Cardiology
+
+Oncology
+
+Healthcare Financial Services
+
+Services
+
+All Services
+
+Predictive Services
+
+All Predictive Services
+Onwatch Predict
+Tube Watch
+
+Medical Technology Advanced Services
+
+MyGEHealthCare
+
+Service Shop
+
+Cybersecurity
+
+All Cybersecurity
+Product Cybersecurity
+Skeye Cybersecurity
+Product Security Portal
+
+Site Planning
+
+Refresh Financial Services
+
+Support
+
+Education
+
+All Education
+Clinical Education
+Healthcare Learning System
+Professional Development
+
+Medical Affairs - Pharmaceutical Diagnostics
+
+Support and Documentation
+
+Cleaner and Disinfectant Compatibility
+Core Imaging (CI) Certification
+Manuals & Documents
+Disinfection of Ultrasound Probes
+Interoperability
+Product Security Portal
+Site Planning
+
+Technical Support
+
+Orders and Invoices
+
+Contact
+
+Shop
+
+Shop All
+
+Training
+
+Equipment
+
+Vscan Air Apps & Accessories
+
+Service Shop Parts & Accessories
+
+Contrast Media & Molecular Imaging Agents
+
+About Us
+
+Careers
+
+About Us
+
+Our Economic Impact
+
+EHS
+
+Foundation
+
+Insights
+
+Leading Perspectives
+Inspiring Stories
+GE HealthCare reports
+Clinical insights
+Explore our content collection
+
+Our Innovations
+
+Sustainability
+
+Newsroom
+
+Investor Relations
+
+Suppliers
+
+Coupa
+Suppliers
+
+Contact
+
+Community Engagement
+
+Change country/language
+
+Looks like you’re in {} — you’re on the {} site.
+
+That country couldn’t be found — try the Global GE HealthCare (EN) experience
+
+Change Country
+
+Cancel
+
+Country and language selected
+
+You are being redirected to the {} site. Products and services availability vary by country. Do you wish to continue?
+
+Continue
+
+Cancel
+
+<div class="course-card" data-source=${hit.source} data-sourceType=${hit._sourceType} data-locale=${hit.locale} data-country=${hit.countryCode} data-sourceCategory=${hit._sourceCategory}>
+<!--  <div class="course-spec-main ${(/ecom|gss/i.test(hit?.source)) && hit?.imageUrl ? "with-gap" : "no-gap"}"> -->
+
+<div class="course-spec-main with-gap">
+<!-- First column with image - START -->
+<div class="course-card__image  ${(/ecom|gss|aem|cdp/i.test(hit?.source)) && hit?.imageUrl ? '':'hidden' }">
+${(/ecom|gss|aem|cdp/i.test(hit?.source)) && hit?.imageUrl ? html `<div class="product-image"><img src="${hit?.imageUrl}" data-src="${hit?.imageUrl}"/></div>` : ''}
+</div> 
+<!-- First column with image - END --> 
+                                                              
+<!-- Second column with content -->                                
+<div class="course-card__content">
+<div class="course-card__tags">${hit.breadCrumb?.startsWith( 'Go to site' ) ? html `<span class="go-to-site">Go to site</span> ${hit.breadCrumb.slice('Go to site'.length)}`: hit.breadCrumb} </div>
+<a href="${hit.productUrl || hit.path}" target="_blank" rel="noopener noreferrer">
+<h6 class="course-card__title">${hit.name || hit.meta?.jcr_title}</h6>
+</a>
+
+<!-- description section - START -->
+<div class="course-card__description">
+${hit.static === "true"  ?  html `<p class="course-card__description">${hit.static_description}</p>` : ''}
+${((hit?._sourceType !== 'Support'  && hit?._sourceType !== 'Services') || hit?.source === 'ECOM'  || hit?.source === 'GSS')  ?  html `<p class="course-card__description"> ${components.Highlight({ attribute: "description", hit })}
+</p>` : ''}
+${hit?._sourceType === 'Services'  ?  html `<p class="course-card__tags">${components.Highlight({ attribute: "description", hit })}</p>` : ''}
+<p class="course-card__tags">
+${hit?.source === 'CDP'  && hit?.partNumber ?  html `<span class="course-card__tags">${components.Highlight({ attribute: "partNumber", hit })}</span>` : ''}
+${hit?._sourceType !== 'Services'  && hit?.revision ?  html `<span class="course-card__tags"> | Rev-${hit?.revision}</span>` : ''}
+${hit?._sourceType === 'Support'  && hit?.lastModified ?  html `<span class="course-card__tags"> published ${new Date(hit.lastModified )?.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>` : ''}
+</p>
+<p  class="course-card__tags">
+${hit?._sourceType === 'Services'  && hit?.OS ? html `<span class="course-card__tags">OS : ${components.Highlight({ attribute: "OS", hit })}</span>` : ''}
+${hit?._sourceType !== 'Services'  && hit?.modalityName ? html `<span class="course-card__tags">${components.Highlight({ attribute: "modalityName", hit })}</span>` : ''}
+${hit?.productName? html `<span class="course-card__tags"> | ${components.Highlight({ attribute: "productName", hit })}</span>` : ''}
+</p>
+</div>
+<!-- description section - END-->
+<div class="course-card__desc hidden">${hit._snippetResult?.text?.[0]?.value}</div>
+
+<!-- Third line - START -->
+${(hit?._sourceType === 'insights'  || hit?._sourceType === 'Insights') && hit.source === 'AEM' && hit?.lastPublishedDate?  html `<p class="course-card__date">${components.Highlight({ attribute: "lastPublishedDate", hit })}
+</p>`:''}
+${hit?._sourceType === 'Services'  && hit?.lastModified ?  html `<span class="course-card__date"> Last updated ${new Date(hit.lastModified )?.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>` : ''}
+<!-- Third line - END -->
+
+<!-- SPEC LINE - START -->
+<div class="course-spec-line ecom-specs ${hit?._sourceCategory!=='ECOM_EDN' ? 'hidden' : ''} ">
+${(hit._sourceCategory=== 'ECOM_EDN' || hit._sourceCategory=== 'GSS_EDN') && hit?.productCategory?  html `<span class="course-spec-items modality-icon">${hit?.productCategory}</span>`:''}
+${hit?.trainingDeliveryMethod?  html `<span class="course-spec-items training-iconset ${hit?.trainingDeliveryMethod}-icon"><span class="${hit?.trainingDeliveryMethod}-icon__img" aria-hidden="true"></span><span class="${hit?.trainingDeliveryMethod}-icon__label">${hit?.trainingDeliveryMethod}</span></span>`:''}
+${hit?.courseDuration?  html `<span class="course-spec-items duration-icon"> <span class="duration-icon__img" aria-hidden="true"></span><span class="duration-icon__label">${hit?.courseDuration}</span></span>`:''}
+${hit?.courseCredits?  html `<span class="course-spec-items credits-icon"> <span class="credits-icon__img" aria-hidden="true"></span><span class="credits-icon__label">${hit?.courseCredits} <span> </span>CE Credits</span></span>`:''}
+</div>
+<!-- Service Shop -->
+<div class="course-spec-line gss-specs ${hit?._sourceType !=='Shop' ? 'hidden' : ''} ">
+${hit._sourceCategory !== 'GSS_EDN' && hit?.code?  html `<span class="course-spec-items code-iconset ${hit?.code}-icon"><span class="${hit?.code}-icon__img" aria-hidden="true"></span><span class="${hit?.code}-icon__label">${hit?.code}</span></span>`:''}
+${hit._sourceCategory !== 'GSS_EDN' && hit?.condition?  html `<span class="course-spec-items condition-iconset ${hit?.condition}-icon"><span class="condition-icon__img" aria-hidden="true"></span><span class="${hit?.condition}-icon__label">${hit?.condition}</span></span>`:''}
+${hit._sourceCategory !== 'GSS_EDN' && hit?.manufacturer?  html `<span class="course-spec-items manufacturer-iconset ${hit?.manufacturer}-icon"><span class="manufacturer-icon__img" aria-hidden="true"></span><span class="${hit?.manufacturer}-icon__label">${hit?.manufacturer}</span></span>`:''}
+</div>
+<!-- SPEC LINE - END -->
+
+<!-- STATIC LINKS - START -->
+<div class="hit-static-link">
+${hit?.static_links?.[0]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[0]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[0]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[1]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[1]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[1]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[2]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[2]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[2]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[3]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[3]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[3]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[4]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[4]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[4]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[5]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[5]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[5]?.title}</a>
+</p>`:''}
+</div>
+<!-- STATIC LINKS - END -->
+ 
+<!-- Price Section START -->
+<div class="course-card-price-section ${hit?.price && ['ECOM'].includes(hit?.source) ? '': 'hidden'} ">
+ ${(hit?.price) && ['ECOM'].includes(hit?.source) ?  html `<span class="course-card__price">${hit?.price}</span>` : ''}   
+<span class="course-card__label ${hit?.price && hit._sourceCategory=== 'ECOM_EDN' ? '': 'hidden'} ">
+${hit.noOfUsers && hit.noOfUsers !=="0" ? (hit.noOfUsers > 1 ? ( '/ ' + hit.noOfUsers + ' ' + 'students' ) : ('/ student')) :  (hit.trainingDeliveryMethod?.toLowerCase() === 'classroom' || hit.trainingDeliveryMethod?.toLowerCase() === 'virtual' ) ?  'starting at' : 'unlimited students'}  
+</span>      
+<span class="course-card__label ${hit?.price && (hit._sourceCategory=== 'ECOM_EQP' || hit?._sourceCategory=== 'ECOM_AA')  ? '' : 'hidden'}">Online starting price</span>          
+</div>
+<!-- Price Section END -->
+
+</div>
+</div>
+<!-- Second column with content - END-->    
+</div>
+
+			
+			
+				<div class="course-card" data-source=${hit.source} data-sourceType=${hit._sourceType} data-locale=${hit.locale} data-country=${hit.countryCode} data-sourceCategory=${hit._sourceCategory}>
+<!--  <div class="course-spec-main ${(/ecom|gss/i.test(hit?.source)) && hit?.imageUrl ? "with-gap" : "no-gap"}"> -->
+
+<div class="course-spec-main with-gap">
+<!-- First column with image - START -->
+<div class="course-card__image  ${(/ecom|gss|aem|cdp/i.test(hit?.source)) && hit?.imageUrl ? '':'hidden' }">
+${(/ecom|gss|aem|cdp/i.test(hit?.source)) && hit?.imageUrl ? html `<div class="product-image"><img src="${hit?.imageUrl}" data-src="${hit?.imageUrl}"/></div>` : ''}
+</div> 
+<!-- First column with image - END --> 
+                                                              
+<!-- Second column with content -->                                
+<div class="course-card__content">
+<div class="course-card__tags">${hit.breadCrumb?.startsWith( 'Go to site' ) ? html `<span class="go-to-site">Go to site</span> ${hit.breadCrumb.slice('Go to site'.length)}`: hit.breadCrumb} </div>
+<a href="${hit.productUrl || hit.path}" target="_blank" rel="noopener noreferrer">
+<h6 class="course-card__title">${hit.name || hit.meta?.jcr_title}</h6>
+</a>
+
+<!-- description section - START -->
+<div class="course-card__description">
+${hit.static === "true"  ?  html `<p class="course-card__description">${hit.static_description}</p>` : ''}
+${((hit?._sourceType !== 'Support'  && hit?._sourceType !== 'Services') || hit?.source === 'ECOM'  || hit?.source === 'GSS')  ?  html `<p class="course-card__description"> ${components.Highlight({ attribute: "description", hit })}
+</p>` : ''}
+${hit?._sourceType === 'Services'  ?  html `<p class="course-card__tags">${components.Highlight({ attribute: "description", hit })}</p>` : ''}
+<p class="course-card__tags">
+${hit?.source === 'CDP'  && hit?.partNumber ?  html `<span class="course-card__tags">${components.Highlight({ attribute: "partNumber", hit })}</span>` : ''}
+${hit?._sourceType !== 'Services'  && hit?.revision ?  html `<span class="course-card__tags"> | Rev-${hit?.revision}</span>` : ''}
+${hit?._sourceType === 'Support'  && hit?.lastModified ?  html `<span class="course-card__tags"> published ${new Date(hit.lastModified )?.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>` : ''}
+</p>
+<p  class="course-card__tags">
+${hit?._sourceType === 'Services'  && hit?.OS ? html `<span class="course-card__tags">OS : ${components.Highlight({ attribute: "OS", hit })}</span>` : ''}
+${hit?._sourceType !== 'Services'  && hit?.modalityName ? html `<span class="course-card__tags">${components.Highlight({ attribute: "modalityName", hit })}</span>` : ''}
+${hit?.productName? html `<span class="course-card__tags"> | ${components.Highlight({ attribute: "productName", hit })}</span>` : ''}
+</p>
+</div>
+<!-- description section - END-->
+<div class="course-card__desc hidden">${hit._snippetResult?.text?.[0]?.value}</div>
+
+<!-- Third line - START -->
+${(hit?._sourceType === 'insights'  || hit?._sourceType === 'Insights') && hit.source === 'AEM' && hit?.lastPublishedDate?  html `<p class="course-card__date">${components.Highlight({ attribute: "lastPublishedDate", hit })}
+</p>`:''}
+${hit?._sourceType === 'Services'  && hit?.lastModified ?  html `<span class="course-card__date"> Last updated ${new Date(hit.lastModified )?.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>` : ''}
+<!-- Third line - END -->
+
+<!-- SPEC LINE - START -->
+<div class="course-spec-line ecom-specs ${hit?._sourceCategory!=='ECOM_EDN' ? 'hidden' : ''} ">
+${(hit._sourceCategory=== 'ECOM_EDN' || hit._sourceCategory=== 'GSS_EDN') && hit?.productCategory?  html `<span class="course-spec-items modality-icon">${hit?.productCategory}</span>`:''}
+${hit?.trainingDeliveryMethod?  html `<span class="course-spec-items training-iconset ${hit?.trainingDeliveryMethod}-icon"><span class="${hit?.trainingDeliveryMethod}-icon__img" aria-hidden="true"></span><span class="${hit?.trainingDeliveryMethod}-icon__label">${hit?.trainingDeliveryMethod}</span></span>`:''}
+${hit?.courseDuration?  html `<span class="course-spec-items duration-icon"> <span class="duration-icon__img" aria-hidden="true"></span><span class="duration-icon__label">${hit?.courseDuration}</span></span>`:''}
+${hit?.courseCredits?  html `<span class="course-spec-items credits-icon"> <span class="credits-icon__img" aria-hidden="true"></span><span class="credits-icon__label">${hit?.courseCredits} <span> </span>CE Credits</span></span>`:''}
+</div>
+<!-- Service Shop -->
+<div class="course-spec-line gss-specs ${hit?._sourceType !=='Shop' ? 'hidden' : ''} ">
+${hit._sourceCategory !== 'GSS_EDN' && hit?.code?  html `<span class="course-spec-items code-iconset ${hit?.code}-icon"><span class="${hit?.code}-icon__img" aria-hidden="true"></span><span class="${hit?.code}-icon__label">${hit?.code}</span></span>`:''}
+${hit._sourceCategory !== 'GSS_EDN' && hit?.condition?  html `<span class="course-spec-items condition-iconset ${hit?.condition}-icon"><span class="condition-icon__img" aria-hidden="true"></span><span class="${hit?.condition}-icon__label">${hit?.condition}</span></span>`:''}
+${hit._sourceCategory !== 'GSS_EDN' && hit?.manufacturer?  html `<span class="course-spec-items manufacturer-iconset ${hit?.manufacturer}-icon"><span class="manufacturer-icon__img" aria-hidden="true"></span><span class="${hit?.manufacturer}-icon__label">${hit?.manufacturer}</span></span>`:''}
+</div>
+<!-- SPEC LINE - END -->
+
+<!-- STATIC LINKS - START -->
+<div class="hit-static-link">
+${hit?.static_links?.[0]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[0]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[0]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[1]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[1]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[1]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[2]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[2]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[2]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[3]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[3]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[3]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[4]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[4]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[4]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[5]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[5]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[5]?.title}</a>
+</p>`:''}
+</div>
+<!-- STATIC LINKS - END -->
+ 
+<!-- Price Section START -->
+<div class="course-card-price-section ${hit?.price && ['ECOM'].includes(hit?.source) ? '': 'hidden'} ">
+ ${(hit?.price) && ['ECOM'].includes(hit?.source) ?  html `<span class="course-card__price">${hit?.price}</span>` : ''}   
+<span class="course-card__label ${hit?.price && hit._sourceCategory=== 'ECOM_EDN' ? '': 'hidden'} ">
+${hit.noOfUsers && hit.noOfUsers !=="0" ? (hit.noOfUsers > 1 ? ( '/ ' + hit.noOfUsers + ' ' + 'students' ) : ('/ student')) :  (hit.trainingDeliveryMethod?.toLowerCase() === 'classroom' || hit.trainingDeliveryMethod?.toLowerCase() === 'virtual' ) ?  'starting at' : 'unlimited students'}  
+</span>      
+<span class="course-card__label ${hit?.price && (hit._sourceCategory=== 'ECOM_EQP' || hit?._sourceCategory=== 'ECOM_AA')  ? '' : 'hidden'}">Online starting price</span>          
+</div>
+<!-- Price Section END -->
+
+</div>
+</div>
+<!-- Second column with content - END-->    
+</div>
+
+<div class="algolia-analytics" data-promoted="${hit?._rankingInfo?.promoted}" data-insights-query-id="${hit.__queryID}" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-cug="${hit?.meta?.cug}"><div class="${hit?.imageUrl ? 'suggested-link-img' : 'suggested-link'}  ">
+<div class="suggested-image-wrapper ${hit?.imageUrl ? '' : 'hidden'}">
+<a href="${hit?.productUrl || hit?.path} " target="_blank"  rel="noopener noreferrer">
+<img src="${hit?.imageUrl}" data-title="${hit?.imageUrl}" /></a>
+</div>
+<div class="suggested-content">
+<div class="product-name">
+<a href="${hit?.productUrl || hit?.path} " target="_blank"  rel="noopener noreferrer">
+${components.Highlight({ attribute: "name", hit })}
+</a>
+</div>
+<div class="product-site">
+<a href="${hit?.productUrl || hit?.path }" target="_blank"  rel="noopener noreferrer">
+${hit.breadCrumb?.startsWith( 'Go to site' ) ? html `<span class="go-to-site">Go to site</span> ${hit.breadCrumb.slice('Go to site'.length)}`: hit.breadCrumb}
+</a>
+</div>
+</div>
+</div></div>
+
+<div class="no-results-message-container">
+<div class="no-results-title">Sorry, we couldn’t find results for “${results?.query}”</div>
+<ul>
+<li>Check your spelling </li>
+<li>Use different keywords and try again </li>
+<li>Broaden your search by using fewer or more general words</li>
+</ul>
+
+<div class="no-results-help-title">Need help?</div>
+<p class="no-results-help-description">Our customer service team can help.</p>
+<p class="no-results-links"><a href="https://www.gehealthcare.com/about/contact-us">Contact Us</a></p>
+<div class="popular_searches">
+    <p class="popular_search_items">Popular Searches</p>
+    <ol class="popular-Hits-list popular_search_grid"></ol>
+</div>
+<br></br>
+</div>
+	
+
+		${query === "" && recentSearches ? html` 
+<div class="autocomplete-dropdown case1 showSectionTitle recentSearches">
+<ul class="suggestions-list">
+        ${recentSearches}
+</ul>
+</div>` : ''}
+ 
+${query === "" && !recentSearches ? html` 
+<div class="autocomplete-dropdown case2 showSectionTitle">
+<ul class="suggestions-list">
+        ${querySuggestions}
+</ul>
+</div>` : ''}
+ 
+${query?.length >= 3 && querySuggestions? html` 
+<div class="autocomplete-dropdown case3">
+<ul class="suggestions-list">
+        ${querySuggestions}
+<div class="recentSearches">
+        ${recentSearches}
+</div>
+</ul>
+</div>` : ''}
+${ sources[0] && query?.length >= 3  &&  html`<div class="main-suggestion english-suggestions-links">
+<div class="suggested-links">Suggested links</div>
+${sources[0]}
+</div>`
+}
+
+Sign In
+
+Don't have an account?
+
+Register Now
+
+AI Solutions
+
+AI Solutions
+
+Products
+
+Products
+
+Imaging
+
+All Imaging
+Advanced Visualization
+Bone & Metabolic Health
+Computed Tomography
+Fluoroscopy
+Imaging operations
+Image Guiding Solutions
+Invasive Cardiology
+Magnetic Resonance Imaging
+Mammography
+Molecular Imaging
+Post-processing
+Radiography (X-ray)
+Surgical Imaging
+
+Ultrasound
+
+All Ultrasound
+Breast Ultrasound
+Cardiovascular | Vivid
+Digital & AI Ultrasound Solutions | Verisound
+General Imaging | LOGIQ
+Handheld Ultrasound | Vscan
+Point of Care | Venue
+Primary Care | Versana
+Surgical Visualization and Guidance
+Urology
+Women's Health | Voluson
+Ultrasound Developer Program
+
+Patient Care Solutions
+
+All Patient Care Solutions
+Anesthesia Solutions
+Diagnostic ECG
+Maternal & Infant Care
+Patient Monitoring
+Clinical Accessories
+Critical care equipment services
+
+Pharmaceutical Imaging Agents
+
+All Pharmaceutical Diagnostics
+Contrast Media
+Molecular Imaging Agents
+Pharma Services
+
+Software and AI Solutions
+
+All Software and AI Solutions
+Advanced Visualization | AW
+Cardiology IT | Centricity
+Cybersecurity
+Enterprise Imaging (VNA) | Datalogue
+Hospital Operations | Command Center
+Imaging Operations | Imaging 360
+Integrated Care Applications | CareIntellect
+PACS & AI Orchestration
+Ultrasound Digital & AI Solutions | Verisound
+
+Refurbished Systems
+
+Parts and Accessories
+
+Clinical Accessories
+Imaging Accessories
+Service Shop
+
+Cardiology
+
+Oncology
+
+Healthcare Financial Services
+
+Services
+
+Services
+
+All Services
+
+Predictive Services
+
+All Predictive Services
+Onwatch Predict
+Tube Watch
+
+Medical Technology Advanced Services
+
+MyGEHealthCare
+
+Service Shop
+
+Cybersecurity
+
+All Cybersecurity
+Product Cybersecurity
+Skeye Cybersecurity
+Product Security Portal
+
+Site Planning
+
+Refresh Financial Services
+
+Support
+
+Support
+
+Education
+
+All Education
+Clinical Education
+Healthcare Learning System
+Professional Development
+
+Medical Affairs - Pharmaceutical Diagnostics
+
+Support and Documentation
+
+Cleaner and Disinfectant Compatibility
+Core Imaging (CI) Certification
+Manuals & Documents
+Disinfection of Ultrasound Probes
+Interoperability
+Product Security Portal
+Site Planning
+
+Technical Support
+
+Orders and Invoices
+
+Contact
+
+Shop
+
+Shop
+
+Shop All
+
+Training
+
+Equipment
+
+Vscan Air Apps & Accessories
+
+Service Shop Parts & Accessories
+
+Contrast Media & Molecular Imaging Agents
+
+About Us
+
+About Us
+
+Careers
+
+About Us
+
+Our Economic Impact
+
+EHS
+
+Foundation
+
+Insights
+
+Leading Perspectives
+Inspiring Stories
+GE HealthCare reports
+Clinical insights
+Explore our content collection
+
+Our Innovations
+
+Sustainability
+
+Newsroom
+
+Investor Relations
+
+Suppliers
+
+Coupa
+Suppliers
+
+Contact
+
+Community Engagement
+
+<div class="course-card" data-source=${hit.source} data-sourceType=${hit._sourceType} data-locale=${hit.locale} data-country=${hit.countryCode} data-sourceCategory=${hit._sourceCategory}>
+<!--  <div class="course-spec-main ${(/ecom|gss/i.test(hit?.source)) && hit?.imageUrl ? "with-gap" : "no-gap"}"> -->
+
+<div class="course-spec-main with-gap">
+<!-- First column with image - START -->
+<div class="course-card__image  ${(/ecom|gss|aem|cdp/i.test(hit?.source)) && hit?.imageUrl ? '':'hidden' }">
+${(/ecom|gss|aem|cdp/i.test(hit?.source)) && hit?.imageUrl ? html `<div class="product-image"><img src="${hit?.imageUrl}" data-src="${hit?.imageUrl}"/></div>` : ''}
+</div> 
+<!-- First column with image - END --> 
+                                                              
+<!-- Second column with content -->                                
+<div class="course-card__content">
+<div class="course-card__tags">${hit.breadCrumb?.startsWith( 'Go to site' ) ? html `<span class="go-to-site">Go to site</span> ${hit.breadCrumb.slice('Go to site'.length)}`: hit.breadCrumb} </div>
+<a href="${hit.productUrl || hit.path}" target="_blank" rel="noopener noreferrer">
+<h6 class="course-card__title">${hit.name || hit.meta?.jcr_title}</h6>
+</a>
+
+<!-- description section - START -->
+<div class="course-card__description">
+${hit.static === "true"  ?  html `<p class="course-card__description">${hit.static_description}</p>` : ''}
+${((hit?._sourceType !== 'Support'  && hit?._sourceType !== 'Services') || hit?.source === 'ECOM'  || hit?.source === 'GSS')  ?  html `<p class="course-card__description"> ${components.Highlight({ attribute: "description", hit })}
+</p>` : ''}
+${hit?._sourceType === 'Services'  ?  html `<p class="course-card__tags">${components.Highlight({ attribute: "description", hit })}</p>` : ''}
+<p class="course-card__tags">
+${hit?.source === 'CDP'  && hit?.partNumber ?  html `<span class="course-card__tags">${components.Highlight({ attribute: "partNumber", hit })}</span>` : ''}
+${hit?._sourceType !== 'Services'  && hit?.revision ?  html `<span class="course-card__tags"> | Rev-${hit?.revision}</span>` : ''}
+${hit?._sourceType === 'Support'  && hit?.lastModified ?  html `<span class="course-card__tags"> published ${new Date(hit.lastModified )?.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>` : ''}
+</p>
+<p  class="course-card__tags">
+${hit?._sourceType === 'Services'  && hit?.OS ? html `<span class="course-card__tags">OS : ${components.Highlight({ attribute: "OS", hit })}</span>` : ''}
+${hit?._sourceType !== 'Services'  && hit?.modalityName ? html `<span class="course-card__tags">${components.Highlight({ attribute: "modalityName", hit })}</span>` : ''}
+${hit?.productName? html `<span class="course-card__tags"> | ${components.Highlight({ attribute: "productName", hit })}</span>` : ''}
+</p>
+</div>
+<!-- description section - END-->
+<div class="course-card__desc hidden">${hit._snippetResult?.text?.[0]?.value}</div>
+
+<!-- Third line - START -->
+${(hit?._sourceType === 'insights'  || hit?._sourceType === 'Insights') && hit.source === 'AEM' && hit?.lastPublishedDate?  html `<p class="course-card__date">${components.Highlight({ attribute: "lastPublishedDate", hit })}
+</p>`:''}
+${hit?._sourceType === 'Services'  && hit?.lastModified ?  html `<span class="course-card__date"> Last updated ${new Date(hit.lastModified )?.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>` : ''}
+<!-- Third line - END -->
+
+<!-- SPEC LINE - START -->
+<div class="course-spec-line ecom-specs ${hit?._sourceCategory!=='ECOM_EDN' ? 'hidden' : ''} ">
+${(hit._sourceCategory=== 'ECOM_EDN' || hit._sourceCategory=== 'GSS_EDN') && hit?.productCategory?  html `<span class="course-spec-items modality-icon">${hit?.productCategory}</span>`:''}
+${hit?.trainingDeliveryMethod?  html `<span class="course-spec-items training-iconset ${hit?.trainingDeliveryMethod}-icon"><span class="${hit?.trainingDeliveryMethod}-icon__img" aria-hidden="true"></span><span class="${hit?.trainingDeliveryMethod}-icon__label">${hit?.trainingDeliveryMethod}</span></span>`:''}
+${hit?.courseDuration?  html `<span class="course-spec-items duration-icon"> <span class="duration-icon__img" aria-hidden="true"></span><span class="duration-icon__label">${hit?.courseDuration}</span></span>`:''}
+${hit?.courseCredits?  html `<span class="course-spec-items credits-icon"> <span class="credits-icon__img" aria-hidden="true"></span><span class="credits-icon__label">${hit?.courseCredits} <span> </span>CE Credits</span></span>`:''}
+</div>
+<!-- Service Shop -->
+<div class="course-spec-line gss-specs ${hit?._sourceType !=='Shop' ? 'hidden' : ''} ">
+${hit._sourceCategory !== 'GSS_EDN' && hit?.code?  html `<span class="course-spec-items code-iconset ${hit?.code}-icon"><span class="${hit?.code}-icon__img" aria-hidden="true"></span><span class="${hit?.code}-icon__label">${hit?.code}</span></span>`:''}
+${hit._sourceCategory !== 'GSS_EDN' && hit?.condition?  html `<span class="course-spec-items condition-iconset ${hit?.condition}-icon"><span class="condition-icon__img" aria-hidden="true"></span><span class="${hit?.condition}-icon__label">${hit?.condition}</span></span>`:''}
+${hit._sourceCategory !== 'GSS_EDN' && hit?.manufacturer?  html `<span class="course-spec-items manufacturer-iconset ${hit?.manufacturer}-icon"><span class="manufacturer-icon__img" aria-hidden="true"></span><span class="${hit?.manufacturer}-icon__label">${hit?.manufacturer}</span></span>`:''}
+</div>
+<!-- SPEC LINE - END -->
+
+<!-- STATIC LINKS - START -->
+<div class="hit-static-link">
+${hit?.static_links?.[0]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[0]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[0]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[1]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[1]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[1]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[2]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[2]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[2]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[3]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[3]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[3]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[4]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[4]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[4]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[5]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[5]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[5]?.title}</a>
+</p>`:''}
+</div>
+<!-- STATIC LINKS - END -->
+ 
+<!-- Price Section START -->
+<div class="course-card-price-section ${hit?.price && ['ECOM'].includes(hit?.source) ? '': 'hidden'} ">
+ ${(hit?.price) && ['ECOM'].includes(hit?.source) ?  html `<span class="course-card__price">${hit?.price}</span>` : ''}   
+<span class="course-card__label ${hit?.price && hit._sourceCategory=== 'ECOM_EDN' ? '': 'hidden'} ">
+${hit.noOfUsers && hit.noOfUsers !=="0" ? (hit.noOfUsers > 1 ? ( '/ ' + hit.noOfUsers + ' ' + 'students' ) : ('/ student')) :  (hit.trainingDeliveryMethod?.toLowerCase() === 'classroom' || hit.trainingDeliveryMethod?.toLowerCase() === 'virtual' ) ?  'starting at' : 'unlimited students'}  
+</span>      
+<span class="course-card__label ${hit?.price && (hit._sourceCategory=== 'ECOM_EQP' || hit?._sourceCategory=== 'ECOM_AA')  ? '' : 'hidden'}">Online starting price</span>          
+</div>
+<!-- Price Section END -->
+
+</div>
+</div>
+<!-- Second column with content - END-->    
+</div>
+
+			
+			
+				<div class="course-card" data-source=${hit.source} data-sourceType=${hit._sourceType} data-locale=${hit.locale} data-country=${hit.countryCode} data-sourceCategory=${hit._sourceCategory}>
+<!--  <div class="course-spec-main ${(/ecom|gss/i.test(hit?.source)) && hit?.imageUrl ? "with-gap" : "no-gap"}"> -->
+
+<div class="course-spec-main with-gap">
+<!-- First column with image - START -->
+<div class="course-card__image  ${(/ecom|gss|aem|cdp/i.test(hit?.source)) && hit?.imageUrl ? '':'hidden' }">
+${(/ecom|gss|aem|cdp/i.test(hit?.source)) && hit?.imageUrl ? html `<div class="product-image"><img src="${hit?.imageUrl}" data-src="${hit?.imageUrl}"/></div>` : ''}
+</div> 
+<!-- First column with image - END --> 
+                                                              
+<!-- Second column with content -->                                
+<div class="course-card__content">
+<div class="course-card__tags">${hit.breadCrumb?.startsWith( 'Go to site' ) ? html `<span class="go-to-site">Go to site</span> ${hit.breadCrumb.slice('Go to site'.length)}`: hit.breadCrumb} </div>
+<a href="${hit.productUrl || hit.path}" target="_blank" rel="noopener noreferrer">
+<h6 class="course-card__title">${hit.name || hit.meta?.jcr_title}</h6>
+</a>
+
+<!-- description section - START -->
+<div class="course-card__description">
+${hit.static === "true"  ?  html `<p class="course-card__description">${hit.static_description}</p>` : ''}
+${((hit?._sourceType !== 'Support'  && hit?._sourceType !== 'Services') || hit?.source === 'ECOM'  || hit?.source === 'GSS')  ?  html `<p class="course-card__description"> ${components.Highlight({ attribute: "description", hit })}
+</p>` : ''}
+${hit?._sourceType === 'Services'  ?  html `<p class="course-card__tags">${components.Highlight({ attribute: "description", hit })}</p>` : ''}
+<p class="course-card__tags">
+${hit?.source === 'CDP'  && hit?.partNumber ?  html `<span class="course-card__tags">${components.Highlight({ attribute: "partNumber", hit })}</span>` : ''}
+${hit?._sourceType !== 'Services'  && hit?.revision ?  html `<span class="course-card__tags"> | Rev-${hit?.revision}</span>` : ''}
+${hit?._sourceType === 'Support'  && hit?.lastModified ?  html `<span class="course-card__tags"> published ${new Date(hit.lastModified )?.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>` : ''}
+</p>
+<p  class="course-card__tags">
+${hit?._sourceType === 'Services'  && hit?.OS ? html `<span class="course-card__tags">OS : ${components.Highlight({ attribute: "OS", hit })}</span>` : ''}
+${hit?._sourceType !== 'Services'  && hit?.modalityName ? html `<span class="course-card__tags">${components.Highlight({ attribute: "modalityName", hit })}</span>` : ''}
+${hit?.productName? html `<span class="course-card__tags"> | ${components.Highlight({ attribute: "productName", hit })}</span>` : ''}
+</p>
+</div>
+<!-- description section - END-->
+<div class="course-card__desc hidden">${hit._snippetResult?.text?.[0]?.value}</div>
+
+<!-- Third line - START -->
+${(hit?._sourceType === 'insights'  || hit?._sourceType === 'Insights') && hit.source === 'AEM' && hit?.lastPublishedDate?  html `<p class="course-card__date">${components.Highlight({ attribute: "lastPublishedDate", hit })}
+</p>`:''}
+${hit?._sourceType === 'Services'  && hit?.lastModified ?  html `<span class="course-card__date"> Last updated ${new Date(hit.lastModified )?.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>` : ''}
+<!-- Third line - END -->
+
+<!-- SPEC LINE - START -->
+<div class="course-spec-line ecom-specs ${hit?._sourceCategory!=='ECOM_EDN' ? 'hidden' : ''} ">
+${(hit._sourceCategory=== 'ECOM_EDN' || hit._sourceCategory=== 'GSS_EDN') && hit?.productCategory?  html `<span class="course-spec-items modality-icon">${hit?.productCategory}</span>`:''}
+${hit?.trainingDeliveryMethod?  html `<span class="course-spec-items training-iconset ${hit?.trainingDeliveryMethod}-icon"><span class="${hit?.trainingDeliveryMethod}-icon__img" aria-hidden="true"></span><span class="${hit?.trainingDeliveryMethod}-icon__label">${hit?.trainingDeliveryMethod}</span></span>`:''}
+${hit?.courseDuration?  html `<span class="course-spec-items duration-icon"> <span class="duration-icon__img" aria-hidden="true"></span><span class="duration-icon__label">${hit?.courseDuration}</span></span>`:''}
+${hit?.courseCredits?  html `<span class="course-spec-items credits-icon"> <span class="credits-icon__img" aria-hidden="true"></span><span class="credits-icon__label">${hit?.courseCredits} <span> </span>CE Credits</span></span>`:''}
+</div>
+<!-- Service Shop -->
+<div class="course-spec-line gss-specs ${hit?._sourceType !=='Shop' ? 'hidden' : ''} ">
+${hit._sourceCategory !== 'GSS_EDN' && hit?.code?  html `<span class="course-spec-items code-iconset ${hit?.code}-icon"><span class="${hit?.code}-icon__img" aria-hidden="true"></span><span class="${hit?.code}-icon__label">${hit?.code}</span></span>`:''}
+${hit._sourceCategory !== 'GSS_EDN' && hit?.condition?  html `<span class="course-spec-items condition-iconset ${hit?.condition}-icon"><span class="condition-icon__img" aria-hidden="true"></span><span class="${hit?.condition}-icon__label">${hit?.condition}</span></span>`:''}
+${hit._sourceCategory !== 'GSS_EDN' && hit?.manufacturer?  html `<span class="course-spec-items manufacturer-iconset ${hit?.manufacturer}-icon"><span class="manufacturer-icon__img" aria-hidden="true"></span><span class="${hit?.manufacturer}-icon__label">${hit?.manufacturer}</span></span>`:''}
+</div>
+<!-- SPEC LINE - END -->
+
+<!-- STATIC LINKS - START -->
+<div class="hit-static-link">
+${hit?.static_links?.[0]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[0]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[0]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[1]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[1]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[1]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[2]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[2]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[2]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[3]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[3]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[3]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[4]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[4]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[4]?.title}</a>
+</p>`:''}
+${hit?.static_links?.[5]?  html `<p class="hits_static_links">  <a href="${hit?.static_links[5]?.url}" target="_blank" rel="noopener noreferrer">${hit?.static_links[5]?.title}</a>
+</p>`:''}
+</div>
+<!-- STATIC LINKS - END -->
+ 
+<!-- Price Section START -->
+<div class="course-card-price-section ${hit?.price && ['ECOM'].includes(hit?.source) ? '': 'hidden'} ">
+ ${(hit?.price) && ['ECOM'].includes(hit?.source) ?  html `<span class="course-card__price">${hit?.price}</span>` : ''}   
+<span class="course-card__label ${hit?.price && hit._sourceCategory=== 'ECOM_EDN' ? '': 'hidden'} ">
+${hit.noOfUsers && hit.noOfUsers !=="0" ? (hit.noOfUsers > 1 ? ( '/ ' + hit.noOfUsers + ' ' + 'students' ) : ('/ student')) :  (hit.trainingDeliveryMethod?.toLowerCase() === 'classroom' || hit.trainingDeliveryMethod?.toLowerCase() === 'virtual' ) ?  'starting at' : 'unlimited students'}  
+</span>      
+<span class="course-card__label ${hit?.price && (hit._sourceCategory=== 'ECOM_EQP' || hit?._sourceCategory=== 'ECOM_AA')  ? '' : 'hidden'}">Online starting price</span>          
+</div>
+<!-- Price Section END -->
+
+</div>
+</div>
+<!-- Second column with content - END-->    
+</div>
+
+<div class="algolia-analytics" data-promoted="${hit?._rankingInfo?.promoted}" data-insights-query-id="${hit.__queryID}" data-insights-object-id="${hit.objectID}" data-insights-position="${hit.__position}" data-cug="${hit?.meta?.cug}"><div class="${hit?.imageUrl ? 'suggested-link-img' : 'suggested-link'}  ">
+<div class="suggested-image-wrapper ${hit?.imageUrl ? '' : 'hidden'}">
+<a href="${hit?.productUrl || hit?.path} " target="_blank"  rel="noopener noreferrer">
+<img src="${hit?.imageUrl}" data-title="${hit?.imageUrl}" /></a>
+</div>
+<div class="suggested-content">
+<div class="product-name">
+<a href="${hit?.productUrl || hit?.path} " target="_blank"  rel="noopener noreferrer">
+${components.Highlight({ attribute: "name", hit })}
+</a>
+</div>
+<div class="product-site">
+<a href="${hit?.productUrl || hit?.path }" target="_blank"  rel="noopener noreferrer">
+${hit.breadCrumb?.startsWith( 'Go to site' ) ? html `<span class="go-to-site">Go to site</span> ${hit.breadCrumb.slice('Go to site'.length)}`: hit.breadCrumb}
+</a>
+</div>
+</div>
+</div></div>
+
+<div class="no-results-message-container">
+<div class="no-results-title">Sorry, we couldn’t find results for “${results?.query}”</div>
+<ul>
+<li>Check your spelling </li>
+<li>Use different keywords and try again </li>
+<li>Broaden your search by using fewer or more general words</li>
+</ul>
+
+<div class="no-results-help-title">Need help?</div>
+<p class="no-results-help-description">Our customer service team can help.</p>
+<p class="no-results-links"><a href="https://www.gehealthcare.com/about/contact-us">Contact Us</a></p>
+<div class="popular_searches">
+    <p class="popular_search_items">Popular Searches</p>
+    <ol class="popular-Hits-list popular_search_grid"></ol>
+</div>
+<br></br>
+</div>
+	
+
+		${query === "" && recentSearches ? html` 
+<div class="autocomplete-dropdown case1 showSectionTitle recentSearches">
+<ul class="suggestions-list">
+        ${recentSearches}
+</ul>
+</div>` : ''}
+ 
+${query === "" && !recentSearches ? html` 
+<div class="autocomplete-dropdown case2 showSectionTitle">
+<ul class="suggestions-list">
+        ${querySuggestions}
+</ul>
+</div>` : ''}
+ 
+${query?.length >= 3 && querySuggestions? html` 
+<div class="autocomplete-dropdown case3">
+<ul class="suggestions-list">
+        ${querySuggestions}
+<div class="recentSearches">
+        ${recentSearches}
+</div>
+</ul>
+</div>` : ''}
+${ sources[0] && query?.length >= 3  &&  html`<div class="main-suggestion english-suggestions-links">
+<div class="suggested-links">Suggested links</div>
+${sources[0]}
+</div>`
+}
+
+Ultrasound Machines and Scanners
+
+/
+
+Handheld Ultrasound
+
+Overview
+
+Education
+
+Imaging gallery
+
+Apps and accessories
+
+Buy now 
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+   
+  
+
+  
+  
+
+                        
+                        
+                            
+  
+  
+  
+  
+  
+    
+    Demo Vscan
+
+Overview
+
+Education
+
+Imaging gallery
+
+Apps and accessories
+
+Buy now 
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+   
+  
+
+  
+  
+
+                
+                
+                    
+  
+  
+  
+  
+  
+    
+    Demo Vscan
+
+Vscan Air™ Portable Ultrasound Systems
+
+The Vscan Air family delivers portable, pocket-sized ultrasound devices to enable clinicians to easily image patients at the point of care – transforming the physical exam with more information to determine the optimized course of treatment.
+
+Schedule product demo
+
+Products
+
+Vscan Air™ handheld ultrasound
+
+Vscan Air™ CL
+
+Flexible, wireless dual-probe handheld ultrasound with curved and linear transducers that deliver crystal clear images at the point of care. Ideal for OB/GYN, abdominal imaging, MSK, and more.
+
+Learn more
+
+Vscan Air ™ SL
+
+Flexible, wireless dual-probe handheld ultrasound with sector and linear transducers that deliver crystal clear images at the point of care. Ideal for fast cardiac assessments, vascular, and more.
+
+Learn more
+
+Digital Tools for Vscan Air
+
+Whether you are an individual provider or part of a larger Healthcare organization, you can now take patient care further by adding Digital Tools, an innovative suite of user focused solutions to your Vscan Air.
+
+Learn more
+
+See for yourself — one device that works like two.
+
+Your browser does not support the video tag.
+
+Vscan Air product overview
+
+Previous
+        
+        
+            
+            Next
+
+Vscan Air product overview
+
+Benefits
+
+Handheld ultrasound system benefits
+
+Accelerate treatment decisions
+
+Handheld ultrasound enables you to make quick diagnostic decisions to help triage patients quickly.
+
+Greater efficiency
+
+Handheld ultrasound enables diagnosis at the point of care, helping healthcare professionals avoid further investigations.
+
+The power to diagnose and act in the palm of your hand
+
+Handheld ultrasound fits in your pocket, making it extremely portable and convenient.
+
+Improve patient experience
+
+Handheld ultrasound accelerates decisions to help reduce patient wait times, travel burden, and costs.
+
+Portable
+
+Handheld ultrasound enables you to have diagnostic capabilities wherever you need them.
+
+Flexible, wireless workflow
+
+With handheld ultrasound at the bedside, you can improve patient management through streamlined decisions.
+
+Clinical images
+
+Vscan Air at Work
+
+With exceptional images at your fingertips across multiple care specialties, you can quickly decide next steps and make fast treatment decisions.
+
+See more Vscan Air images
+
+Your browser does not support the video tag.
+
+Vscan Air SL: Apical 4 chamber with color + PW Doppler
+
+Vscan Air SL: Patellar Tendon
+
+Vscan Air CL: Liver/Kidney
+
+Vscan Air CL: Fetal profile
+
+Vscan Air SL: Liver with HD-SRI
+
+Vscan Air CL: Optic nerve
+
+Previous
+        
+        
+            
+            Next
+
+Vscan Air SL: Apical 4 chamber with color + PW Doppler
+
+Vscan Air SL: Apical 5 chamber view with Color
+
+Vscan Air SL: Parasternal long axis view with M-mode
+
+Sagittal right kidney with color flow
+
+Sagittal lung
+
+Optic nerve
+
+Point of care handheld ultrasound for your specialty
+
+Seamlessly integrate Vscan Air into your practice. Clinician feedback drives our ultra-portable innovations to ensure they are easy to use, intuitive to navigate, and right for your point of care use.
+
+Specialty Insights
+
+Primary Care
+
+Emergency Medicine
+
+Cardiology
+
+Critical Care
+
+MSK
+
+OB/GYN
+
+Support
+
+Education
+
+A wide range of tutorials to help get you started.
+
+Learn more
+
+Support Center
+
+When you need support, our experts are ready to help you.
+
+Learn more
+
+Contact us
+
+Need Help? 1-866-281-7545
+
+Contact us
+
+FAQs
+
+Why should I consider adding Vscan Air handheld ultrasound to my practice?
+
+Innovation in handheld ultrasound is revolutionizing the use of ultrasound by healthcare professionals and helping to enable more personalized care for patients worldwide.
+
+Pocket-sized handheld ultrasound provides clinicians with a tool to complement the physical exam for focused assessments at the point-of-care.
+
+Handheld ultrasound provides a unique value as an easy-to-use, lightweight, and portable ultrasound tool clinicians can have literally on hand to evaluate and triage patients, enabling them to get answers quickly to help accelerate diagnoses and treatment decisions.
+
+Handheld ultrasound can help improve healthcare outcomes and potentially lower costs by reducing patient wait times and offering a more efficient workflow. It supports increased confidence by supplementing the information gathered throughout the clinical evaluation. Can improve practice management, patient follow-up and referrals to specialists, or in emergencies can help avoid unnecessary referrals and long wait times for additional care.
+
+Why should I consider adding Vscan Air handheld ultrasound to my practice?
+
+Innovation in handheld ultrasound is revolutionizing the use of ultrasound by healthcare professionals and helping to enable more personalized care for patients worldwide.
+
+Pocket-sized handheld ultrasound provides clinicians with a tool to complement the physical exam for focused assessments at the point-of-care.
+
+Handheld ultrasound provides a unique value as an easy-to-use, lightweight, and portable ultrasound tool clinicians can have literally on hand to evaluate and triage patients, enabling them to get answers quickly to help accelerate diagnoses and treatment decisions.
+
+Handheld ultrasound can help improve healthcare outcomes and potentially lower costs by reducing patient wait times and offering a more efficient workflow. It supports increased confidence by supplementing the information gathered throughout the clinical evaluation. Can improve practice management, patient follow-up and referrals to specialists, or in emergencies can help avoid unnecessary referrals and long wait times for additional care.
+
+What are the benefits of handheld ultrasound?
+
+The use of handheld ultrasound as part of the physical exam may improve patient care. Handheld ultrasound is valuable in enabling clinicians to see what they could only feel or hear at the point-of-care prior to the handheld ultrasound exam.
+
+Delivering information at the point-of-care for decision-making, handheld ultrasound helps clinicians optimize healthcare operations, services, and experience.
+
+What are the benefits of handheld ultrasound?
+
+The use of handheld ultrasound as part of the physical exam may improve patient care. Handheld ultrasound is valuable in enabling clinicians to see what they could only feel or hear at the point-of-care prior to the handheld ultrasound exam.
+
+Delivering information at the point-of-care for decision-making, handheld ultrasound helps clinicians optimize healthcare operations, services, and experience.
+
+Is Vscan Air easy to learn and use?
+
+Yes!  Vscan Air CL and Vscan Air SL probes pair with the Vscan Air app which is user-validated to be intuitive and easy to use. User support tools on our Vscan Air support web portal provide online services to enhance the Vscan Air experience – from product information to video tutorials to clinical and service support.
+
+Is Vscan Air easy to learn and use?
+
+Yes!  Vscan Air CL and Vscan Air SL probes pair with the Vscan Air app which is user-validated to be intuitive and easy to use. User support tools on our Vscan Air support web portal provide online services to enhance the Vscan Air experience – from product information to video tutorials to clinical and service support.
+
+What modes are available on Vscan Air handheld ultrasound?
+
+B-mode: Black/white imaging – black-and-white mode for displaying anatomy in two dimensions in real time
+
+Color Doppler: Color flow – color-coded overlay for real-time blood flow imaging
+
+PW: Pulsed wave spectral Doppler – displays speed and direction of blood flow allowing velocity measurements
+
+M-Mode: Motion mode – displays tissue motion over time (along one direction as indicated by M-mode cursor)
+
+What modes are available on Vscan Air handheld ultrasound?
+
+B-mode: Black/white imaging – black-and-white mode for displaying anatomy in two dimensions in real time
+
+Color Doppler: Color flow – color-coded overlay for real-time blood flow imaging
+
+PW: Pulsed wave spectral Doppler – displays speed and direction of blood flow allowing velocity measurements
+
+M-Mode: Motion mode – displays tissue motion over time (along one direction as indicated by M-mode cursor)
+
+Can I do both deep and shallow scanning with Vscan Air?
+
+Yes, both Vscan Air SL and CL probes use GE HealthCare’s industry-leading dual-probe (2-in-1) technology enabling you to scan patients effortlessly without switching probes between, or during, exams. Complete both shallow and deep ultrasound scans with one probe.
+
+The Vscan Air SL is a flexible, wireless dual-probe with sector phased array and linear array transducers. The Vscan Air CL is a wireless, dual probe with curved array and linear array transducers.
+
+Can I do both deep and shallow scanning with Vscan Air?
+
+Yes, both Vscan Air SL and CL probes use GE HealthCare’s industry-leading dual-probe (2-in-1) technology enabling you to scan patients effortlessly without switching probes between, or during, exams. Complete both shallow and deep ultrasound scans with one probe.
+
+The Vscan Air SL is a flexible, wireless dual-probe with sector phased array and linear array transducers. The Vscan Air CL is a wireless, dual probe with curved array and linear array transducers.
+
+JB23888XX January 2024
+
+Have a question? We would love to hear from you.
+
+Contact us
+
+JB23888XX January 2024
+
+Contact Us
+
+We’re ready to support you in your moments that matter
+
+MktoForms2.loadForm("//app-sj02.marketo.com", "005-SHS-767",
+                 148168,
+                    function (form) {
+                         if (!form) return;
+                         var hidden = {};
+hidden["utm_source"]="";
+hidden["utm_campaign"]="";
+hidden["utm_medium"]="";
+hidden["utm_term"]="";
+hidden["utm_content"]="";
+hidden["flexField2"]="Ultrasound Machines for Precision Sonography";
+hidden["flexField3"]="Ultrasound Machines for Precision Sonography";
+hidden["flexField4"]="https://www.gehealthcare.com/en-us/products/ultrasound/handheld-ultrasound";
+hidden["flexField5"]="Vscan Air™ Portable Ultrasound Systems";
+hidden["flexField6"]="No";
+form.addHiddenFields(hidden);
+                         
+                         var recaptchaEnabled = true;
+                         var recaptchaProcessed = false;
+                         // Intercept submit button click to get reCAPTCHA token before form submission
+                         if(recaptchaEnabled === true || recaptchaEnabled === 'true') {
+                              form.getFormElem().find('button[type="submit"]').on('click', function(e) {
+                                   if(!recaptchaProcessed) {
+                                        e.preventDefault();
+                                        e.stopImmediatePropagation();
+                                        grecaptcha.ready(function() {
+                                             grecaptcha.execute('6LdsEK4UAAAAAIrK6ay_z9jKjDMUxobP6n-ib_m6', {action: 'submit'}).then(function(token) {
+                                                  document.getElementById('g-recaptcha-response').value = token;
+                                                  form.vals({"g-recaptcha-response": token});
+                                                  recaptchaProcessed = true;
+                                                  // Trigger click again, this time it will proceed
+                                                  form.getFormElem().find('button[type="submit"]').off('click').click();
+                                             }).catch(function(err) {
+                                                  console.error('reCAPTCHA execution failed:', err);
+                                             });
+                                        });
+                                   }
+                              });
+                         }
+                         
+                         form.onValidate(function (validity) {
+                              if(!validity){
+                              form.getFormElem().parents(".gehc-marketo-form-wraper").find(".gehc-marketo-error-message").css("display", "inline-flex");
+                              form.getFormElem().addClass("errorshown");
+                              }
+                         });
+                         form.onSuccess(function () {
+                              form.getFormElem().hide();
+                              
+                              // Reset reCAPTCHA flag for potential resubmission
+                              recaptchaProcessed = false;
+                              
+                              form.getFormElem().parents(".gehc-marketo-form-wraper").addClass("show-successfull-msg");
+                              if(form.getFormElem().parents(".gehc-marketo-form-wraper").find(".gehc-marketo-error-message")){
+                                   form.getFormElem().parents(".gehc-marketo-form-wraper").find(".gehc-marketo-error-message").hide();
+                              }
+                              if(form.getFormElem().parents(".gehc-marketo-form-wraper").find(".marketo-form-header-container")){
+                                   form.getFormElem().parents(".gehc-marketo-form-wraper").find(".marketo-form-header-container").hide();
+                              }
+                              if(form.getFormElem().parents(".gehc-marketo-form-wraper").find(".marketo-form-header")){
+                                   form.getFormElem().parents(".gehc-marketo-form-wraper").find(".marketo-form-header").hide();
+                              }
+                              if(form.getFormElem().parents(".hero-banner-capture").length){
+                                   form.getFormElem().parents(".hero-banner-capture").addClass("show-thankyou-module"); 
+                              }
+                              form.getFormElem().parents(".gehc-marketo-form-wraper").find(".gehc-marketo-successmessage").show();
+                              let $marketoForm = $("#mktoForm_148168");
+                              $marketoForm.trigger("reset");
+                              let $submitButton = $marketoForm.find(".mktoButton[type=submit]");
+                              $submitButton.removeAttr("disabled");
+                              $submitButton.text("Submit");
+                              let scrollTo = form.getFormElem().parents(".gehc-marketo-form-wraper").find(".gehc-marketo-successmessage").offset().top;
+                              $('body, html').animate({scrollTop: scrollTo+'px'}, 10);
+                              return false;
+                         });
+                         form.onSubmit(function(){
+                              let formValues = form.vals();
+                              if (formValues && Object.prototype.hasOwnProperty.call(formValues, 'contact_question')){
+                                   // Set fallback value from placeholder if empty
+                                   if (!formValues.contact_question) {
+                                        let placeholderVal = document.getElementById('contact_question')?.getAttribute('placeholder');
+                                        if (placeholderVal) {
+                                             formValues.contact_question = placeholderVal;
+                                             // Update contact_question values
+                                             form.vals({
+                                                  "contact_question": placeholderVal
+                                             });
+                                        }
+                                   }
+                              }
+                              setTimeout(() => {
+                                   let submitRow = form.getFormElem().parents(".gehc-marketo-form-wraper").find(".mktoButtonRow");
+                                   if(submitRow.find(".mktoErrorMsg") && submitRow.find(".mktoErrorMsg").length != 0){
+                                        form.getFormElem().hide();
+                                        form.getFormElem().parents(".gehc-marketo-form-wraper").addClass("show-error-msg");
+                                        if(form.getFormElem().parents(".gehc-marketo-form-wraper").find(".marketo-form-header-container")){
+                                             form.getFormElem().parents(".gehc-marketo-form-wraper").find(".marketo-form-header-container").hide();
+                                        }
+                                        if(form.getFormElem().parents(".gehc-marketo-form-wraper").find(".marketo-form-header")){
+                                             form.getFormElem().parents(".gehc-marketo-form-wraper").find(".marketo-form-header").hide();
+                                        }
+                                        if(form.getFormElem().parents(".gehc-marketo-form-wraper").find(".gehc-marketo-error-message")){
+                                             form.getFormElem().parents(".gehc-marketo-form-wraper").find(".gehc-marketo-error-message").hide();
+                                        }    
+                                        if(form.getFormElem().parents(".hero-banner-capture").length){
+                                             form.getFormElem().parents(".hero-banner-capture").addClass("show-custom-error"); 
+                                        }
+                                        form.getFormElem().parents(".gehc-marketo-form-wraper").find(".gehc-marketo-errormessage").show();
+                                        let scrollTo = form.getFormElem().parents(".gehc-marketo-form-wraper").find(".gehc-marketo-errormessage").offset().top;
+                                        $('body, html').animate({scrollTop: scrollTo+'px'}, 10);
+                                   }
+                              }, "15000");
+                         });
+                         if($('strong') && $('strong').length != 0){
+                              let strongtag = $('strong');
+                              $(strongtag[0]).addClass('firststrong');
+                         }
+                         let formrow = $(".mktoFormRow");
+                         $(formrow[0]).addClass("firstformrow");
+                    });
+
+News and Press
+            
+
+               Investors
+            
+
+              Suppliers
+            
+
+              Specialties
+            
+
+              Careers
+            
+
+              Contact Us
+            
+
+              Email Preferences
+
+Compliance
+
+Sitemap  California Transparency in Supply Chain Act Adverse Event Reporting Expanded Access Policy
+
+United States
+      
+          ico-caret-right
+
+© 2026 GE HealthCare. GE is a trademark of General Electric Company. Used under trademark license.
+
+Privacy Policy
+
+California Privacy Policy
+
+Terms and Conditions
+
+Security
+
+Portal Terms of Use

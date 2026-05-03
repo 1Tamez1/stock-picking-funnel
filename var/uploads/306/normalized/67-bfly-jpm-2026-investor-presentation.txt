@@ -1,0 +1,443 @@
+# bfly-jpm-2026-investor-presentation.pdf
+
+## Metadata
+- MIME type: application/pdf
+- Original file: bfly-jpm-2026-investor-presentation.pdf
+- Notes: Layout-preserving PDF text. Charts and images should be checked against the original file.
+
+## LLM View
+Unlocking Ultrasound at Scale
+in the AI infrastructure.
+44th Annual J.P. Morgan Health Conference
+January 15, 2026
+Forward Looking Statements
+Certain statements in this presentation include “forward-looking statements” within the meaning of the “safe harbor” provisions of the United States
+Private Securities Litigation Reform Act of 1995. In some cases, you can identify forward -looking statements by terminology such as “aim,” “anticipate,”
+“assume,” “believe,” “contemplate,” “continue,” “could,” “due,” “estimate,” “expect,” “goal,” “intend,” “may,” “objective,” “plan,” “predict,” “potential,”
+“positioned,” “seek,” “should,” “target,” “will,” “would,” and other similar expressions that are predictions of or indicate future events and future trends, or
+the negative of these terms or other comparable terminology. These forward-looking statements include, without limitation, our expectations with respect
+to ﬁnancial results, future performance, commercialization and plans to deploy our products and services, development of prod ucts and services and the
+size and potential growth of current or future markets for our products and services. Our actual results may diﬀer from our e xpectations, estimates, and
+projections and, consequently, you should not rely on these forward-looking statements as predictions of future events. Forward-looking statements are
+based on our current beliefs and assumptions and on information currently available to us. These forward -looking statements involve signiﬁcant known
+and unknown risks and uncertainties and other factors that could cause the actual outcomes or results to diﬀer materially fro m those discussed in the
+forward-looking statements. Most of these factors are outside our control and are diﬃcult to predict. Factors that may cause suc h diﬀerences include,
+but are not limited to: our ability to grow and manage growth eﬀectively; the success, cost, and timing of our product and se rvice development activities;
+the potential attributes and beneﬁts of our products and services; the degree to which our products and services are accepted by healthcare practitioners
+and patients for their approved uses; our ability to obtain and maintain regulatory approval for our products, and any relate d restrictions and limitations of
+any approved product; our ability to identify, in-license, or acquire additional technology; our ability to maintain our existin g license, manufacturing,
+supply, and distribution agreements; our ability to compete with other companies currently marketing or engaged in the develo pment of products and
+services that we are currently marketing or developing; changes in applicable laws or regulations; the size and growth potent ial of the markets for our
+products and services, and our ability to serve those markets, either alone or in partnership with others; the pricing of our products and services, and
+reimbursement for medical procedures conducted using our products and services; our estimates regarding expenses, revenue, capital requirements,
+and needs for additional ﬁnancing; our ﬁnancial performance; our ability to raise ﬁnancing in the future; and other risks and uncertainties indicated from
+time to time in our most recent Annual Report on Form 10-K or in our subsequent ﬁlings with the Securities and Exchange Commission. We caution that
+the foregoing list of factors is not exclusive. We caution you not to place undue reliance upon any forward-looking statements, which speak only as of the
+date of this presentation. We do not undertake or accept any obligation or undertake to release publicly any updates or revis ions to any forward-looking
+statements to reﬂect any change in our expectations or any change in events, conditions, or circumstances on which any such s tatement is based.
+
+                                                                                                                                                                   2
+The Butterfly Journey
+
+                                            iQ (2018 – Poseidon 2.0)
+                                             • First commercial-ready chip,
+                                                                                        iQ3 (2024 – Poseidon 4.3)
+ Butterfly Network founded                     solving key technical barriers
+                                                                                         • Improved image quality
+ with the mission to democratize                                                         • Parity to Piezos
+ medical imaging                            iQ+ (2020 – Poseidon 4.0)
+                                             • Enhanced capabilities,                    • High speed 3D
+                                               optimized supply chain
+
+                       2015                                   2021                                  2025
+
+ 2011                                   2016                                    2024
+
+               Ultrasound-on-Chip (Poseidon 1.0)           BFLY Business Combination              Compass AI (2025)
+                • First prototype demonstrating             • Listed on NYSE February              • Next-gen, AI-powered
+                  integration feasibility                     12, 2021                               enterprise software
+
+                                                                                                                            3
+     Butterfly Ultrasound-on-Chip : More Capability, One Probe.
+
+                      Compact
+
+                     Affordable
+                                                        3 traditional
+                     Whole-body
+                        3D                                 arrays
+
+                                          Advanced
+
+                                        imaging modes
+
+    Supercomputers to iPhone.     Ultrasound carts to Butterfly.             Just as the digital cameras           Butterfly aims to revolutionize
+                                                                        disrupted the film camera industry…          the ultrasound industry.
+
+                                                                           Analog c amera     Digital camera on   Analog ultrasound with     Digital ultrasound on
+                                                                              with film      semiconductor chip    piezoelec tric crystals   semiconductor chip
+                                                                                                                                                                     4
+4
+Butterfly Featured on Season 1,
+      Episodes 12 and 13
+
+                                  5
+                                                           Primary Care
+
+  iQ3: Award-Winning                        Emergency
+                                              Medicine
+                                                                              Hospitals
+
+Handheld Ultrasound for
+                               Anesthesiology                                        Outpatient Practices
+More Care Venues
+                          Musculoskeletal                                                 Specialty Groups
+
+                              Specialty                                                       Post-Acute
+                               Surgery                                                        Care
+
+                                                                                          Homecare
+                             Hospitalists
+                                                                                          Providers
+
+                                   Cardiology                                        Nursing
+
+                                            Radiology                         Global Health
+                                                                              Partners
+                                                               Veterinary
+
+                                            Broad use across           Enabling new models
+                                              specialities.             across care venues
+
+                                                                                                   6
+More Intelligent with
+
+AI-powered enterprise software designed
+to move POCUS from underutilized tool
+to connected, compliant, revenue-ready
+system.
+
+                                          7
+More Documented
+Voice to auto-documentation in seconds —
+giving clinicians back valuable time, reducing
+after-hours work, and removing one of the
+biggest barriers to POCUS adoption: the
+documentation process.
+More End-to-End Compliance with a Holistic Enterprise Solution
+
+                                                                     Workflow Manager                          Education & Training
+                                                      Device
+        iQ3                                          Agnostic        Orders or encounters-based workflows      Butterfly Academy educational videos
+                                                                     with or without attestation.              and Proficiency Management      .
+
+              Encounter-Based
+                 Workflow
+
+                                                                     Interoperability                          Implementation Team
+       Butterfly
+       Handheld                                                      Seamless EHR + PACS integration, single   Robust implementation team to guide a
+      Ultrasound                                                     sign-on, mobile device management.        swift install and dedicated support.
+
+    Encounter-based                                    Hospital IT
+       Workflow                                        Integration
+                                                                     Fleet Management Dashboard                Device-agnostic
+                                                                     View usage and device data, and manage    Works with Butterfly and non-Butterfly
+                                                                     all DICOM settings in one place.          ultrasounds.
+
+Leaders in Security & Compliance
+Our commitment to meeting the ever-evolving global
+security standards is unwavering.
+
+                                                                                                                                                        9
+More Open with Butterfly Garden
+Butterfly’s Software Development Kit (SDK) enables third parties to build tailored ultrasound
+AI solutions leveraging our real-time imaging, workflows and secure cloud integration.
+
+                           Access an all-in-one Developer’s Package
+            Create with the Butterfly platform, the world’s first semiconductor-based, whole-body ultrasound.
+
+            Butterfly SDK                           Butterfly Probe                     Engineering Support
+         Developer Kit for your               The world’s only single-probe,                  Documentation,
+      application to access images            whole-body handheld device,               sample applications, and
+       captured and control gain,           powered by Ultrasound-on-Chip              direct support from Butterfly
+        depth and preset of the                       technology.                        as you develop your Al.
+             Butterfly probe.
+
+                                                                                                                       10
+AI-powered Apps
+Compatible with Butterfly
+• 25+ portfolio companies
+
+• First FDA-cleared app live in the Apple app store
+
+• Educational apps available for download
+
+• BREAKING: Butterfly Network to Extend its
+  Proprietary 3D Imaging Capabilities to Butterfly
+  Garden Developers (Press Release)
+
+                                                      11
+More Accessible, One App at a Time
+
+  Access Guided Diagnostic-    Learn to Assess for   Learn to Identify Key Peripheral
+     quality Heart Scans      Deep Vein Thrombosis              Anatomy
+
+                                                                                        12
+More Growth with a Strategic Plan to Drive the Core Business
+• Next-generation devices and workflow software targeting deeper hospital adoption
+• Services business, AI tools and education aimed at expanding into ambulatory settings and to
+  lower-cost care teams
+
+                           D EV IC ES      SOFTW ARE               SERVICES
+
+     Home & Long-term Care Facilities       EMS & Clinics        Medical Schools & Hospital Systems
+                                          Care Continuum                                              13
+The convergence of AI
+and the human body.
+
+Butterfly’s semiconductor architecture
+can be used as a gateway into the body
+for diagnostics, therapy and human
+integration.
+
+                                         14
+More Market Disruption
+Leveraging Ultrasound-on-Chip in New Technologies
+
+                   Compact
+
+                  Affordable
+
+                  Whole-body
+
+                     3D
+
+                                                    15
+AI at the Edge
+Edge devices embedded with AI, sensing and compute will bring real time intelligence to every
+experience, service and system — including the human body.
+
+                                                                                                16
+AI is advancing from logic to perception.
+Butterfly’s chip can help that paradigm shift.
+Smart spaces & ambient AI are transitioning from concept to reality
+
+                                                                      17
+AI is advancing from logic to perception.
+Butterfly’s chip can help that paradigm shift.
+Smart spaces & ambient AI are transitioning from concept to reality… in healthcare, too.
+
+                                                                                           18
+AI is advancing from logic to perception.
+Butterfly’s chip can help that paradigm shift.
+Rapid growth of vision-based AI applications
+
+                                                 19
+One Platform.
+                                                    Primary Care
+More Opportunity.                  Emergency
+                                                                   Hospitals
+                                    Medicine
+
+                      Anesthesiology                                           Outpatient Practices
+
+                Musculoskeletal                                                      Specialty Groups
+
+                                                    POCUS
+                   Specialty
+                                                                                         Post-Acute Care
+                    Surgery
+
+                                                                                     Homecare
+                    Hospitalists
+                                                                                     Providers
+
+                           Cardiology                                          Nursing
+
+                                        Radiology
+                                                                   Global Health Partners
+
+                                                     Veterinary
+
+                                                                                                           20
+One Platform.                                                                  …and a world
+
+More Opportunity.
+                                                                             of non-healthcare
+                                       POCUS                                    applications
+                           Patient                 Tomo-                    Battery Regeneration
+                          Monitoring               graphy                     Material Stress
+                                                                                Fish Finding
+                                                                            Underwater Drones
+                                                                            Consumer Products
+
+                                                                Neuro-            Security
+                 Pharma                                        modulation         Military
+                                                                 & BCI          Wearables
+
+                                     Butterfly
+                               Ultrasound-on-Chip
+                Therapy
+                                                               Robotics
+                Healing
+
+                                                    Catheter
+                           Endo-
+                                                     Based
+                          luminal
+                                                     (IVUS)
+
+                                         HIFU
+                                       Treatment
+                                                                                                21
+More Opportunity, More Value.
+                                                    >$350 Billion Opportunity in Healthcare Alone
+
+ Handheld POCUS >2BN
+
+     Hospital
+  Cart Ultrasound                                             Therapeutics
+      >$6.5BN                                                   >$80BN
+                                                                                                                        Interventional                                                Implantable
+                                                                                                                           >$100BN                                                     >$115BN
+
+ Home & Long-term
+   Care Facilities
+     (lung and bladder)
+            ~20BN                                                Wearables
+                                                                  >$30BN
+
+   POCUS/Ultrasound Data: Global ultrasound mark et revenues projec ted by 2029 from the 2025 Signify Ultrasound Equipment Report
+   Hom ecare/LTC Data: company estimate based on calculation of combined opportunity to addres s long term care facility + Neurogenic Bladder + CHF + PAD + hospital readmis sion populations
+   Chip markets: company estimate based on calculation of combined opportunity and global market researc h                                                                                          22
+A New Wave of Ultrasound-enabled Technologies
+
+• Compact, cost-effective, power-efficient, immensely capable
+
+•   9,000 element 2D Matrix Array for 3D imaging
+
+•   Ultra-wide frequency range (1-12MHz)
+
+•   25,000 concurrent 4K movie streams
+
+•   1 Trillion operations per second
+
+                                                                Photo: Jordan Harrison/Pexels
+
+                                                                                                23
+More Innovation: Ultrasound-on-Chip   Poseidon Family
+
+      Probe Version
+
+                                                        24
+More Innovation: Ultrasound-on-Chip   Poseidon Family
+
+             Butterfly P5.1   Mindray M8 Cart
+
+                                                        25
+More Innovation: Ultrasound-on-Chip   Apollo Family
+
+                           \
+
+                                                      26
+                         NVIDIA Case Study:
+                         Solving World-Changing Problems                                    Pioneering Technology
+                                                                                            Define the Category
+
+                         NVIDIA Revenue Evolution: Gaming vs. Chip (Data Center) Business   Gaming
+
+                                                                                            Programmable by Design
+                                                                                            Open & Empower the Platform
+
+                                                                                            CUDA & GPU
+
+Revenue (USD Billions)
+                                                                                            World-changing Ecosystem
+                                                                                            Expand & Scale Out to New Markets
+
+                                                                                            Data Center & AI
+                             Fiscal Year
+                                                    ●              Gaming (Video Games)
+                                                    ●              Data Center (Chips/AI)
+                                                                                                                          27
+                                             Item 1.01. Entry into a Material Definitive Agreement
+8 deals to date, including BCIs, robotics,   November 17, 2025
+liver assessment, and more.
+                                             Under the terms of the Agreement, Midjourney will pay
+                                             the Company a one-time non-recurring fee of $15
+                                             million and a $10 million annual license fee, payable
+                                             quarterly during the term of the Agreement. The
+                                             Agreement also contemplates that Midjourney will
+                                             make (i) additional payments of up to $9 million
+                                             upon the achievement of specified milestones, (ii)
+                                             certain revenue sharing payments in connection with
+                                             Midjourney’s commercialization of hardware products
+                                             incorporating Company chips, and (iii) payments in
+                                             connection with any purchases of chips from the Company.
+
+40+ companies in the pipeline.
+
+                                                                                                        28
+Demonstrated Growth and Financial Discipline
+ ●     Preliminary unaudited Q4 revenue growth of at least 17%.
+ ●     Q4 2025 Earnings Call: Thursday, February 26, 8:00 am EST
+
+  USD (millions)                        FY 2022   FY 2023          FY 2024      FY 2025    FY 2026
+
+  Revenue ($)                              73.4        65.9              82.1      92.0+
+
+  Adjusted Gross Margin                  54.8%       58.8%            59.6%      63.6%*
+
+  Adjusted EBITDA Loss*                 (136.4)       (67.5)           (38.9)    (32-35)
+
+  Cash, Cash Equivalents & Restricted     166.8       138.7              92.8    148.2**
+  Cash
+
+  *YTD as of 9/30/25
+  **Balance as of 9/30/25
+
+                                                                                                 29
+     Key Investment Highlights
+                 Proven Core Commercial Business                                      Demonstrated Revenue Growth and
+      1          as an Ultrasound Market Disruptor                          3         Financial Discipline
+
+     Market disrupting point-of-care handheld device, powered by          Poised to drive rapid expansion through continued revenue growth
+     proprietary semiconductor technology that can be leveraged in non-   and expense efficiencies, as evidenced by 2024 and 2025
+     competitive markets.                                                 performance to date.
+
+                 Exponential Potential as a Full Stack
+       2         Platform                                                   4          Significant, Diverse TAM Opportunity
+
+      Unlocking a holistic ultrasound ecosystem of hardware, software,    Significant TAM opportunity allowing for core business growth
+      service and education – enabled by a full stack platform.           through hospital penetration, while also targeting expansion into new
+                                                                          markets through co-development.
+
+                  Well-positioned to execute on key initiatives over the near term:
+                  • Continued AI and semiconductor innovation, with plans to launch 4th-gen chip
+       5          • Expanding deeper and wider in hospital/enterprise channel
+                  • Developing in home care/services market
+                  • Continued co-development of Ultrasound-on-Chip         in non-competitive markets (Butterfly Embedded )
+                                                                                                                                          30
+30
+Thank you!
+                                      Ultrasound-on-ChipTM            Versatile Handheld               Intuitive Software
+                                            Platform              With >20 presets on a single,   AI, workflow and educational
+                                       600+ patents issued             whole-body probe           tools to drive ultrasound use
+                                           and pending                                                     and adoption
+   ir.butterflynetwork.com
+
+   investors@butterflynetinc.com
+
+   Headquarters
+                                      Professional Services             Butterfly Garden                Health Systems
+   1600 District Ave                    Dedicated support                AI Marketplace                Penetration in 100
+                                         to organizations          Software development kits              of top 100
+   Burlington, MA 01803                    from day one                for 3-party AI apps
+
+                                        Medical Education                 Global reach                 Founded in 2011
+                                   Over 80% of U.S. med schools          100+ countries               Offices in New York,
+                                      have adopted Butterfly           (inclusive of global          Burlington and Taiwan
+                                                                         health partners)
+VERSATILE. AFFORDABLE. DIGITAL.
+                                                                                                                             31
